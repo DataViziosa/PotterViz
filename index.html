@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/scrolloverflow.min.js"></script>
+<script src="js/fullpage2.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>-->
+<link rel="stylesheet" href="css/fullpage.min.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="wrapper">
+	<div class="section" data-anchor="Title">
+	<svg width="586" height="400" xmlns="http://www.w3.org/2000/svg">
+	 <g>
+	  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp1" cx="171" stroke="#fff" fill="#000"/>
+	  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp3" transform="rotate(192,390.0091,270)" cx="390.00912" stroke="#fff" fill="#000"/>
+	  <path id="hp2" d="m239,247c36,-26 85,-1 85,-1" opacity="NaN" stroke-width="20" stroke="#fff" fill="#000"/>
+	  <path id="hp4" d="m176.54311,41.80681l20.31907,37.15581l-8.37838,4.38497l25.58558,31.83439l-8.37462,5.31647l31.62913,53.30836l-53.64864,-40.85207l10.23273,-5.67321l-33.33333,-26.16614l11.94444,-8.08618l-35.19519,-27.44942l39.21921,-23.77298z" stroke-width="0" stroke="#e6b905" fill="#e6b905"/>
+	 </g>
+	</svg><br>
+	<a href="#Introduction">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="120" id="arrow" viewBox="0 0 122.91 110.38">
+  <path id="hg2" transform="rotate(90 44.0126 61.8)" stroke-width="5"  d="m49.26179,61.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg1" transform="rotate(90 44.0126 27.8)" stroke-width="5" d="m49.26179,27.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg3" transform="rotate(90 44.013 96.8)" stroke-width="5" d="m49.26179,96.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+</svg>
+</a>
+	</div>
+	<div class="section" data-anchor="Introduction"></div>
+	<div class="section" data-anchor="Hogwarts">
+		<div class="slide" data-anchor=""></div>
+		<div class="slide" data-anchor="slide3-2"></div>
+		<div class="slide" data-anchor="slide3-3"></div>
+	</div>
+	<div class="section" data-anchor="Characters"></div>
+	<div class="section" data-anchor="Magical-World"></div>
+	<div class="section" data-anchor="Stats"></div>
+	<div class="section" data-anchor="About"></div>
+</div>
+<script>
+$(document).ready(function(){
+	$('#wrapper').fullpage({
+		anchors: ['Title', 'Introduction', 'Hogwarts','Characters','Magical-World','Stats','About'],
+        sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black'],
+        slidesNavigation: true,
+		navigationPosition:"right",
+		autoScrolling: true,
+		  navigation: true,
+		  showActiveTooltip: true,
+		  slidesNavigation:true,
+		  slidesNavPosition:"bottom",
+		  fitToSection:true,
+		  navigationTooltips: [
+        "Title",
+        "Introduction",
+        "Hogwarts",
+        "Characters",
+        "Magical World",
+        "Stats",
+        "About",
+      ],
+      controlArrows:false, 
+      showActiveTooltip:false
+	});
+});
+</script>
+</body>
+</html>

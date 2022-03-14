@@ -1,0 +1,11 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <ellipse stroke-width="10" ry="72" rx="72" id="svg_1" cy="270" cx="171" stroke="#fff" fill="#000"/>
+  <ellipse stroke-width="20" ry="72" rx="72" id="svg_2" cy="270" cx="171" stroke="#fff" fill="#000"/>
+  <ellipse stroke-width="20" ry="72" rx="72" id="svg_4" cy="270" cx="390.00912" stroke="#fff" fill="#000"/>
+  <path id="svg_6" d="m232,248" opacity="NaN" stroke-width="10" stroke="#fff" fill="#000"/>
+  <path id="svg_7" d="m239,247c36,-26 85,-1 85,-1" opacity="NaN" stroke-width="20" stroke="#fff" fill="#000"/>
+  <path id="svg_10" d="m176.54311,41.80681l20.31907,37.15581l-8.37838,4.38497l25.58558,31.83439l-8.37462,5.31647l31.62913,53.30836l-53.64864,-40.85207l10.23273,-5.67321l-33.33333,-26.16614l11.94444,-8.08618l-35.19519,-27.44942l39.21921,-23.77298z" stroke-width="10" stroke="#e6b905" fill="#e6b905"/>
+ </g>
+</svg>

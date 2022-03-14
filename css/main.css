@@ -1,0 +1,52 @@
+.section{
+	text-align: center;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background: white;
+}
+
+.fp-slidesNav{
+	text-align: center;
+}
+
+.fp-viewing-Title #fp-nav{
+	visibility: hidden;
+}
+
+#hp4{
+  opacity: 0;
+  animation: 2.5s opacity forwards;
+}
+@keyframes opacity {
+  0% {opacity: 0} 
+  100% {opacity: 1}
+}
+
+a path  {
+      fill: white;opacity: 0.3;
+      animation: 3.5s opacity2 infinite;
+    }
+    @keyframes opacity2 {
+      15% {opacity: 0.3} 
+      35% {opacity: 1}
+      65% {opacity: 1} 
+      85% {opacity: 0.3}
+    }
+    #hg2 {animation-delay: 0.5s}
+    #hg3 {animation-delay: 1.0s}
+
+
+#hp2, ellipse {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1.9s linear forwards;
+}
+#hp2 {animation-delay: 0.8s}
+#hp3 {animation-delay: 1.1s}
+#hp4 {animation-delay: 1.8s}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
