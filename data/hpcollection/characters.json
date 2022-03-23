@@ -1197,7 +1197,7 @@
   },
   {
     "id": 73,
-    "name": "Cadogan",
+    "name": "Sir Cadogan",
     "birth": "Middle Ages,",
     "death": "Before 1993",
     "species": "Human",
@@ -1469,7 +1469,7 @@
   },
   {
     "id": 90,
-    "name": "Crabbe",
+    "name": "Vincent Crabbe, Sr.",
     "birth": null,
     "death": null,
     "species": "Human",
@@ -2501,7 +2501,7 @@
     "wand": null,
     "patronus": null,
     "house": null,
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Inquisitorial Squad (formerly)", "Mrs Norris"],
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Inquisitorial Squad (formerly)", "Mrs. Norris"],
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
@@ -3048,7 +3048,7 @@
   },
   {
     "id": 185,
-    "name": "Goyle",
+    "name": "Goyle Sr",
     "birth": null,
     "death": null,
     "species": "Human",
@@ -4322,7 +4322,7 @@
   },
   {
     "id": 259,
-    "name": "Edward Lupin",
+    "name": "Teddy Lupin",
     "birth": "April, 1998",
     "death": null,
     "species": "Human (Metamorphmagus)",
@@ -5491,7 +5491,7 @@
   },
   {
     "id": 327,
-    "name": "James Potter I",
+    "name": "James Potter",
     "birth": "27 March, 1960",
     "death": "31 October, 1981 (aged 21)",
     "species": "Human",
@@ -5515,7 +5515,7 @@
   },
   {
     "id": 328,
-    "name": "James Potter II",
+    "name": "James Sirius Potter",
     "birth": "Between 1 September 2003 and 31 August 2004",
     "death": null,
     "species": "Human",
@@ -6813,7 +6813,7 @@
   },
   {
     "id": 405,
-    "name": "Edward Tonks",
+    "name": "Ted Tonks",
     "birth": null,
     "death": "March, 1998",
     "species": "Human",
@@ -7261,7 +7261,7 @@
   },
   {
     "id": 471,
-    "name": "Charles Weasley",
+    "name": "Charlie Weasley",
     "birth": "12 December, 1972",
     "death": null,
     "species": "Human",
@@ -10446,7 +10446,7 @@
   },
   {
     "id": 663,
-    "name": "Mrs Norris",
+    "name": "Mrs. Norris",
     "birth": "1984 or earlier",
     "death": null,
     "species": "Cat",
@@ -10715,7 +10715,7 @@
   },
   {
     "id": 679,
-    "name": "Lily L. Potter",
+    "name": "Lily Luna Potter",
     "birth": "Between 1 September 2007 and 31 August 2008",
     "death": null,
     "species": "Human",
@@ -10737,7 +10737,7 @@
   },
   {
     "id": 680,
-    "name": "Lily J. Potter",
+    "name": "Lily Potter",
     "birth": "30 January, 1960",
     "death": "31 October, 1981 (aged 21)",
     "species": "Human",
@@ -10936,7 +10936,7 @@
   },
   {
     "id": 692,
-    "name": "Merope Riddle",
+    "name": "Merope Gaunt",
     "birth": "c. 1907",
     "death": "31 December, 1926 (aged 19)",
     "species": "Human",
@@ -11032,7 +11032,7 @@
   },
   {
     "id": 698,
-    "name": "Rosmerta",
+    "name": "Madam Rosmerta",
     "birth": "Before 1959",
     "death": null,
     "species": "Human",
