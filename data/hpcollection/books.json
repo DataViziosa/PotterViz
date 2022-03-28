@@ -14,6 +14,7 @@
     "plot_take_place_years": ["1991", "1992"],
     "approx_sales":120000000,
     "translations":90,
+    "pages":309,
     "book_covers": [
       {
         "id": 1,
@@ -221,6 +222,7 @@
     "plot_take_place_years": ["1992", "1993"],
     "approx_sales":77000000,
     "translations":72,
+    "pages":341,
     "book_covers": [
       {
         "id": 1,
@@ -389,6 +391,7 @@
     "plot_take_place_years": ["1993", "1994"],
     "approx_sales":65000000,
     "translations":47,
+    "pages":435,
     "book_covers": [
       {
         "id": 1,
@@ -554,8 +557,9 @@
         "US": "07-08-2000"
       }
     ],
-    "plot_take_place_years": ["1994", "1995"],
+    "plot_take_place_years": ["194", "1995"],
     "approx_sales":65000000,
+    "pages":734,
     "translations":39,
     "book_covers": [
       {
@@ -838,6 +842,7 @@
     ],
     "plot_take_place_years": ["1995", "1996"],
     "approx_sales":65000000,
+    "pages":870,
     "translations":32,
     "book_covers": [
       {
@@ -1160,6 +1165,7 @@
     ],
     "plot_take_place_years": ["1996", "1997"],
     "approx_sales":65000000,
+    "pages":652,
     "translations":30,
     "book_covers": [
       {
@@ -1439,6 +1445,7 @@
     ],
     "plot_take_place_years": ["1997", "1998"],
     "approx_sales":65000000,
+    "pages":759,
     "translations":28,
     "book_covers": [
       {
