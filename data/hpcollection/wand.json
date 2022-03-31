@@ -1,0 +1,196 @@
+[
+  {
+   "name": "Albus Dumbledore",
+    "wood": "Elder",
+    "length": 15,
+    "core": "Thestral tail hair",
+    "Note": "The Elder Wand, one of the Deathly Hallows. Also known as the Deathstick and the Wand of Destiny."
+},
+{
+   "name": "Bellatrix Lestrange",
+    "wood": "Walnut",
+    "length": 12.75,
+    "core": "Dragon heartstring",
+    "Note": "This wand is described as 'unyielding;' passed into the possession of Hermione Granger after the Skirmish at Malfoy Manor in 1998."
+},
+{
+   "name": "Cedric Diggory",
+    "wood": "Walnut",
+    "length": 12.25,
+    "core": "Unicorn hair",
+    "Note": "This wand was 'pleasantly springy'; hair from particularly fine male unicorn (seventeen hands high), which nearly gored Mr Ollivander with its horn after he plucked its tail hair."
+},
+{
+   "name": "Celestina Warbeck",
+    "wood": "Larch",
+    "length": 10.5,
+    "core": "Phoenix feather",
+    "Note": "Celestina Warbeck's wand is mentioned in the lyrics of the title track of her best-selling album, You Stole My Cauldron but You Can't Have my Heart."
+},
+{
+   "name": "Dolores Umbridge",
+    "wood": "Birch",
+    "length": 8,
+    "core": "Dragon heartstring",
+    "Note": "This wand is described as 'unusually short;' broken by a centaur's hoof in June 1996 in the Forbidden Forest"
+},
+{
+   "name": "Draco Malfoy",
+    "wood": "Hawthorn",
+    "length": 10,
+    "core": "Veela hair",
+    "Note": "This wand passed into the possession of Harry Potter after the Skirmish at Malfoy Manor in 1998 until Harry came into possession of the Elder Wand and mended his first wand."
+},
+{
+   "name": "Fleur Delacour",
+    "wood": "Rosewood",
+    "length": 9.5,
+    "core": "Phoenix feather",
+    "Note": "In this wand the core is a hair from Fleur's grandmother, who was a Veela."
+},
+{
+   "name": "Garrick Ollivander",
+    "wood": "Hornbeam",
+    "length": 12.75,
+    "core": "Dragon heartstring",
+    "Note": ""
+},
+{
+   "name": "Harry Potter",
+    "wood": "Holly",
+    "length": 11,
+    "core": "Phoenix feather",
+    "Note": "Brother to Voldemort's wand — the core tail feathers are both from Fawkes; broken in December 1997 while fleeing from Godric's Hollow;[22] repaired with the Elder Wand in May 1998."
+},
+{
+   "name": "Hermione Granger",
+    "wood": "Vine",
+    "length": 10.75,
+    "core": "Dragon heartstring",
+    "Note": "This wand was confiscated when the trio was captured by Snatchers in 1998."
+},
+
+{
+   "name": "Horace Slughorn",
+    "wood": "Cedar",
+    "length": 10.25,
+    "core": "Dragon heartstring",
+    "Note": "Fairly flexible."
+},
+
+{
+   "name": "James Potter",
+    "wood": "Mahogany",
+    "length": 11,
+    "core": "Unknown",
+    "Note": "This wand was excellent for transfiguration"
+},
+{
+   "name": "Lily Evans",
+    "wood": "Willow",
+    "length": 10.25,
+    "core": "Unknown",
+    "Note": "This wand was nice for Charm work."
+},
+{
+   "name": "Lucius Malfoy",
+    "wood": "Elm",
+    "length": 18,
+    "core": "Dragon heartstring",
+    "Note": "This wand was kept in a snake-headed walking stick that Lucius carried; 'borrowed' by Lord Voldemort and destroyed by Harry Potter's wand during the Battle of the Seven Potters in 1997."
+},
+
+{
+   "name": "Mary Cattermole",
+    "wood": "Cherry",
+    "length": 8.75,
+    "core": "Unicorn hair",
+    "Note": "This wand was confiscated by the Muggle-Born Registration Commission in 1997."
+},
+
+{
+   "name": "Minerva McGonagall",
+    "wood": "Fir",
+    "length": 9.5,
+    "core": "Dragon heartstring",
+    "Note": "This wand was most likely purchased from Ollivanders in 1947 when she was eleven almost twelve."
+},
+
+{
+   "name": "Neville Longbottom",
+    "wood": "Cherry",
+    "length": -1,
+    "core": "Unicorn hair",
+    "Note": "This wand was nice for Charm work."
+},
+{
+   "name": "Peter Pettigrew",
+    "wood": "Chestnut",
+    "length": 9.25,
+    "core": "Unknown",
+    "Note": "This wand may have been one of the last wands Mr Ollivander sold before he disappeared in 1996. This was Peter Pettigrew's wand. During the Skirmish at Malfoy Manor, Ron took this wand from Pettigrew and used from then on, as his own wand was taken by Snatchers."
+},
+{
+   "name": "Quirinus Quirrell",
+    "wood": "Alder",
+    "length": 9,
+    "core": "Unicorn hair",
+    "Note": "This wand was nice for Charm work."
+},
+{
+   "name": "Remus Lupin",
+    "wood": "Cypress",
+    "length": 10.25,
+    "core": "Unknown",
+    "Note": "Cypress wands are said to be well-matched to wizards who are self-sacrificing and willing to die a heroic death. Lupin spent the majority of his life alone to save others from having to deal with the consequences of his affliction, and died defending Hogwarts castle in the Battle of Hogwarts."
+},
+{
+   "name": "Charlie Weasley",
+    "wood": "Ash",
+    "length": 12,
+    "core": "Unicorn hair",
+    "Note": "Ron's brother Charlie's old wand; severely damaged in September 1992 after a run-in with the Whomping Willow."
+},
+{
+   "name": "Ronald Weasley",
+    "wood": "Willow",
+    "length": 14,
+    "core": "Unicorn hair",
+    "Note": "Purchased with his father's winnings from a Daily Prophet draw. Taken from him by Snatchers and replaced with Peter Pettigrew's wand."
+},
+{
+   "name": "Rubeus Hagridl",
+    "wood": "Oak",
+    "length": 16,
+    "core": "Unknown",
+    "Note": "This wand was snapped in half when Hagrid was expelled from Hogwarts during his third year — the pieces are certainly hidden in Hagrid's pink umbrella."
+},
+{
+   "name": "Tom Riddle",
+    "wood": "Yew",
+    "length": 13.5,
+    "core": "Phoenix feather",
+    "Note": "This wand is brother to Harry Potter's wand — the core tail feathers are both from Fawkes."
+},
+{
+   "name": "Silvanus Kettleburnl",
+    "wood": "Alder",
+    "length": 11.5,
+    "core": "Phoenix feather",
+    "Note": ""
+},
+{
+   "name": "Ginny Weasley",
+    "wood": "Yew",
+    "length": -1,
+    "core": "Unknown",
+    "Note": "A yew wand is suited for a person who is a fierce protector of others.[3] Protectiveness is an espect of Ginny's personality. She has frequently defended Harry Potter against others."
+},
+{
+   "name": "Sybill Trelawney",
+    "wood": "Hazel",
+    "length": 9.5,
+    "core": "Unicorn hair",
+    "Note": "This wand bears a resemblance to Sirius Black's wand, though there are slight differences. They both have a square-like handle and have magical runes depicted on the wand, but Trelawney's wand has a darker colour and has a swirly shape from the handle to the tip."
+}
+]
