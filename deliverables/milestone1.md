@@ -11,7 +11,7 @@ Here you will find the datasets that we will mainly use for this project. Please
 
 ## Problematic 
 
-The general topic of our project consists in visualising and recreating the Harry Potter world by analysing the characters, their specificities, as well as their relationships.
+The general topic of our project consists in visualising the Harry Potter world by analysing the characters, their specificities, as well as their relationships.
 Our goal is to retrieve a great amount of information from our datasets to better understand the series and eventually retrieve the main differences between the movies and the books. 
 
 ### Exploring characters:
