@@ -26,7 +26,7 @@ The target audience: This project targets a large set of people. On the one hand
 On the other hand, people that are already familiar with this whole wizarding world, will hopefully enjoy going through this. 
 
 
-![image](https://user-images.githubusercontent.com/57985870/161519282-919a5d0b-37aa-47e1-ab78-41b43528b6ad.png)
+
 
 
 
