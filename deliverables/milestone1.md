@@ -15,13 +15,12 @@ The general topic of our project consists in visualising and recreating the Harr
 Our goal is to retrieve a great amount of information from our datasets to better understand the series and eventually retrieve the main differences between the movies and the books. 
 
 ### Exploring characters:
-- *Houses*: The concept of Houses in Harry Potter world is extremely relevant. Hogwarts is divided into four houses. Before beginning their schooling, each student must be sorted into their houses by the Sorting Hat. 
+- *Houses*: The concept of Houses in Harry Potter world is extremely relevant. Hogwarts is divided into 4 houses. Before beginning their schooling, each student must be sorted into their houses by the Sorting Hat. 
 Given our list of characters, we are interested to study their distribution among the 4 houses. 
-- *Wands*: The study of the history and the magical properties of wands was called *wandlore*. Each wand consists of a type of wood that surrounding a core of magical substance. Although the wand cores might come from the same creature, or the wood might come from the same tree, no two existing wands were exactly alike. 
-One of our ideas of interactive visualisation will be to let the user choose components of a wand and show him/her the closest character in terms of wand components.
+- *Wands*: The study of the history and the magical properties of wands is called *wandlore*. Each wand consists of a type of wood surrounding a core of magical substance. Although the wand cores might come from the same creature, or the wood might come from the same tree, no two existing wands were exactly alike. 
+One of our ideas of interactive visualisation will be to let the user chooses components of a wand and show him/her the closest character in terms of wand components.
 - *Blood Types*: One of the underlying problems in the wizarding world is intolerance and prejudice based on the “purity” of a person’s wizarding blood. Wizards distinguish between purebloods, half-blood and Muggle-borns.
 We will study the distribution of blood types among our characters.
-- *Species*: Apart from humans, we can distinguish and explore several other creatures in the saga, such as Ghosts, Goblins, House-elves …
 - *Spells*: We have at our disposal a complete dataset collecting a lot of spells that can be cast by wizards. For each spell it is interesting to display the pronunciation and the description.
 - *Association between characters*: We are interested in retrieving the existence of an eventual association between two characters. 
 
