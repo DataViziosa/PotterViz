@@ -1,12 +1,21 @@
 # Milestone 1
 
+## Datasets
+Here you will find the datasets that we will mainly use for this project. Please find the [accompanying exploratory data analysis notebook to see the results of our findings](../python/exploratory_data_analysis.ipynb):
+- [Harry Potter Collection](https://github.com/theDavidBarton/the-harry-potter-database) contains a lot of information about characters, potions, spells and books. 
+- We enhance the book dataset (in the previous bullet) with more information about [sales](https://en.wikipedia.org/wiki/List_of_best-selling_books) and [translations](https://en.wikipedia.org/wiki/Harry_Potter_in_translation)
+- [Harry Potter network](https://github.com/dpmartin42/Networks/tree/master/Harry%20Potter) describing the network of interactiosn between characters.
+- [Harry Potter Books content](https://github.com/formcept/whiteboard/tree/master/nbviewer/notebooks/data/harrypotter) containing the texts of all the Harry Potter books. 
+- [Harry Potter movies](https://www.kaggle.com/kornflex/harry-potter-movies-dataset) containing information about the movies as well as the transcript that can be useful for advanced analysis.
+- Top 40 favourite Harry Potter characters based on [this article ](https://www.theguardian.com/childrens-books-site/2011/aug/30/snape-favourite-harry-potter-character).
+
 ## Problematic 
 
 The general topic of our project consists in visualising and recreating the Harry Potter world by analysing the characters and their specificities, as well as their relationships.
 Our goal is to retrieve a great amount of information from our datasets to better understand the series and eventually retrieve the main differences between the movies and the books. 
 
 Exploring characters:
-•	Gender: The distribution of genders in the Harry Potter series (between Male and Female)
+- *Gender*: The distribution of genders in the Harry Potter series (between Male and Female)
 •	Houses: The concept of Houses in Harry Potter world is extremely relevant. Hogwarts is divided into four houses, each bearing the last name of its founder: Gryffindor, Ravenclaw, Hufflepuff and Slytherin. Before beginning their schooling, each student must first be sorted into their correct houses by the magical Sorting Hat. 
 Given our list of characters, we are interested to study their distribution among the 4 houses. 
 •	Wands: Wands are unique and tells a lot about its owner. The stud
@@ -30,14 +39,7 @@ On the other hand, people that are already familiar with this whole wizarding wo
 
 
 
-## Datasets
-Here you will find the datasets that we will mainly use for this project. Please find the [accompanying exploratory data analysis notebook to see the results of our findings](../python/exploratory_data_analysis.ipynb):
-- [Harry Potter Collection](https://github.com/theDavidBarton/the-harry-potter-database) contains a lot of information about characters, potions, spells and books. 
-- We enhance the book dataset (in the previous bullet) with more information about [sales](https://en.wikipedia.org/wiki/List_of_best-selling_books) and [translations](https://en.wikipedia.org/wiki/Harry_Potter_in_translation)
-- [Harry Potter network](https://github.com/dpmartin42/Networks/tree/master/Harry%20Potter) describing the network of interactiosn between characters.
-- [Harry Potter Books content](https://github.com/formcept/whiteboard/tree/master/nbviewer/notebooks/data/harrypotter) containing the texts of all the Harry Potter books. 
-- [Harry Potter movies](https://www.kaggle.com/kornflex/harry-potter-movies-dataset) containing information about the movies as well as the transcript that can be useful for advanced analysis.
-- Top 40 favourite Harry Potter characters based on [this article ](https://www.theguardian.com/childrens-books-site/2011/aug/30/snape-favourite-harry-potter-character).
+
 
 ## Related work
 With an intellectual property this big and impactful, there has been many vizualizations of Harry Potter's universe. Here are some examples found on different websites:
