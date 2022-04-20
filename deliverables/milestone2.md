@@ -49,6 +49,10 @@ The second and related view of the character network, will show a graph based on
 
 ### Spells
 <img align="right" width="300" height="150" src="images/spellPiechart.png"></img>
+We have at our disposal a complete dataset collecting a lot of spells that can be cast by Harry Potter world wizards. We collected a significant amount of spells, that we sort into six categories.
+In this visualisation, we represent on the right-hand side of the page a pie chart showing the percentage of spell types. On the left-hand side, we list the corresponding spell names according to their category. 
+
+
 
 ### Wands
 <img align="right" width="300" height="150" src="images/characterToWand.png"></img>
