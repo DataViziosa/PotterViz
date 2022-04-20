@@ -25,3 +25,10 @@ The first one will display a network of the association between characters, i.e.
 The second and related view of the character network, will show a graph based on the interactions, i.e. two characters have a link between them if they interact at one point in the series. This second view will also allow us to display the information sidebar as before.
 
 > For these visualisations, we will probably need the lecture on graphs as well as the D3 library on graphs. (e.g. Hierarchical edge bundling).
+
+### Spells
+<img align="right" width="300" height="150" src="images/spellPiechart.png"></img>
+
+### Wands
+<img align="right" width="300" height="150" src="images/characterToWand.png"></img>
+
