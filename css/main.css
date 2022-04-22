@@ -1,3 +1,14 @@
+.inline-block{
+  display: inline-block !important;
+}
+
+.modal-open {
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+}
+
 .section{
 	text-align: center;
 }
@@ -52,6 +63,20 @@ a path  {
     stroke-dashoffset: 0;
   }
 }
+
+@font-face {
+  font-family: HPFont;
+  src: url("/fonts/hp.ttf");
+}
+@font-face {
+  font-family: FBFont;
+  src: url("/fonts/fb.ttf");
+}
+@font-face {
+  font-family: WWFont;
+  src: url("/fonts/ww.ttf");
+}
+
 
 .hogwarts-logo{
   display: inline-block;

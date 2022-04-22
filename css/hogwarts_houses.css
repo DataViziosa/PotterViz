@@ -1,0 +1,90 @@
+.bold{
+	font-weight: bold;
+}
+#house_name{
+	padding-top: 50px;
+	font-size: 100px;
+	font-family: HPFont;
+}
+
+#house_description{
+	font-size: 25px;
+	font-family: WWFont;
+}
+.fp-enabled .modal{
+   position:fixed !important;
+}
+
+#char_name{
+	font-family: FBFont;
+	font-size: 35px;
+	margin-top: 10px;
+}
+
+#char_picture{
+	border-radius: 60%;
+}
+
+#char_info{
+	text-align: center;
+}
+
+.fa-solid{
+	padding: 0.375rem 0.0rem;
+}
+.col-6{
+	width: 50%!important;
+}
+
+#char_infos  .form-control:disabled, #char_infos  .form-control[readonly] {
+    background-color: #fff !important;
+}
+
+#char_infos  .form-control:disabled, #char_infos  .form-control[readonly] {
+    background-color: #fff !important;
+}
+#char_infos  .form-control {
+	border: none!important;
+}
+
+#char_info_footer{
+	border: none !important;
+}
+
+#char_infos .input-group-text{
+	background-color: #fff !important;
+	border: none !important;
+}
+#char_infos label{
+	text-align: left !important;
+}
+
+#char_infos .row{
+	text-align: left!important;
+}
+
+#char_picture{
+	height: 200px;
+	width: 200px;
+}
+
+.slytherin{
+	background-color: #1A472A;
+	color: #AAAAAA;
+}
+
+.ravenclaw{
+	background-color: #222F5B;
+	color: #946B2D;
+
+}
+
+.gryffindor{
+	background-color: #740001;
+	color: #EEBA30;
+}
+
+.hufflepuff{
+	background-color: #D3A625;
+	color: #60605C;
+}
