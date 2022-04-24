@@ -1,0 +1,4411 @@
+,source,target,association
+0,1,12,['British Ministry of Magic']
+1,1,20,['British Ministry of Magic']
+2,1,22,['British Ministry of Magic']
+3,1,25,['British Ministry of Magic']
+4,1,43,['British Ministry of Magic']
+5,1,64,['British Ministry of Magic']
+6,1,73,['British Ministry of Magic']
+7,1,75,['British Ministry of Magic']
+8,1,84,['British Ministry of Magic']
+9,1,91,['British Ministry of Magic']
+10,1,92,['British Ministry of Magic']
+11,1,93,['British Ministry of Magic']
+12,1,99,['British Ministry of Magic']
+13,1,103,['British Ministry of Magic']
+14,1,107,['British Ministry of Magic']
+15,1,108,['British Ministry of Magic']
+16,1,131,['British Ministry of Magic']
+17,1,134,['British Ministry of Magic']
+18,1,165,['British Ministry of Magic']
+19,1,175,['British Ministry of Magic']
+20,4,6,['Slytherin']
+21,4,14,['Slytherin']
+22,4,15,['Slytherin']
+23,4,47,['Slytherin']
+24,4,48,['Slytherin']
+25,4,58,['Slytherin']
+26,4,61,['Slytherin']
+27,4,74,['Slytherin']
+28,4,88,['Slytherin']
+29,4,95,['Slytherin']
+30,4,96,['Slytherin']
+31,4,98,['Slytherin']
+32,4,111,['Slytherin']
+33,4,119,['Slytherin']
+34,4,140,['Slytherin']
+35,4,144,['Slytherin']
+36,4,150,['Slytherin']
+37,4,164,['Slytherin']
+38,4,167,['Slytherin']
+39,5,9,['Order of the Phoenix']
+40,5,10,['Gryffindor']
+41,5,16,['Gryffindor']
+42,5,21,['Order of the Phoenix']
+43,5,24,['Order of the Phoenix']
+44,5,25,['Order of the Phoenix']
+45,5,27,['Order of the Phoenix']
+46,5,34,['Order of the Phoenix']
+47,5,37,['Gryffindor']
+48,5,40,['Order of the Phoenix']
+49,5,54,['Gryffindor']
+50,5,55,"['Gryffindor', 'Order of the Phoenix']"
+51,5,56,"['Gryffindor', 'Order of the Phoenix']"
+52,5,63,['Gryffindor']
+53,5,64,"['Gryffindor', 'Order of the Phoenix']"
+54,5,65,['Order of the Phoenix']
+55,5,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+56,5,67,['Potter family']
+57,5,71,['Gryffindor']
+58,5,72,['Gryffindor']
+59,5,73,['Order of the Phoenix']
+60,5,79,['Gryffindor']
+61,5,83,['Order of the Phoenix']
+62,5,84,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+63,5,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+64,5,93,['Order of the Phoenix']
+65,5,98,['Order of the Phoenix']
+66,5,100,['Gryffindor']
+67,5,103,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+68,5,104,"['Gryffindor', 'Order of the Phoenix']"
+69,5,105,"['Gryffindor', 'Order of the Phoenix']"
+70,5,106,"['Gryffindor', 'Order of the Phoenix']"
+71,5,107,['Gryffindor']
+72,5,108,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+73,5,109,"['Gryffindor', 'Order of the Phoenix']"
+74,5,110,['Gryffindor']
+75,5,113,['Potter family']
+76,5,114,['Gryffindor']
+77,5,118,['Gryffindor']
+78,5,125,['Order of the Phoenix']
+79,5,132,['Gryffindor']
+80,5,133,['Order of the Phoenix']
+81,5,134,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+82,5,139,['Gryffindor']
+83,5,142,['Order of the Phoenix']
+84,5,143,['Order of the Phoenix']
+85,5,145,['Order of the Phoenix']
+86,5,146,"['Gryffindor', 'Order of the Phoenix']"
+87,5,152,['Gryffindor']
+88,5,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+89,5,162,['Gryffindor']
+90,5,165,['Order of the Phoenix']
+91,5,168,['Order of the Phoenix']
+92,5,169,['Gryffindor']
+93,5,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+94,5,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+95,5,175,"['Gryffindor', 'Order of the Phoenix']"
+96,6,4,['Slytherin']
+97,6,14,['Slytherin']
+98,6,15,['Slytherin']
+99,6,47,['Slytherin']
+100,6,48,['Slytherin']
+101,6,58,['Slytherin']
+102,6,61,['Slytherin']
+103,6,74,['Slytherin']
+104,6,88,['Slytherin']
+105,6,95,['Slytherin']
+106,6,96,['Slytherin']
+107,6,98,['Slytherin']
+108,6,111,['Slytherin']
+109,6,119,['Slytherin']
+110,6,140,['Slytherin']
+111,6,144,['Slytherin']
+112,6,150,['Slytherin']
+113,6,164,['Slytherin']
+114,6,167,['Slytherin']
+115,7,9,"[""Dumbledore's Army""]"
+116,7,13,"['Ravenclaw', ""Dumbledore's Army""]"
+117,7,16,"[""Dumbledore's Army""]"
+118,7,24,"[""Dumbledore's Army""]"
+119,7,36,"[""Dumbledore's Army""]"
+120,7,37,"[""Dumbledore's Army""]"
+121,7,41,['Ravenclaw']
+122,7,46,"['Ravenclaw', ""Dumbledore's Army""]"
+123,7,56,"[""Dumbledore's Army""]"
+124,7,62,['Ravenclaw']
+125,7,64,"[""Dumbledore's Army""]"
+126,7,65,['Ravenclaw']
+127,7,68,"[""Dumbledore's Army""]"
+128,7,71,"[""Dumbledore's Army""]"
+129,7,77,['Ravenclaw']
+130,7,84,"[""Dumbledore's Army""]"
+131,7,86,['Ravenclaw']
+132,7,100,"[""Dumbledore's Army""]"
+133,7,105,"[""Dumbledore's Army""]"
+134,7,106,"[""Dumbledore's Army""]"
+135,7,108,"[""Dumbledore's Army""]"
+136,7,112,"[""Dumbledore's Army""]"
+137,7,114,"[""Dumbledore's Army""]"
+138,7,116,"[""Dumbledore's Army""]"
+139,7,118,"[""Dumbledore's Army""]"
+140,7,123,"['Ravenclaw', ""Dumbledore's Army""]"
+141,7,124,['Ravenclaw']
+142,7,131,['Ravenclaw']
+143,7,134,"[""Dumbledore's Army""]"
+144,7,139,"[""Dumbledore's Army""]"
+145,7,143,"['Ravenclaw', ""Dumbledore's Army""]"
+146,7,146,"[""Dumbledore's Army""]"
+147,7,151,"['Ravenclaw', ""Dumbledore's Army""]"
+148,7,152,"[""Dumbledore's Army""]"
+149,7,156,['Ravenclaw']
+150,7,157,['Ravenclaw']
+151,7,162,"[""Dumbledore's Army""]"
+152,7,166,['Ravenclaw']
+153,7,169,"[""Dumbledore's Army""]"
+154,7,171,['Ravenclaw']
+155,7,172,"[""Dumbledore's Army""]"
+156,7,175,"[""Dumbledore's Army""]"
+157,9,5,['Order of the Phoenix']
+158,9,7,"[""Dumbledore's Army""]"
+159,9,13,"[""Dumbledore's Army""]"
+160,9,16,"[""Dumbledore's Army""]"
+161,9,21,['Order of the Phoenix']
+162,9,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+163,9,25,['Order of the Phoenix']
+164,9,27,['Order of the Phoenix']
+165,9,34,['Order of the Phoenix']
+166,9,36,"[""Dumbledore's Army""]"
+167,9,37,"[""Dumbledore's Army""]"
+168,9,40,['Order of the Phoenix']
+169,9,46,"[""Dumbledore's Army""]"
+170,9,55,['Order of the Phoenix']
+171,9,56,"['Order of the Phoenix', ""Dumbledore's Army""]"
+172,9,64,"['Order of the Phoenix', ""Dumbledore's Army""]"
+173,9,65,['Order of the Phoenix']
+174,9,66,['Order of the Phoenix']
+175,9,68,"[""Dumbledore's Army""]"
+176,9,71,"[""Dumbledore's Army""]"
+177,9,73,['Order of the Phoenix']
+178,9,83,['Order of the Phoenix']
+179,9,84,"['Order of the Phoenix', ""Dumbledore's Army""]"
+180,9,85,['Order of the Phoenix']
+181,9,93,['Order of the Phoenix']
+182,9,98,['Order of the Phoenix']
+183,9,100,"[""Dumbledore's Army""]"
+184,9,103,['Order of the Phoenix']
+185,9,104,['Order of the Phoenix']
+186,9,105,"['Order of the Phoenix', ""Dumbledore's Army""]"
+187,9,106,"['Order of the Phoenix', ""Dumbledore's Army""]"
+188,9,108,"['Order of the Phoenix', ""Dumbledore's Army""]"
+189,9,109,['Order of the Phoenix']
+190,9,112,"[""Dumbledore's Army""]"
+191,9,114,"[""Dumbledore's Army""]"
+192,9,116,"[""Dumbledore's Army""]"
+193,9,118,"[""Dumbledore's Army""]"
+194,9,123,"[""Dumbledore's Army""]"
+195,9,125,['Order of the Phoenix']
+196,9,133,['Order of the Phoenix']
+197,9,134,"['Order of the Phoenix', ""Dumbledore's Army""]"
+198,9,139,"[""Dumbledore's Army""]"
+199,9,142,['Order of the Phoenix']
+200,9,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+201,9,145,['Order of the Phoenix']
+202,9,146,"['Order of the Phoenix', ""Dumbledore's Army""]"
+203,9,151,"[""Dumbledore's Army""]"
+204,9,152,"[""Dumbledore's Army""]"
+205,9,155,['Order of the Phoenix']
+206,9,162,"[""Dumbledore's Army""]"
+207,9,165,['Order of the Phoenix']
+208,9,168,['Order of the Phoenix']
+209,9,169,"[""Dumbledore's Army""]"
+210,9,172,"['Order of the Phoenix', ""Dumbledore's Army""]"
+211,9,173,['Order of the Phoenix']
+212,9,175,"['Order of the Phoenix', ""Dumbledore's Army""]"
+213,10,5,['Gryffindor']
+214,10,16,['Gryffindor']
+215,10,37,['Gryffindor']
+216,10,54,['Gryffindor']
+217,10,55,['Gryffindor']
+218,10,56,['Gryffindor']
+219,10,63,['Gryffindor']
+220,10,64,['Gryffindor']
+221,10,66,['Gryffindor']
+222,10,71,['Gryffindor']
+223,10,72,['Gryffindor']
+224,10,79,['Gryffindor']
+225,10,84,['Gryffindor']
+226,10,85,['Gryffindor']
+227,10,100,['Gryffindor']
+228,10,103,['Gryffindor']
+229,10,104,['Gryffindor']
+230,10,105,['Gryffindor']
+231,10,106,['Gryffindor']
+232,10,107,['Gryffindor']
+233,10,108,['Gryffindor']
+234,10,109,['Gryffindor']
+235,10,110,['Gryffindor']
+236,10,114,['Gryffindor']
+237,10,118,['Gryffindor']
+238,10,132,['Gryffindor']
+239,10,134,['Gryffindor']
+240,10,139,['Gryffindor']
+241,10,146,['Gryffindor']
+242,10,152,['Gryffindor']
+243,10,155,['Gryffindor']
+244,10,162,['Gryffindor']
+245,10,169,['Gryffindor']
+246,10,172,['Gryffindor']
+247,10,173,['Gryffindor']
+248,10,175,['Gryffindor']
+249,11,14,"['Death Eaters', 'Lord Voldemort']"
+250,11,15,['Lord Voldemort']
+251,11,19,"['Death Eaters', 'Lord Voldemort']"
+252,11,26,"['Death Eaters', 'Lord Voldemort']"
+253,11,47,"['Death Eaters', 'Lord Voldemort']"
+254,11,48,['Lord Voldemort']
+255,11,51,['Lord Voldemort']
+256,11,60,"['Death Eaters', 'Lord Voldemort']"
+257,11,79,"['Death Eaters', 'Lord Voldemort']"
+258,11,86,['Lord Voldemort']
+259,11,88,['Death Eaters']
+260,11,90,"['Death Eaters', 'Lord Voldemort']"
+261,11,121,"['Death Eaters', 'Lord Voldemort']"
+262,11,147,['Lord Voldemort']
+263,12,1,['British Ministry of Magic']
+264,12,20,['British Ministry of Magic']
+265,12,22,['British Ministry of Magic']
+266,12,25,['British Ministry of Magic']
+267,12,43,['British Ministry of Magic']
+268,12,64,['British Ministry of Magic']
+269,12,73,['British Ministry of Magic']
+270,12,75,['British Ministry of Magic']
+271,12,84,['British Ministry of Magic']
+272,12,91,['British Ministry of Magic']
+273,12,92,['British Ministry of Magic']
+274,12,93,['British Ministry of Magic']
+275,12,99,['British Ministry of Magic']
+276,12,103,['British Ministry of Magic']
+277,12,107,['British Ministry of Magic']
+278,12,108,['British Ministry of Magic']
+279,12,131,['British Ministry of Magic']
+280,12,134,['British Ministry of Magic']
+281,12,165,['British Ministry of Magic']
+282,12,175,['British Ministry of Magic']
+283,13,7,"['Ravenclaw', ""Dumbledore's Army""]"
+284,13,9,"[""Dumbledore's Army""]"
+285,13,16,"[""Dumbledore's Army""]"
+286,13,24,"[""Dumbledore's Army""]"
+287,13,36,"[""Dumbledore's Army""]"
+288,13,37,"[""Dumbledore's Army""]"
+289,13,41,['Ravenclaw']
+290,13,46,"['Ravenclaw', ""Dumbledore's Army""]"
+291,13,56,"[""Dumbledore's Army""]"
+292,13,62,['Ravenclaw']
+293,13,64,"[""Dumbledore's Army""]"
+294,13,65,['Ravenclaw']
+295,13,68,"[""Dumbledore's Army""]"
+296,13,71,"[""Dumbledore's Army""]"
+297,13,77,['Ravenclaw']
+298,13,84,"[""Dumbledore's Army""]"
+299,13,86,['Ravenclaw']
+300,13,100,"[""Dumbledore's Army""]"
+301,13,105,"[""Dumbledore's Army""]"
+302,13,106,"[""Dumbledore's Army""]"
+303,13,108,"[""Dumbledore's Army""]"
+304,13,112,"[""Dumbledore's Army""]"
+305,13,114,"[""Dumbledore's Army""]"
+306,13,116,"[""Dumbledore's Army""]"
+307,13,118,"[""Dumbledore's Army""]"
+308,13,123,"['Ravenclaw', ""Dumbledore's Army""]"
+309,13,124,['Ravenclaw']
+310,13,131,['Ravenclaw']
+311,13,134,"[""Dumbledore's Army""]"
+312,13,139,"[""Dumbledore's Army""]"
+313,13,143,"['Ravenclaw', ""Dumbledore's Army""]"
+314,13,146,"[""Dumbledore's Army""]"
+315,13,151,"['Ravenclaw', ""Dumbledore's Army""]"
+316,13,152,"[""Dumbledore's Army""]"
+317,13,156,['Ravenclaw']
+318,13,157,['Ravenclaw']
+319,13,162,"[""Dumbledore's Army""]"
+320,13,166,['Ravenclaw']
+321,13,169,"[""Dumbledore's Army""]"
+322,13,171,['Ravenclaw']
+323,13,172,"[""Dumbledore's Army""]"
+324,13,175,"[""Dumbledore's Army""]"
+325,14,4,['Slytherin']
+326,14,6,['Slytherin']
+327,14,11,"['Death Eaters', 'Lord Voldemort']"
+328,14,15,"['Slytherin', 'Lord Voldemort']"
+329,14,19,"['Death Eaters', 'Lord Voldemort']"
+330,14,26,"['Death Eaters', 'Lord Voldemort']"
+331,14,47,"['Slytherin', 'Death Eaters', 'Lord Voldemort']"
+332,14,48,"['Slytherin', 'Lord Voldemort']"
+333,14,51,['Lord Voldemort']
+334,14,58,['Slytherin']
+335,14,60,"['Death Eaters', 'Lord Voldemort']"
+336,14,61,['Slytherin']
+337,14,74,['Slytherin']
+338,14,79,"['Death Eaters', 'Lord Voldemort']"
+339,14,86,['Lord Voldemort']
+340,14,88,"['Slytherin', 'Death Eaters']"
+341,14,90,"['Death Eaters', 'Lord Voldemort']"
+342,14,95,['Slytherin']
+343,14,96,['Slytherin']
+344,14,98,['Slytherin']
+345,14,111,['Slytherin']
+346,14,119,['Slytherin']
+347,14,121,"['Death Eaters', 'Lord Voldemort']"
+348,14,140,['Slytherin']
+349,14,144,['Slytherin']
+350,14,147,['Lord Voldemort']
+351,14,150,['Slytherin']
+352,14,164,['Slytherin']
+353,14,167,['Slytherin']
+354,15,4,['Slytherin']
+355,15,6,['Slytherin']
+356,15,11,['Lord Voldemort']
+357,15,14,"['Slytherin', 'Lord Voldemort']"
+358,15,19,['Lord Voldemort']
+359,15,26,['Lord Voldemort']
+360,15,47,"['Slytherin', 'Lord Voldemort']"
+361,15,48,"['Slytherin', 'Lord Voldemort']"
+362,15,51,['Lord Voldemort']
+363,15,58,['Slytherin']
+364,15,60,['Lord Voldemort']
+365,15,61,['Slytherin']
+366,15,74,['Slytherin']
+367,15,79,['Lord Voldemort']
+368,15,86,['Lord Voldemort']
+369,15,88,['Slytherin']
+370,15,90,['Lord Voldemort']
+371,15,95,['Slytherin']
+372,15,96,['Slytherin']
+373,15,98,['Slytherin']
+374,15,111,['Slytherin']
+375,15,119,['Slytherin']
+376,15,121,['Lord Voldemort']
+377,15,140,['Slytherin']
+378,15,144,['Slytherin']
+379,15,147,['Lord Voldemort']
+380,15,150,['Slytherin']
+381,15,164,['Slytherin']
+382,15,167,['Slytherin']
+383,16,5,['Gryffindor']
+384,16,7,"[""Dumbledore's Army""]"
+385,16,9,"[""Dumbledore's Army""]"
+386,16,10,['Gryffindor']
+387,16,13,"[""Dumbledore's Army""]"
+388,16,21,['Harry Potter']
+389,16,24,"[""Dumbledore's Army"", 'Harry Potter']"
+390,16,34,['Harry Potter']
+391,16,36,"[""Dumbledore's Army""]"
+392,16,37,"['Gryffindor', ""Dumbledore's Army""]"
+393,16,40,['Harry Potter']
+394,16,46,"[""Dumbledore's Army""]"
+395,16,54,['Gryffindor']
+396,16,55,"['Gryffindor', 'Harry Potter']"
+397,16,56,"['Gryffindor', ""Dumbledore's Army""]"
+398,16,63,['Gryffindor']
+399,16,64,"['Gryffindor', ""Dumbledore's Army"", 'Harry Potter']"
+400,16,65,['Harry Potter']
+401,16,66,['Gryffindor']
+402,16,68,"[""Dumbledore's Army""]"
+403,16,71,"['Gryffindor', ""Dumbledore's Army""]"
+404,16,72,['Gryffindor']
+405,16,77,['Harry Potter']
+406,16,79,['Gryffindor']
+407,16,84,"['Gryffindor', ""Dumbledore's Army""]"
+408,16,85,['Gryffindor']
+409,16,98,['Harry Potter']
+410,16,100,"['Gryffindor', ""Dumbledore's Army""]"
+411,16,103,['Gryffindor']
+412,16,104,['Gryffindor']
+413,16,105,"['Gryffindor', ""Dumbledore's Army""]"
+414,16,106,"['Gryffindor', ""Dumbledore's Army""]"
+415,16,107,['Gryffindor']
+416,16,108,"['Gryffindor', ""Dumbledore's Army""]"
+417,16,109,['Gryffindor']
+418,16,110,['Gryffindor']
+419,16,112,"[""Dumbledore's Army""]"
+420,16,114,"['Gryffindor', ""Dumbledore's Army""]"
+421,16,116,"[""Dumbledore's Army""]"
+422,16,118,"['Gryffindor', ""Dumbledore's Army""]"
+423,16,123,"[""Dumbledore's Army""]"
+424,16,125,['Harry Potter']
+425,16,132,['Gryffindor']
+426,16,134,"['Gryffindor', ""Dumbledore's Army""]"
+427,16,139,"['Gryffindor', ""Dumbledore's Army""]"
+428,16,143,"[""Dumbledore's Army""]"
+429,16,146,"['Gryffindor', ""Dumbledore's Army""]"
+430,16,151,"[""Dumbledore's Army""]"
+431,16,152,"['Gryffindor', ""Dumbledore's Army""]"
+432,16,155,['Gryffindor']
+433,16,162,"['Gryffindor', ""Dumbledore's Army""]"
+434,16,169,"['Gryffindor', ""Dumbledore's Army""]"
+435,16,171,['Harry Potter']
+436,16,172,"['Gryffindor', ""Dumbledore's Army""]"
+437,16,173,['Gryffindor']
+438,16,175,"['Gryffindor', ""Dumbledore's Army"", 'Harry Potter']"
+439,17,71,['Slug Club']
+440,17,84,['Slug Club']
+441,17,88,['Slug Club']
+442,17,95,['Slug Club']
+443,17,111,['Slug Club']
+444,17,134,['Slug Club']
+445,17,155,['Slug Club']
+446,17,172,['Slug Club']
+447,19,11,"['Death Eaters', 'Lord Voldemort']"
+448,19,14,"['Death Eaters', 'Lord Voldemort']"
+449,19,15,['Lord Voldemort']
+450,19,26,"['Death Eaters', 'Lord Voldemort']"
+451,19,47,"['Death Eaters', 'Lord Voldemort']"
+452,19,48,['Lord Voldemort']
+453,19,51,['Lord Voldemort']
+454,19,60,"['Death Eaters', 'Lord Voldemort']"
+455,19,79,"['Death Eaters', 'Lord Voldemort']"
+456,19,86,['Lord Voldemort']
+457,19,88,['Death Eaters']
+458,19,90,"['Death Eaters', 'Lord Voldemort']"
+459,19,121,"['Death Eaters', 'Lord Voldemort']"
+460,19,147,['Lord Voldemort']
+461,20,1,['British Ministry of Magic']
+462,20,12,['British Ministry of Magic']
+463,20,22,['British Ministry of Magic']
+464,20,25,['British Ministry of Magic']
+465,20,43,['British Ministry of Magic']
+466,20,64,['British Ministry of Magic']
+467,20,73,['British Ministry of Magic']
+468,20,75,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+469,20,84,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+470,20,91,['British Ministry of Magic']
+471,20,92,['British Ministry of Magic']
+472,20,93,['British Ministry of Magic']
+473,20,99,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+474,20,103,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+475,20,107,['British Ministry of Magic']
+476,20,108,['British Ministry of Magic']
+477,20,115,['Department of Magical Law Enforcement']
+478,20,131,['British Ministry of Magic']
+479,20,134,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+480,20,146,['Department of Magical Law Enforcement']
+481,20,165,['British Ministry of Magic']
+482,20,175,['British Ministry of Magic']
+483,21,5,['Order of the Phoenix']
+484,21,9,['Order of the Phoenix']
+485,21,16,['Harry Potter']
+486,21,24,"['Order of the Phoenix', 'Harry Potter']"
+487,21,25,"['Order of the Phoenix', 'Advance Guard']"
+488,21,27,['Order of the Phoenix']
+489,21,34,"['Order of the Phoenix', 'Harry Potter']"
+490,21,40,"['Order of the Phoenix', 'Harry Potter']"
+491,21,55,"['Order of the Phoenix', 'Harry Potter']"
+492,21,56,['Order of the Phoenix']
+493,21,64,"['Order of the Phoenix', 'Harry Potter']"
+494,21,65,"['Order of the Phoenix', 'Harry Potter']"
+495,21,66,"['Order of the Phoenix', 'Advance Guard']"
+496,21,73,"['Order of the Phoenix', 'Advance Guard']"
+497,21,77,['Harry Potter']
+498,21,83,"['Order of the Phoenix', 'Advance Guard']"
+499,21,84,['Order of the Phoenix']
+500,21,85,['Order of the Phoenix']
+501,21,93,"['Order of the Phoenix', 'Advance Guard']"
+502,21,98,"['Order of the Phoenix', 'Harry Potter']"
+503,21,103,['Order of the Phoenix']
+504,21,104,['Order of the Phoenix']
+505,21,105,['Order of the Phoenix']
+506,21,106,['Order of the Phoenix']
+507,21,108,['Order of the Phoenix']
+508,21,109,['Order of the Phoenix']
+509,21,125,"['Order of the Phoenix', 'Harry Potter']"
+510,21,133,['Order of the Phoenix']
+511,21,134,['Order of the Phoenix']
+512,21,142,['Order of the Phoenix']
+513,21,143,['Order of the Phoenix']
+514,21,145,['Order of the Phoenix']
+515,21,146,['Order of the Phoenix']
+516,21,155,['Order of the Phoenix']
+517,21,165,"['Order of the Phoenix', 'Advance Guard']"
+518,21,168,"['Order of the Phoenix', 'Advance Guard']"
+519,21,171,['Harry Potter']
+520,21,172,['Order of the Phoenix']
+521,21,173,['Order of the Phoenix']
+522,21,175,"['Order of the Phoenix', 'Harry Potter']"
+523,22,1,['British Ministry of Magic']
+524,22,12,['British Ministry of Magic']
+525,22,20,['British Ministry of Magic']
+526,22,25,['British Ministry of Magic']
+527,22,43,['British Ministry of Magic']
+528,22,64,['British Ministry of Magic']
+529,22,73,['British Ministry of Magic']
+530,22,75,['British Ministry of Magic']
+531,22,84,['British Ministry of Magic']
+532,22,91,['British Ministry of Magic']
+533,22,92,['British Ministry of Magic']
+534,22,93,['British Ministry of Magic']
+535,22,99,['British Ministry of Magic']
+536,22,103,['British Ministry of Magic']
+537,22,107,['British Ministry of Magic']
+538,22,108,['British Ministry of Magic']
+539,22,131,['British Ministry of Magic']
+540,22,134,['British Ministry of Magic']
+541,22,165,['British Ministry of Magic']
+542,22,175,['British Ministry of Magic']
+543,23,33,['Hufflepuff']
+544,23,36,['Hufflepuff']
+545,23,67,['Hufflepuff']
+546,23,68,['Hufflepuff']
+547,23,91,['Hufflepuff']
+548,23,97,['Hufflepuff']
+549,23,112,['Hufflepuff']
+550,23,116,['Hufflepuff']
+551,23,138,['Hufflepuff']
+552,23,163,['Hufflepuff']
+553,23,165,['Hufflepuff']
+554,24,5,['Order of the Phoenix']
+555,24,7,"[""Dumbledore's Army""]"
+556,24,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+557,24,13,"[""Dumbledore's Army""]"
+558,24,16,"[""Dumbledore's Army"", 'Harry Potter']"
+559,24,21,"['Order of the Phoenix', 'Harry Potter']"
+560,24,25,['Order of the Phoenix']
+561,24,27,['Order of the Phoenix']
+562,24,34,"['Order of the Phoenix', 'Harry Potter']"
+563,24,36,"[""Dumbledore's Army""]"
+564,24,37,"[""Dumbledore's Army""]"
+565,24,40,"['Order of the Phoenix', 'Harry Potter']"
+566,24,46,"[""Dumbledore's Army""]"
+567,24,55,"['Order of the Phoenix', 'Harry Potter']"
+568,24,56,"['Order of the Phoenix', ""Dumbledore's Army""]"
+569,24,64,"['Order of the Phoenix', ""Dumbledore's Army"", 'Harry Potter']"
+570,24,65,"['Order of the Phoenix', 'Harry Potter']"
+571,24,66,['Order of the Phoenix']
+572,24,68,"[""Dumbledore's Army""]"
+573,24,71,"[""Dumbledore's Army""]"
+574,24,73,['Order of the Phoenix']
+575,24,77,['Harry Potter']
+576,24,83,['Order of the Phoenix']
+577,24,84,"['Order of the Phoenix', ""Dumbledore's Army""]"
+578,24,85,['Order of the Phoenix']
+579,24,93,['Order of the Phoenix']
+580,24,98,"['Order of the Phoenix', 'Harry Potter']"
+581,24,100,"[""Dumbledore's Army""]"
+582,24,103,['Order of the Phoenix']
+583,24,104,['Order of the Phoenix']
+584,24,105,"['Order of the Phoenix', ""Dumbledore's Army""]"
+585,24,106,"['Order of the Phoenix', ""Dumbledore's Army""]"
+586,24,108,"['Order of the Phoenix', ""Dumbledore's Army""]"
+587,24,109,['Order of the Phoenix']
+588,24,112,"[""Dumbledore's Army""]"
+589,24,114,"[""Dumbledore's Army""]"
+590,24,116,"[""Dumbledore's Army""]"
+591,24,118,"[""Dumbledore's Army""]"
+592,24,123,"[""Dumbledore's Army""]"
+593,24,125,"['Order of the Phoenix', 'Harry Potter']"
+594,24,133,['Order of the Phoenix']
+595,24,134,"['Order of the Phoenix', ""Dumbledore's Army""]"
+596,24,139,"[""Dumbledore's Army""]"
+597,24,142,['Order of the Phoenix']
+598,24,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+599,24,145,['Order of the Phoenix']
+600,24,146,"['Order of the Phoenix', ""Dumbledore's Army""]"
+601,24,151,"[""Dumbledore's Army""]"
+602,24,152,"[""Dumbledore's Army""]"
+603,24,155,['Order of the Phoenix']
+604,24,162,"[""Dumbledore's Army""]"
+605,24,165,['Order of the Phoenix']
+606,24,168,['Order of the Phoenix']
+607,24,169,"[""Dumbledore's Army""]"
+608,24,171,['Harry Potter']
+609,24,172,"['Order of the Phoenix', ""Dumbledore's Army""]"
+610,24,173,['Order of the Phoenix']
+611,24,175,"['Order of the Phoenix', ""Dumbledore's Army"", 'Harry Potter']"
+612,25,1,['British Ministry of Magic']
+613,25,5,['Order of the Phoenix']
+614,25,9,['Order of the Phoenix']
+615,25,12,['British Ministry of Magic']
+616,25,20,['British Ministry of Magic']
+617,25,21,"['Order of the Phoenix', 'Advance Guard']"
+618,25,22,['British Ministry of Magic']
+619,25,24,['Order of the Phoenix']
+620,25,27,['Order of the Phoenix']
+621,25,34,['Order of the Phoenix']
+622,25,40,['Order of the Phoenix']
+623,25,43,['British Ministry of Magic']
+624,25,55,['Order of the Phoenix']
+625,25,56,['Order of the Phoenix']
+626,25,64,"['British Ministry of Magic', 'Order of the Phoenix']"
+627,25,65,['Order of the Phoenix']
+628,25,66,"['Order of the Phoenix', 'Advance Guard']"
+629,25,73,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+630,25,75,['British Ministry of Magic']
+631,25,83,"['Order of the Phoenix', 'Advance Guard']"
+632,25,84,"['British Ministry of Magic', 'Order of the Phoenix']"
+633,25,85,['Order of the Phoenix']
+634,25,91,['British Ministry of Magic']
+635,25,92,['British Ministry of Magic']
+636,25,93,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+637,25,98,['Order of the Phoenix']
+638,25,99,['British Ministry of Magic']
+639,25,103,"['British Ministry of Magic', 'Order of the Phoenix']"
+640,25,104,['Order of the Phoenix']
+641,25,105,['Order of the Phoenix']
+642,25,106,['Order of the Phoenix']
+643,25,107,['British Ministry of Magic']
+644,25,108,"['British Ministry of Magic', 'Order of the Phoenix']"
+645,25,109,['Order of the Phoenix']
+646,25,125,['Order of the Phoenix']
+647,25,131,['British Ministry of Magic']
+648,25,133,['Order of the Phoenix']
+649,25,134,"['British Ministry of Magic', 'Order of the Phoenix']"
+650,25,142,['Order of the Phoenix']
+651,25,143,['Order of the Phoenix']
+652,25,145,['Order of the Phoenix']
+653,25,146,['Order of the Phoenix']
+654,25,155,['Order of the Phoenix']
+655,25,165,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+656,25,168,"['Order of the Phoenix', 'Advance Guard']"
+657,25,172,['Order of the Phoenix']
+658,25,173,['Order of the Phoenix']
+659,25,175,"['British Ministry of Magic', 'Order of the Phoenix']"
+660,26,11,"['Death Eaters', 'Lord Voldemort']"
+661,26,14,"['Death Eaters', 'Lord Voldemort']"
+662,26,15,['Lord Voldemort']
+663,26,19,"['Death Eaters', 'Lord Voldemort']"
+664,26,47,"['Death Eaters', 'Lord Voldemort']"
+665,26,48,['Lord Voldemort']
+666,26,51,['Lord Voldemort']
+667,26,60,"['Death Eaters', 'Lord Voldemort']"
+668,26,79,"['Death Eaters', 'Lord Voldemort']"
+669,26,86,['Lord Voldemort']
+670,26,88,['Death Eaters']
+671,26,90,"['Death Eaters', 'Lord Voldemort']"
+672,26,121,"['Death Eaters', 'Lord Voldemort']"
+673,26,147,['Lord Voldemort']
+674,27,5,['Order of the Phoenix']
+675,27,9,['Order of the Phoenix']
+676,27,21,['Order of the Phoenix']
+677,27,24,['Order of the Phoenix']
+678,27,25,['Order of the Phoenix']
+679,27,34,['Order of the Phoenix']
+680,27,40,['Order of the Phoenix']
+681,27,55,['Order of the Phoenix']
+682,27,56,['Order of the Phoenix']
+683,27,64,['Order of the Phoenix']
+684,27,65,['Order of the Phoenix']
+685,27,66,['Order of the Phoenix']
+686,27,73,['Order of the Phoenix']
+687,27,83,['Order of the Phoenix']
+688,27,84,['Order of the Phoenix']
+689,27,85,['Order of the Phoenix']
+690,27,93,['Order of the Phoenix']
+691,27,98,['Order of the Phoenix']
+692,27,103,['Order of the Phoenix']
+693,27,104,['Order of the Phoenix']
+694,27,105,['Order of the Phoenix']
+695,27,106,['Order of the Phoenix']
+696,27,108,['Order of the Phoenix']
+697,27,109,['Order of the Phoenix']
+698,27,125,['Order of the Phoenix']
+699,27,133,['Order of the Phoenix']
+700,27,134,['Order of the Phoenix']
+701,27,142,['Order of the Phoenix']
+702,27,143,['Order of the Phoenix']
+703,27,145,['Order of the Phoenix']
+704,27,146,['Order of the Phoenix']
+705,27,155,['Order of the Phoenix']
+706,27,165,['Order of the Phoenix']
+707,27,168,['Order of the Phoenix']
+708,27,172,['Order of the Phoenix']
+709,27,173,['Order of the Phoenix']
+710,27,175,['Order of the Phoenix']
+711,33,23,['Hufflepuff']
+712,33,36,['Hufflepuff']
+713,33,67,['Hufflepuff']
+714,33,68,['Hufflepuff']
+715,33,91,['Hufflepuff']
+716,33,97,['Hufflepuff']
+717,33,112,['Hufflepuff']
+718,33,116,['Hufflepuff']
+719,33,138,['Hufflepuff']
+720,33,163,['Hufflepuff']
+721,33,165,['Hufflepuff']
+722,34,5,['Order of the Phoenix']
+723,34,9,['Order of the Phoenix']
+724,34,16,['Harry Potter']
+725,34,21,"['Order of the Phoenix', 'Harry Potter']"
+726,34,24,"['Order of the Phoenix', 'Harry Potter']"
+727,34,25,['Order of the Phoenix']
+728,34,27,['Order of the Phoenix']
+729,34,39,['Albus Dumbledore']
+730,34,40,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+731,34,55,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+732,34,56,['Order of the Phoenix']
+733,34,64,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+734,34,65,"['Order of the Phoenix', 'Harry Potter']"
+735,34,66,['Order of the Phoenix']
+736,34,73,['Order of the Phoenix']
+737,34,77,['Harry Potter']
+738,34,83,['Order of the Phoenix']
+739,34,84,"['Order of the Phoenix', 'Albus Dumbledore']"
+740,34,85,['Order of the Phoenix']
+741,34,91,['Albus Dumbledore']
+742,34,93,['Order of the Phoenix']
+743,34,98,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+744,34,103,['Order of the Phoenix']
+745,34,104,['Order of the Phoenix']
+746,34,105,['Order of the Phoenix']
+747,34,106,['Order of the Phoenix']
+748,34,108,['Order of the Phoenix']
+749,34,109,['Order of the Phoenix']
+750,34,125,"['Order of the Phoenix', 'Harry Potter']"
+751,34,133,"['Order of the Phoenix', 'Albus Dumbledore']"
+752,34,134,['Order of the Phoenix']
+753,34,142,['Order of the Phoenix']
+754,34,143,['Order of the Phoenix']
+755,34,145,['Order of the Phoenix']
+756,34,146,"['Order of the Phoenix', 'Albus Dumbledore']"
+757,34,154,['Albus Dumbledore']
+758,34,155,['Order of the Phoenix']
+759,34,165,['Order of the Phoenix']
+760,34,168,['Order of the Phoenix']
+761,34,171,['Harry Potter']
+762,34,172,['Order of the Phoenix']
+763,34,173,['Order of the Phoenix']
+764,34,175,"['Order of the Phoenix', 'Harry Potter']"
+765,36,7,"[""Dumbledore's Army""]"
+766,36,9,"[""Dumbledore's Army""]"
+767,36,13,"[""Dumbledore's Army""]"
+768,36,16,"[""Dumbledore's Army""]"
+769,36,23,['Hufflepuff']
+770,36,24,"[""Dumbledore's Army""]"
+771,36,33,['Hufflepuff']
+772,36,37,"[""Dumbledore's Army""]"
+773,36,46,"[""Dumbledore's Army""]"
+774,36,56,"[""Dumbledore's Army""]"
+775,36,64,"[""Dumbledore's Army""]"
+776,36,67,['Hufflepuff']
+777,36,68,"[""Dumbledore's Army"", 'Hufflepuff']"
+778,36,71,"[""Dumbledore's Army""]"
+779,36,84,"[""Dumbledore's Army""]"
+780,36,91,['Hufflepuff']
+781,36,97,['Hufflepuff']
+782,36,100,"[""Dumbledore's Army""]"
+783,36,105,"[""Dumbledore's Army""]"
+784,36,106,"[""Dumbledore's Army""]"
+785,36,108,"[""Dumbledore's Army""]"
+786,36,112,"[""Dumbledore's Army"", 'Hufflepuff']"
+787,36,114,"[""Dumbledore's Army""]"
+788,36,116,"[""Dumbledore's Army"", 'Hufflepuff']"
+789,36,118,"[""Dumbledore's Army""]"
+790,36,123,"[""Dumbledore's Army""]"
+791,36,134,"[""Dumbledore's Army""]"
+792,36,138,['Hufflepuff']
+793,36,139,"[""Dumbledore's Army""]"
+794,36,143,"[""Dumbledore's Army""]"
+795,36,146,"[""Dumbledore's Army""]"
+796,36,151,"[""Dumbledore's Army""]"
+797,36,152,"[""Dumbledore's Army""]"
+798,36,162,"[""Dumbledore's Army""]"
+799,36,163,['Hufflepuff']
+800,36,165,['Hufflepuff']
+801,36,169,"[""Dumbledore's Army""]"
+802,36,172,"[""Dumbledore's Army""]"
+803,36,175,"[""Dumbledore's Army""]"
+804,37,5,['Gryffindor']
+805,37,7,"[""Dumbledore's Army""]"
+806,37,9,"[""Dumbledore's Army""]"
+807,37,10,['Gryffindor']
+808,37,13,"[""Dumbledore's Army""]"
+809,37,16,"['Gryffindor', ""Dumbledore's Army""]"
+810,37,24,"[""Dumbledore's Army""]"
+811,37,36,"[""Dumbledore's Army""]"
+812,37,46,"[""Dumbledore's Army""]"
+813,37,54,['Gryffindor']
+814,37,55,['Gryffindor']
+815,37,56,"['Gryffindor', ""Dumbledore's Army""]"
+816,37,63,['Gryffindor']
+817,37,64,"['Gryffindor', ""Dumbledore's Army""]"
+818,37,66,['Gryffindor']
+819,37,68,"[""Dumbledore's Army""]"
+820,37,71,"['Gryffindor', ""Dumbledore's Army""]"
+821,37,72,['Gryffindor']
+822,37,79,['Gryffindor']
+823,37,84,"['Gryffindor', ""Dumbledore's Army""]"
+824,37,85,['Gryffindor']
+825,37,100,"['Gryffindor', ""Dumbledore's Army""]"
+826,37,103,['Gryffindor']
+827,37,104,['Gryffindor']
+828,37,105,"['Gryffindor', ""Dumbledore's Army""]"
+829,37,106,"['Gryffindor', ""Dumbledore's Army""]"
+830,37,107,['Gryffindor']
+831,37,108,"['Gryffindor', ""Dumbledore's Army""]"
+832,37,109,['Gryffindor']
+833,37,110,['Gryffindor']
+834,37,112,"[""Dumbledore's Army""]"
+835,37,114,"['Gryffindor', ""Dumbledore's Army""]"
+836,37,116,"[""Dumbledore's Army""]"
+837,37,118,"['Gryffindor', ""Dumbledore's Army""]"
+838,37,123,"[""Dumbledore's Army""]"
+839,37,132,['Gryffindor']
+840,37,134,"['Gryffindor', ""Dumbledore's Army""]"
+841,37,139,"['Gryffindor', ""Dumbledore's Army""]"
+842,37,143,"[""Dumbledore's Army""]"
+843,37,146,"['Gryffindor', ""Dumbledore's Army""]"
+844,37,151,"[""Dumbledore's Army""]"
+845,37,152,"['Gryffindor', ""Dumbledore's Army""]"
+846,37,155,['Gryffindor']
+847,37,162,"['Gryffindor', ""Dumbledore's Army""]"
+848,37,169,"['Gryffindor', ""Dumbledore's Army""]"
+849,37,172,"['Gryffindor', ""Dumbledore's Army""]"
+850,37,173,['Gryffindor']
+851,37,175,"['Gryffindor', ""Dumbledore's Army""]"
+852,39,34,['Albus Dumbledore']
+853,39,40,['Albus Dumbledore']
+854,39,55,['Albus Dumbledore']
+855,39,64,['Albus Dumbledore']
+856,39,84,['Albus Dumbledore']
+857,39,91,['Albus Dumbledore']
+858,39,98,['Albus Dumbledore']
+859,39,133,['Albus Dumbledore']
+860,39,146,['Albus Dumbledore']
+861,39,154,['Albus Dumbledore']
+862,40,5,['Order of the Phoenix']
+863,40,9,['Order of the Phoenix']
+864,40,16,['Harry Potter']
+865,40,21,"['Order of the Phoenix', 'Harry Potter']"
+866,40,24,"['Order of the Phoenix', 'Harry Potter']"
+867,40,25,['Order of the Phoenix']
+868,40,27,['Order of the Phoenix']
+869,40,34,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+870,40,39,['Albus Dumbledore']
+871,40,55,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+872,40,56,['Order of the Phoenix']
+873,40,64,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+874,40,65,"['Order of the Phoenix', 'Harry Potter']"
+875,40,66,['Order of the Phoenix']
+876,40,73,['Order of the Phoenix']
+877,40,77,['Harry Potter']
+878,40,83,['Order of the Phoenix']
+879,40,84,"['Order of the Phoenix', 'Albus Dumbledore']"
+880,40,85,['Order of the Phoenix']
+881,40,91,['Albus Dumbledore']
+882,40,93,['Order of the Phoenix']
+883,40,98,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+884,40,103,['Order of the Phoenix']
+885,40,104,['Order of the Phoenix']
+886,40,105,['Order of the Phoenix']
+887,40,106,['Order of the Phoenix']
+888,40,108,['Order of the Phoenix']
+889,40,109,['Order of the Phoenix']
+890,40,125,"['Order of the Phoenix', 'Harry Potter']"
+891,40,133,"['Order of the Phoenix', 'Albus Dumbledore']"
+892,40,134,['Order of the Phoenix']
+893,40,142,['Order of the Phoenix']
+894,40,143,['Order of the Phoenix']
+895,40,145,['Order of the Phoenix']
+896,40,146,"['Order of the Phoenix', 'Albus Dumbledore']"
+897,40,154,['Albus Dumbledore']
+898,40,155,['Order of the Phoenix']
+899,40,165,['Order of the Phoenix']
+900,40,168,['Order of the Phoenix']
+901,40,171,['Harry Potter']
+902,40,172,['Order of the Phoenix']
+903,40,173,['Order of the Phoenix']
+904,40,175,"['Order of the Phoenix', 'Harry Potter']"
+905,41,7,['Ravenclaw']
+906,41,13,['Ravenclaw']
+907,41,46,['Ravenclaw']
+908,41,62,['Ravenclaw']
+909,41,65,['Ravenclaw']
+910,41,77,['Ravenclaw']
+911,41,86,['Ravenclaw']
+912,41,123,['Ravenclaw']
+913,41,124,['Ravenclaw']
+914,41,131,['Ravenclaw']
+915,41,143,['Ravenclaw']
+916,41,151,['Ravenclaw']
+917,41,156,['Ravenclaw']
+918,41,157,['Ravenclaw']
+919,41,166,['Ravenclaw']
+920,41,171,['Ravenclaw']
+921,43,1,['British Ministry of Magic']
+922,43,12,['British Ministry of Magic']
+923,43,20,['British Ministry of Magic']
+924,43,22,['British Ministry of Magic']
+925,43,25,['British Ministry of Magic']
+926,43,64,['British Ministry of Magic']
+927,43,73,['British Ministry of Magic']
+928,43,75,['British Ministry of Magic']
+929,43,84,['British Ministry of Magic']
+930,43,91,['British Ministry of Magic']
+931,43,92,['British Ministry of Magic']
+932,43,93,['British Ministry of Magic']
+933,43,99,['British Ministry of Magic']
+934,43,103,['British Ministry of Magic']
+935,43,107,['British Ministry of Magic']
+936,43,108,['British Ministry of Magic']
+937,43,131,['British Ministry of Magic']
+938,43,134,['British Ministry of Magic']
+939,43,165,['British Ministry of Magic']
+940,43,175,['British Ministry of Magic']
+941,46,7,"['Ravenclaw', ""Dumbledore's Army""]"
+942,46,9,"[""Dumbledore's Army""]"
+943,46,13,"['Ravenclaw', ""Dumbledore's Army""]"
+944,46,16,"[""Dumbledore's Army""]"
+945,46,24,"[""Dumbledore's Army""]"
+946,46,36,"[""Dumbledore's Army""]"
+947,46,37,"[""Dumbledore's Army""]"
+948,46,41,['Ravenclaw']
+949,46,56,"[""Dumbledore's Army""]"
+950,46,62,['Ravenclaw']
+951,46,64,"[""Dumbledore's Army""]"
+952,46,65,['Ravenclaw']
+953,46,68,"[""Dumbledore's Army""]"
+954,46,71,"[""Dumbledore's Army""]"
+955,46,77,['Ravenclaw']
+956,46,84,"[""Dumbledore's Army""]"
+957,46,86,['Ravenclaw']
+958,46,100,"[""Dumbledore's Army""]"
+959,46,105,"[""Dumbledore's Army""]"
+960,46,106,"[""Dumbledore's Army""]"
+961,46,108,"[""Dumbledore's Army""]"
+962,46,112,"[""Dumbledore's Army""]"
+963,46,114,"[""Dumbledore's Army""]"
+964,46,116,"[""Dumbledore's Army""]"
+965,46,118,"[""Dumbledore's Army""]"
+966,46,123,"['Ravenclaw', ""Dumbledore's Army""]"
+967,46,124,['Ravenclaw']
+968,46,131,['Ravenclaw']
+969,46,134,"[""Dumbledore's Army""]"
+970,46,139,"[""Dumbledore's Army""]"
+971,46,143,"['Ravenclaw', ""Dumbledore's Army""]"
+972,46,146,"[""Dumbledore's Army""]"
+973,46,151,"['Ravenclaw', ""Dumbledore's Army""]"
+974,46,152,"[""Dumbledore's Army""]"
+975,46,156,['Ravenclaw']
+976,46,157,['Ravenclaw']
+977,46,162,"[""Dumbledore's Army""]"
+978,46,166,['Ravenclaw']
+979,46,169,"[""Dumbledore's Army""]"
+980,46,171,['Ravenclaw']
+981,46,172,"[""Dumbledore's Army""]"
+982,46,175,"[""Dumbledore's Army""]"
+983,47,4,['Slytherin']
+984,47,6,['Slytherin']
+985,47,11,"['Death Eaters', 'Lord Voldemort']"
+986,47,14,"['Slytherin', 'Death Eaters', 'Lord Voldemort']"
+987,47,15,"['Slytherin', 'Lord Voldemort']"
+988,47,19,"['Death Eaters', 'Lord Voldemort']"
+989,47,26,"['Death Eaters', 'Lord Voldemort']"
+990,47,48,"['Slytherin', 'Lord Voldemort']"
+991,47,51,['Lord Voldemort']
+992,47,58,['Slytherin']
+993,47,60,"['Death Eaters', 'Lord Voldemort']"
+994,47,61,['Slytherin']
+995,47,74,['Slytherin']
+996,47,79,"['Death Eaters', 'Lord Voldemort']"
+997,47,86,['Lord Voldemort']
+998,47,88,"['Slytherin', 'Death Eaters']"
+999,47,90,"['Death Eaters', 'Lord Voldemort']"
+1000,47,95,['Slytherin']
+1001,47,96,['Slytherin']
+1002,47,98,['Slytherin']
+1003,47,111,['Slytherin']
+1004,47,119,['Slytherin']
+1005,47,121,"['Death Eaters', 'Lord Voldemort']"
+1006,47,140,['Slytherin']
+1007,47,144,['Slytherin']
+1008,47,147,['Lord Voldemort']
+1009,47,150,['Slytherin']
+1010,47,164,['Slytherin']
+1011,47,167,['Slytherin']
+1012,48,4,['Slytherin']
+1013,48,6,['Slytherin']
+1014,48,11,['Lord Voldemort']
+1015,48,14,"['Slytherin', 'Lord Voldemort']"
+1016,48,15,"['Slytherin', 'Lord Voldemort']"
+1017,48,19,['Lord Voldemort']
+1018,48,26,['Lord Voldemort']
+1019,48,47,"['Slytherin', 'Lord Voldemort']"
+1020,48,51,['Lord Voldemort']
+1021,48,58,['Slytherin']
+1022,48,60,['Lord Voldemort']
+1023,48,61,['Slytherin']
+1024,48,74,['Slytherin']
+1025,48,79,['Lord Voldemort']
+1026,48,86,['Lord Voldemort']
+1027,48,88,['Slytherin']
+1028,48,90,['Lord Voldemort']
+1029,48,95,['Slytherin']
+1030,48,96,['Slytherin']
+1031,48,98,['Slytherin']
+1032,48,111,['Slytherin']
+1033,48,119,['Slytherin']
+1034,48,121,['Lord Voldemort']
+1035,48,140,['Slytherin']
+1036,48,144,['Slytherin']
+1037,48,147,['Lord Voldemort']
+1038,48,150,['Slytherin']
+1039,48,164,['Slytherin']
+1040,48,167,['Slytherin']
+1041,51,11,['Lord Voldemort']
+1042,51,14,['Lord Voldemort']
+1043,51,15,['Lord Voldemort']
+1044,51,19,['Lord Voldemort']
+1045,51,26,['Lord Voldemort']
+1046,51,47,['Lord Voldemort']
+1047,51,48,['Lord Voldemort']
+1048,51,60,['Lord Voldemort']
+1049,51,79,['Lord Voldemort']
+1050,51,86,['Lord Voldemort']
+1051,51,90,['Lord Voldemort']
+1052,51,121,['Lord Voldemort']
+1053,51,147,['Lord Voldemort']
+1054,54,5,['Gryffindor']
+1055,54,10,['Gryffindor']
+1056,54,16,['Gryffindor']
+1057,54,37,['Gryffindor']
+1058,54,55,['Gryffindor']
+1059,54,56,['Gryffindor']
+1060,54,63,['Gryffindor']
+1061,54,64,['Gryffindor']
+1062,54,66,['Gryffindor']
+1063,54,71,['Gryffindor']
+1064,54,72,['Gryffindor']
+1065,54,79,['Gryffindor']
+1066,54,84,['Gryffindor']
+1067,54,85,['Gryffindor']
+1068,54,100,['Gryffindor']
+1069,54,103,['Gryffindor']
+1070,54,104,['Gryffindor']
+1071,54,105,['Gryffindor']
+1072,54,106,['Gryffindor']
+1073,54,107,['Gryffindor']
+1074,54,108,['Gryffindor']
+1075,54,109,['Gryffindor']
+1076,54,110,['Gryffindor']
+1077,54,114,['Gryffindor']
+1078,54,118,['Gryffindor']
+1079,54,132,['Gryffindor']
+1080,54,134,['Gryffindor']
+1081,54,139,['Gryffindor']
+1082,54,146,['Gryffindor']
+1083,54,152,['Gryffindor']
+1084,54,155,['Gryffindor']
+1085,54,162,['Gryffindor']
+1086,54,169,['Gryffindor']
+1087,54,172,['Gryffindor']
+1088,54,173,['Gryffindor']
+1089,54,175,['Gryffindor']
+1090,55,5,"['Gryffindor', 'Order of the Phoenix']"
+1091,55,9,['Order of the Phoenix']
+1092,55,10,['Gryffindor']
+1093,55,16,"['Gryffindor', 'Harry Potter']"
+1094,55,21,"['Order of the Phoenix', 'Harry Potter']"
+1095,55,24,"['Order of the Phoenix', 'Harry Potter']"
+1096,55,25,['Order of the Phoenix']
+1097,55,27,['Order of the Phoenix']
+1098,55,34,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+1099,55,37,['Gryffindor']
+1100,55,39,['Albus Dumbledore']
+1101,55,40,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+1102,55,54,['Gryffindor']
+1103,55,56,"['Gryffindor', 'Order of the Phoenix']"
+1104,55,63,['Gryffindor']
+1105,55,64,"['Gryffindor', 'Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+1106,55,65,"['Order of the Phoenix', 'Harry Potter']"
+1107,55,66,"['Gryffindor', 'Order of the Phoenix']"
+1108,55,71,['Gryffindor']
+1109,55,72,['Gryffindor']
+1110,55,73,['Order of the Phoenix']
+1111,55,77,['Harry Potter']
+1112,55,79,['Gryffindor']
+1113,55,83,['Order of the Phoenix']
+1114,55,84,"['Gryffindor', 'Order of the Phoenix', 'Albus Dumbledore']"
+1115,55,85,"['Gryffindor', 'Order of the Phoenix']"
+1116,55,91,['Albus Dumbledore']
+1117,55,93,['Order of the Phoenix']
+1118,55,98,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+1119,55,100,['Gryffindor']
+1120,55,103,"['Gryffindor', 'Order of the Phoenix']"
+1121,55,104,"['Gryffindor', 'Order of the Phoenix']"
+1122,55,105,"['Gryffindor', 'Order of the Phoenix']"
+1123,55,106,"['Gryffindor', 'Order of the Phoenix']"
+1124,55,107,['Gryffindor']
+1125,55,108,"['Gryffindor', 'Order of the Phoenix']"
+1126,55,109,"['Gryffindor', 'Order of the Phoenix']"
+1127,55,110,['Gryffindor']
+1128,55,114,['Gryffindor']
+1129,55,118,['Gryffindor']
+1130,55,125,"['Order of the Phoenix', 'Harry Potter']"
+1131,55,132,['Gryffindor']
+1132,55,133,"['Order of the Phoenix', 'Albus Dumbledore']"
+1133,55,134,"['Gryffindor', 'Order of the Phoenix']"
+1134,55,139,['Gryffindor']
+1135,55,142,['Order of the Phoenix']
+1136,55,143,['Order of the Phoenix']
+1137,55,145,['Order of the Phoenix']
+1138,55,146,"['Gryffindor', 'Order of the Phoenix', 'Albus Dumbledore']"
+1139,55,152,['Gryffindor']
+1140,55,154,['Albus Dumbledore']
+1141,55,155,"['Gryffindor', 'Order of the Phoenix']"
+1142,55,162,['Gryffindor']
+1143,55,165,['Order of the Phoenix']
+1144,55,168,['Order of the Phoenix']
+1145,55,169,['Gryffindor']
+1146,55,171,['Harry Potter']
+1147,55,172,"['Gryffindor', 'Order of the Phoenix']"
+1148,55,173,"['Gryffindor', 'Order of the Phoenix']"
+1149,55,175,"['Gryffindor', 'Order of the Phoenix', 'Harry Potter']"
+1150,56,5,"['Gryffindor', 'Order of the Phoenix']"
+1151,56,7,"[""Dumbledore's Army""]"
+1152,56,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+1153,56,10,['Gryffindor']
+1154,56,13,"[""Dumbledore's Army""]"
+1155,56,16,"['Gryffindor', ""Dumbledore's Army""]"
+1156,56,21,['Order of the Phoenix']
+1157,56,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+1158,56,25,['Order of the Phoenix']
+1159,56,27,['Order of the Phoenix']
+1160,56,34,['Order of the Phoenix']
+1161,56,36,"[""Dumbledore's Army""]"
+1162,56,37,"['Gryffindor', ""Dumbledore's Army""]"
+1163,56,40,['Order of the Phoenix']
+1164,56,46,"[""Dumbledore's Army""]"
+1165,56,54,['Gryffindor']
+1166,56,55,"['Gryffindor', 'Order of the Phoenix']"
+1167,56,63,['Gryffindor']
+1168,56,64,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1169,56,65,['Order of the Phoenix']
+1170,56,66,"['Gryffindor', 'Order of the Phoenix']"
+1171,56,68,"[""Dumbledore's Army""]"
+1172,56,71,"['Gryffindor', ""Dumbledore's Army""]"
+1173,56,72,['Gryffindor']
+1174,56,73,['Order of the Phoenix']
+1175,56,79,['Gryffindor']
+1176,56,83,['Order of the Phoenix']
+1177,56,84,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1178,56,85,"['Gryffindor', 'Order of the Phoenix']"
+1179,56,93,['Order of the Phoenix']
+1180,56,98,['Order of the Phoenix']
+1181,56,100,"['Gryffindor', ""Dumbledore's Army""]"
+1182,56,103,"['Gryffindor', 'Order of the Phoenix']"
+1183,56,104,"['Gryffindor', 'Order of the Phoenix']"
+1184,56,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1185,56,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1186,56,107,['Gryffindor']
+1187,56,108,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1188,56,109,"['Gryffindor', 'Order of the Phoenix']"
+1189,56,110,['Gryffindor']
+1190,56,112,"[""Dumbledore's Army""]"
+1191,56,114,"['Gryffindor', ""Dumbledore's Army""]"
+1192,56,116,"[""Dumbledore's Army""]"
+1193,56,118,"['Gryffindor', ""Dumbledore's Army""]"
+1194,56,123,"[""Dumbledore's Army""]"
+1195,56,125,['Order of the Phoenix']
+1196,56,132,['Gryffindor']
+1197,56,133,['Order of the Phoenix']
+1198,56,134,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1199,56,139,"['Gryffindor', ""Dumbledore's Army""]"
+1200,56,142,['Order of the Phoenix']
+1201,56,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+1202,56,145,['Order of the Phoenix']
+1203,56,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1204,56,151,"[""Dumbledore's Army""]"
+1205,56,152,"['Gryffindor', ""Dumbledore's Army""]"
+1206,56,155,"['Gryffindor', 'Order of the Phoenix']"
+1207,56,162,"['Gryffindor', ""Dumbledore's Army""]"
+1208,56,165,['Order of the Phoenix']
+1209,56,168,['Order of the Phoenix']
+1210,56,169,"['Gryffindor', ""Dumbledore's Army""]"
+1211,56,172,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1212,56,173,"['Gryffindor', 'Order of the Phoenix']"
+1213,56,175,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1214,58,4,['Slytherin']
+1215,58,6,['Slytherin']
+1216,58,14,['Slytherin']
+1217,58,15,['Slytherin']
+1218,58,47,['Slytherin']
+1219,58,48,['Slytherin']
+1220,58,61,['Slytherin']
+1221,58,74,['Slytherin']
+1222,58,88,['Slytherin']
+1223,58,95,['Slytherin']
+1224,58,96,['Slytherin']
+1225,58,98,['Slytherin']
+1226,58,111,['Slytherin']
+1227,58,119,['Slytherin']
+1228,58,140,['Slytherin']
+1229,58,144,['Slytherin']
+1230,58,150,['Slytherin']
+1231,58,164,['Slytherin']
+1232,58,167,['Slytherin']
+1233,60,11,"['Death Eaters', 'Lord Voldemort']"
+1234,60,14,"['Death Eaters', 'Lord Voldemort']"
+1235,60,15,['Lord Voldemort']
+1236,60,19,"['Death Eaters', 'Lord Voldemort']"
+1237,60,26,"['Death Eaters', 'Lord Voldemort']"
+1238,60,47,"['Death Eaters', 'Lord Voldemort']"
+1239,60,48,['Lord Voldemort']
+1240,60,51,['Lord Voldemort']
+1241,60,79,"['Death Eaters', 'Lord Voldemort']"
+1242,60,86,['Lord Voldemort']
+1243,60,88,['Death Eaters']
+1244,60,90,"['Death Eaters', 'Lord Voldemort']"
+1245,60,121,"['Death Eaters', 'Lord Voldemort']"
+1246,60,147,['Lord Voldemort']
+1247,61,4,['Slytherin']
+1248,61,6,['Slytherin']
+1249,61,14,['Slytherin']
+1250,61,15,['Slytherin']
+1251,61,47,['Slytherin']
+1252,61,48,['Slytherin']
+1253,61,58,['Slytherin']
+1254,61,74,['Slytherin']
+1255,61,88,['Slytherin']
+1256,61,95,['Slytherin']
+1257,61,96,['Slytherin']
+1258,61,98,['Slytherin']
+1259,61,111,['Slytherin']
+1260,61,119,['Slytherin']
+1261,61,140,['Slytherin']
+1262,61,144,['Slytherin']
+1263,61,150,['Slytherin']
+1264,61,164,['Slytherin']
+1265,61,167,['Slytherin']
+1266,62,7,['Ravenclaw']
+1267,62,13,['Ravenclaw']
+1268,62,41,['Ravenclaw']
+1269,62,46,['Ravenclaw']
+1270,62,65,['Ravenclaw']
+1271,62,77,['Ravenclaw']
+1272,62,86,['Ravenclaw']
+1273,62,123,['Ravenclaw']
+1274,62,124,['Ravenclaw']
+1275,62,131,['Ravenclaw']
+1276,62,143,['Ravenclaw']
+1277,62,151,['Ravenclaw']
+1278,62,156,['Ravenclaw']
+1279,62,157,['Ravenclaw']
+1280,62,166,['Ravenclaw']
+1281,62,171,['Ravenclaw']
+1282,63,5,['Gryffindor']
+1283,63,10,['Gryffindor']
+1284,63,16,['Gryffindor']
+1285,63,37,['Gryffindor']
+1286,63,54,['Gryffindor']
+1287,63,55,['Gryffindor']
+1288,63,56,['Gryffindor']
+1289,63,64,['Gryffindor']
+1290,63,66,['Gryffindor']
+1291,63,71,['Gryffindor']
+1292,63,72,['Gryffindor']
+1293,63,79,['Gryffindor']
+1294,63,84,['Gryffindor']
+1295,63,85,['Gryffindor']
+1296,63,100,['Gryffindor']
+1297,63,103,['Gryffindor']
+1298,63,104,['Gryffindor']
+1299,63,105,['Gryffindor']
+1300,63,106,['Gryffindor']
+1301,63,107,['Gryffindor']
+1302,63,108,['Gryffindor']
+1303,63,109,['Gryffindor']
+1304,63,110,['Gryffindor']
+1305,63,114,['Gryffindor']
+1306,63,118,['Gryffindor']
+1307,63,132,['Gryffindor']
+1308,63,134,['Gryffindor']
+1309,63,139,['Gryffindor']
+1310,63,146,['Gryffindor']
+1311,63,152,['Gryffindor']
+1312,63,155,['Gryffindor']
+1313,63,162,['Gryffindor']
+1314,63,169,['Gryffindor']
+1315,63,172,['Gryffindor']
+1316,63,173,['Gryffindor']
+1317,63,175,['Gryffindor']
+1318,64,1,['British Ministry of Magic']
+1319,64,5,"['Gryffindor', 'Order of the Phoenix']"
+1320,64,7,"[""Dumbledore's Army""]"
+1321,64,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+1322,64,10,['Gryffindor']
+1323,64,12,['British Ministry of Magic']
+1324,64,13,"[""Dumbledore's Army""]"
+1325,64,16,"['Gryffindor', ""Dumbledore's Army"", 'Harry Potter']"
+1326,64,20,['British Ministry of Magic']
+1327,64,21,"['Order of the Phoenix', 'Harry Potter']"
+1328,64,22,['British Ministry of Magic']
+1329,64,24,"['Order of the Phoenix', ""Dumbledore's Army"", 'Harry Potter']"
+1330,64,25,"['British Ministry of Magic', 'Order of the Phoenix']"
+1331,64,27,['Order of the Phoenix']
+1332,64,34,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+1333,64,36,"[""Dumbledore's Army""]"
+1334,64,37,"['Gryffindor', ""Dumbledore's Army""]"
+1335,64,39,['Albus Dumbledore']
+1336,64,40,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+1337,64,43,['British Ministry of Magic']
+1338,64,46,"[""Dumbledore's Army""]"
+1339,64,54,['Gryffindor']
+1340,64,55,"['Gryffindor', 'Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+1341,64,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1342,64,63,['Gryffindor']
+1343,64,65,"['Order of the Phoenix', 'Harry Potter']"
+1344,64,66,"['Gryffindor', 'Order of the Phoenix']"
+1345,64,68,"[""Dumbledore's Army""]"
+1346,64,71,"['Gryffindor', ""Dumbledore's Army""]"
+1347,64,72,['Gryffindor']
+1348,64,73,"['British Ministry of Magic', 'Order of the Phoenix']"
+1349,64,75,['British Ministry of Magic']
+1350,64,77,['Harry Potter']
+1351,64,79,['Gryffindor']
+1352,64,83,['Order of the Phoenix']
+1353,64,84,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Albus Dumbledore']"
+1354,64,85,"['Gryffindor', 'Order of the Phoenix']"
+1355,64,91,"['British Ministry of Magic', 'Albus Dumbledore']"
+1356,64,92,['British Ministry of Magic']
+1357,64,93,"['British Ministry of Magic', 'Order of the Phoenix']"
+1358,64,98,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+1359,64,99,['British Ministry of Magic']
+1360,64,100,"['Gryffindor', ""Dumbledore's Army""]"
+1361,64,103,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix']"
+1362,64,104,"['Gryffindor', 'Order of the Phoenix']"
+1363,64,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1364,64,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1365,64,107,"['British Ministry of Magic', 'Gryffindor']"
+1366,64,108,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1367,64,109,"['Gryffindor', 'Order of the Phoenix']"
+1368,64,110,['Gryffindor']
+1369,64,112,"[""Dumbledore's Army""]"
+1370,64,114,"['Gryffindor', ""Dumbledore's Army""]"
+1371,64,116,"[""Dumbledore's Army""]"
+1372,64,118,"['Gryffindor', ""Dumbledore's Army""]"
+1373,64,123,"[""Dumbledore's Army""]"
+1374,64,125,"['Order of the Phoenix', 'Harry Potter']"
+1375,64,131,['British Ministry of Magic']
+1376,64,132,['Gryffindor']
+1377,64,133,"['Order of the Phoenix', 'Albus Dumbledore']"
+1378,64,134,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1379,64,139,"['Gryffindor', ""Dumbledore's Army""]"
+1380,64,142,['Order of the Phoenix']
+1381,64,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+1382,64,145,['Order of the Phoenix']
+1383,64,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Albus Dumbledore']"
+1384,64,151,"[""Dumbledore's Army""]"
+1385,64,152,"['Gryffindor', ""Dumbledore's Army""]"
+1386,64,154,['Albus Dumbledore']
+1387,64,155,"['Gryffindor', 'Order of the Phoenix']"
+1388,64,162,"['Gryffindor', ""Dumbledore's Army""]"
+1389,64,165,"['British Ministry of Magic', 'Order of the Phoenix']"
+1390,64,168,['Order of the Phoenix']
+1391,64,169,"['Gryffindor', ""Dumbledore's Army""]"
+1392,64,171,['Harry Potter']
+1393,64,172,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1394,64,173,"['Gryffindor', 'Order of the Phoenix']"
+1395,64,175,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Harry Potter']"
+1396,65,5,['Order of the Phoenix']
+1397,65,7,['Ravenclaw']
+1398,65,9,['Order of the Phoenix']
+1399,65,13,['Ravenclaw']
+1400,65,16,['Harry Potter']
+1401,65,21,"['Order of the Phoenix', 'Harry Potter']"
+1402,65,24,"['Order of the Phoenix', 'Harry Potter']"
+1403,65,25,['Order of the Phoenix']
+1404,65,27,['Order of the Phoenix']
+1405,65,34,"['Order of the Phoenix', 'Harry Potter']"
+1406,65,40,"['Order of the Phoenix', 'Harry Potter']"
+1407,65,41,['Ravenclaw']
+1408,65,46,['Ravenclaw']
+1409,65,55,"['Order of the Phoenix', 'Harry Potter']"
+1410,65,56,['Order of the Phoenix']
+1411,65,62,['Ravenclaw']
+1412,65,64,"['Order of the Phoenix', 'Harry Potter']"
+1413,65,66,['Order of the Phoenix']
+1414,65,73,['Order of the Phoenix']
+1415,65,77,"['Ravenclaw', 'Harry Potter']"
+1416,65,83,['Order of the Phoenix']
+1417,65,84,['Order of the Phoenix']
+1418,65,85,['Order of the Phoenix']
+1419,65,86,['Ravenclaw']
+1420,65,93,['Order of the Phoenix']
+1421,65,98,"['Order of the Phoenix', 'Harry Potter']"
+1422,65,103,['Order of the Phoenix']
+1423,65,104,['Order of the Phoenix']
+1424,65,105,['Order of the Phoenix']
+1425,65,106,['Order of the Phoenix']
+1426,65,108,['Order of the Phoenix']
+1427,65,109,['Order of the Phoenix']
+1428,65,123,['Ravenclaw']
+1429,65,124,['Ravenclaw']
+1430,65,125,"['Order of the Phoenix', 'Harry Potter']"
+1431,65,131,['Ravenclaw']
+1432,65,133,['Order of the Phoenix']
+1433,65,134,['Order of the Phoenix']
+1434,65,142,['Order of the Phoenix']
+1435,65,143,"['Order of the Phoenix', 'Ravenclaw']"
+1436,65,145,['Order of the Phoenix']
+1437,65,146,['Order of the Phoenix']
+1438,65,151,['Ravenclaw']
+1439,65,155,['Order of the Phoenix']
+1440,65,156,['Ravenclaw']
+1441,65,157,['Ravenclaw']
+1442,65,165,['Order of the Phoenix']
+1443,65,166,['Ravenclaw']
+1444,65,168,['Order of the Phoenix']
+1445,65,171,"['Ravenclaw', 'Harry Potter']"
+1446,65,172,['Order of the Phoenix']
+1447,65,173,['Order of the Phoenix']
+1448,65,175,"['Order of the Phoenix', 'Harry Potter']"
+1449,66,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1450,66,9,['Order of the Phoenix']
+1451,66,10,['Gryffindor']
+1452,66,16,['Gryffindor']
+1453,66,21,"['Order of the Phoenix', 'Advance Guard']"
+1454,66,24,['Order of the Phoenix']
+1455,66,25,"['Order of the Phoenix', 'Advance Guard']"
+1456,66,27,['Order of the Phoenix']
+1457,66,34,['Order of the Phoenix']
+1458,66,37,['Gryffindor']
+1459,66,40,['Order of the Phoenix']
+1460,66,54,['Gryffindor']
+1461,66,55,"['Gryffindor', 'Order of the Phoenix']"
+1462,66,56,"['Gryffindor', 'Order of the Phoenix']"
+1463,66,63,['Gryffindor']
+1464,66,64,"['Gryffindor', 'Order of the Phoenix']"
+1465,66,65,['Order of the Phoenix']
+1466,66,67,['Potter family']
+1467,66,71,['Gryffindor']
+1468,66,72,['Gryffindor']
+1469,66,73,"['Order of the Phoenix', 'Advance Guard']"
+1470,66,79,['Gryffindor']
+1471,66,83,"['Order of the Phoenix', 'Advance Guard']"
+1472,66,84,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1473,66,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1474,66,93,"['Order of the Phoenix', 'Advance Guard']"
+1475,66,98,['Order of the Phoenix']
+1476,66,100,['Gryffindor']
+1477,66,103,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1478,66,104,"['Gryffindor', 'Order of the Phoenix']"
+1479,66,105,"['Gryffindor', 'Order of the Phoenix']"
+1480,66,106,"['Gryffindor', 'Order of the Phoenix']"
+1481,66,107,['Gryffindor']
+1482,66,108,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1483,66,109,"['Gryffindor', 'Order of the Phoenix']"
+1484,66,110,['Gryffindor']
+1485,66,113,['Potter family']
+1486,66,114,['Gryffindor']
+1487,66,118,['Gryffindor']
+1488,66,125,['Order of the Phoenix']
+1489,66,132,['Gryffindor']
+1490,66,133,['Order of the Phoenix']
+1491,66,134,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1492,66,139,['Gryffindor']
+1493,66,142,['Order of the Phoenix']
+1494,66,143,['Order of the Phoenix']
+1495,66,145,['Order of the Phoenix']
+1496,66,146,"['Gryffindor', 'Order of the Phoenix']"
+1497,66,152,['Gryffindor']
+1498,66,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1499,66,162,['Gryffindor']
+1500,66,165,"['Order of the Phoenix', 'Advance Guard']"
+1501,66,168,"['Order of the Phoenix', 'Advance Guard']"
+1502,66,169,['Gryffindor']
+1503,66,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1504,66,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1505,66,175,"['Gryffindor', 'Order of the Phoenix']"
+1506,67,5,['Potter family']
+1507,67,23,['Hufflepuff']
+1508,67,33,['Hufflepuff']
+1509,67,36,['Hufflepuff']
+1510,67,66,['Potter family']
+1511,67,68,['Hufflepuff']
+1512,67,84,"['Potter family', 'Weasley family']"
+1513,67,85,['Potter family']
+1514,67,91,['Hufflepuff']
+1515,67,97,['Hufflepuff']
+1516,67,103,"['Potter family', 'Weasley family']"
+1517,67,104,['Weasley family']
+1518,67,105,['Weasley family']
+1519,67,106,['Weasley family']
+1520,67,107,['Weasley family']
+1521,67,108,"['Potter family', 'Weasley family']"
+1522,67,109,['Weasley family']
+1523,67,112,['Hufflepuff']
+1524,67,113,['Potter family']
+1525,67,116,['Hufflepuff']
+1526,67,125,['Weasley family']
+1527,67,134,"['Potter family', 'Weasley family']"
+1528,67,138,['Hufflepuff']
+1529,67,139,['Weasley family']
+1530,67,155,['Potter family']
+1531,67,163,['Hufflepuff']
+1532,67,165,['Hufflepuff']
+1533,67,172,"['Potter family', 'Weasley family']"
+1534,67,173,"['Potter family', 'Weasley family']"
+1535,68,7,"[""Dumbledore's Army""]"
+1536,68,9,"[""Dumbledore's Army""]"
+1537,68,13,"[""Dumbledore's Army""]"
+1538,68,16,"[""Dumbledore's Army""]"
+1539,68,23,['Hufflepuff']
+1540,68,24,"[""Dumbledore's Army""]"
+1541,68,33,['Hufflepuff']
+1542,68,36,"[""Dumbledore's Army"", 'Hufflepuff']"
+1543,68,37,"[""Dumbledore's Army""]"
+1544,68,46,"[""Dumbledore's Army""]"
+1545,68,56,"[""Dumbledore's Army""]"
+1546,68,64,"[""Dumbledore's Army""]"
+1547,68,67,['Hufflepuff']
+1548,68,71,"[""Dumbledore's Army""]"
+1549,68,84,"[""Dumbledore's Army""]"
+1550,68,91,['Hufflepuff']
+1551,68,97,['Hufflepuff']
+1552,68,100,"[""Dumbledore's Army""]"
+1553,68,105,"[""Dumbledore's Army""]"
+1554,68,106,"[""Dumbledore's Army""]"
+1555,68,108,"[""Dumbledore's Army""]"
+1556,68,112,"[""Dumbledore's Army"", 'Hufflepuff']"
+1557,68,114,"[""Dumbledore's Army""]"
+1558,68,116,"[""Dumbledore's Army"", 'Hufflepuff']"
+1559,68,118,"[""Dumbledore's Army""]"
+1560,68,123,"[""Dumbledore's Army""]"
+1561,68,134,"[""Dumbledore's Army""]"
+1562,68,138,['Hufflepuff']
+1563,68,139,"[""Dumbledore's Army""]"
+1564,68,143,"[""Dumbledore's Army""]"
+1565,68,146,"[""Dumbledore's Army""]"
+1566,68,151,"[""Dumbledore's Army""]"
+1567,68,152,"[""Dumbledore's Army""]"
+1568,68,162,"[""Dumbledore's Army""]"
+1569,68,163,['Hufflepuff']
+1570,68,165,['Hufflepuff']
+1571,68,169,"[""Dumbledore's Army""]"
+1572,68,172,"[""Dumbledore's Army""]"
+1573,68,175,"[""Dumbledore's Army""]"
+1574,71,5,['Gryffindor']
+1575,71,7,"[""Dumbledore's Army""]"
+1576,71,9,"[""Dumbledore's Army""]"
+1577,71,10,['Gryffindor']
+1578,71,13,"[""Dumbledore's Army""]"
+1579,71,16,"['Gryffindor', ""Dumbledore's Army""]"
+1580,71,17,['Slug Club']
+1581,71,24,"[""Dumbledore's Army""]"
+1582,71,36,"[""Dumbledore's Army""]"
+1583,71,37,"['Gryffindor', ""Dumbledore's Army""]"
+1584,71,46,"[""Dumbledore's Army""]"
+1585,71,54,['Gryffindor']
+1586,71,55,['Gryffindor']
+1587,71,56,"['Gryffindor', ""Dumbledore's Army""]"
+1588,71,63,['Gryffindor']
+1589,71,64,"['Gryffindor', ""Dumbledore's Army""]"
+1590,71,66,['Gryffindor']
+1591,71,68,"[""Dumbledore's Army""]"
+1592,71,72,['Gryffindor']
+1593,71,79,['Gryffindor']
+1594,71,84,"['Gryffindor', ""Dumbledore's Army"", 'Slug Club', 'Gryffindor Quidditch team']"
+1595,71,85,"['Gryffindor', 'Gryffindor Quidditch team']"
+1596,71,88,['Slug Club']
+1597,71,95,['Slug Club']
+1598,71,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1599,71,103,['Gryffindor']
+1600,71,104,"['Gryffindor', 'Gryffindor Quidditch team']"
+1601,71,105,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1602,71,106,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1603,71,107,['Gryffindor']
+1604,71,108,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1605,71,109,['Gryffindor']
+1606,71,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+1607,71,111,['Slug Club']
+1608,71,112,"[""Dumbledore's Army""]"
+1609,71,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1610,71,116,"[""Dumbledore's Army""]"
+1611,71,118,"['Gryffindor', ""Dumbledore's Army""]"
+1612,71,123,"[""Dumbledore's Army""]"
+1613,71,132,['Gryffindor']
+1614,71,134,"['Gryffindor', ""Dumbledore's Army"", 'Slug Club']"
+1615,71,139,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1616,71,143,"[""Dumbledore's Army""]"
+1617,71,146,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1618,71,151,"[""Dumbledore's Army""]"
+1619,71,152,"['Gryffindor', ""Dumbledore's Army""]"
+1620,71,155,"['Gryffindor', 'Slug Club']"
+1621,71,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1622,71,169,"['Gryffindor', ""Dumbledore's Army""]"
+1623,71,172,"['Gryffindor', ""Dumbledore's Army"", 'Slug Club', 'Gryffindor Quidditch team']"
+1624,71,173,['Gryffindor']
+1625,71,175,"['Gryffindor', ""Dumbledore's Army""]"
+1626,72,5,['Gryffindor']
+1627,72,10,['Gryffindor']
+1628,72,16,['Gryffindor']
+1629,72,37,['Gryffindor']
+1630,72,54,['Gryffindor']
+1631,72,55,['Gryffindor']
+1632,72,56,['Gryffindor']
+1633,72,63,['Gryffindor']
+1634,72,64,['Gryffindor']
+1635,72,66,['Gryffindor']
+1636,72,71,['Gryffindor']
+1637,72,79,['Gryffindor']
+1638,72,84,['Gryffindor']
+1639,72,85,['Gryffindor']
+1640,72,100,['Gryffindor']
+1641,72,103,['Gryffindor']
+1642,72,104,['Gryffindor']
+1643,72,105,['Gryffindor']
+1644,72,106,['Gryffindor']
+1645,72,107,['Gryffindor']
+1646,72,108,['Gryffindor']
+1647,72,109,['Gryffindor']
+1648,72,110,['Gryffindor']
+1649,72,114,['Gryffindor']
+1650,72,118,['Gryffindor']
+1651,72,132,['Gryffindor']
+1652,72,134,['Gryffindor']
+1653,72,139,['Gryffindor']
+1654,72,146,['Gryffindor']
+1655,72,152,['Gryffindor']
+1656,72,155,['Gryffindor']
+1657,72,162,['Gryffindor']
+1658,72,169,['Gryffindor']
+1659,72,172,['Gryffindor']
+1660,72,173,['Gryffindor']
+1661,72,175,['Gryffindor']
+1662,73,1,['British Ministry of Magic']
+1663,73,5,['Order of the Phoenix']
+1664,73,9,['Order of the Phoenix']
+1665,73,12,['British Ministry of Magic']
+1666,73,20,['British Ministry of Magic']
+1667,73,21,"['Order of the Phoenix', 'Advance Guard']"
+1668,73,22,['British Ministry of Magic']
+1669,73,24,['Order of the Phoenix']
+1670,73,25,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+1671,73,27,['Order of the Phoenix']
+1672,73,34,['Order of the Phoenix']
+1673,73,40,['Order of the Phoenix']
+1674,73,43,['British Ministry of Magic']
+1675,73,55,['Order of the Phoenix']
+1676,73,56,['Order of the Phoenix']
+1677,73,64,"['British Ministry of Magic', 'Order of the Phoenix']"
+1678,73,65,['Order of the Phoenix']
+1679,73,66,"['Order of the Phoenix', 'Advance Guard']"
+1680,73,75,['British Ministry of Magic']
+1681,73,83,"['Order of the Phoenix', 'Advance Guard']"
+1682,73,84,"['British Ministry of Magic', 'Order of the Phoenix']"
+1683,73,85,['Order of the Phoenix']
+1684,73,91,['British Ministry of Magic']
+1685,73,92,['British Ministry of Magic']
+1686,73,93,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+1687,73,98,['Order of the Phoenix']
+1688,73,99,['British Ministry of Magic']
+1689,73,103,"['British Ministry of Magic', 'Order of the Phoenix']"
+1690,73,104,['Order of the Phoenix']
+1691,73,105,['Order of the Phoenix']
+1692,73,106,['Order of the Phoenix']
+1693,73,107,['British Ministry of Magic']
+1694,73,108,"['British Ministry of Magic', 'Order of the Phoenix']"
+1695,73,109,['Order of the Phoenix']
+1696,73,125,['Order of the Phoenix']
+1697,73,131,['British Ministry of Magic']
+1698,73,133,['Order of the Phoenix']
+1699,73,134,"['British Ministry of Magic', 'Order of the Phoenix']"
+1700,73,142,['Order of the Phoenix']
+1701,73,143,['Order of the Phoenix']
+1702,73,145,['Order of the Phoenix']
+1703,73,146,['Order of the Phoenix']
+1704,73,155,['Order of the Phoenix']
+1705,73,165,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+1706,73,168,"['Order of the Phoenix', 'Advance Guard']"
+1707,73,172,['Order of the Phoenix']
+1708,73,173,['Order of the Phoenix']
+1709,73,175,"['British Ministry of Magic', 'Order of the Phoenix']"
+1710,74,4,['Slytherin']
+1711,74,6,['Slytherin']
+1712,74,14,['Slytherin']
+1713,74,15,['Slytherin']
+1714,74,47,['Slytherin']
+1715,74,48,['Slytherin']
+1716,74,58,['Slytherin']
+1717,74,61,['Slytherin']
+1718,74,88,['Slytherin']
+1719,74,95,['Slytherin']
+1720,74,96,['Slytherin']
+1721,74,98,['Slytherin']
+1722,74,111,['Slytherin']
+1723,74,119,['Slytherin']
+1724,74,140,['Slytherin']
+1725,74,144,['Slytherin']
+1726,74,150,['Slytherin']
+1727,74,164,['Slytherin']
+1728,74,167,['Slytherin']
+1729,75,1,['British Ministry of Magic']
+1730,75,12,['British Ministry of Magic']
+1731,75,20,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+1732,75,22,['British Ministry of Magic']
+1733,75,25,['British Ministry of Magic']
+1734,75,43,['British Ministry of Magic']
+1735,75,64,['British Ministry of Magic']
+1736,75,73,['British Ministry of Magic']
+1737,75,84,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+1738,75,91,['British Ministry of Magic']
+1739,75,92,['British Ministry of Magic']
+1740,75,93,['British Ministry of Magic']
+1741,75,99,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+1742,75,103,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+1743,75,107,['British Ministry of Magic']
+1744,75,108,['British Ministry of Magic']
+1745,75,115,['Department of Magical Law Enforcement']
+1746,75,131,['British Ministry of Magic']
+1747,75,134,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+1748,75,146,['Department of Magical Law Enforcement']
+1749,75,165,['British Ministry of Magic']
+1750,75,175,['British Ministry of Magic']
+1751,77,7,['Ravenclaw']
+1752,77,13,['Ravenclaw']
+1753,77,16,['Harry Potter']
+1754,77,21,['Harry Potter']
+1755,77,24,['Harry Potter']
+1756,77,34,['Harry Potter']
+1757,77,40,['Harry Potter']
+1758,77,41,['Ravenclaw']
+1759,77,46,['Ravenclaw']
+1760,77,55,['Harry Potter']
+1761,77,62,['Ravenclaw']
+1762,77,64,['Harry Potter']
+1763,77,65,"['Ravenclaw', 'Harry Potter']"
+1764,77,86,['Ravenclaw']
+1765,77,98,['Harry Potter']
+1766,77,123,['Ravenclaw']
+1767,77,124,['Ravenclaw']
+1768,77,125,['Harry Potter']
+1769,77,131,['Ravenclaw']
+1770,77,143,['Ravenclaw']
+1771,77,151,['Ravenclaw']
+1772,77,156,['Ravenclaw']
+1773,77,157,['Ravenclaw']
+1774,77,166,['Ravenclaw']
+1775,77,171,"['Ravenclaw', 'Harry Potter']"
+1776,77,175,['Harry Potter']
+1777,79,5,['Gryffindor']
+1778,79,10,['Gryffindor']
+1779,79,11,"['Death Eaters', 'Lord Voldemort']"
+1780,79,14,"['Death Eaters', 'Lord Voldemort']"
+1781,79,15,['Lord Voldemort']
+1782,79,16,['Gryffindor']
+1783,79,19,"['Death Eaters', 'Lord Voldemort']"
+1784,79,26,"['Death Eaters', 'Lord Voldemort']"
+1785,79,37,['Gryffindor']
+1786,79,47,"['Death Eaters', 'Lord Voldemort']"
+1787,79,48,['Lord Voldemort']
+1788,79,51,['Lord Voldemort']
+1789,79,54,['Gryffindor']
+1790,79,55,['Gryffindor']
+1791,79,56,['Gryffindor']
+1792,79,60,"['Death Eaters', 'Lord Voldemort']"
+1793,79,63,['Gryffindor']
+1794,79,64,['Gryffindor']
+1795,79,66,['Gryffindor']
+1796,79,71,['Gryffindor']
+1797,79,72,['Gryffindor']
+1798,79,84,['Gryffindor']
+1799,79,85,['Gryffindor']
+1800,79,86,['Lord Voldemort']
+1801,79,88,['Death Eaters']
+1802,79,90,"['Death Eaters', 'Lord Voldemort']"
+1803,79,100,['Gryffindor']
+1804,79,103,['Gryffindor']
+1805,79,104,['Gryffindor']
+1806,79,105,['Gryffindor']
+1807,79,106,['Gryffindor']
+1808,79,107,['Gryffindor']
+1809,79,108,['Gryffindor']
+1810,79,109,['Gryffindor']
+1811,79,110,['Gryffindor']
+1812,79,114,['Gryffindor']
+1813,79,118,['Gryffindor']
+1814,79,121,"['Death Eaters', 'Lord Voldemort']"
+1815,79,132,['Gryffindor']
+1816,79,134,['Gryffindor']
+1817,79,139,['Gryffindor']
+1818,79,146,['Gryffindor']
+1819,79,147,['Lord Voldemort']
+1820,79,152,['Gryffindor']
+1821,79,155,['Gryffindor']
+1822,79,162,['Gryffindor']
+1823,79,169,['Gryffindor']
+1824,79,172,['Gryffindor']
+1825,79,173,['Gryffindor']
+1826,79,175,['Gryffindor']
+1827,83,5,['Order of the Phoenix']
+1828,83,9,['Order of the Phoenix']
+1829,83,21,"['Order of the Phoenix', 'Advance Guard']"
+1830,83,24,['Order of the Phoenix']
+1831,83,25,"['Order of the Phoenix', 'Advance Guard']"
+1832,83,27,['Order of the Phoenix']
+1833,83,34,['Order of the Phoenix']
+1834,83,40,['Order of the Phoenix']
+1835,83,55,['Order of the Phoenix']
+1836,83,56,['Order of the Phoenix']
+1837,83,64,['Order of the Phoenix']
+1838,83,65,['Order of the Phoenix']
+1839,83,66,"['Order of the Phoenix', 'Advance Guard']"
+1840,83,73,"['Order of the Phoenix', 'Advance Guard']"
+1841,83,84,['Order of the Phoenix']
+1842,83,85,['Order of the Phoenix']
+1843,83,93,"['Order of the Phoenix', 'Advance Guard']"
+1844,83,98,['Order of the Phoenix']
+1845,83,103,['Order of the Phoenix']
+1846,83,104,['Order of the Phoenix']
+1847,83,105,['Order of the Phoenix']
+1848,83,106,['Order of the Phoenix']
+1849,83,108,['Order of the Phoenix']
+1850,83,109,['Order of the Phoenix']
+1851,83,125,['Order of the Phoenix']
+1852,83,133,['Order of the Phoenix']
+1853,83,134,['Order of the Phoenix']
+1854,83,142,['Order of the Phoenix']
+1855,83,143,['Order of the Phoenix']
+1856,83,145,['Order of the Phoenix']
+1857,83,146,['Order of the Phoenix']
+1858,83,155,['Order of the Phoenix']
+1859,83,165,"['Order of the Phoenix', 'Advance Guard']"
+1860,83,168,"['Order of the Phoenix', 'Advance Guard']"
+1861,83,172,['Order of the Phoenix']
+1862,83,173,['Order of the Phoenix']
+1863,83,175,['Order of the Phoenix']
+1864,84,1,['British Ministry of Magic']
+1865,84,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1866,84,7,"[""Dumbledore's Army""]"
+1867,84,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+1868,84,10,['Gryffindor']
+1869,84,12,['British Ministry of Magic']
+1870,84,13,"[""Dumbledore's Army""]"
+1871,84,16,"['Gryffindor', ""Dumbledore's Army""]"
+1872,84,17,['Slug Club']
+1873,84,20,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+1874,84,21,['Order of the Phoenix']
+1875,84,22,['British Ministry of Magic']
+1876,84,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+1877,84,25,"['British Ministry of Magic', 'Order of the Phoenix']"
+1878,84,27,['Order of the Phoenix']
+1879,84,34,"['Order of the Phoenix', 'Albus Dumbledore']"
+1880,84,36,"[""Dumbledore's Army""]"
+1881,84,37,"['Gryffindor', ""Dumbledore's Army""]"
+1882,84,39,['Albus Dumbledore']
+1883,84,40,"['Order of the Phoenix', 'Albus Dumbledore']"
+1884,84,43,['British Ministry of Magic']
+1885,84,46,"[""Dumbledore's Army""]"
+1886,84,54,['Gryffindor']
+1887,84,55,"['Gryffindor', 'Order of the Phoenix', 'Albus Dumbledore']"
+1888,84,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1889,84,63,['Gryffindor']
+1890,84,64,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Albus Dumbledore']"
+1891,84,65,['Order of the Phoenix']
+1892,84,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1893,84,67,"['Potter family', 'Weasley family']"
+1894,84,68,"[""Dumbledore's Army""]"
+1895,84,71,"['Gryffindor', ""Dumbledore's Army"", 'Slug Club', 'Gryffindor Quidditch team']"
+1896,84,72,['Gryffindor']
+1897,84,73,"['British Ministry of Magic', 'Order of the Phoenix']"
+1898,84,75,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+1899,84,79,['Gryffindor']
+1900,84,83,['Order of the Phoenix']
+1901,84,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+1902,84,88,['Slug Club']
+1903,84,91,"['British Ministry of Magic', 'Albus Dumbledore']"
+1904,84,92,['British Ministry of Magic']
+1905,84,93,"['British Ministry of Magic', 'Order of the Phoenix']"
+1906,84,95,['Slug Club']
+1907,84,98,"['Order of the Phoenix', 'Albus Dumbledore']"
+1908,84,99,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+1909,84,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1910,84,103,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', 'Department of Magical Law Enforcement', 'Weasley family']"
+1911,84,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team']"
+1912,84,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+1913,84,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+1914,84,107,"['British Ministry of Magic', 'Gryffindor', 'Weasley family']"
+1915,84,108,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+1916,84,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+1917,84,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+1918,84,111,['Slug Club']
+1919,84,112,"[""Dumbledore's Army""]"
+1920,84,113,['Potter family']
+1921,84,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1922,84,115,['Department of Magical Law Enforcement']
+1923,84,116,"[""Dumbledore's Army""]"
+1924,84,118,"['Gryffindor', ""Dumbledore's Army""]"
+1925,84,123,"[""Dumbledore's Army""]"
+1926,84,125,"['Order of the Phoenix', 'Weasley family']"
+1927,84,131,['British Ministry of Magic']
+1928,84,132,['Gryffindor']
+1929,84,133,"['Order of the Phoenix', 'Albus Dumbledore']"
+1930,84,134,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Slug Club', 'Department of Magical Law Enforcement', 'Weasley family']"
+1931,84,139,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+1932,84,142,['Order of the Phoenix']
+1933,84,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+1934,84,145,['Order of the Phoenix']
+1935,84,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Department of Magical Law Enforcement', 'Albus Dumbledore', 'Gryffindor Quidditch team']"
+1936,84,151,"[""Dumbledore's Army""]"
+1937,84,152,"['Gryffindor', ""Dumbledore's Army""]"
+1938,84,154,['Albus Dumbledore']
+1939,84,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Slug Club']"
+1940,84,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+1941,84,165,"['British Ministry of Magic', 'Order of the Phoenix']"
+1942,84,168,['Order of the Phoenix']
+1943,84,169,"['Gryffindor', ""Dumbledore's Army""]"
+1944,84,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Slug Club', 'Weasley family', 'Gryffindor Quidditch team']"
+1945,84,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+1946,84,175,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+1947,85,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1948,85,9,['Order of the Phoenix']
+1949,85,10,['Gryffindor']
+1950,85,16,['Gryffindor']
+1951,85,21,['Order of the Phoenix']
+1952,85,24,['Order of the Phoenix']
+1953,85,25,['Order of the Phoenix']
+1954,85,27,['Order of the Phoenix']
+1955,85,34,['Order of the Phoenix']
+1956,85,37,['Gryffindor']
+1957,85,40,['Order of the Phoenix']
+1958,85,54,['Gryffindor']
+1959,85,55,"['Gryffindor', 'Order of the Phoenix']"
+1960,85,56,"['Gryffindor', 'Order of the Phoenix']"
+1961,85,63,['Gryffindor']
+1962,85,64,"['Gryffindor', 'Order of the Phoenix']"
+1963,85,65,['Order of the Phoenix']
+1964,85,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1965,85,67,['Potter family']
+1966,85,71,"['Gryffindor', 'Gryffindor Quidditch team']"
+1967,85,72,['Gryffindor']
+1968,85,73,['Order of the Phoenix']
+1969,85,79,['Gryffindor']
+1970,85,83,['Order of the Phoenix']
+1971,85,84,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+1972,85,93,['Order of the Phoenix']
+1973,85,98,['Order of the Phoenix']
+1974,85,100,"['Gryffindor', 'Gryffindor Quidditch team']"
+1975,85,103,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1976,85,104,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+1977,85,105,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+1978,85,106,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+1979,85,107,['Gryffindor']
+1980,85,108,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+1981,85,109,"['Gryffindor', 'Order of the Phoenix']"
+1982,85,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+1983,85,113,['Potter family']
+1984,85,114,"['Gryffindor', 'Gryffindor Quidditch team']"
+1985,85,118,['Gryffindor']
+1986,85,125,['Order of the Phoenix']
+1987,85,132,['Gryffindor']
+1988,85,133,['Order of the Phoenix']
+1989,85,134,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1990,85,139,"['Gryffindor', 'Gryffindor Quidditch team']"
+1991,85,142,['Order of the Phoenix']
+1992,85,143,['Order of the Phoenix']
+1993,85,145,['Order of the Phoenix']
+1994,85,146,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+1995,85,152,['Gryffindor']
+1996,85,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+1997,85,162,"['Gryffindor', 'Gryffindor Quidditch team']"
+1998,85,165,['Order of the Phoenix']
+1999,85,168,['Order of the Phoenix']
+2000,85,169,['Gryffindor']
+2001,85,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+2002,85,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+2003,85,175,"['Gryffindor', 'Order of the Phoenix']"
+2004,86,7,['Ravenclaw']
+2005,86,11,['Lord Voldemort']
+2006,86,13,['Ravenclaw']
+2007,86,14,['Lord Voldemort']
+2008,86,15,['Lord Voldemort']
+2009,86,19,['Lord Voldemort']
+2010,86,26,['Lord Voldemort']
+2011,86,41,['Ravenclaw']
+2012,86,46,['Ravenclaw']
+2013,86,47,['Lord Voldemort']
+2014,86,48,['Lord Voldemort']
+2015,86,51,['Lord Voldemort']
+2016,86,60,['Lord Voldemort']
+2017,86,62,['Ravenclaw']
+2018,86,65,['Ravenclaw']
+2019,86,77,['Ravenclaw']
+2020,86,79,['Lord Voldemort']
+2021,86,90,['Lord Voldemort']
+2022,86,121,['Lord Voldemort']
+2023,86,123,['Ravenclaw']
+2024,86,124,['Ravenclaw']
+2025,86,131,['Ravenclaw']
+2026,86,143,['Ravenclaw']
+2027,86,147,['Lord Voldemort']
+2028,86,151,['Ravenclaw']
+2029,86,156,['Ravenclaw']
+2030,86,157,['Ravenclaw']
+2031,86,166,['Ravenclaw']
+2032,86,171,['Ravenclaw']
+2033,88,4,['Slytherin']
+2034,88,6,['Slytherin']
+2035,88,11,['Death Eaters']
+2036,88,14,"['Slytherin', 'Death Eaters']"
+2037,88,15,['Slytherin']
+2038,88,17,['Slug Club']
+2039,88,19,['Death Eaters']
+2040,88,26,['Death Eaters']
+2041,88,47,"['Slytherin', 'Death Eaters']"
+2042,88,48,['Slytherin']
+2043,88,58,['Slytherin']
+2044,88,60,['Death Eaters']
+2045,88,61,['Slytherin']
+2046,88,71,['Slug Club']
+2047,88,74,['Slytherin']
+2048,88,79,['Death Eaters']
+2049,88,84,['Slug Club']
+2050,88,90,['Death Eaters']
+2051,88,95,"['Slytherin', 'Slug Club']"
+2052,88,96,['Slytherin']
+2053,88,98,['Slytherin']
+2054,88,111,"['Slytherin', 'Slug Club']"
+2055,88,119,['Slytherin']
+2056,88,121,['Death Eaters']
+2057,88,134,['Slug Club']
+2058,88,140,['Slytherin']
+2059,88,144,['Slytherin']
+2060,88,150,['Slytherin']
+2061,88,155,['Slug Club']
+2062,88,164,['Slytherin']
+2063,88,167,['Slytherin']
+2064,88,172,['Slug Club']
+2065,90,11,"['Death Eaters', 'Lord Voldemort']"
+2066,90,14,"['Death Eaters', 'Lord Voldemort']"
+2067,90,15,['Lord Voldemort']
+2068,90,19,"['Death Eaters', 'Lord Voldemort']"
+2069,90,26,"['Death Eaters', 'Lord Voldemort']"
+2070,90,47,"['Death Eaters', 'Lord Voldemort']"
+2071,90,48,['Lord Voldemort']
+2072,90,51,['Lord Voldemort']
+2073,90,60,"['Death Eaters', 'Lord Voldemort']"
+2074,90,79,"['Death Eaters', 'Lord Voldemort']"
+2075,90,86,['Lord Voldemort']
+2076,90,88,['Death Eaters']
+2077,90,121,"['Death Eaters', 'Lord Voldemort']"
+2078,90,147,['Lord Voldemort']
+2079,91,1,['British Ministry of Magic']
+2080,91,12,['British Ministry of Magic']
+2081,91,20,['British Ministry of Magic']
+2082,91,22,['British Ministry of Magic']
+2083,91,23,['Hufflepuff']
+2084,91,25,['British Ministry of Magic']
+2085,91,33,['Hufflepuff']
+2086,91,34,['Albus Dumbledore']
+2087,91,36,['Hufflepuff']
+2088,91,39,['Albus Dumbledore']
+2089,91,40,['Albus Dumbledore']
+2090,91,43,['British Ministry of Magic']
+2091,91,55,['Albus Dumbledore']
+2092,91,64,"['British Ministry of Magic', 'Albus Dumbledore']"
+2093,91,67,['Hufflepuff']
+2094,91,68,['Hufflepuff']
+2095,91,73,['British Ministry of Magic']
+2096,91,75,['British Ministry of Magic']
+2097,91,84,"['British Ministry of Magic', 'Albus Dumbledore']"
+2098,91,92,['British Ministry of Magic']
+2099,91,93,['British Ministry of Magic']
+2100,91,97,['Hufflepuff']
+2101,91,98,['Albus Dumbledore']
+2102,91,99,['British Ministry of Magic']
+2103,91,103,['British Ministry of Magic']
+2104,91,107,['British Ministry of Magic']
+2105,91,108,['British Ministry of Magic']
+2106,91,112,['Hufflepuff']
+2107,91,116,['Hufflepuff']
+2108,91,131,['British Ministry of Magic']
+2109,91,133,['Albus Dumbledore']
+2110,91,134,['British Ministry of Magic']
+2111,91,138,['Hufflepuff']
+2112,91,146,['Albus Dumbledore']
+2113,91,154,['Albus Dumbledore']
+2114,91,163,['Hufflepuff']
+2115,91,165,"['British Ministry of Magic', 'Hufflepuff']"
+2116,91,175,['British Ministry of Magic']
+2117,92,1,['British Ministry of Magic']
+2118,92,12,['British Ministry of Magic']
+2119,92,20,['British Ministry of Magic']
+2120,92,22,['British Ministry of Magic']
+2121,92,25,['British Ministry of Magic']
+2122,92,43,['British Ministry of Magic']
+2123,92,64,['British Ministry of Magic']
+2124,92,73,['British Ministry of Magic']
+2125,92,75,['British Ministry of Magic']
+2126,92,84,['British Ministry of Magic']
+2127,92,91,['British Ministry of Magic']
+2128,92,93,['British Ministry of Magic']
+2129,92,99,['British Ministry of Magic']
+2130,92,103,['British Ministry of Magic']
+2131,92,107,['British Ministry of Magic']
+2132,92,108,['British Ministry of Magic']
+2133,92,131,['British Ministry of Magic']
+2134,92,134,['British Ministry of Magic']
+2135,92,165,['British Ministry of Magic']
+2136,92,175,['British Ministry of Magic']
+2137,93,1,['British Ministry of Magic']
+2138,93,5,['Order of the Phoenix']
+2139,93,9,['Order of the Phoenix']
+2140,93,12,['British Ministry of Magic']
+2141,93,20,['British Ministry of Magic']
+2142,93,21,"['Order of the Phoenix', 'Advance Guard']"
+2143,93,22,['British Ministry of Magic']
+2144,93,24,['Order of the Phoenix']
+2145,93,25,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+2146,93,27,['Order of the Phoenix']
+2147,93,34,['Order of the Phoenix']
+2148,93,40,['Order of the Phoenix']
+2149,93,43,['British Ministry of Magic']
+2150,93,55,['Order of the Phoenix']
+2151,93,56,['Order of the Phoenix']
+2152,93,64,"['British Ministry of Magic', 'Order of the Phoenix']"
+2153,93,65,['Order of the Phoenix']
+2154,93,66,"['Order of the Phoenix', 'Advance Guard']"
+2155,93,73,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+2156,93,75,['British Ministry of Magic']
+2157,93,83,"['Order of the Phoenix', 'Advance Guard']"
+2158,93,84,"['British Ministry of Magic', 'Order of the Phoenix']"
+2159,93,85,['Order of the Phoenix']
+2160,93,91,['British Ministry of Magic']
+2161,93,92,['British Ministry of Magic']
+2162,93,98,['Order of the Phoenix']
+2163,93,99,['British Ministry of Magic']
+2164,93,103,"['British Ministry of Magic', 'Order of the Phoenix']"
+2165,93,104,['Order of the Phoenix']
+2166,93,105,['Order of the Phoenix']
+2167,93,106,['Order of the Phoenix']
+2168,93,107,['British Ministry of Magic']
+2169,93,108,"['British Ministry of Magic', 'Order of the Phoenix']"
+2170,93,109,['Order of the Phoenix']
+2171,93,125,['Order of the Phoenix']
+2172,93,131,['British Ministry of Magic']
+2173,93,133,['Order of the Phoenix']
+2174,93,134,"['British Ministry of Magic', 'Order of the Phoenix']"
+2175,93,142,['Order of the Phoenix']
+2176,93,143,['Order of the Phoenix']
+2177,93,145,['Order of the Phoenix']
+2178,93,146,['Order of the Phoenix']
+2179,93,155,['Order of the Phoenix']
+2180,93,165,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+2181,93,168,"['Order of the Phoenix', 'Advance Guard']"
+2182,93,172,['Order of the Phoenix']
+2183,93,173,['Order of the Phoenix']
+2184,93,175,"['British Ministry of Magic', 'Order of the Phoenix']"
+2185,95,4,['Slytherin']
+2186,95,6,['Slytherin']
+2187,95,14,['Slytherin']
+2188,95,15,['Slytherin']
+2189,95,17,['Slug Club']
+2190,95,47,['Slytherin']
+2191,95,48,['Slytherin']
+2192,95,58,['Slytherin']
+2193,95,61,['Slytherin']
+2194,95,71,['Slug Club']
+2195,95,74,['Slytherin']
+2196,95,84,['Slug Club']
+2197,95,88,"['Slytherin', 'Slug Club']"
+2198,95,96,['Slytherin']
+2199,95,98,['Slytherin']
+2200,95,111,"['Slytherin', 'Slug Club']"
+2201,95,119,['Slytherin']
+2202,95,134,['Slug Club']
+2203,95,140,['Slytherin']
+2204,95,144,['Slytherin']
+2205,95,150,['Slytherin']
+2206,95,155,['Slug Club']
+2207,95,164,['Slytherin']
+2208,95,167,['Slytherin']
+2209,95,172,['Slug Club']
+2210,96,4,['Slytherin']
+2211,96,6,['Slytherin']
+2212,96,14,['Slytherin']
+2213,96,15,['Slytherin']
+2214,96,47,['Slytherin']
+2215,96,48,['Slytherin']
+2216,96,58,['Slytherin']
+2217,96,61,['Slytherin']
+2218,96,74,['Slytherin']
+2219,96,88,['Slytherin']
+2220,96,95,['Slytherin']
+2221,96,98,['Slytherin']
+2222,96,111,['Slytherin']
+2223,96,119,['Slytherin']
+2224,96,140,['Slytherin']
+2225,96,144,['Slytherin']
+2226,96,150,['Slytherin']
+2227,96,164,['Slytherin']
+2228,96,167,['Slytherin']
+2229,97,23,['Hufflepuff']
+2230,97,33,['Hufflepuff']
+2231,97,36,['Hufflepuff']
+2232,97,67,['Hufflepuff']
+2233,97,68,['Hufflepuff']
+2234,97,91,['Hufflepuff']
+2235,97,112,['Hufflepuff']
+2236,97,116,['Hufflepuff']
+2237,97,138,['Hufflepuff']
+2238,97,163,['Hufflepuff']
+2239,97,165,['Hufflepuff']
+2240,98,4,['Slytherin']
+2241,98,5,['Order of the Phoenix']
+2242,98,6,['Slytherin']
+2243,98,9,['Order of the Phoenix']
+2244,98,14,['Slytherin']
+2245,98,15,['Slytherin']
+2246,98,16,['Harry Potter']
+2247,98,21,"['Order of the Phoenix', 'Harry Potter']"
+2248,98,24,"['Order of the Phoenix', 'Harry Potter']"
+2249,98,25,['Order of the Phoenix']
+2250,98,27,['Order of the Phoenix']
+2251,98,34,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+2252,98,39,['Albus Dumbledore']
+2253,98,40,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+2254,98,47,['Slytherin']
+2255,98,48,['Slytherin']
+2256,98,55,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+2257,98,56,['Order of the Phoenix']
+2258,98,58,['Slytherin']
+2259,98,61,['Slytherin']
+2260,98,64,"['Order of the Phoenix', 'Harry Potter', 'Albus Dumbledore']"
+2261,98,65,"['Order of the Phoenix', 'Harry Potter']"
+2262,98,66,['Order of the Phoenix']
+2263,98,73,['Order of the Phoenix']
+2264,98,74,['Slytherin']
+2265,98,77,['Harry Potter']
+2266,98,83,['Order of the Phoenix']
+2267,98,84,"['Order of the Phoenix', 'Albus Dumbledore']"
+2268,98,85,['Order of the Phoenix']
+2269,98,88,['Slytherin']
+2270,98,91,['Albus Dumbledore']
+2271,98,93,['Order of the Phoenix']
+2272,98,95,['Slytherin']
+2273,98,96,['Slytherin']
+2274,98,103,['Order of the Phoenix']
+2275,98,104,['Order of the Phoenix']
+2276,98,105,['Order of the Phoenix']
+2277,98,106,['Order of the Phoenix']
+2278,98,108,['Order of the Phoenix']
+2279,98,109,['Order of the Phoenix']
+2280,98,111,['Slytherin']
+2281,98,119,['Slytherin']
+2282,98,125,"['Order of the Phoenix', 'Harry Potter']"
+2283,98,133,"['Order of the Phoenix', 'Albus Dumbledore']"
+2284,98,134,['Order of the Phoenix']
+2285,98,140,['Slytherin']
+2286,98,142,['Order of the Phoenix']
+2287,98,143,['Order of the Phoenix']
+2288,98,144,['Slytherin']
+2289,98,145,['Order of the Phoenix']
+2290,98,146,"['Order of the Phoenix', 'Albus Dumbledore']"
+2291,98,150,['Slytherin']
+2292,98,154,['Albus Dumbledore']
+2293,98,155,['Order of the Phoenix']
+2294,98,164,['Slytherin']
+2295,98,165,['Order of the Phoenix']
+2296,98,167,['Slytherin']
+2297,98,168,['Order of the Phoenix']
+2298,98,171,['Harry Potter']
+2299,98,172,['Order of the Phoenix']
+2300,98,173,['Order of the Phoenix']
+2301,98,175,"['Order of the Phoenix', 'Harry Potter']"
+2302,99,1,['British Ministry of Magic']
+2303,99,12,['British Ministry of Magic']
+2304,99,20,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+2305,99,22,['British Ministry of Magic']
+2306,99,25,['British Ministry of Magic']
+2307,99,43,['British Ministry of Magic']
+2308,99,64,['British Ministry of Magic']
+2309,99,73,['British Ministry of Magic']
+2310,99,75,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+2311,99,84,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+2312,99,91,['British Ministry of Magic']
+2313,99,92,['British Ministry of Magic']
+2314,99,93,['British Ministry of Magic']
+2315,99,103,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+2316,99,107,['British Ministry of Magic']
+2317,99,108,['British Ministry of Magic']
+2318,99,115,['Department of Magical Law Enforcement']
+2319,99,131,['British Ministry of Magic']
+2320,99,134,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+2321,99,146,['Department of Magical Law Enforcement']
+2322,99,165,['British Ministry of Magic']
+2323,99,175,['British Ministry of Magic']
+2324,100,5,['Gryffindor']
+2325,100,7,"[""Dumbledore's Army""]"
+2326,100,9,"[""Dumbledore's Army""]"
+2327,100,10,['Gryffindor']
+2328,100,13,"[""Dumbledore's Army""]"
+2329,100,16,"['Gryffindor', ""Dumbledore's Army""]"
+2330,100,24,"[""Dumbledore's Army""]"
+2331,100,36,"[""Dumbledore's Army""]"
+2332,100,37,"['Gryffindor', ""Dumbledore's Army""]"
+2333,100,46,"[""Dumbledore's Army""]"
+2334,100,54,['Gryffindor']
+2335,100,55,['Gryffindor']
+2336,100,56,"['Gryffindor', ""Dumbledore's Army""]"
+2337,100,63,['Gryffindor']
+2338,100,64,"['Gryffindor', ""Dumbledore's Army""]"
+2339,100,66,['Gryffindor']
+2340,100,68,"[""Dumbledore's Army""]"
+2341,100,71,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2342,100,72,['Gryffindor']
+2343,100,79,['Gryffindor']
+2344,100,84,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2345,100,85,"['Gryffindor', 'Gryffindor Quidditch team']"
+2346,100,103,['Gryffindor']
+2347,100,104,"['Gryffindor', 'Gryffindor Quidditch team']"
+2348,100,105,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2349,100,106,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2350,100,107,['Gryffindor']
+2351,100,108,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2352,100,109,['Gryffindor']
+2353,100,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+2354,100,112,"[""Dumbledore's Army""]"
+2355,100,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2356,100,116,"[""Dumbledore's Army""]"
+2357,100,118,"['Gryffindor', ""Dumbledore's Army""]"
+2358,100,123,"[""Dumbledore's Army""]"
+2359,100,132,['Gryffindor']
+2360,100,134,"['Gryffindor', ""Dumbledore's Army""]"
+2361,100,139,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2362,100,143,"[""Dumbledore's Army""]"
+2363,100,146,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2364,100,151,"[""Dumbledore's Army""]"
+2365,100,152,"['Gryffindor', ""Dumbledore's Army""]"
+2366,100,155,['Gryffindor']
+2367,100,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2368,100,169,"['Gryffindor', ""Dumbledore's Army""]"
+2369,100,172,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2370,100,173,['Gryffindor']
+2371,100,175,"['Gryffindor', ""Dumbledore's Army""]"
+2372,103,1,['British Ministry of Magic']
+2373,103,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+2374,103,9,['Order of the Phoenix']
+2375,103,10,['Gryffindor']
+2376,103,12,['British Ministry of Magic']
+2377,103,16,['Gryffindor']
+2378,103,20,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+2379,103,21,['Order of the Phoenix']
+2380,103,22,['British Ministry of Magic']
+2381,103,24,['Order of the Phoenix']
+2382,103,25,"['British Ministry of Magic', 'Order of the Phoenix']"
+2383,103,27,['Order of the Phoenix']
+2384,103,34,['Order of the Phoenix']
+2385,103,37,['Gryffindor']
+2386,103,40,['Order of the Phoenix']
+2387,103,43,['British Ministry of Magic']
+2388,103,54,['Gryffindor']
+2389,103,55,"['Gryffindor', 'Order of the Phoenix']"
+2390,103,56,"['Gryffindor', 'Order of the Phoenix']"
+2391,103,63,['Gryffindor']
+2392,103,64,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix']"
+2393,103,65,['Order of the Phoenix']
+2394,103,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+2395,103,67,"['Potter family', 'Weasley family']"
+2396,103,71,['Gryffindor']
+2397,103,72,['Gryffindor']
+2398,103,73,"['British Ministry of Magic', 'Order of the Phoenix']"
+2399,103,75,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+2400,103,79,['Gryffindor']
+2401,103,83,['Order of the Phoenix']
+2402,103,84,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', 'Department of Magical Law Enforcement', 'Weasley family']"
+2403,103,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+2404,103,91,['British Ministry of Magic']
+2405,103,92,['British Ministry of Magic']
+2406,103,93,"['British Ministry of Magic', 'Order of the Phoenix']"
+2407,103,98,['Order of the Phoenix']
+2408,103,99,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+2409,103,100,['Gryffindor']
+2410,103,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2411,103,105,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2412,103,106,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2413,103,107,"['British Ministry of Magic', 'Gryffindor', 'Weasley family', 'Prewett family']"
+2414,103,108,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2415,103,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2416,103,110,['Gryffindor']
+2417,103,113,['Potter family']
+2418,103,114,['Gryffindor']
+2419,103,115,['Department of Magical Law Enforcement']
+2420,103,118,['Gryffindor']
+2421,103,125,"['Order of the Phoenix', 'Weasley family']"
+2422,103,131,['British Ministry of Magic']
+2423,103,132,['Gryffindor']
+2424,103,133,['Order of the Phoenix']
+2425,103,134,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', 'Department of Magical Law Enforcement', 'Weasley family']"
+2426,103,139,"['Gryffindor', 'Weasley family']"
+2427,103,142,['Order of the Phoenix']
+2428,103,143,['Order of the Phoenix']
+2429,103,145,['Order of the Phoenix']
+2430,103,146,"['Gryffindor', 'Order of the Phoenix', 'Department of Magical Law Enforcement']"
+2431,103,152,['Gryffindor']
+2432,103,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+2433,103,162,['Gryffindor']
+2434,103,165,"['British Ministry of Magic', 'Order of the Phoenix']"
+2435,103,168,['Order of the Phoenix']
+2436,103,169,['Gryffindor']
+2437,103,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2438,103,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2439,103,175,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix']"
+2440,104,5,"['Gryffindor', 'Order of the Phoenix']"
+2441,104,9,['Order of the Phoenix']
+2442,104,10,['Gryffindor']
+2443,104,16,['Gryffindor']
+2444,104,21,['Order of the Phoenix']
+2445,104,24,['Order of the Phoenix']
+2446,104,25,['Order of the Phoenix']
+2447,104,27,['Order of the Phoenix']
+2448,104,34,['Order of the Phoenix']
+2449,104,37,['Gryffindor']
+2450,104,40,['Order of the Phoenix']
+2451,104,54,['Gryffindor']
+2452,104,55,"['Gryffindor', 'Order of the Phoenix']"
+2453,104,56,"['Gryffindor', 'Order of the Phoenix']"
+2454,104,63,['Gryffindor']
+2455,104,64,"['Gryffindor', 'Order of the Phoenix']"
+2456,104,65,['Order of the Phoenix']
+2457,104,66,"['Gryffindor', 'Order of the Phoenix']"
+2458,104,67,['Weasley family']
+2459,104,71,"['Gryffindor', 'Gryffindor Quidditch team']"
+2460,104,72,['Gryffindor']
+2461,104,73,['Order of the Phoenix']
+2462,104,79,['Gryffindor']
+2463,104,83,['Order of the Phoenix']
+2464,104,84,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team']"
+2465,104,85,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+2466,104,93,['Order of the Phoenix']
+2467,104,98,['Order of the Phoenix']
+2468,104,100,"['Gryffindor', 'Gryffindor Quidditch team']"
+2469,104,103,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2470,104,105,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2471,104,106,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2472,104,107,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2473,104,108,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2474,104,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2475,104,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+2476,104,114,"['Gryffindor', 'Gryffindor Quidditch team']"
+2477,104,118,['Gryffindor']
+2478,104,125,"['Order of the Phoenix', 'Weasley family']"
+2479,104,132,['Gryffindor']
+2480,104,133,['Order of the Phoenix']
+2481,104,134,"['Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+2482,104,139,"['Gryffindor', 'Weasley family', 'Gryffindor Quidditch team']"
+2483,104,142,['Order of the Phoenix']
+2484,104,143,['Order of the Phoenix']
+2485,104,145,['Order of the Phoenix']
+2486,104,146,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+2487,104,152,['Gryffindor']
+2488,104,155,"['Gryffindor', 'Order of the Phoenix']"
+2489,104,162,"['Gryffindor', 'Gryffindor Quidditch team']"
+2490,104,165,['Order of the Phoenix']
+2491,104,168,['Order of the Phoenix']
+2492,104,169,['Gryffindor']
+2493,104,172,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2494,104,173,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2495,104,175,"['Gryffindor', 'Order of the Phoenix']"
+2496,105,5,"['Gryffindor', 'Order of the Phoenix']"
+2497,105,7,"[""Dumbledore's Army""]"
+2498,105,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2499,105,10,['Gryffindor']
+2500,105,13,"[""Dumbledore's Army""]"
+2501,105,16,"['Gryffindor', ""Dumbledore's Army""]"
+2502,105,21,['Order of the Phoenix']
+2503,105,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2504,105,25,['Order of the Phoenix']
+2505,105,27,['Order of the Phoenix']
+2506,105,34,['Order of the Phoenix']
+2507,105,36,"[""Dumbledore's Army""]"
+2508,105,37,"['Gryffindor', ""Dumbledore's Army""]"
+2509,105,40,['Order of the Phoenix']
+2510,105,46,"[""Dumbledore's Army""]"
+2511,105,54,['Gryffindor']
+2512,105,55,"['Gryffindor', 'Order of the Phoenix']"
+2513,105,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2514,105,63,['Gryffindor']
+2515,105,64,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2516,105,65,['Order of the Phoenix']
+2517,105,66,"['Gryffindor', 'Order of the Phoenix']"
+2518,105,67,['Weasley family']
+2519,105,68,"[""Dumbledore's Army""]"
+2520,105,71,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2521,105,72,['Gryffindor']
+2522,105,73,['Order of the Phoenix']
+2523,105,79,['Gryffindor']
+2524,105,83,['Order of the Phoenix']
+2525,105,84,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+2526,105,85,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+2527,105,93,['Order of the Phoenix']
+2528,105,98,['Order of the Phoenix']
+2529,105,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2530,105,103,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2531,105,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2532,105,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2533,105,107,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2534,105,108,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2535,105,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2536,105,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+2537,105,112,"[""Dumbledore's Army""]"
+2538,105,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2539,105,116,"[""Dumbledore's Army""]"
+2540,105,118,"['Gryffindor', ""Dumbledore's Army""]"
+2541,105,123,"[""Dumbledore's Army""]"
+2542,105,125,"['Order of the Phoenix', 'Weasley family']"
+2543,105,132,['Gryffindor']
+2544,105,133,['Order of the Phoenix']
+2545,105,134,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family']"
+2546,105,139,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+2547,105,142,['Order of the Phoenix']
+2548,105,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2549,105,145,['Order of the Phoenix']
+2550,105,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2551,105,151,"[""Dumbledore's Army""]"
+2552,105,152,"['Gryffindor', ""Dumbledore's Army""]"
+2553,105,155,"['Gryffindor', 'Order of the Phoenix']"
+2554,105,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2555,105,165,['Order of the Phoenix']
+2556,105,168,['Order of the Phoenix']
+2557,105,169,"['Gryffindor', ""Dumbledore's Army""]"
+2558,105,172,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2559,105,173,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2560,105,175,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2561,106,5,"['Gryffindor', 'Order of the Phoenix']"
+2562,106,7,"[""Dumbledore's Army""]"
+2563,106,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2564,106,10,['Gryffindor']
+2565,106,13,"[""Dumbledore's Army""]"
+2566,106,16,"['Gryffindor', ""Dumbledore's Army""]"
+2567,106,21,['Order of the Phoenix']
+2568,106,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2569,106,25,['Order of the Phoenix']
+2570,106,27,['Order of the Phoenix']
+2571,106,34,['Order of the Phoenix']
+2572,106,36,"[""Dumbledore's Army""]"
+2573,106,37,"['Gryffindor', ""Dumbledore's Army""]"
+2574,106,40,['Order of the Phoenix']
+2575,106,46,"[""Dumbledore's Army""]"
+2576,106,54,['Gryffindor']
+2577,106,55,"['Gryffindor', 'Order of the Phoenix']"
+2578,106,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2579,106,63,['Gryffindor']
+2580,106,64,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2581,106,65,['Order of the Phoenix']
+2582,106,66,"['Gryffindor', 'Order of the Phoenix']"
+2583,106,67,['Weasley family']
+2584,106,68,"[""Dumbledore's Army""]"
+2585,106,71,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2586,106,72,['Gryffindor']
+2587,106,73,['Order of the Phoenix']
+2588,106,79,['Gryffindor']
+2589,106,83,['Order of the Phoenix']
+2590,106,84,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+2591,106,85,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+2592,106,93,['Order of the Phoenix']
+2593,106,98,['Order of the Phoenix']
+2594,106,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2595,106,103,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2596,106,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2597,106,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2598,106,107,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2599,106,108,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2600,106,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2601,106,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+2602,106,112,"[""Dumbledore's Army""]"
+2603,106,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2604,106,116,"[""Dumbledore's Army""]"
+2605,106,118,"['Gryffindor', ""Dumbledore's Army""]"
+2606,106,123,"[""Dumbledore's Army""]"
+2607,106,125,"['Order of the Phoenix', 'Weasley family']"
+2608,106,132,['Gryffindor']
+2609,106,133,['Order of the Phoenix']
+2610,106,134,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family']"
+2611,106,139,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+2612,106,142,['Order of the Phoenix']
+2613,106,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2614,106,145,['Order of the Phoenix']
+2615,106,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2616,106,151,"[""Dumbledore's Army""]"
+2617,106,152,"['Gryffindor', ""Dumbledore's Army""]"
+2618,106,155,"['Gryffindor', 'Order of the Phoenix']"
+2619,106,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2620,106,165,['Order of the Phoenix']
+2621,106,168,['Order of the Phoenix']
+2622,106,169,"['Gryffindor', ""Dumbledore's Army""]"
+2623,106,172,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2624,106,173,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2625,106,175,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2626,107,1,['British Ministry of Magic']
+2627,107,5,['Gryffindor']
+2628,107,10,['Gryffindor']
+2629,107,12,['British Ministry of Magic']
+2630,107,16,['Gryffindor']
+2631,107,20,['British Ministry of Magic']
+2632,107,22,['British Ministry of Magic']
+2633,107,25,['British Ministry of Magic']
+2634,107,37,['Gryffindor']
+2635,107,43,['British Ministry of Magic']
+2636,107,54,['Gryffindor']
+2637,107,55,['Gryffindor']
+2638,107,56,['Gryffindor']
+2639,107,63,['Gryffindor']
+2640,107,64,"['British Ministry of Magic', 'Gryffindor']"
+2641,107,66,['Gryffindor']
+2642,107,67,['Weasley family']
+2643,107,71,['Gryffindor']
+2644,107,72,['Gryffindor']
+2645,107,73,['British Ministry of Magic']
+2646,107,75,['British Ministry of Magic']
+2647,107,79,['Gryffindor']
+2648,107,84,"['British Ministry of Magic', 'Gryffindor', 'Weasley family']"
+2649,107,85,['Gryffindor']
+2650,107,91,['British Ministry of Magic']
+2651,107,92,['British Ministry of Magic']
+2652,107,93,['British Ministry of Magic']
+2653,107,99,['British Ministry of Magic']
+2654,107,100,['Gryffindor']
+2655,107,103,"['British Ministry of Magic', 'Gryffindor', 'Weasley family', 'Prewett family']"
+2656,107,104,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2657,107,105,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2658,107,106,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2659,107,108,"['British Ministry of Magic', 'Gryffindor', 'Weasley family', 'Prewett family']"
+2660,107,109,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2661,107,110,['Gryffindor']
+2662,107,114,['Gryffindor']
+2663,107,118,['Gryffindor']
+2664,107,125,['Weasley family']
+2665,107,131,['British Ministry of Magic']
+2666,107,132,['Gryffindor']
+2667,107,134,"['British Ministry of Magic', 'Gryffindor', 'Weasley family']"
+2668,107,139,"['Gryffindor', 'Weasley family']"
+2669,107,146,['Gryffindor']
+2670,107,152,['Gryffindor']
+2671,107,155,['Gryffindor']
+2672,107,162,['Gryffindor']
+2673,107,165,['British Ministry of Magic']
+2674,107,169,['Gryffindor']
+2675,107,172,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2676,107,173,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2677,107,175,"['British Ministry of Magic', 'Gryffindor']"
+2678,108,1,['British Ministry of Magic']
+2679,108,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+2680,108,7,"[""Dumbledore's Army""]"
+2681,108,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2682,108,10,['Gryffindor']
+2683,108,12,['British Ministry of Magic']
+2684,108,13,"[""Dumbledore's Army""]"
+2685,108,16,"['Gryffindor', ""Dumbledore's Army""]"
+2686,108,20,['British Ministry of Magic']
+2687,108,21,['Order of the Phoenix']
+2688,108,22,['British Ministry of Magic']
+2689,108,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2690,108,25,"['British Ministry of Magic', 'Order of the Phoenix']"
+2691,108,27,['Order of the Phoenix']
+2692,108,34,['Order of the Phoenix']
+2693,108,36,"[""Dumbledore's Army""]"
+2694,108,37,"['Gryffindor', ""Dumbledore's Army""]"
+2695,108,40,['Order of the Phoenix']
+2696,108,43,['British Ministry of Magic']
+2697,108,46,"[""Dumbledore's Army""]"
+2698,108,54,['Gryffindor']
+2699,108,55,"['Gryffindor', 'Order of the Phoenix']"
+2700,108,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2701,108,63,['Gryffindor']
+2702,108,64,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2703,108,65,['Order of the Phoenix']
+2704,108,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+2705,108,67,"['Potter family', 'Weasley family']"
+2706,108,68,"[""Dumbledore's Army""]"
+2707,108,71,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2708,108,72,['Gryffindor']
+2709,108,73,"['British Ministry of Magic', 'Order of the Phoenix']"
+2710,108,75,['British Ministry of Magic']
+2711,108,79,['Gryffindor']
+2712,108,83,['Order of the Phoenix']
+2713,108,84,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+2714,108,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+2715,108,91,['British Ministry of Magic']
+2716,108,92,['British Ministry of Magic']
+2717,108,93,"['British Ministry of Magic', 'Order of the Phoenix']"
+2718,108,98,['Order of the Phoenix']
+2719,108,99,['British Ministry of Magic']
+2720,108,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2721,108,103,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2722,108,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2723,108,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2724,108,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2725,108,107,"['British Ministry of Magic', 'Gryffindor', 'Weasley family', 'Prewett family']"
+2726,108,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2727,108,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+2728,108,112,"[""Dumbledore's Army""]"
+2729,108,113,['Potter family']
+2730,108,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2731,108,116,"[""Dumbledore's Army""]"
+2732,108,118,"['Gryffindor', ""Dumbledore's Army""]"
+2733,108,123,"[""Dumbledore's Army""]"
+2734,108,125,"['Order of the Phoenix', 'Weasley family']"
+2735,108,131,['British Ministry of Magic']
+2736,108,132,['Gryffindor']
+2737,108,133,['Order of the Phoenix']
+2738,108,134,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family']"
+2739,108,139,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+2740,108,142,['Order of the Phoenix']
+2741,108,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+2742,108,145,['Order of the Phoenix']
+2743,108,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2744,108,151,"[""Dumbledore's Army""]"
+2745,108,152,"['Gryffindor', ""Dumbledore's Army""]"
+2746,108,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+2747,108,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2748,108,165,"['British Ministry of Magic', 'Order of the Phoenix']"
+2749,108,168,['Order of the Phoenix']
+2750,108,169,"['Gryffindor', ""Dumbledore's Army""]"
+2751,108,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+2752,108,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2753,108,175,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+2754,109,5,"['Gryffindor', 'Order of the Phoenix']"
+2755,109,9,['Order of the Phoenix']
+2756,109,10,['Gryffindor']
+2757,109,16,['Gryffindor']
+2758,109,21,['Order of the Phoenix']
+2759,109,24,['Order of the Phoenix']
+2760,109,25,['Order of the Phoenix']
+2761,109,27,['Order of the Phoenix']
+2762,109,34,['Order of the Phoenix']
+2763,109,37,['Gryffindor']
+2764,109,40,['Order of the Phoenix']
+2765,109,54,['Gryffindor']
+2766,109,55,"['Gryffindor', 'Order of the Phoenix']"
+2767,109,56,"['Gryffindor', 'Order of the Phoenix']"
+2768,109,63,['Gryffindor']
+2769,109,64,"['Gryffindor', 'Order of the Phoenix']"
+2770,109,65,['Order of the Phoenix']
+2771,109,66,"['Gryffindor', 'Order of the Phoenix']"
+2772,109,67,['Weasley family']
+2773,109,71,['Gryffindor']
+2774,109,72,['Gryffindor']
+2775,109,73,['Order of the Phoenix']
+2776,109,79,['Gryffindor']
+2777,109,83,['Order of the Phoenix']
+2778,109,84,"['Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+2779,109,85,"['Gryffindor', 'Order of the Phoenix']"
+2780,109,93,['Order of the Phoenix']
+2781,109,98,['Order of the Phoenix']
+2782,109,100,['Gryffindor']
+2783,109,103,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2784,109,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2785,109,105,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2786,109,106,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2787,109,107,"['Gryffindor', 'Weasley family', 'Prewett family']"
+2788,109,108,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2789,109,110,['Gryffindor']
+2790,109,114,['Gryffindor']
+2791,109,118,['Gryffindor']
+2792,109,125,"['Order of the Phoenix', 'Weasley family']"
+2793,109,132,['Gryffindor']
+2794,109,133,['Order of the Phoenix']
+2795,109,134,"['Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+2796,109,139,"['Gryffindor', 'Weasley family']"
+2797,109,142,['Order of the Phoenix']
+2798,109,143,['Order of the Phoenix']
+2799,109,145,['Order of the Phoenix']
+2800,109,146,"['Gryffindor', 'Order of the Phoenix']"
+2801,109,152,['Gryffindor']
+2802,109,155,"['Gryffindor', 'Order of the Phoenix']"
+2803,109,162,['Gryffindor']
+2804,109,165,['Order of the Phoenix']
+2805,109,168,['Order of the Phoenix']
+2806,109,169,['Gryffindor']
+2807,109,172,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2808,109,173,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+2809,109,175,"['Gryffindor', 'Order of the Phoenix']"
+2810,110,5,['Gryffindor']
+2811,110,10,['Gryffindor']
+2812,110,16,['Gryffindor']
+2813,110,37,['Gryffindor']
+2814,110,54,['Gryffindor']
+2815,110,55,['Gryffindor']
+2816,110,56,['Gryffindor']
+2817,110,63,['Gryffindor']
+2818,110,64,['Gryffindor']
+2819,110,66,['Gryffindor']
+2820,110,71,"['Gryffindor', 'Gryffindor Quidditch team']"
+2821,110,72,['Gryffindor']
+2822,110,79,['Gryffindor']
+2823,110,84,"['Gryffindor', 'Gryffindor Quidditch team']"
+2824,110,85,"['Gryffindor', 'Gryffindor Quidditch team']"
+2825,110,100,"['Gryffindor', 'Gryffindor Quidditch team']"
+2826,110,103,['Gryffindor']
+2827,110,104,"['Gryffindor', 'Gryffindor Quidditch team']"
+2828,110,105,"['Gryffindor', 'Gryffindor Quidditch team']"
+2829,110,106,"['Gryffindor', 'Gryffindor Quidditch team']"
+2830,110,107,['Gryffindor']
+2831,110,108,"['Gryffindor', 'Gryffindor Quidditch team']"
+2832,110,109,['Gryffindor']
+2833,110,114,"['Gryffindor', 'Gryffindor Quidditch team']"
+2834,110,118,['Gryffindor']
+2835,110,132,['Gryffindor']
+2836,110,134,['Gryffindor']
+2837,110,139,"['Gryffindor', 'Gryffindor Quidditch team']"
+2838,110,146,"['Gryffindor', 'Gryffindor Quidditch team']"
+2839,110,152,['Gryffindor']
+2840,110,155,['Gryffindor']
+2841,110,162,"['Gryffindor', 'Gryffindor Quidditch team']"
+2842,110,169,['Gryffindor']
+2843,110,172,"['Gryffindor', 'Gryffindor Quidditch team']"
+2844,110,173,['Gryffindor']
+2845,110,175,['Gryffindor']
+2846,111,4,['Slytherin']
+2847,111,6,['Slytherin']
+2848,111,14,['Slytherin']
+2849,111,15,['Slytherin']
+2850,111,17,['Slug Club']
+2851,111,47,['Slytherin']
+2852,111,48,['Slytherin']
+2853,111,58,['Slytherin']
+2854,111,61,['Slytherin']
+2855,111,71,['Slug Club']
+2856,111,74,['Slytherin']
+2857,111,84,['Slug Club']
+2858,111,88,"['Slytherin', 'Slug Club']"
+2859,111,95,"['Slytherin', 'Slug Club']"
+2860,111,96,['Slytherin']
+2861,111,98,['Slytherin']
+2862,111,119,['Slytherin']
+2863,111,134,['Slug Club']
+2864,111,140,['Slytherin']
+2865,111,144,['Slytherin']
+2866,111,150,['Slytherin']
+2867,111,155,['Slug Club']
+2868,111,164,['Slytherin']
+2869,111,167,['Slytherin']
+2870,111,172,['Slug Club']
+2871,112,7,"[""Dumbledore's Army""]"
+2872,112,9,"[""Dumbledore's Army""]"
+2873,112,13,"[""Dumbledore's Army""]"
+2874,112,16,"[""Dumbledore's Army""]"
+2875,112,23,['Hufflepuff']
+2876,112,24,"[""Dumbledore's Army""]"
+2877,112,33,['Hufflepuff']
+2878,112,36,"[""Dumbledore's Army"", 'Hufflepuff']"
+2879,112,37,"[""Dumbledore's Army""]"
+2880,112,46,"[""Dumbledore's Army""]"
+2881,112,56,"[""Dumbledore's Army""]"
+2882,112,64,"[""Dumbledore's Army""]"
+2883,112,67,['Hufflepuff']
+2884,112,68,"[""Dumbledore's Army"", 'Hufflepuff']"
+2885,112,71,"[""Dumbledore's Army""]"
+2886,112,84,"[""Dumbledore's Army""]"
+2887,112,91,['Hufflepuff']
+2888,112,97,['Hufflepuff']
+2889,112,100,"[""Dumbledore's Army""]"
+2890,112,105,"[""Dumbledore's Army""]"
+2891,112,106,"[""Dumbledore's Army""]"
+2892,112,108,"[""Dumbledore's Army""]"
+2893,112,114,"[""Dumbledore's Army""]"
+2894,112,116,"[""Dumbledore's Army"", 'Hufflepuff']"
+2895,112,118,"[""Dumbledore's Army""]"
+2896,112,123,"[""Dumbledore's Army""]"
+2897,112,134,"[""Dumbledore's Army""]"
+2898,112,138,['Hufflepuff']
+2899,112,139,"[""Dumbledore's Army""]"
+2900,112,143,"[""Dumbledore's Army""]"
+2901,112,146,"[""Dumbledore's Army""]"
+2902,112,151,"[""Dumbledore's Army""]"
+2903,112,152,"[""Dumbledore's Army""]"
+2904,112,162,"[""Dumbledore's Army""]"
+2905,112,163,['Hufflepuff']
+2906,112,165,['Hufflepuff']
+2907,112,169,"[""Dumbledore's Army""]"
+2908,112,172,"[""Dumbledore's Army""]"
+2909,112,175,"[""Dumbledore's Army""]"
+2910,113,5,['Potter family']
+2911,113,66,['Potter family']
+2912,113,67,['Potter family']
+2913,113,84,['Potter family']
+2914,113,85,['Potter family']
+2915,113,103,['Potter family']
+2916,113,108,['Potter family']
+2917,113,134,['Potter family']
+2918,113,155,['Potter family']
+2919,113,172,['Potter family']
+2920,113,173,['Potter family']
+2921,114,5,['Gryffindor']
+2922,114,7,"[""Dumbledore's Army""]"
+2923,114,9,"[""Dumbledore's Army""]"
+2924,114,10,['Gryffindor']
+2925,114,13,"[""Dumbledore's Army""]"
+2926,114,16,"['Gryffindor', ""Dumbledore's Army""]"
+2927,114,24,"[""Dumbledore's Army""]"
+2928,114,36,"[""Dumbledore's Army""]"
+2929,114,37,"['Gryffindor', ""Dumbledore's Army""]"
+2930,114,46,"[""Dumbledore's Army""]"
+2931,114,54,['Gryffindor']
+2932,114,55,['Gryffindor']
+2933,114,56,"['Gryffindor', ""Dumbledore's Army""]"
+2934,114,63,['Gryffindor']
+2935,114,64,"['Gryffindor', ""Dumbledore's Army""]"
+2936,114,66,['Gryffindor']
+2937,114,68,"[""Dumbledore's Army""]"
+2938,114,71,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2939,114,72,['Gryffindor']
+2940,114,79,['Gryffindor']
+2941,114,84,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2942,114,85,"['Gryffindor', 'Gryffindor Quidditch team']"
+2943,114,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2944,114,103,['Gryffindor']
+2945,114,104,"['Gryffindor', 'Gryffindor Quidditch team']"
+2946,114,105,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2947,114,106,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2948,114,107,['Gryffindor']
+2949,114,108,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2950,114,109,['Gryffindor']
+2951,114,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+2952,114,112,"[""Dumbledore's Army""]"
+2953,114,116,"[""Dumbledore's Army""]"
+2954,114,118,"['Gryffindor', ""Dumbledore's Army""]"
+2955,114,123,"[""Dumbledore's Army""]"
+2956,114,132,['Gryffindor']
+2957,114,134,"['Gryffindor', ""Dumbledore's Army""]"
+2958,114,139,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2959,114,143,"[""Dumbledore's Army""]"
+2960,114,146,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2961,114,151,"[""Dumbledore's Army""]"
+2962,114,152,"['Gryffindor', ""Dumbledore's Army""]"
+2963,114,155,['Gryffindor']
+2964,114,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2965,114,169,"['Gryffindor', ""Dumbledore's Army""]"
+2966,114,172,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+2967,114,173,['Gryffindor']
+2968,114,175,"['Gryffindor', ""Dumbledore's Army""]"
+2969,115,20,['Department of Magical Law Enforcement']
+2970,115,75,['Department of Magical Law Enforcement']
+2971,115,84,['Department of Magical Law Enforcement']
+2972,115,99,['Department of Magical Law Enforcement']
+2973,115,103,['Department of Magical Law Enforcement']
+2974,115,134,['Department of Magical Law Enforcement']
+2975,115,146,['Department of Magical Law Enforcement']
+2976,116,7,"[""Dumbledore's Army""]"
+2977,116,9,"[""Dumbledore's Army""]"
+2978,116,13,"[""Dumbledore's Army""]"
+2979,116,16,"[""Dumbledore's Army""]"
+2980,116,23,['Hufflepuff']
+2981,116,24,"[""Dumbledore's Army""]"
+2982,116,33,['Hufflepuff']
+2983,116,36,"[""Dumbledore's Army"", 'Hufflepuff']"
+2984,116,37,"[""Dumbledore's Army""]"
+2985,116,46,"[""Dumbledore's Army""]"
+2986,116,56,"[""Dumbledore's Army""]"
+2987,116,64,"[""Dumbledore's Army""]"
+2988,116,67,['Hufflepuff']
+2989,116,68,"[""Dumbledore's Army"", 'Hufflepuff']"
+2990,116,71,"[""Dumbledore's Army""]"
+2991,116,84,"[""Dumbledore's Army""]"
+2992,116,91,['Hufflepuff']
+2993,116,97,['Hufflepuff']
+2994,116,100,"[""Dumbledore's Army""]"
+2995,116,105,"[""Dumbledore's Army""]"
+2996,116,106,"[""Dumbledore's Army""]"
+2997,116,108,"[""Dumbledore's Army""]"
+2998,116,112,"[""Dumbledore's Army"", 'Hufflepuff']"
+2999,116,114,"[""Dumbledore's Army""]"
+3000,116,118,"[""Dumbledore's Army""]"
+3001,116,123,"[""Dumbledore's Army""]"
+3002,116,134,"[""Dumbledore's Army""]"
+3003,116,138,['Hufflepuff']
+3004,116,139,"[""Dumbledore's Army""]"
+3005,116,143,"[""Dumbledore's Army""]"
+3006,116,146,"[""Dumbledore's Army""]"
+3007,116,151,"[""Dumbledore's Army""]"
+3008,116,152,"[""Dumbledore's Army""]"
+3009,116,162,"[""Dumbledore's Army""]"
+3010,116,163,['Hufflepuff']
+3011,116,165,['Hufflepuff']
+3012,116,169,"[""Dumbledore's Army""]"
+3013,116,172,"[""Dumbledore's Army""]"
+3014,116,175,"[""Dumbledore's Army""]"
+3015,118,5,['Gryffindor']
+3016,118,7,"[""Dumbledore's Army""]"
+3017,118,9,"[""Dumbledore's Army""]"
+3018,118,10,['Gryffindor']
+3019,118,13,"[""Dumbledore's Army""]"
+3020,118,16,"['Gryffindor', ""Dumbledore's Army""]"
+3021,118,24,"[""Dumbledore's Army""]"
+3022,118,36,"[""Dumbledore's Army""]"
+3023,118,37,"['Gryffindor', ""Dumbledore's Army""]"
+3024,118,46,"[""Dumbledore's Army""]"
+3025,118,54,['Gryffindor']
+3026,118,55,['Gryffindor']
+3027,118,56,"['Gryffindor', ""Dumbledore's Army""]"
+3028,118,63,['Gryffindor']
+3029,118,64,"['Gryffindor', ""Dumbledore's Army""]"
+3030,118,66,['Gryffindor']
+3031,118,68,"[""Dumbledore's Army""]"
+3032,118,71,"['Gryffindor', ""Dumbledore's Army""]"
+3033,118,72,['Gryffindor']
+3034,118,79,['Gryffindor']
+3035,118,84,"['Gryffindor', ""Dumbledore's Army""]"
+3036,118,85,['Gryffindor']
+3037,118,100,"['Gryffindor', ""Dumbledore's Army""]"
+3038,118,103,['Gryffindor']
+3039,118,104,['Gryffindor']
+3040,118,105,"['Gryffindor', ""Dumbledore's Army""]"
+3041,118,106,"['Gryffindor', ""Dumbledore's Army""]"
+3042,118,107,['Gryffindor']
+3043,118,108,"['Gryffindor', ""Dumbledore's Army""]"
+3044,118,109,['Gryffindor']
+3045,118,110,['Gryffindor']
+3046,118,112,"[""Dumbledore's Army""]"
+3047,118,114,"['Gryffindor', ""Dumbledore's Army""]"
+3048,118,116,"[""Dumbledore's Army""]"
+3049,118,123,"[""Dumbledore's Army""]"
+3050,118,132,['Gryffindor']
+3051,118,134,"['Gryffindor', ""Dumbledore's Army""]"
+3052,118,139,"['Gryffindor', ""Dumbledore's Army""]"
+3053,118,143,"[""Dumbledore's Army""]"
+3054,118,146,"['Gryffindor', ""Dumbledore's Army""]"
+3055,118,151,"[""Dumbledore's Army""]"
+3056,118,152,"['Gryffindor', ""Dumbledore's Army""]"
+3057,118,155,['Gryffindor']
+3058,118,162,"['Gryffindor', ""Dumbledore's Army""]"
+3059,118,169,"['Gryffindor', ""Dumbledore's Army""]"
+3060,118,172,"['Gryffindor', ""Dumbledore's Army""]"
+3061,118,173,['Gryffindor']
+3062,118,175,"['Gryffindor', ""Dumbledore's Army""]"
+3063,119,4,['Slytherin']
+3064,119,6,['Slytherin']
+3065,119,14,['Slytherin']
+3066,119,15,['Slytherin']
+3067,119,47,['Slytherin']
+3068,119,48,['Slytherin']
+3069,119,58,['Slytherin']
+3070,119,61,['Slytherin']
+3071,119,74,['Slytherin']
+3072,119,88,['Slytherin']
+3073,119,95,['Slytherin']
+3074,119,96,['Slytherin']
+3075,119,98,['Slytherin']
+3076,119,111,['Slytherin']
+3077,119,140,['Slytherin']
+3078,119,144,['Slytherin']
+3079,119,150,['Slytherin']
+3080,119,164,['Slytherin']
+3081,119,167,['Slytherin']
+3082,121,11,"['Death Eaters', 'Lord Voldemort']"
+3083,121,14,"['Death Eaters', 'Lord Voldemort']"
+3084,121,15,['Lord Voldemort']
+3085,121,19,"['Death Eaters', 'Lord Voldemort']"
+3086,121,26,"['Death Eaters', 'Lord Voldemort']"
+3087,121,47,"['Death Eaters', 'Lord Voldemort']"
+3088,121,48,['Lord Voldemort']
+3089,121,51,['Lord Voldemort']
+3090,121,60,"['Death Eaters', 'Lord Voldemort']"
+3091,121,79,"['Death Eaters', 'Lord Voldemort']"
+3092,121,86,['Lord Voldemort']
+3093,121,88,['Death Eaters']
+3094,121,90,"['Death Eaters', 'Lord Voldemort']"
+3095,121,147,['Lord Voldemort']
+3096,123,7,"['Ravenclaw', ""Dumbledore's Army""]"
+3097,123,9,"[""Dumbledore's Army""]"
+3098,123,13,"['Ravenclaw', ""Dumbledore's Army""]"
+3099,123,16,"[""Dumbledore's Army""]"
+3100,123,24,"[""Dumbledore's Army""]"
+3101,123,36,"[""Dumbledore's Army""]"
+3102,123,37,"[""Dumbledore's Army""]"
+3103,123,41,['Ravenclaw']
+3104,123,46,"['Ravenclaw', ""Dumbledore's Army""]"
+3105,123,56,"[""Dumbledore's Army""]"
+3106,123,62,['Ravenclaw']
+3107,123,64,"[""Dumbledore's Army""]"
+3108,123,65,['Ravenclaw']
+3109,123,68,"[""Dumbledore's Army""]"
+3110,123,71,"[""Dumbledore's Army""]"
+3111,123,77,['Ravenclaw']
+3112,123,84,"[""Dumbledore's Army""]"
+3113,123,86,['Ravenclaw']
+3114,123,100,"[""Dumbledore's Army""]"
+3115,123,105,"[""Dumbledore's Army""]"
+3116,123,106,"[""Dumbledore's Army""]"
+3117,123,108,"[""Dumbledore's Army""]"
+3118,123,112,"[""Dumbledore's Army""]"
+3119,123,114,"[""Dumbledore's Army""]"
+3120,123,116,"[""Dumbledore's Army""]"
+3121,123,118,"[""Dumbledore's Army""]"
+3122,123,124,['Ravenclaw']
+3123,123,131,['Ravenclaw']
+3124,123,134,"[""Dumbledore's Army""]"
+3125,123,139,"[""Dumbledore's Army""]"
+3126,123,143,"['Ravenclaw', ""Dumbledore's Army""]"
+3127,123,146,"[""Dumbledore's Army""]"
+3128,123,151,"['Ravenclaw', ""Dumbledore's Army""]"
+3129,123,152,"[""Dumbledore's Army""]"
+3130,123,156,['Ravenclaw']
+3131,123,157,['Ravenclaw']
+3132,123,162,"[""Dumbledore's Army""]"
+3133,123,166,['Ravenclaw']
+3134,123,169,"[""Dumbledore's Army""]"
+3135,123,171,['Ravenclaw']
+3136,123,172,"[""Dumbledore's Army""]"
+3137,123,175,"[""Dumbledore's Army""]"
+3138,124,7,['Ravenclaw']
+3139,124,13,['Ravenclaw']
+3140,124,41,['Ravenclaw']
+3141,124,46,['Ravenclaw']
+3142,124,62,['Ravenclaw']
+3143,124,65,['Ravenclaw']
+3144,124,77,['Ravenclaw']
+3145,124,86,['Ravenclaw']
+3146,124,123,['Ravenclaw']
+3147,124,131,['Ravenclaw']
+3148,124,143,['Ravenclaw']
+3149,124,151,['Ravenclaw']
+3150,124,156,['Ravenclaw']
+3151,124,157,['Ravenclaw']
+3152,124,166,['Ravenclaw']
+3153,124,171,['Ravenclaw']
+3154,125,5,['Order of the Phoenix']
+3155,125,9,['Order of the Phoenix']
+3156,125,16,['Harry Potter']
+3157,125,21,"['Order of the Phoenix', 'Harry Potter']"
+3158,125,24,"['Order of the Phoenix', 'Harry Potter']"
+3159,125,25,['Order of the Phoenix']
+3160,125,27,['Order of the Phoenix']
+3161,125,34,"['Order of the Phoenix', 'Harry Potter']"
+3162,125,40,"['Order of the Phoenix', 'Harry Potter']"
+3163,125,55,"['Order of the Phoenix', 'Harry Potter']"
+3164,125,56,['Order of the Phoenix']
+3165,125,64,"['Order of the Phoenix', 'Harry Potter']"
+3166,125,65,"['Order of the Phoenix', 'Harry Potter']"
+3167,125,66,['Order of the Phoenix']
+3168,125,67,['Weasley family']
+3169,125,73,['Order of the Phoenix']
+3170,125,77,['Harry Potter']
+3171,125,83,['Order of the Phoenix']
+3172,125,84,"['Order of the Phoenix', 'Weasley family']"
+3173,125,85,['Order of the Phoenix']
+3174,125,93,['Order of the Phoenix']
+3175,125,98,"['Order of the Phoenix', 'Harry Potter']"
+3176,125,103,"['Order of the Phoenix', 'Weasley family']"
+3177,125,104,"['Order of the Phoenix', 'Weasley family']"
+3178,125,105,"['Order of the Phoenix', 'Weasley family']"
+3179,125,106,"['Order of the Phoenix', 'Weasley family']"
+3180,125,107,['Weasley family']
+3181,125,108,"['Order of the Phoenix', 'Weasley family']"
+3182,125,109,"['Order of the Phoenix', 'Weasley family']"
+3183,125,133,['Order of the Phoenix']
+3184,125,134,"['Order of the Phoenix', 'Weasley family']"
+3185,125,139,['Weasley family']
+3186,125,142,['Order of the Phoenix']
+3187,125,143,['Order of the Phoenix']
+3188,125,145,['Order of the Phoenix']
+3189,125,146,['Order of the Phoenix']
+3190,125,155,['Order of the Phoenix']
+3191,125,165,['Order of the Phoenix']
+3192,125,168,['Order of the Phoenix']
+3193,125,171,['Harry Potter']
+3194,125,172,"['Order of the Phoenix', 'Weasley family']"
+3195,125,173,"['Order of the Phoenix', 'Weasley family']"
+3196,125,175,"['Order of the Phoenix', 'Harry Potter']"
+3197,131,1,['British Ministry of Magic']
+3198,131,7,['Ravenclaw']
+3199,131,12,['British Ministry of Magic']
+3200,131,13,['Ravenclaw']
+3201,131,20,['British Ministry of Magic']
+3202,131,22,['British Ministry of Magic']
+3203,131,25,['British Ministry of Magic']
+3204,131,41,['Ravenclaw']
+3205,131,43,['British Ministry of Magic']
+3206,131,46,['Ravenclaw']
+3207,131,62,['Ravenclaw']
+3208,131,64,['British Ministry of Magic']
+3209,131,65,['Ravenclaw']
+3210,131,73,['British Ministry of Magic']
+3211,131,75,['British Ministry of Magic']
+3212,131,77,['Ravenclaw']
+3213,131,84,['British Ministry of Magic']
+3214,131,86,['Ravenclaw']
+3215,131,91,['British Ministry of Magic']
+3216,131,92,['British Ministry of Magic']
+3217,131,93,['British Ministry of Magic']
+3218,131,99,['British Ministry of Magic']
+3219,131,103,['British Ministry of Magic']
+3220,131,107,['British Ministry of Magic']
+3221,131,108,['British Ministry of Magic']
+3222,131,123,['Ravenclaw']
+3223,131,124,['Ravenclaw']
+3224,131,134,['British Ministry of Magic']
+3225,131,143,['Ravenclaw']
+3226,131,151,['Ravenclaw']
+3227,131,156,['Ravenclaw']
+3228,131,157,['Ravenclaw']
+3229,131,165,['British Ministry of Magic']
+3230,131,166,['Ravenclaw']
+3231,131,171,['Ravenclaw']
+3232,131,175,['British Ministry of Magic']
+3233,132,5,['Gryffindor']
+3234,132,10,['Gryffindor']
+3235,132,16,['Gryffindor']
+3236,132,37,['Gryffindor']
+3237,132,54,['Gryffindor']
+3238,132,55,['Gryffindor']
+3239,132,56,['Gryffindor']
+3240,132,63,['Gryffindor']
+3241,132,64,['Gryffindor']
+3242,132,66,['Gryffindor']
+3243,132,71,['Gryffindor']
+3244,132,72,['Gryffindor']
+3245,132,79,['Gryffindor']
+3246,132,84,['Gryffindor']
+3247,132,85,['Gryffindor']
+3248,132,100,['Gryffindor']
+3249,132,103,['Gryffindor']
+3250,132,104,['Gryffindor']
+3251,132,105,['Gryffindor']
+3252,132,106,['Gryffindor']
+3253,132,107,['Gryffindor']
+3254,132,108,['Gryffindor']
+3255,132,109,['Gryffindor']
+3256,132,110,['Gryffindor']
+3257,132,114,['Gryffindor']
+3258,132,118,['Gryffindor']
+3259,132,134,['Gryffindor']
+3260,132,139,['Gryffindor']
+3261,132,146,['Gryffindor']
+3262,132,152,['Gryffindor']
+3263,132,155,['Gryffindor']
+3264,132,162,['Gryffindor']
+3265,132,169,['Gryffindor']
+3266,132,172,['Gryffindor']
+3267,132,173,['Gryffindor']
+3268,132,175,['Gryffindor']
+3269,133,5,['Order of the Phoenix']
+3270,133,9,['Order of the Phoenix']
+3271,133,21,['Order of the Phoenix']
+3272,133,24,['Order of the Phoenix']
+3273,133,25,['Order of the Phoenix']
+3274,133,27,['Order of the Phoenix']
+3275,133,34,"['Order of the Phoenix', 'Albus Dumbledore']"
+3276,133,39,['Albus Dumbledore']
+3277,133,40,"['Order of the Phoenix', 'Albus Dumbledore']"
+3278,133,55,"['Order of the Phoenix', 'Albus Dumbledore']"
+3279,133,56,['Order of the Phoenix']
+3280,133,64,"['Order of the Phoenix', 'Albus Dumbledore']"
+3281,133,65,['Order of the Phoenix']
+3282,133,66,['Order of the Phoenix']
+3283,133,73,['Order of the Phoenix']
+3284,133,83,['Order of the Phoenix']
+3285,133,84,"['Order of the Phoenix', 'Albus Dumbledore']"
+3286,133,85,['Order of the Phoenix']
+3287,133,91,['Albus Dumbledore']
+3288,133,93,['Order of the Phoenix']
+3289,133,98,"['Order of the Phoenix', 'Albus Dumbledore']"
+3290,133,103,['Order of the Phoenix']
+3291,133,104,['Order of the Phoenix']
+3292,133,105,['Order of the Phoenix']
+3293,133,106,['Order of the Phoenix']
+3294,133,108,['Order of the Phoenix']
+3295,133,109,['Order of the Phoenix']
+3296,133,125,['Order of the Phoenix']
+3297,133,134,['Order of the Phoenix']
+3298,133,142,['Order of the Phoenix']
+3299,133,143,['Order of the Phoenix']
+3300,133,145,['Order of the Phoenix']
+3301,133,146,"['Order of the Phoenix', 'Albus Dumbledore']"
+3302,133,154,['Albus Dumbledore']
+3303,133,155,['Order of the Phoenix']
+3304,133,165,['Order of the Phoenix']
+3305,133,168,['Order of the Phoenix']
+3306,133,172,['Order of the Phoenix']
+3307,133,173,['Order of the Phoenix']
+3308,133,175,['Order of the Phoenix']
+3309,134,1,['British Ministry of Magic']
+3310,134,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3311,134,7,"[""Dumbledore's Army""]"
+3312,134,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3313,134,10,['Gryffindor']
+3314,134,12,['British Ministry of Magic']
+3315,134,13,"[""Dumbledore's Army""]"
+3316,134,16,"['Gryffindor', ""Dumbledore's Army""]"
+3317,134,17,['Slug Club']
+3318,134,20,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+3319,134,21,['Order of the Phoenix']
+3320,134,22,['British Ministry of Magic']
+3321,134,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3322,134,25,"['British Ministry of Magic', 'Order of the Phoenix']"
+3323,134,27,['Order of the Phoenix']
+3324,134,34,['Order of the Phoenix']
+3325,134,36,"[""Dumbledore's Army""]"
+3326,134,37,"['Gryffindor', ""Dumbledore's Army""]"
+3327,134,40,['Order of the Phoenix']
+3328,134,43,['British Ministry of Magic']
+3329,134,46,"[""Dumbledore's Army""]"
+3330,134,54,['Gryffindor']
+3331,134,55,"['Gryffindor', 'Order of the Phoenix']"
+3332,134,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+3333,134,63,['Gryffindor']
+3334,134,64,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+3335,134,65,['Order of the Phoenix']
+3336,134,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3337,134,67,"['Potter family', 'Weasley family']"
+3338,134,68,"[""Dumbledore's Army""]"
+3339,134,71,"['Gryffindor', ""Dumbledore's Army"", 'Slug Club']"
+3340,134,72,['Gryffindor']
+3341,134,73,"['British Ministry of Magic', 'Order of the Phoenix']"
+3342,134,75,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+3343,134,79,['Gryffindor']
+3344,134,83,['Order of the Phoenix']
+3345,134,84,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Slug Club', 'Department of Magical Law Enforcement', 'Weasley family']"
+3346,134,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3347,134,88,['Slug Club']
+3348,134,91,['British Ministry of Magic']
+3349,134,92,['British Ministry of Magic']
+3350,134,93,"['British Ministry of Magic', 'Order of the Phoenix']"
+3351,134,95,['Slug Club']
+3352,134,98,['Order of the Phoenix']
+3353,134,99,"['British Ministry of Magic', 'Department of Magical Law Enforcement']"
+3354,134,100,"['Gryffindor', ""Dumbledore's Army""]"
+3355,134,103,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', 'Department of Magical Law Enforcement', 'Weasley family']"
+3356,134,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+3357,134,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family']"
+3358,134,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family']"
+3359,134,107,"['British Ministry of Magic', 'Gryffindor', 'Weasley family']"
+3360,134,108,"['British Ministry of Magic', 'Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family']"
+3361,134,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+3362,134,110,['Gryffindor']
+3363,134,111,['Slug Club']
+3364,134,112,"[""Dumbledore's Army""]"
+3365,134,113,['Potter family']
+3366,134,114,"['Gryffindor', ""Dumbledore's Army""]"
+3367,134,115,['Department of Magical Law Enforcement']
+3368,134,116,"[""Dumbledore's Army""]"
+3369,134,118,"['Gryffindor', ""Dumbledore's Army""]"
+3370,134,123,"[""Dumbledore's Army""]"
+3371,134,125,"['Order of the Phoenix', 'Weasley family']"
+3372,134,131,['British Ministry of Magic']
+3373,134,132,['Gryffindor']
+3374,134,133,['Order of the Phoenix']
+3375,134,139,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family']"
+3376,134,142,['Order of the Phoenix']
+3377,134,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3378,134,145,['Order of the Phoenix']
+3379,134,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Department of Magical Law Enforcement']"
+3380,134,151,"[""Dumbledore's Army""]"
+3381,134,152,"['Gryffindor', ""Dumbledore's Army""]"
+3382,134,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Slug Club']"
+3383,134,162,"['Gryffindor', ""Dumbledore's Army""]"
+3384,134,165,"['British Ministry of Magic', 'Order of the Phoenix']"
+3385,134,168,['Order of the Phoenix']
+3386,134,169,"['Gryffindor', ""Dumbledore's Army""]"
+3387,134,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Slug Club', 'Weasley family']"
+3388,134,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+3389,134,175,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+3390,138,23,['Hufflepuff']
+3391,138,33,['Hufflepuff']
+3392,138,36,['Hufflepuff']
+3393,138,67,['Hufflepuff']
+3394,138,68,['Hufflepuff']
+3395,138,91,['Hufflepuff']
+3396,138,97,['Hufflepuff']
+3397,138,112,['Hufflepuff']
+3398,138,116,['Hufflepuff']
+3399,138,163,['Hufflepuff']
+3400,138,165,['Hufflepuff']
+3401,139,5,['Gryffindor']
+3402,139,7,"[""Dumbledore's Army""]"
+3403,139,9,"[""Dumbledore's Army""]"
+3404,139,10,['Gryffindor']
+3405,139,13,"[""Dumbledore's Army""]"
+3406,139,16,"['Gryffindor', ""Dumbledore's Army""]"
+3407,139,24,"[""Dumbledore's Army""]"
+3408,139,36,"[""Dumbledore's Army""]"
+3409,139,37,"['Gryffindor', ""Dumbledore's Army""]"
+3410,139,46,"[""Dumbledore's Army""]"
+3411,139,54,['Gryffindor']
+3412,139,55,['Gryffindor']
+3413,139,56,"['Gryffindor', ""Dumbledore's Army""]"
+3414,139,63,['Gryffindor']
+3415,139,64,"['Gryffindor', ""Dumbledore's Army""]"
+3416,139,66,['Gryffindor']
+3417,139,67,['Weasley family']
+3418,139,68,"[""Dumbledore's Army""]"
+3419,139,71,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3420,139,72,['Gryffindor']
+3421,139,79,['Gryffindor']
+3422,139,84,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+3423,139,85,"['Gryffindor', 'Gryffindor Quidditch team']"
+3424,139,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3425,139,103,"['Gryffindor', 'Weasley family']"
+3426,139,104,"['Gryffindor', 'Weasley family', 'Gryffindor Quidditch team']"
+3427,139,105,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+3428,139,106,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+3429,139,107,"['Gryffindor', 'Weasley family']"
+3430,139,108,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+3431,139,109,"['Gryffindor', 'Weasley family']"
+3432,139,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+3433,139,112,"[""Dumbledore's Army""]"
+3434,139,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3435,139,116,"[""Dumbledore's Army""]"
+3436,139,118,"['Gryffindor', ""Dumbledore's Army""]"
+3437,139,123,"[""Dumbledore's Army""]"
+3438,139,125,['Weasley family']
+3439,139,132,['Gryffindor']
+3440,139,134,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family']"
+3441,139,143,"[""Dumbledore's Army""]"
+3442,139,146,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3443,139,151,"[""Dumbledore's Army""]"
+3444,139,152,"['Gryffindor', ""Dumbledore's Army""]"
+3445,139,155,['Gryffindor']
+3446,139,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3447,139,169,"['Gryffindor', ""Dumbledore's Army""]"
+3448,139,172,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+3449,139,173,"['Gryffindor', 'Weasley family']"
+3450,139,175,"['Gryffindor', ""Dumbledore's Army""]"
+3451,140,4,['Slytherin']
+3452,140,6,['Slytherin']
+3453,140,14,['Slytherin']
+3454,140,15,['Slytherin']
+3455,140,47,['Slytherin']
+3456,140,48,['Slytherin']
+3457,140,58,['Slytherin']
+3458,140,61,['Slytherin']
+3459,140,74,['Slytherin']
+3460,140,88,['Slytherin']
+3461,140,95,['Slytherin']
+3462,140,96,['Slytherin']
+3463,140,98,['Slytherin']
+3464,140,111,['Slytherin']
+3465,140,119,['Slytherin']
+3466,140,144,['Slytherin']
+3467,140,150,['Slytherin']
+3468,140,164,['Slytherin']
+3469,140,167,['Slytherin']
+3470,142,5,['Order of the Phoenix']
+3471,142,9,['Order of the Phoenix']
+3472,142,21,['Order of the Phoenix']
+3473,142,24,['Order of the Phoenix']
+3474,142,25,['Order of the Phoenix']
+3475,142,27,['Order of the Phoenix']
+3476,142,34,['Order of the Phoenix']
+3477,142,40,['Order of the Phoenix']
+3478,142,55,['Order of the Phoenix']
+3479,142,56,['Order of the Phoenix']
+3480,142,64,['Order of the Phoenix']
+3481,142,65,['Order of the Phoenix']
+3482,142,66,['Order of the Phoenix']
+3483,142,73,['Order of the Phoenix']
+3484,142,83,['Order of the Phoenix']
+3485,142,84,['Order of the Phoenix']
+3486,142,85,['Order of the Phoenix']
+3487,142,93,['Order of the Phoenix']
+3488,142,98,['Order of the Phoenix']
+3489,142,103,['Order of the Phoenix']
+3490,142,104,['Order of the Phoenix']
+3491,142,105,['Order of the Phoenix']
+3492,142,106,['Order of the Phoenix']
+3493,142,108,['Order of the Phoenix']
+3494,142,109,['Order of the Phoenix']
+3495,142,125,['Order of the Phoenix']
+3496,142,133,['Order of the Phoenix']
+3497,142,134,['Order of the Phoenix']
+3498,142,143,['Order of the Phoenix']
+3499,142,145,['Order of the Phoenix']
+3500,142,146,['Order of the Phoenix']
+3501,142,155,['Order of the Phoenix']
+3502,142,165,['Order of the Phoenix']
+3503,142,168,['Order of the Phoenix']
+3504,142,172,['Order of the Phoenix']
+3505,142,173,['Order of the Phoenix']
+3506,142,175,['Order of the Phoenix']
+3507,143,5,['Order of the Phoenix']
+3508,143,7,"['Ravenclaw', ""Dumbledore's Army""]"
+3509,143,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3510,143,13,"['Ravenclaw', ""Dumbledore's Army""]"
+3511,143,16,"[""Dumbledore's Army""]"
+3512,143,21,['Order of the Phoenix']
+3513,143,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3514,143,25,['Order of the Phoenix']
+3515,143,27,['Order of the Phoenix']
+3516,143,34,['Order of the Phoenix']
+3517,143,36,"[""Dumbledore's Army""]"
+3518,143,37,"[""Dumbledore's Army""]"
+3519,143,40,['Order of the Phoenix']
+3520,143,41,['Ravenclaw']
+3521,143,46,"['Ravenclaw', ""Dumbledore's Army""]"
+3522,143,55,['Order of the Phoenix']
+3523,143,56,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3524,143,62,['Ravenclaw']
+3525,143,64,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3526,143,65,"['Order of the Phoenix', 'Ravenclaw']"
+3527,143,66,['Order of the Phoenix']
+3528,143,68,"[""Dumbledore's Army""]"
+3529,143,71,"[""Dumbledore's Army""]"
+3530,143,73,['Order of the Phoenix']
+3531,143,77,['Ravenclaw']
+3532,143,83,['Order of the Phoenix']
+3533,143,84,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3534,143,85,['Order of the Phoenix']
+3535,143,86,['Ravenclaw']
+3536,143,93,['Order of the Phoenix']
+3537,143,98,['Order of the Phoenix']
+3538,143,100,"[""Dumbledore's Army""]"
+3539,143,103,['Order of the Phoenix']
+3540,143,104,['Order of the Phoenix']
+3541,143,105,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3542,143,106,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3543,143,108,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3544,143,109,['Order of the Phoenix']
+3545,143,112,"[""Dumbledore's Army""]"
+3546,143,114,"[""Dumbledore's Army""]"
+3547,143,116,"[""Dumbledore's Army""]"
+3548,143,118,"[""Dumbledore's Army""]"
+3549,143,123,"['Ravenclaw', ""Dumbledore's Army""]"
+3550,143,124,['Ravenclaw']
+3551,143,125,['Order of the Phoenix']
+3552,143,131,['Ravenclaw']
+3553,143,133,['Order of the Phoenix']
+3554,143,134,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3555,143,139,"[""Dumbledore's Army""]"
+3556,143,142,['Order of the Phoenix']
+3557,143,145,['Order of the Phoenix']
+3558,143,146,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3559,143,151,"['Ravenclaw', ""Dumbledore's Army""]"
+3560,143,152,"[""Dumbledore's Army""]"
+3561,143,155,['Order of the Phoenix']
+3562,143,156,['Ravenclaw']
+3563,143,157,['Ravenclaw']
+3564,143,162,"[""Dumbledore's Army""]"
+3565,143,165,['Order of the Phoenix']
+3566,143,166,['Ravenclaw']
+3567,143,168,['Order of the Phoenix']
+3568,143,169,"[""Dumbledore's Army""]"
+3569,143,171,['Ravenclaw']
+3570,143,172,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3571,143,173,['Order of the Phoenix']
+3572,143,175,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3573,144,4,['Slytherin']
+3574,144,6,['Slytherin']
+3575,144,14,['Slytherin']
+3576,144,15,['Slytherin']
+3577,144,47,['Slytherin']
+3578,144,48,['Slytherin']
+3579,144,58,['Slytherin']
+3580,144,61,['Slytherin']
+3581,144,74,['Slytherin']
+3582,144,88,['Slytherin']
+3583,144,95,['Slytherin']
+3584,144,96,['Slytherin']
+3585,144,98,['Slytherin']
+3586,144,111,['Slytherin']
+3587,144,119,['Slytherin']
+3588,144,140,['Slytherin']
+3589,144,150,['Slytherin']
+3590,144,164,['Slytherin']
+3591,144,167,['Slytherin']
+3592,145,5,['Order of the Phoenix']
+3593,145,9,['Order of the Phoenix']
+3594,145,21,['Order of the Phoenix']
+3595,145,24,['Order of the Phoenix']
+3596,145,25,['Order of the Phoenix']
+3597,145,27,['Order of the Phoenix']
+3598,145,34,['Order of the Phoenix']
+3599,145,40,['Order of the Phoenix']
+3600,145,55,['Order of the Phoenix']
+3601,145,56,['Order of the Phoenix']
+3602,145,64,['Order of the Phoenix']
+3603,145,65,['Order of the Phoenix']
+3604,145,66,['Order of the Phoenix']
+3605,145,73,['Order of the Phoenix']
+3606,145,83,['Order of the Phoenix']
+3607,145,84,['Order of the Phoenix']
+3608,145,85,['Order of the Phoenix']
+3609,145,93,['Order of the Phoenix']
+3610,145,98,['Order of the Phoenix']
+3611,145,103,['Order of the Phoenix']
+3612,145,104,['Order of the Phoenix']
+3613,145,105,['Order of the Phoenix']
+3614,145,106,['Order of the Phoenix']
+3615,145,108,['Order of the Phoenix']
+3616,145,109,['Order of the Phoenix']
+3617,145,125,['Order of the Phoenix']
+3618,145,133,['Order of the Phoenix']
+3619,145,134,['Order of the Phoenix']
+3620,145,142,['Order of the Phoenix']
+3621,145,143,['Order of the Phoenix']
+3622,145,146,['Order of the Phoenix']
+3623,145,155,['Order of the Phoenix']
+3624,145,165,['Order of the Phoenix']
+3625,145,168,['Order of the Phoenix']
+3626,145,172,['Order of the Phoenix']
+3627,145,173,['Order of the Phoenix']
+3628,145,175,['Order of the Phoenix']
+3629,146,5,"['Gryffindor', 'Order of the Phoenix']"
+3630,146,7,"[""Dumbledore's Army""]"
+3631,146,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3632,146,10,['Gryffindor']
+3633,146,13,"[""Dumbledore's Army""]"
+3634,146,16,"['Gryffindor', ""Dumbledore's Army""]"
+3635,146,20,['Department of Magical Law Enforcement']
+3636,146,21,['Order of the Phoenix']
+3637,146,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3638,146,25,['Order of the Phoenix']
+3639,146,27,['Order of the Phoenix']
+3640,146,34,"['Order of the Phoenix', 'Albus Dumbledore']"
+3641,146,36,"[""Dumbledore's Army""]"
+3642,146,37,"['Gryffindor', ""Dumbledore's Army""]"
+3643,146,39,['Albus Dumbledore']
+3644,146,40,"['Order of the Phoenix', 'Albus Dumbledore']"
+3645,146,46,"[""Dumbledore's Army""]"
+3646,146,54,['Gryffindor']
+3647,146,55,"['Gryffindor', 'Order of the Phoenix', 'Albus Dumbledore']"
+3648,146,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+3649,146,63,['Gryffindor']
+3650,146,64,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Albus Dumbledore']"
+3651,146,65,['Order of the Phoenix']
+3652,146,66,"['Gryffindor', 'Order of the Phoenix']"
+3653,146,68,"[""Dumbledore's Army""]"
+3654,146,71,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3655,146,72,['Gryffindor']
+3656,146,73,['Order of the Phoenix']
+3657,146,75,['Department of Magical Law Enforcement']
+3658,146,79,['Gryffindor']
+3659,146,83,['Order of the Phoenix']
+3660,146,84,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Department of Magical Law Enforcement', 'Albus Dumbledore', 'Gryffindor Quidditch team']"
+3661,146,85,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+3662,146,91,['Albus Dumbledore']
+3663,146,93,['Order of the Phoenix']
+3664,146,98,"['Order of the Phoenix', 'Albus Dumbledore']"
+3665,146,99,['Department of Magical Law Enforcement']
+3666,146,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3667,146,103,"['Gryffindor', 'Order of the Phoenix', 'Department of Magical Law Enforcement']"
+3668,146,104,"['Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+3669,146,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3670,146,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3671,146,107,['Gryffindor']
+3672,146,108,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3673,146,109,"['Gryffindor', 'Order of the Phoenix']"
+3674,146,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+3675,146,112,"[""Dumbledore's Army""]"
+3676,146,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3677,146,115,['Department of Magical Law Enforcement']
+3678,146,116,"[""Dumbledore's Army""]"
+3679,146,118,"['Gryffindor', ""Dumbledore's Army""]"
+3680,146,123,"[""Dumbledore's Army""]"
+3681,146,125,['Order of the Phoenix']
+3682,146,132,['Gryffindor']
+3683,146,133,"['Order of the Phoenix', 'Albus Dumbledore']"
+3684,146,134,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Department of Magical Law Enforcement']"
+3685,146,139,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3686,146,142,['Order of the Phoenix']
+3687,146,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+3688,146,145,['Order of the Phoenix']
+3689,146,151,"[""Dumbledore's Army""]"
+3690,146,152,"['Gryffindor', ""Dumbledore's Army""]"
+3691,146,154,['Albus Dumbledore']
+3692,146,155,"['Gryffindor', 'Order of the Phoenix']"
+3693,146,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3694,146,165,['Order of the Phoenix']
+3695,146,168,['Order of the Phoenix']
+3696,146,169,"['Gryffindor', ""Dumbledore's Army""]"
+3697,146,172,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3698,146,173,"['Gryffindor', 'Order of the Phoenix']"
+3699,146,175,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+3700,147,11,['Lord Voldemort']
+3701,147,14,['Lord Voldemort']
+3702,147,15,['Lord Voldemort']
+3703,147,19,['Lord Voldemort']
+3704,147,26,['Lord Voldemort']
+3705,147,47,['Lord Voldemort']
+3706,147,48,['Lord Voldemort']
+3707,147,51,['Lord Voldemort']
+3708,147,60,['Lord Voldemort']
+3709,147,79,['Lord Voldemort']
+3710,147,86,['Lord Voldemort']
+3711,147,90,['Lord Voldemort']
+3712,147,121,['Lord Voldemort']
+3713,150,4,['Slytherin']
+3714,150,6,['Slytherin']
+3715,150,14,['Slytherin']
+3716,150,15,['Slytherin']
+3717,150,47,['Slytherin']
+3718,150,48,['Slytherin']
+3719,150,58,['Slytherin']
+3720,150,61,['Slytherin']
+3721,150,74,['Slytherin']
+3722,150,88,['Slytherin']
+3723,150,95,['Slytherin']
+3724,150,96,['Slytherin']
+3725,150,98,['Slytherin']
+3726,150,111,['Slytherin']
+3727,150,119,['Slytherin']
+3728,150,140,['Slytherin']
+3729,150,144,['Slytherin']
+3730,150,164,['Slytherin']
+3731,150,167,['Slytherin']
+3732,151,7,"['Ravenclaw', ""Dumbledore's Army""]"
+3733,151,9,"[""Dumbledore's Army""]"
+3734,151,13,"['Ravenclaw', ""Dumbledore's Army""]"
+3735,151,16,"[""Dumbledore's Army""]"
+3736,151,24,"[""Dumbledore's Army""]"
+3737,151,36,"[""Dumbledore's Army""]"
+3738,151,37,"[""Dumbledore's Army""]"
+3739,151,41,['Ravenclaw']
+3740,151,46,"['Ravenclaw', ""Dumbledore's Army""]"
+3741,151,56,"[""Dumbledore's Army""]"
+3742,151,62,['Ravenclaw']
+3743,151,64,"[""Dumbledore's Army""]"
+3744,151,65,['Ravenclaw']
+3745,151,68,"[""Dumbledore's Army""]"
+3746,151,71,"[""Dumbledore's Army""]"
+3747,151,77,['Ravenclaw']
+3748,151,84,"[""Dumbledore's Army""]"
+3749,151,86,['Ravenclaw']
+3750,151,100,"[""Dumbledore's Army""]"
+3751,151,105,"[""Dumbledore's Army""]"
+3752,151,106,"[""Dumbledore's Army""]"
+3753,151,108,"[""Dumbledore's Army""]"
+3754,151,112,"[""Dumbledore's Army""]"
+3755,151,114,"[""Dumbledore's Army""]"
+3756,151,116,"[""Dumbledore's Army""]"
+3757,151,118,"[""Dumbledore's Army""]"
+3758,151,123,"['Ravenclaw', ""Dumbledore's Army""]"
+3759,151,124,['Ravenclaw']
+3760,151,131,['Ravenclaw']
+3761,151,134,"[""Dumbledore's Army""]"
+3762,151,139,"[""Dumbledore's Army""]"
+3763,151,143,"['Ravenclaw', ""Dumbledore's Army""]"
+3764,151,146,"[""Dumbledore's Army""]"
+3765,151,152,"[""Dumbledore's Army""]"
+3766,151,156,['Ravenclaw']
+3767,151,157,['Ravenclaw']
+3768,151,162,"[""Dumbledore's Army""]"
+3769,151,166,['Ravenclaw']
+3770,151,169,"[""Dumbledore's Army""]"
+3771,151,171,['Ravenclaw']
+3772,151,172,"[""Dumbledore's Army""]"
+3773,151,175,"[""Dumbledore's Army""]"
+3774,152,5,['Gryffindor']
+3775,152,7,"[""Dumbledore's Army""]"
+3776,152,9,"[""Dumbledore's Army""]"
+3777,152,10,['Gryffindor']
+3778,152,13,"[""Dumbledore's Army""]"
+3779,152,16,"['Gryffindor', ""Dumbledore's Army""]"
+3780,152,24,"[""Dumbledore's Army""]"
+3781,152,36,"[""Dumbledore's Army""]"
+3782,152,37,"['Gryffindor', ""Dumbledore's Army""]"
+3783,152,46,"[""Dumbledore's Army""]"
+3784,152,54,['Gryffindor']
+3785,152,55,['Gryffindor']
+3786,152,56,"['Gryffindor', ""Dumbledore's Army""]"
+3787,152,63,['Gryffindor']
+3788,152,64,"['Gryffindor', ""Dumbledore's Army""]"
+3789,152,66,['Gryffindor']
+3790,152,68,"[""Dumbledore's Army""]"
+3791,152,71,"['Gryffindor', ""Dumbledore's Army""]"
+3792,152,72,['Gryffindor']
+3793,152,79,['Gryffindor']
+3794,152,84,"['Gryffindor', ""Dumbledore's Army""]"
+3795,152,85,['Gryffindor']
+3796,152,100,"['Gryffindor', ""Dumbledore's Army""]"
+3797,152,103,['Gryffindor']
+3798,152,104,['Gryffindor']
+3799,152,105,"['Gryffindor', ""Dumbledore's Army""]"
+3800,152,106,"['Gryffindor', ""Dumbledore's Army""]"
+3801,152,107,['Gryffindor']
+3802,152,108,"['Gryffindor', ""Dumbledore's Army""]"
+3803,152,109,['Gryffindor']
+3804,152,110,['Gryffindor']
+3805,152,112,"[""Dumbledore's Army""]"
+3806,152,114,"['Gryffindor', ""Dumbledore's Army""]"
+3807,152,116,"[""Dumbledore's Army""]"
+3808,152,118,"['Gryffindor', ""Dumbledore's Army""]"
+3809,152,123,"[""Dumbledore's Army""]"
+3810,152,132,['Gryffindor']
+3811,152,134,"['Gryffindor', ""Dumbledore's Army""]"
+3812,152,139,"['Gryffindor', ""Dumbledore's Army""]"
+3813,152,143,"[""Dumbledore's Army""]"
+3814,152,146,"['Gryffindor', ""Dumbledore's Army""]"
+3815,152,151,"[""Dumbledore's Army""]"
+3816,152,155,['Gryffindor']
+3817,152,162,"['Gryffindor', ""Dumbledore's Army""]"
+3818,152,169,"['Gryffindor', ""Dumbledore's Army""]"
+3819,152,172,"['Gryffindor', ""Dumbledore's Army""]"
+3820,152,173,['Gryffindor']
+3821,152,175,"['Gryffindor', ""Dumbledore's Army""]"
+3822,154,34,['Albus Dumbledore']
+3823,154,39,['Albus Dumbledore']
+3824,154,40,['Albus Dumbledore']
+3825,154,55,['Albus Dumbledore']
+3826,154,64,['Albus Dumbledore']
+3827,154,84,['Albus Dumbledore']
+3828,154,91,['Albus Dumbledore']
+3829,154,98,['Albus Dumbledore']
+3830,154,133,['Albus Dumbledore']
+3831,154,146,['Albus Dumbledore']
+3832,155,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3833,155,9,['Order of the Phoenix']
+3834,155,10,['Gryffindor']
+3835,155,16,['Gryffindor']
+3836,155,17,['Slug Club']
+3837,155,21,['Order of the Phoenix']
+3838,155,24,['Order of the Phoenix']
+3839,155,25,['Order of the Phoenix']
+3840,155,27,['Order of the Phoenix']
+3841,155,34,['Order of the Phoenix']
+3842,155,37,['Gryffindor']
+3843,155,40,['Order of the Phoenix']
+3844,155,54,['Gryffindor']
+3845,155,55,"['Gryffindor', 'Order of the Phoenix']"
+3846,155,56,"['Gryffindor', 'Order of the Phoenix']"
+3847,155,63,['Gryffindor']
+3848,155,64,"['Gryffindor', 'Order of the Phoenix']"
+3849,155,65,['Order of the Phoenix']
+3850,155,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3851,155,67,['Potter family']
+3852,155,71,"['Gryffindor', 'Slug Club']"
+3853,155,72,['Gryffindor']
+3854,155,73,['Order of the Phoenix']
+3855,155,79,['Gryffindor']
+3856,155,83,['Order of the Phoenix']
+3857,155,84,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Slug Club']"
+3858,155,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3859,155,88,['Slug Club']
+3860,155,93,['Order of the Phoenix']
+3861,155,95,['Slug Club']
+3862,155,98,['Order of the Phoenix']
+3863,155,100,['Gryffindor']
+3864,155,103,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3865,155,104,"['Gryffindor', 'Order of the Phoenix']"
+3866,155,105,"['Gryffindor', 'Order of the Phoenix']"
+3867,155,106,"['Gryffindor', 'Order of the Phoenix']"
+3868,155,107,['Gryffindor']
+3869,155,108,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3870,155,109,"['Gryffindor', 'Order of the Phoenix']"
+3871,155,110,['Gryffindor']
+3872,155,111,['Slug Club']
+3873,155,113,['Potter family']
+3874,155,114,['Gryffindor']
+3875,155,118,['Gryffindor']
+3876,155,125,['Order of the Phoenix']
+3877,155,132,['Gryffindor']
+3878,155,133,['Order of the Phoenix']
+3879,155,134,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Slug Club']"
+3880,155,139,['Gryffindor']
+3881,155,142,['Order of the Phoenix']
+3882,155,143,['Order of the Phoenix']
+3883,155,145,['Order of the Phoenix']
+3884,155,146,"['Gryffindor', 'Order of the Phoenix']"
+3885,155,152,['Gryffindor']
+3886,155,162,['Gryffindor']
+3887,155,165,['Order of the Phoenix']
+3888,155,168,['Order of the Phoenix']
+3889,155,169,['Gryffindor']
+3890,155,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Slug Club']"
+3891,155,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+3892,155,175,"['Gryffindor', 'Order of the Phoenix']"
+3893,156,7,['Ravenclaw']
+3894,156,13,['Ravenclaw']
+3895,156,41,['Ravenclaw']
+3896,156,46,['Ravenclaw']
+3897,156,62,['Ravenclaw']
+3898,156,65,['Ravenclaw']
+3899,156,77,['Ravenclaw']
+3900,156,86,['Ravenclaw']
+3901,156,123,['Ravenclaw']
+3902,156,124,['Ravenclaw']
+3903,156,131,['Ravenclaw']
+3904,156,143,['Ravenclaw']
+3905,156,151,['Ravenclaw']
+3906,156,157,['Ravenclaw']
+3907,156,166,['Ravenclaw']
+3908,156,171,['Ravenclaw']
+3909,157,7,['Ravenclaw']
+3910,157,13,['Ravenclaw']
+3911,157,41,['Ravenclaw']
+3912,157,46,['Ravenclaw']
+3913,157,62,['Ravenclaw']
+3914,157,65,['Ravenclaw']
+3915,157,77,['Ravenclaw']
+3916,157,86,['Ravenclaw']
+3917,157,123,['Ravenclaw']
+3918,157,124,['Ravenclaw']
+3919,157,131,['Ravenclaw']
+3920,157,143,['Ravenclaw']
+3921,157,151,['Ravenclaw']
+3922,157,156,['Ravenclaw']
+3923,157,166,['Ravenclaw']
+3924,157,171,['Ravenclaw']
+3925,162,5,['Gryffindor']
+3926,162,7,"[""Dumbledore's Army""]"
+3927,162,9,"[""Dumbledore's Army""]"
+3928,162,10,['Gryffindor']
+3929,162,13,"[""Dumbledore's Army""]"
+3930,162,16,"['Gryffindor', ""Dumbledore's Army""]"
+3931,162,24,"[""Dumbledore's Army""]"
+3932,162,36,"[""Dumbledore's Army""]"
+3933,162,37,"['Gryffindor', ""Dumbledore's Army""]"
+3934,162,46,"[""Dumbledore's Army""]"
+3935,162,54,['Gryffindor']
+3936,162,55,['Gryffindor']
+3937,162,56,"['Gryffindor', ""Dumbledore's Army""]"
+3938,162,63,['Gryffindor']
+3939,162,64,"['Gryffindor', ""Dumbledore's Army""]"
+3940,162,66,['Gryffindor']
+3941,162,68,"[""Dumbledore's Army""]"
+3942,162,71,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3943,162,72,['Gryffindor']
+3944,162,79,['Gryffindor']
+3945,162,84,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3946,162,85,"['Gryffindor', 'Gryffindor Quidditch team']"
+3947,162,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3948,162,103,['Gryffindor']
+3949,162,104,"['Gryffindor', 'Gryffindor Quidditch team']"
+3950,162,105,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3951,162,106,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3952,162,107,['Gryffindor']
+3953,162,108,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3954,162,109,['Gryffindor']
+3955,162,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+3956,162,112,"[""Dumbledore's Army""]"
+3957,162,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3958,162,116,"[""Dumbledore's Army""]"
+3959,162,118,"['Gryffindor', ""Dumbledore's Army""]"
+3960,162,123,"[""Dumbledore's Army""]"
+3961,162,132,['Gryffindor']
+3962,162,134,"['Gryffindor', ""Dumbledore's Army""]"
+3963,162,139,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3964,162,143,"[""Dumbledore's Army""]"
+3965,162,146,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3966,162,151,"[""Dumbledore's Army""]"
+3967,162,152,"['Gryffindor', ""Dumbledore's Army""]"
+3968,162,155,['Gryffindor']
+3969,162,169,"['Gryffindor', ""Dumbledore's Army""]"
+3970,162,172,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+3971,162,173,['Gryffindor']
+3972,162,175,"['Gryffindor', ""Dumbledore's Army""]"
+3973,163,23,['Hufflepuff']
+3974,163,33,['Hufflepuff']
+3975,163,36,['Hufflepuff']
+3976,163,67,['Hufflepuff']
+3977,163,68,['Hufflepuff']
+3978,163,91,['Hufflepuff']
+3979,163,97,['Hufflepuff']
+3980,163,112,['Hufflepuff']
+3981,163,116,['Hufflepuff']
+3982,163,138,['Hufflepuff']
+3983,163,165,['Hufflepuff']
+3984,164,4,['Slytherin']
+3985,164,6,['Slytherin']
+3986,164,14,['Slytherin']
+3987,164,15,['Slytherin']
+3988,164,47,['Slytherin']
+3989,164,48,['Slytherin']
+3990,164,58,['Slytherin']
+3991,164,61,['Slytherin']
+3992,164,74,['Slytherin']
+3993,164,88,['Slytherin']
+3994,164,95,['Slytherin']
+3995,164,96,['Slytherin']
+3996,164,98,['Slytherin']
+3997,164,111,['Slytherin']
+3998,164,119,['Slytherin']
+3999,164,140,['Slytherin']
+4000,164,144,['Slytherin']
+4001,164,150,['Slytherin']
+4002,164,167,['Slytherin']
+4003,165,1,['British Ministry of Magic']
+4004,165,5,['Order of the Phoenix']
+4005,165,9,['Order of the Phoenix']
+4006,165,12,['British Ministry of Magic']
+4007,165,20,['British Ministry of Magic']
+4008,165,21,"['Order of the Phoenix', 'Advance Guard']"
+4009,165,22,['British Ministry of Magic']
+4010,165,23,['Hufflepuff']
+4011,165,24,['Order of the Phoenix']
+4012,165,25,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+4013,165,27,['Order of the Phoenix']
+4014,165,33,['Hufflepuff']
+4015,165,34,['Order of the Phoenix']
+4016,165,36,['Hufflepuff']
+4017,165,40,['Order of the Phoenix']
+4018,165,43,['British Ministry of Magic']
+4019,165,55,['Order of the Phoenix']
+4020,165,56,['Order of the Phoenix']
+4021,165,64,"['British Ministry of Magic', 'Order of the Phoenix']"
+4022,165,65,['Order of the Phoenix']
+4023,165,66,"['Order of the Phoenix', 'Advance Guard']"
+4024,165,67,['Hufflepuff']
+4025,165,68,['Hufflepuff']
+4026,165,73,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+4027,165,75,['British Ministry of Magic']
+4028,165,83,"['Order of the Phoenix', 'Advance Guard']"
+4029,165,84,"['British Ministry of Magic', 'Order of the Phoenix']"
+4030,165,85,['Order of the Phoenix']
+4031,165,91,"['British Ministry of Magic', 'Hufflepuff']"
+4032,165,92,['British Ministry of Magic']
+4033,165,93,"['British Ministry of Magic', 'Order of the Phoenix', 'Advance Guard']"
+4034,165,97,['Hufflepuff']
+4035,165,98,['Order of the Phoenix']
+4036,165,99,['British Ministry of Magic']
+4037,165,103,"['British Ministry of Magic', 'Order of the Phoenix']"
+4038,165,104,['Order of the Phoenix']
+4039,165,105,['Order of the Phoenix']
+4040,165,106,['Order of the Phoenix']
+4041,165,107,['British Ministry of Magic']
+4042,165,108,"['British Ministry of Magic', 'Order of the Phoenix']"
+4043,165,109,['Order of the Phoenix']
+4044,165,112,['Hufflepuff']
+4045,165,116,['Hufflepuff']
+4046,165,125,['Order of the Phoenix']
+4047,165,131,['British Ministry of Magic']
+4048,165,133,['Order of the Phoenix']
+4049,165,134,"['British Ministry of Magic', 'Order of the Phoenix']"
+4050,165,138,['Hufflepuff']
+4051,165,142,['Order of the Phoenix']
+4052,165,143,['Order of the Phoenix']
+4053,165,145,['Order of the Phoenix']
+4054,165,146,['Order of the Phoenix']
+4055,165,155,['Order of the Phoenix']
+4056,165,163,['Hufflepuff']
+4057,165,168,"['Order of the Phoenix', 'Advance Guard']"
+4058,165,172,['Order of the Phoenix']
+4059,165,173,['Order of the Phoenix']
+4060,165,175,"['British Ministry of Magic', 'Order of the Phoenix']"
+4061,166,7,['Ravenclaw']
+4062,166,13,['Ravenclaw']
+4063,166,41,['Ravenclaw']
+4064,166,46,['Ravenclaw']
+4065,166,62,['Ravenclaw']
+4066,166,65,['Ravenclaw']
+4067,166,77,['Ravenclaw']
+4068,166,86,['Ravenclaw']
+4069,166,123,['Ravenclaw']
+4070,166,124,['Ravenclaw']
+4071,166,131,['Ravenclaw']
+4072,166,143,['Ravenclaw']
+4073,166,151,['Ravenclaw']
+4074,166,156,['Ravenclaw']
+4075,166,157,['Ravenclaw']
+4076,166,171,['Ravenclaw']
+4077,167,4,['Slytherin']
+4078,167,6,['Slytherin']
+4079,167,14,['Slytherin']
+4080,167,15,['Slytherin']
+4081,167,47,['Slytherin']
+4082,167,48,['Slytherin']
+4083,167,58,['Slytherin']
+4084,167,61,['Slytherin']
+4085,167,74,['Slytherin']
+4086,167,88,['Slytherin']
+4087,167,95,['Slytherin']
+4088,167,96,['Slytherin']
+4089,167,98,['Slytherin']
+4090,167,111,['Slytherin']
+4091,167,119,['Slytherin']
+4092,167,140,['Slytherin']
+4093,167,144,['Slytherin']
+4094,167,150,['Slytherin']
+4095,167,164,['Slytherin']
+4096,168,5,['Order of the Phoenix']
+4097,168,9,['Order of the Phoenix']
+4098,168,21,"['Order of the Phoenix', 'Advance Guard']"
+4099,168,24,['Order of the Phoenix']
+4100,168,25,"['Order of the Phoenix', 'Advance Guard']"
+4101,168,27,['Order of the Phoenix']
+4102,168,34,['Order of the Phoenix']
+4103,168,40,['Order of the Phoenix']
+4104,168,55,['Order of the Phoenix']
+4105,168,56,['Order of the Phoenix']
+4106,168,64,['Order of the Phoenix']
+4107,168,65,['Order of the Phoenix']
+4108,168,66,"['Order of the Phoenix', 'Advance Guard']"
+4109,168,73,"['Order of the Phoenix', 'Advance Guard']"
+4110,168,83,"['Order of the Phoenix', 'Advance Guard']"
+4111,168,84,['Order of the Phoenix']
+4112,168,85,['Order of the Phoenix']
+4113,168,93,"['Order of the Phoenix', 'Advance Guard']"
+4114,168,98,['Order of the Phoenix']
+4115,168,103,['Order of the Phoenix']
+4116,168,104,['Order of the Phoenix']
+4117,168,105,['Order of the Phoenix']
+4118,168,106,['Order of the Phoenix']
+4119,168,108,['Order of the Phoenix']
+4120,168,109,['Order of the Phoenix']
+4121,168,125,['Order of the Phoenix']
+4122,168,133,['Order of the Phoenix']
+4123,168,134,['Order of the Phoenix']
+4124,168,142,['Order of the Phoenix']
+4125,168,143,['Order of the Phoenix']
+4126,168,145,['Order of the Phoenix']
+4127,168,146,['Order of the Phoenix']
+4128,168,155,['Order of the Phoenix']
+4129,168,165,"['Order of the Phoenix', 'Advance Guard']"
+4130,168,172,['Order of the Phoenix']
+4131,168,173,['Order of the Phoenix']
+4132,168,175,['Order of the Phoenix']
+4133,169,5,['Gryffindor']
+4134,169,7,"[""Dumbledore's Army""]"
+4135,169,9,"[""Dumbledore's Army""]"
+4136,169,10,['Gryffindor']
+4137,169,13,"[""Dumbledore's Army""]"
+4138,169,16,"['Gryffindor', ""Dumbledore's Army""]"
+4139,169,24,"[""Dumbledore's Army""]"
+4140,169,36,"[""Dumbledore's Army""]"
+4141,169,37,"['Gryffindor', ""Dumbledore's Army""]"
+4142,169,46,"[""Dumbledore's Army""]"
+4143,169,54,['Gryffindor']
+4144,169,55,['Gryffindor']
+4145,169,56,"['Gryffindor', ""Dumbledore's Army""]"
+4146,169,63,['Gryffindor']
+4147,169,64,"['Gryffindor', ""Dumbledore's Army""]"
+4148,169,66,['Gryffindor']
+4149,169,68,"[""Dumbledore's Army""]"
+4150,169,71,"['Gryffindor', ""Dumbledore's Army""]"
+4151,169,72,['Gryffindor']
+4152,169,79,['Gryffindor']
+4153,169,84,"['Gryffindor', ""Dumbledore's Army""]"
+4154,169,85,['Gryffindor']
+4155,169,100,"['Gryffindor', ""Dumbledore's Army""]"
+4156,169,103,['Gryffindor']
+4157,169,104,['Gryffindor']
+4158,169,105,"['Gryffindor', ""Dumbledore's Army""]"
+4159,169,106,"['Gryffindor', ""Dumbledore's Army""]"
+4160,169,107,['Gryffindor']
+4161,169,108,"['Gryffindor', ""Dumbledore's Army""]"
+4162,169,109,['Gryffindor']
+4163,169,110,['Gryffindor']
+4164,169,112,"[""Dumbledore's Army""]"
+4165,169,114,"['Gryffindor', ""Dumbledore's Army""]"
+4166,169,116,"[""Dumbledore's Army""]"
+4167,169,118,"['Gryffindor', ""Dumbledore's Army""]"
+4168,169,123,"[""Dumbledore's Army""]"
+4169,169,132,['Gryffindor']
+4170,169,134,"['Gryffindor', ""Dumbledore's Army""]"
+4171,169,139,"['Gryffindor', ""Dumbledore's Army""]"
+4172,169,143,"[""Dumbledore's Army""]"
+4173,169,146,"['Gryffindor', ""Dumbledore's Army""]"
+4174,169,151,"[""Dumbledore's Army""]"
+4175,169,152,"['Gryffindor', ""Dumbledore's Army""]"
+4176,169,155,['Gryffindor']
+4177,169,162,"['Gryffindor', ""Dumbledore's Army""]"
+4178,169,172,"['Gryffindor', ""Dumbledore's Army""]"
+4179,169,173,['Gryffindor']
+4180,169,175,"['Gryffindor', ""Dumbledore's Army""]"
+4181,171,7,['Ravenclaw']
+4182,171,13,['Ravenclaw']
+4183,171,16,['Harry Potter']
+4184,171,21,['Harry Potter']
+4185,171,24,['Harry Potter']
+4186,171,34,['Harry Potter']
+4187,171,40,['Harry Potter']
+4188,171,41,['Ravenclaw']
+4189,171,46,['Ravenclaw']
+4190,171,55,['Harry Potter']
+4191,171,62,['Ravenclaw']
+4192,171,64,['Harry Potter']
+4193,171,65,"['Ravenclaw', 'Harry Potter']"
+4194,171,77,"['Ravenclaw', 'Harry Potter']"
+4195,171,86,['Ravenclaw']
+4196,171,98,['Harry Potter']
+4197,171,123,['Ravenclaw']
+4198,171,124,['Ravenclaw']
+4199,171,125,['Harry Potter']
+4200,171,131,['Ravenclaw']
+4201,171,143,['Ravenclaw']
+4202,171,151,['Ravenclaw']
+4203,171,156,['Ravenclaw']
+4204,171,157,['Ravenclaw']
+4205,171,166,['Ravenclaw']
+4206,171,175,['Harry Potter']
+4207,172,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+4208,172,7,"[""Dumbledore's Army""]"
+4209,172,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+4210,172,10,['Gryffindor']
+4211,172,13,"[""Dumbledore's Army""]"
+4212,172,16,"['Gryffindor', ""Dumbledore's Army""]"
+4213,172,17,['Slug Club']
+4214,172,21,['Order of the Phoenix']
+4215,172,24,"['Order of the Phoenix', ""Dumbledore's Army""]"
+4216,172,25,['Order of the Phoenix']
+4217,172,27,['Order of the Phoenix']
+4218,172,34,['Order of the Phoenix']
+4219,172,36,"[""Dumbledore's Army""]"
+4220,172,37,"['Gryffindor', ""Dumbledore's Army""]"
+4221,172,40,['Order of the Phoenix']
+4222,172,46,"[""Dumbledore's Army""]"
+4223,172,54,['Gryffindor']
+4224,172,55,"['Gryffindor', 'Order of the Phoenix']"
+4225,172,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4226,172,63,['Gryffindor']
+4227,172,64,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4228,172,65,['Order of the Phoenix']
+4229,172,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+4230,172,67,"['Potter family', 'Weasley family']"
+4231,172,68,"[""Dumbledore's Army""]"
+4232,172,71,"['Gryffindor', ""Dumbledore's Army"", 'Slug Club', 'Gryffindor Quidditch team']"
+4233,172,72,['Gryffindor']
+4234,172,73,['Order of the Phoenix']
+4235,172,79,['Gryffindor']
+4236,172,83,['Order of the Phoenix']
+4237,172,84,"['Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Slug Club', 'Weasley family', 'Gryffindor Quidditch team']"
+4238,172,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Gryffindor Quidditch team']"
+4239,172,88,['Slug Club']
+4240,172,93,['Order of the Phoenix']
+4241,172,95,['Slug Club']
+4242,172,98,['Order of the Phoenix']
+4243,172,100,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+4244,172,103,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4245,172,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+4246,172,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+4247,172,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+4248,172,107,"['Gryffindor', 'Weasley family', 'Prewett family']"
+4249,172,108,"['Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team', 'Prewett family']"
+4250,172,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4251,172,110,"['Gryffindor', 'Gryffindor Quidditch team']"
+4252,172,111,['Slug Club']
+4253,172,112,"[""Dumbledore's Army""]"
+4254,172,113,['Potter family']
+4255,172,114,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+4256,172,116,"[""Dumbledore's Army""]"
+4257,172,118,"['Gryffindor', ""Dumbledore's Army""]"
+4258,172,123,"[""Dumbledore's Army""]"
+4259,172,125,"['Order of the Phoenix', 'Weasley family']"
+4260,172,132,['Gryffindor']
+4261,172,133,['Order of the Phoenix']
+4262,172,134,"['Potter family', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Slug Club', 'Weasley family']"
+4263,172,139,"['Gryffindor', ""Dumbledore's Army"", 'Weasley family', 'Gryffindor Quidditch team']"
+4264,172,142,['Order of the Phoenix']
+4265,172,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+4266,172,145,['Order of the Phoenix']
+4267,172,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+4268,172,151,"[""Dumbledore's Army""]"
+4269,172,152,"['Gryffindor', ""Dumbledore's Army""]"
+4270,172,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Slug Club']"
+4271,172,162,"['Gryffindor', ""Dumbledore's Army"", 'Gryffindor Quidditch team']"
+4272,172,165,['Order of the Phoenix']
+4273,172,168,['Order of the Phoenix']
+4274,172,169,"['Gryffindor', ""Dumbledore's Army""]"
+4275,172,173,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4276,172,175,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4277,173,5,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+4278,173,9,['Order of the Phoenix']
+4279,173,10,['Gryffindor']
+4280,173,16,['Gryffindor']
+4281,173,21,['Order of the Phoenix']
+4282,173,24,['Order of the Phoenix']
+4283,173,25,['Order of the Phoenix']
+4284,173,27,['Order of the Phoenix']
+4285,173,34,['Order of the Phoenix']
+4286,173,37,['Gryffindor']
+4287,173,40,['Order of the Phoenix']
+4288,173,54,['Gryffindor']
+4289,173,55,"['Gryffindor', 'Order of the Phoenix']"
+4290,173,56,"['Gryffindor', 'Order of the Phoenix']"
+4291,173,63,['Gryffindor']
+4292,173,64,"['Gryffindor', 'Order of the Phoenix']"
+4293,173,65,['Order of the Phoenix']
+4294,173,66,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+4295,173,67,"['Potter family', 'Weasley family']"
+4296,173,71,['Gryffindor']
+4297,173,72,['Gryffindor']
+4298,173,73,['Order of the Phoenix']
+4299,173,79,['Gryffindor']
+4300,173,83,['Order of the Phoenix']
+4301,173,84,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+4302,173,85,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+4303,173,93,['Order of the Phoenix']
+4304,173,98,['Order of the Phoenix']
+4305,173,100,['Gryffindor']
+4306,173,103,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4307,173,104,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4308,173,105,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4309,173,106,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4310,173,107,"['Gryffindor', 'Weasley family', 'Prewett family']"
+4311,173,108,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4312,173,109,"['Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4313,173,110,['Gryffindor']
+4314,173,113,['Potter family']
+4315,173,114,['Gryffindor']
+4316,173,118,['Gryffindor']
+4317,173,125,"['Order of the Phoenix', 'Weasley family']"
+4318,173,132,['Gryffindor']
+4319,173,133,['Order of the Phoenix']
+4320,173,134,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family']"
+4321,173,139,"['Gryffindor', 'Weasley family']"
+4322,173,142,['Order of the Phoenix']
+4323,173,143,['Order of the Phoenix']
+4324,173,145,['Order of the Phoenix']
+4325,173,146,"['Gryffindor', 'Order of the Phoenix']"
+4326,173,152,['Gryffindor']
+4327,173,155,"['Potter family', 'Gryffindor', 'Order of the Phoenix']"
+4328,173,162,['Gryffindor']
+4329,173,165,['Order of the Phoenix']
+4330,173,168,['Order of the Phoenix']
+4331,173,169,['Gryffindor']
+4332,173,172,"['Potter family', 'Gryffindor', 'Order of the Phoenix', 'Weasley family', 'Prewett family']"
+4333,173,175,"['Gryffindor', 'Order of the Phoenix']"
+4334,175,1,['British Ministry of Magic']
+4335,175,5,"['Gryffindor', 'Order of the Phoenix']"
+4336,175,7,"[""Dumbledore's Army""]"
+4337,175,9,"['Order of the Phoenix', ""Dumbledore's Army""]"
+4338,175,10,['Gryffindor']
+4339,175,12,['British Ministry of Magic']
+4340,175,13,"[""Dumbledore's Army""]"
+4341,175,16,"['Gryffindor', ""Dumbledore's Army"", 'Harry Potter']"
+4342,175,20,['British Ministry of Magic']
+4343,175,21,"['Order of the Phoenix', 'Harry Potter']"
+4344,175,22,['British Ministry of Magic']
+4345,175,24,"['Order of the Phoenix', ""Dumbledore's Army"", 'Harry Potter']"
+4346,175,25,"['British Ministry of Magic', 'Order of the Phoenix']"
+4347,175,27,['Order of the Phoenix']
+4348,175,34,"['Order of the Phoenix', 'Harry Potter']"
+4349,175,36,"[""Dumbledore's Army""]"
+4350,175,37,"['Gryffindor', ""Dumbledore's Army""]"
+4351,175,40,"['Order of the Phoenix', 'Harry Potter']"
+4352,175,43,['British Ministry of Magic']
+4353,175,46,"[""Dumbledore's Army""]"
+4354,175,54,['Gryffindor']
+4355,175,55,"['Gryffindor', 'Order of the Phoenix', 'Harry Potter']"
+4356,175,56,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4357,175,63,['Gryffindor']
+4358,175,64,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army"", 'Harry Potter']"
+4359,175,65,"['Order of the Phoenix', 'Harry Potter']"
+4360,175,66,"['Gryffindor', 'Order of the Phoenix']"
+4361,175,68,"[""Dumbledore's Army""]"
+4362,175,71,"['Gryffindor', ""Dumbledore's Army""]"
+4363,175,72,['Gryffindor']
+4364,175,73,"['British Ministry of Magic', 'Order of the Phoenix']"
+4365,175,75,['British Ministry of Magic']
+4366,175,77,['Harry Potter']
+4367,175,79,['Gryffindor']
+4368,175,83,['Order of the Phoenix']
+4369,175,84,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4370,175,85,"['Gryffindor', 'Order of the Phoenix']"
+4371,175,91,['British Ministry of Magic']
+4372,175,92,['British Ministry of Magic']
+4373,175,93,"['British Ministry of Magic', 'Order of the Phoenix']"
+4374,175,98,"['Order of the Phoenix', 'Harry Potter']"
+4375,175,99,['British Ministry of Magic']
+4376,175,100,"['Gryffindor', ""Dumbledore's Army""]"
+4377,175,103,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix']"
+4378,175,104,"['Gryffindor', 'Order of the Phoenix']"
+4379,175,105,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4380,175,106,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4381,175,107,"['British Ministry of Magic', 'Gryffindor']"
+4382,175,108,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4383,175,109,"['Gryffindor', 'Order of the Phoenix']"
+4384,175,110,['Gryffindor']
+4385,175,112,"[""Dumbledore's Army""]"
+4386,175,114,"['Gryffindor', ""Dumbledore's Army""]"
+4387,175,116,"[""Dumbledore's Army""]"
+4388,175,118,"['Gryffindor', ""Dumbledore's Army""]"
+4389,175,123,"[""Dumbledore's Army""]"
+4390,175,125,"['Order of the Phoenix', 'Harry Potter']"
+4391,175,131,['British Ministry of Magic']
+4392,175,132,['Gryffindor']
+4393,175,133,['Order of the Phoenix']
+4394,175,134,"['British Ministry of Magic', 'Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4395,175,139,"['Gryffindor', ""Dumbledore's Army""]"
+4396,175,142,['Order of the Phoenix']
+4397,175,143,"['Order of the Phoenix', ""Dumbledore's Army""]"
+4398,175,145,['Order of the Phoenix']
+4399,175,146,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4400,175,151,"[""Dumbledore's Army""]"
+4401,175,152,"['Gryffindor', ""Dumbledore's Army""]"
+4402,175,155,"['Gryffindor', 'Order of the Phoenix']"
+4403,175,162,"['Gryffindor', ""Dumbledore's Army""]"
+4404,175,165,"['British Ministry of Magic', 'Order of the Phoenix']"
+4405,175,168,['Order of the Phoenix']
+4406,175,169,"['Gryffindor', ""Dumbledore's Army""]"
+4407,175,171,['Harry Potter']
+4408,175,172,"['Gryffindor', 'Order of the Phoenix', ""Dumbledore's Army""]"
+4409,175,173,"['Gryffindor', 'Order of the Phoenix']"
