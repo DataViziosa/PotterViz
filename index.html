@@ -20,6 +20,7 @@
 <!-- Custom Stylesheet-->
 <link rel="stylesheet" href="css/hogwarts_houses.css">
 <link rel="stylesheet" href="css/char_networks.css">
+<link rel="stylesheet" href="css/spell_by_books.css">
 
 
 
@@ -203,7 +204,9 @@
 	</div>
 	<div class="section" data-anchor="Stats">
 		<div class="slide" data-anchor="Stats-1"></div>
-		<div class="slide" data-anchor="Stats-2"></div>
+		<div class="slide" data-anchor="Stats-2">
+			<div id="spellByBook"></div>
+		</div>
 		<div class="slide" data-anchor="Stats-3"></div>
 	</div>
 	<div class="section" data-anchor="About">
@@ -223,7 +226,7 @@ $(document).ready(function(){
 		  showActiveTooltip: true,
 		  slidesNavigation:true,
 		  slidesNavPosition:"bottom",
-		  normalScrollElements: '.modal',
+		  normalScrollElements: '.modal, #spellByBook',
 		  fitToSection:true,
 		  navigationTooltips: [
         "Title",
@@ -270,6 +273,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.noverlap.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.animate.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.forceAtlas2.min.js"></script>-->
-<script src="js/char_networks.js"></script>
+<script type="text/javascript" src="js/char_networks.js"></script>
+<script type="text/javascript" src="js/spell_by_book.js"></script>
 </body>
 </html>
