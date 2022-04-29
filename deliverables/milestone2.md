@@ -63,5 +63,7 @@ Each wand consists of a type of wood surrounding a core of magical substance. Th
 Here we'd like to display the most prominent words that occur throughout the collection of Harry Potter books through the use of word clouds. We would have the book covers displayed and whenever we hover (or click) on one, it would interactively update the corresponding word cloud. We could also have it updated automatically to pass to the next book after a certain time to see the progression of the world cloud. We would also have an option of displaying the word cloud for all the books together.
 
 ### Additional visualisations
-If we have time, we will enable 
+If we have time, we will try to do more advanced visualisations such as 
+- **Spells launched by line** in the book. More concretely, this visualisation will allow the user to explore at which time each spell is launched and in which context. For this visualisation, will probably only `d3` and more precisely `d3-brush` to allow more interaction for the user.
+- Sentiment analysis in movie screenplay. This visualisation will probably be the most advanced one as it will involve some Machine Learning to be able to extract emotion and sentiment for each line said by characters. THis visualisation will allow us to navigate across the movies and scenes in each movie and to see how the emotion of a character evolves across this scene and maybe across the whole movie. For this visualisation, we will probably only need diverse features from the `d3` library. 
 
