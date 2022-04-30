@@ -32,7 +32,7 @@ function analyseHouse(){
 
 
 function displayData(house){
-	let datapath = "http://localhost:8888/data/"
+	let datapath = "http://localhost:80/data/"
 	let char_data = datapath+"cleaned/selected_chars.csv"
 	let char_images = datapath + "images/characters/"
 	let ext_img = ".png"
