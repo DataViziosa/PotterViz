@@ -8,9 +8,13 @@
 	border-radius: 10px;
 }
 
-#x-axis{
+.axis{
 	color: white;
 }
-#y-axis{
-	color: white;
+
+.hidden{
+	display: none;
+}
+.shown{
+	display: block;
 }
