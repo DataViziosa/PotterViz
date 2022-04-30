@@ -14,6 +14,11 @@
   pointer-events: none;
 }
 
+/* SigmaJS network related style*/
+#sigma-container{
+  height: 60%;
+  text-align: left;
+}
 .node:hover,
 .node--source,
 .node--target {
@@ -40,4 +45,49 @@
 
 .link--target {
   stroke: #2ca02c;
+}
+
+/* Filtering menu related styles*/
+.inactive-filter{
+  color: blue;
+  background-color: #666666!important;
+}
+
+.active-filter{
+  color: red;
+  background-color: #a3a3a3!important;
+}
+#filter-menu{
+  cursor: pointer;
+  text-align: left;
+  vertical-align: top;
+  height: 60%;
+  overflow: scroll;
+}
+#filter-menu-list{
+  list-style: none;
+}
+
+/* Common association div styles*/
+#common-association{
+  height: 20%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+#common-association-list{
+  list-style-type: none;
+}
+
+#common-association-list li{
+  border-radius: 5px;
+  margin-left: 20px;
+}
+#search-char{
+  width: 46.66%;
+}
+
+#explore-char{
+  color: whitesmoke;
 }
