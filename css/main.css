@@ -84,7 +84,7 @@ a path  {
 
 .hogwarts-logo-img{
   z-index: 0;
-  height: 300px;
+  height: 300px !important;
   transition: transform 300ms ease-in-out;
   }
 
