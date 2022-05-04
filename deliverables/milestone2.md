@@ -1,5 +1,9 @@
 ## Milestone 2
 
+Authors: Alessio Verardo, Emna Fendri, Stephane Selim
+
+---
+
 We will present the different visualisations we'd like to show in our project and what information we want to convey in each of them, along with some sketches to have a rough view of what the final product will look like. 
 
 ## General structure and comments
@@ -23,6 +27,8 @@ Our page will start with a quick introduction into the Harry Potter universe wit
 </figure>
 
 In this section we want to display information about each movie and book of the Harry Potter universe. We thought of displaying this info in the context of a scrolling gallery. For each set (movies or books), we display a gallery of the items, and highlight the item whenever the mouse hovers over one. Upon click of an item, we display the relevant information on a pane on the side.
+
+> We could make use of a fisheye distortion effect using D3 to highlight a book in a scrolling gallery whenever we hover over it, but this still under consideration.
 
 
 
@@ -60,7 +66,7 @@ Each wand consists of a type of wood surrounding a core of magical substance. Th
 ### Word Cloud
 <img align="left" width="250" src="images/word_cloud.png"></img>
 
-Here we'd like to display the most prominent words that occur throughout the collection of Harry Potter books through the use of word clouds. We would have the book covers displayed and whenever we hover (or click) on one, it would interactively update the corresponding word cloud. We could also have it updated automatically to pass to the next book after a certain time to see the progression of the world cloud. We would also have an option of displaying the word cloud for all the books together.
+We'd like to display the most prominent words that occur throughout the collection of Harry Potter books through the use of word clouds. We would have the book covers displayed and whenever we hover (or click) on one, it would interactively update the corresponding word cloud. We could also have it updated automatically to pass to the next book after a certain time to see the progression of the world cloud. We would also have an option of displaying the word cloud for all the books together.
 
 ### Additional visualisations
 If we have time, we will try to do more advanced visualisations such as 
