@@ -1,0 +1,70 @@
+.chars-scene{
+	text-align: left;
+	border-radius: 50px;
+    border: 1px white solid;
+    margin: 10px;
+
+}
+
+.chars-name{
+	margin-left: 20px;
+	color: white;
+}
+
+.chars-img{
+	border-radius: 50px;
+}
+
+#charInScene{
+	text-align: left;
+  overflow: scroll;
+}
+
+.y-axis, .x-axis{
+	color: white;
+}
+
+.menu-block{
+	    fill: lightgrey;
+    opacity: 0.4;
+    border: 1px solid grey;
+    border-radius: 2px;
+      transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+.menu-block:hover{
+	opacity: 0.9;
+}
+
+.btn-group{
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 10px;
+}
+
+#tooltip_scene, #tooltip_rectangle{
+	background-color: #DDDDDD;
+	color: black;
+	position: absolute;
+	overflow: auto;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#tooltip_rectangle{
+	width: 200px;
+}
+
+.rect-pol-score{
+	fill: white;
+	opacity: 0.4;
+	transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+.rect-pol-score:hover{
+	opacity: 0.8;
+}
+#sentimentAnalysisMenu{
+	text-align: center;
+}

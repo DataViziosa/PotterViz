@@ -16,7 +16,6 @@
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/d3.min.js"></script>
-
 	<!-- Custom scripts-->
 	<script src="js/hogwarts_houses.js"></script>
 	<script src="js/music.js"></script>
@@ -26,6 +25,7 @@
 	<link rel="stylesheet" href="css/hogwarts_houses.css">
 	<link rel="stylesheet" href="css/char_networks.css">
 	<link rel="stylesheet" href="css/spell_by_books.css">
+	<link rel="stylesheet" href="css/sentiment_analysis.css">
 
 	<!-- Libraries stylesheets -->
 	<link rel="stylesheet" href="css/fullpage.min.css">
@@ -226,7 +226,32 @@
 					<div id="spellByBookContainer" style="width:100%;height:80%"></div>
 				</div>
 			</div>
-			<div class="slide" data-anchor="deep-3"></div>
+			<div class="slide" data-anchor="deep-3">
+				<div id="sentimentAnalysis" style="width:100%;height:100%">
+					<div class="btn-group" role="group" aria-label="check_group">
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp1" autocomplete="off" onclick="displayMovie(1)" checked>
+						  <label class="btn btn-outline-secondary" for="btn_hp1">Harry Potter and the Philosopher's Stone</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp2" autocomplete="off" onclick="displayMovie(2)">
+						  <label class="btn btn-outline-secondary" for="btn_hp2">Harry Potter and the Chamber of Secrets</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp3" autocomplete="off" onclick="displayMovie(3)">
+						  <label class="btn btn-outline-secondary" for="btn_hp3">Harry Potter and the Prisoner of Azkaban</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp4" autocomplete="off" onclick="displayMovie(4)">
+						  <label class="btn btn-outline-secondary" for="btn_hp4">Harry Potter and the Goblet of Fire</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp5" autocomplete="off" onclick="displayMovie(5)">
+						  <label class="btn btn-outline-secondary" for="btn_hp5">Harry Potter and the Order of the Phoenix</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp6" autocomplete="off" onclick="displayMovie(6)">
+						  <label class="btn btn-outline-secondary" for="btn_hp6">Harry Potter and the Half-Blood Prince</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp7" autocomplete="off" onclick="displayMovie(7)">
+						  <label class="btn btn-outline-secondary" for="btn_hp7">Harry Potter and the Deathly Hallows Part 1</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp8" autocomplete="off" onclick="displayMovie(8)">
+						  <label class="btn btn-outline-secondary" for="btn_hp8">Harry Potter and the Deathly Hallows Part 2</label>
+						</div>
+					<svg id="sentimentAnalysisMenu"></svg>
+					<div id="charInScene" style="width:100%;height:30%"></div>
+					<div id="sentimentAnalysisPlot" style="width:100%;height:30%">
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="section" data-anchor="About">
 			A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo
@@ -245,7 +270,7 @@
 			  showActiveTooltip: true, // Show the name of the section on the navigation bar 
 			  slidesNavigation:true, // display the dots for horizontal navigation
 			  slidesNavPosition:"bottom", // set the position of the horizontal navigation dots
-			  normalScrollElements: '.modal, #spellByBook, #sigma-container,#filter-menu', // Put the div id in which we want to block fullpage js scrolling
+			  normalScrollElements: '.modal, #spellByBook, #sigma-container,#filter-menu, #charInScene', // Put the div id in which we want to block fullpage js scrolling
 			  fitToSection:true,
 			  navigationTooltips: [
 	        "Title",
@@ -276,5 +301,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.1/plugins/sigma.renderers.customShapes.min.js" integrity="sha512-aq73VTnmRtppJmMoDa567DjtQsbyMBtfEDdLGdU8EqqwOEO4ExH36KE7i9kjWdv9XTuMi9vHnrt9aw5nItTicw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="js/char_networks.js"></script>
 	<script type="text/javascript" src="js/spell_by_book.js"></script>
+<script type="text/javascript" src="js/sentiment_analysis.js"></script>
 </body>
 </html>

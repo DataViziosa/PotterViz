@@ -1,0 +1,290 @@
+var datapath_sa = "http://localhost:80/data/"
+var cleaned_folder = datapath_sa+"cleaned/"
+var char_data_sa = cleaned_folder+"selected_chars.csv"
+var char_images_sa = datapath_sa + "images/characters/"
+var ext_img_sa = ".png"
+
+var width_sa = 900
+
+var movie_id_to_name = {
+	1: "Harry Potter and the Philosopher's Stone",
+	2: "Harry Potter and the Chamber of Secrets",
+	3: "Harry Potter and the Prisoner of Azkaban",
+	4: "Harry Potter and the Gobelt of Fire",
+	5: "Harry Potter and the Order of the Phoenix",
+	6: "Harry Potter and the Half-Blood Prince",
+	7: "Harry Potter and the Deathly Hallows Part 1",
+	8: "Harry Potter and the Deathly Hallows Part 2"
+}
+
+displayMovie(1)
+
+class PolarityScore{
+	constructor(){
+		this.data = []
+		this.xScale = d3.scaleLinear()
+		this.yScale = d3.scaleLinear()
+		this.width = width_sa
+		this.height = 400
+		this.svg = d3.select("#sentimentAnalysisPlot")
+						.append("svg")
+						.attr("width", this.width)
+						.attr("height", this.height)
+
+	  	this.yAxisGroup = this.svg.append("g")
+	  	this.margin = {top: 20, right: 30, bottom: 30, left: 40}
+
+		
+
+	  	this.xAxis = d3.axisBottom(this.xScale).tickSize(15)
+		this.yAxis = d3.axisLeft().scale(this.yScale).tickSize(0.25)
+		this.svg.append("g")
+			    .attr("transform", "translate(" + this.margin.left + ",0)")
+			    .call(this.yAxis)
+
+		this.tooltip_rectangle = d3.select("body")
+	              .append("div")
+	              .attr("id", "tooltip_rectangle")
+	              .style("visibility", "hidden")
+	}
+
+	displayRectangleTooltip(d, info, tooltip_rectangle){
+		console.log(info)
+	 	return tooltip_rectangle.style("visibility", "visible")
+	              .style("left", d['pageX']+10+"px")
+	              .style("top", d['pageY']-80+"px")
+	              .html("<span style='font-weight:bold'>Speaker: "+info['character']+"<br></span>Score: "+info['polarity_score']+"<br><br>«"+info['dialog']+"»")
+	}
+
+	changeData(data){
+		var tot_line = data.length
+		this.data = [...data]
+		this.xScale.domain([1, tot_line]).range([this.margin.left, this.width - this.margin.right])
+		this.yScale.domain([-1,1]).range([ this.height - this.margin.bottom, this.margin.top])
+		this.svg.html("")
+
+		this.svg.append("path")
+	      .datum(data)
+	      .attr("fill", "none")
+	      .attr("stroke", "#fff")
+	      .attr("stroke-width", 1)
+	      .attr("class", "line-plot-scene")
+	      .attr("d", d3.line()
+	      	.curve(d3.curveBasis) 
+	        .x(d=>this.xScale(d.id))
+	        .y(d=>this.yScale(d.polarity_score))
+          )
+        this.svg.append("line")          // attach a line
+		    .style("stroke","white")// colour the line
+		    .attr("x1", this.xScale(1))     // x position of the first end of the line
+		    .attr("y1", this.yScale(0))      // y position of the first end of the line
+		    .attr("x2", this.xScale(tot_line))   // x position of the second end of the line
+		    .attr("y2", this.yScale(0))
+        var rect = this.svg.selectAll(".rect-pol-score")
+        		.data(data)
+        		.enter()
+        		.append("rect")
+        		.attr("x", d=> this.xScale(parseInt(d.id)-0.5))
+        		.attr("y", d=> {
+        			var score = parseFloat(d.polarity_score)
+        			if(score > 0.0){
+        				return this.yScale(score)
+        			}
+        			return 0
+        		})
+        		.attr("width", d=>{
+        			var idInt = parseInt(d.id)
+        			return this.xScale(idInt)-this.xScale(idInt)
+        		})
+        		.attr("height", d=>{
+        			var score = parseFloat(d.polarity_score)
+        			if(score > 0.0){
+        				return 10//this.yScale(score)
+        			} 
+        			return 0
+        		})
+        		.attr("class", "rect-pol-score")
+        		.on("mouseover",d=>{
+        			this.displayRectangleTooltip(d, d.srcElement.__data__, this.tooltip_rectangle)
+        		})
+        		.on("mouseout", d=>{
+        			this.tooltip_rectangle.style("visibility", "hidden")
+        		})
+        rect.exit().remove()
+	}
+
+	changeScale(x_low, x_high){
+	  //Update xAxis scale
+	  this.xScale.domain([x_low, x_high])
+	    .range([0, this.width]);
+
+	  //Call axes
+	  var t =this.svg.transition()
+	    .duration(500)
+	    .ease(d3.easeLinear)
+	    .call(this.xAxis)
+
+	   this.svg.selectAll(".line-plot-scene")
+	   		.transition(t)
+	   		.attr("d", d3.line()
+		    .x(d=> this.xScale(d.id))
+		    .y(d=> this.yScale(d.polarity_score))
+		    ).style("visibility","hidden")
+
+
+		this.svg.selectAll(".rect-pol-score")
+	   		.transition(t)
+	   		.attr("x", d=> this.xScale(parseInt(d.id)-0.5))
+    		.attr("y", d=> {
+    			var score = parseFloat(d.polarity_score)
+        			if(score > 0.0){
+        				return this.yScale(score)
+        			}else{
+        				return this.yScale(0)
+        			}
+    		})
+    		.attr("width", d=>{
+        			var idInt = parseInt(d.id)
+        			return this.xScale(idInt+0.5)-this.xScale(idInt-0.5)
+			})
+			.attr("height", d=>{
+				var score = parseFloat(d.polarity_score)
+    			if(score > 0.0){
+    				return this.yScale(0)-this.yScale(score)
+    			}else{
+    				return -this.yScale(0)+this.yScale(score)
+    			}
+				})
+
+	  this.yAxisGroup.call(this.yAxis);
+	}
+}
+
+var pol = new PolarityScore()
+
+
+function charInScene(char_set){
+	var char_list = Array.from(char_set)
+	var container = d3.select("#charInScene")
+
+	d3.csv(char_data_sa).then(d=>buildPlot(d))
+	function buildPlot(char_data){
+		var char_data = char_data.filter(d=> char_list.includes(d.name))
+		container.html("");
+
+		var divs = container.selectAll(".chars-scene")
+			.data(char_data)
+			.enter()
+			.append("div")
+			.attr("class","chars-scene col-3 inline-block")
+			.on("click",d=>{
+				console.log("cheh")
+			})
+		var imgs = divs.append("img")
+					   .attr('src', d=>char_images_sa+d.image_name+ext_img_sa)
+					   .attr("width", 50)
+					   .attr("height", 50)
+					   .attr("class", "chars-img inline-block")
+
+		var names = divs.append("h5")
+						.text(d=>d.name)
+						.attr("class", "chars-name inline-block")
+
+
+		divs.exit().remove()
+	}
+}
+
+function displayScenes(data){
+
+	function displaySceneTooltip(d, info, tooltip_sentiment){
+	 	return tooltip_sentiment.style("visibility", "visible")
+	              .style("left", d['pageX']+10+"px")
+	              .style("top", d['pageY']-80+"px")
+	              .html("<span style='font-weight:bold'>"+info['name']+" ("+info['nb_dialog']+")</span>")
+	}
+
+	var last_chapter = ""
+	var cur_id = 0
+	var cur_nb = 0
+	var cur_total = 0
+	var set_chars = new Set()
+	var chapters = []
+
+	for(k in data){
+		var d = data[k]
+		if(last_chapter == d.chapter){
+			cur_nb += 1
+			cur_total += 1
+			set_chars.add(d.character)
+		} else{
+			if(cur_id!=0){
+				chapters.push({
+					id: cur_id,
+					name: last_chapter,
+					nb_dialog: cur_nb,
+					start_diag: cur_total-cur_nb,
+					chars: set_chars
+				})
+			}
+			cur_id += 1
+			cur_nb = 1
+			cur_total += 1
+			last_chapter = d.chapter
+			set_chars = new Set()
+			set_chars.add(d.character)
+		}
+	}
+
+	var tooltip_sentiment = d3.select("body")
+	              .append("div")
+	              .attr("id", "tooltip_scene")
+	              .style("visibility", "hidden")
+
+
+	var svgScene = d3.select("#sentimentAnalysisMenu")
+						.attr("width", width_sa)
+						.attr("height", 130)
+	svgScene.html("")
+
+
+	// y scale is ordinal 
+	var xScale = d3.scaleLinear()
+				    .domain([1,cur_total])
+				    .range([0, width_sa])
+
+	var rects = svgScene.selectAll(".menu-block")
+						.data(chapters)
+						.enter()
+						.append("rect")
+						.attr("width", d=>{
+							return xScale(d.start_diag+d.nb_dialog)-xScale(d.start_diag)
+						})
+						.attr("height", 130)
+						.attr('fill', 'red')
+						.attr('class', 'menu-block')
+						.attr('y', d=> 30)
+						.attr('x', d=> xScale(d.start_diag))
+						.on("click",d=> {
+							var sceneData = d.srcElement.__data__
+							charInScene(sceneData.chars)
+							pol.changeScale(sceneData.start_diag, sceneData.nb_dialog+sceneData.start_diag)
+						})
+						.on("mouseover", d =>{
+				           displaySceneTooltip(d, d["srcElement"]["__data__"], tooltip_sentiment) // show a superposed div with the books in which it appears and the context (the sentence)
+				       	})
+				     	.on("mouseout", function(){
+				           tooltip_sentiment.style("visibility", "hidden") // remove the div
+				       })
+}
+
+
+function displayMovie(movieNb){
+	d3.csv(cleaned_folder+"sentimentMovie.csv").then(d=>{
+		var movie_name = movie_id_to_name[movieNb]
+		var data = d.filter(x=> x.movie == movie_name)
+
+		pol.changeData(data)
+		displayScenes(data, movieNb)
+	})
+}
