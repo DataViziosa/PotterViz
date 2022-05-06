@@ -68,3 +68,24 @@
 #sentimentAnalysisMenu{
 	text-align: center;
 }
+
+.hightlighted-tmp{
+	opacity: 0.8;
+}
+
+.highlighted.highlighted-tmp{
+	fill: white;
+}
+
+.highlighted{
+	fill: red;
+}
+
+.rect-movie{
+	fill: white;
+	opacity: 0;
+}
+
+.rect-movie-tmpsel{
+	opacity: 0.5;
+}
