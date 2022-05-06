@@ -1,5 +1,9 @@
 ## Milestone 2
 
+Authors: Alessio Verardo, Emna Fendri, Stephane Selim
+
+---
+
 We will present the different visualisations we'd like to show in our project and what information we want to convey in each of them, along with some sketches to have a rough view of what the final product will look like. 
 
 ## General structure and comments
@@ -24,10 +28,9 @@ Our page will start with a quick introduction into the Harry Potter universe wit
 
 In this section we want to display information about each movie and book of the Harry Potter universe. We thought of displaying this info in the context of a scrolling gallery. For each set (movies or books), we display a gallery of the items, and highlight the item whenever the mouse hovers over one. Upon click of an item, we display the relevant information on a pane on the side.
 
-### Word Cloud
-<img align="left" width="250" src="images/word_cloud.png"></img>
+> We could make use of a fisheye distortion effect using D3 to highlight a book in a scrolling gallery whenever we hover over it, but this still under consideration.
 
-Here we'd like to display the most prominent words that occur throughout the collection of Harry Potter books through the use of word clouds. We would have the book covers displayed and whenever we hover (or click) on one, it would interactively update the corresponding word cloud. We could also have it updated automatically to pass to the next book after a certain time to see the progression of the world cloud. We would also have an option of displaying the word cloud for all the books together.
+
 
 
 ### Hogwarts houses
@@ -40,12 +43,9 @@ The second part of the visualisation will be more challenging but also more comp
 
 ### Character networks
 <img align="right" width="300" height="150" src="images/network.png"></img>
-After the investigation of the houses, we may want to get more insights about the characters. For this purpose, we will have two different but related network visualisations.
-The first one will display a network of the association between characters, i.e. a network with an edge between any two characters if they were in the same group of people (or association) throughout the saga. This visualisation will have a filtering feature allowing us to visually keep only the associations we want to investigate. Furthermore, when clicking on one node, we will display the character information sidebar presented earlier. Finally, when clicking on some edge, we will be shown all the association that the two characters have in common.
- 
-The second and related view of the character network, will show a graph based on the interactions, i.e. two characters have a link between them if they interact at one point in the series. This second view will also allow us to display the information sidebar as before.
+After the investigation of the houses, we may want to get more insights about the characters. For this purpose, we will provide a graph exploration tool. The goal is to investigate the most known associations or groups of people in the Harry Potter series. The tool will provide a filtering by association feature and will enable dynamic exploration of the network (via zooming and panning). Additionally, all the informations we have about one character will be displayable. 
 
-> For these visualisations, we will probably need the lecture on graphs as well as the D3 library on graphs. (e.g. Hierarchical edge bundling).
+> For ths visualisation, we will probably need the lecture on graphs as well as a mix of Javascript, D3 and sigmajs libraries .
 
 ### Spells
 <img align="left" width="400" height="220" src="images/spellPiechart.png"></img>
@@ -63,4 +63,13 @@ In this visualisation, we represent on the right-hand side of the page a pie cha
 
 Each wand consists of a type of wood surrounding a core of magical substance. The wood may be unique to each wand, but the core material is generally redundant (there are 4 of them). In this visualisation, we will display through a Sankey chart a mapping between the 15 main characters of the saga and the core material of their wand.
 
+### Word Cloud
+<img align="left" width="250" src="images/word_cloud.png"></img>
+
+We'd like to display the most prominent words that occur throughout the collection of Harry Potter books through the use of word clouds. We would have the book covers displayed and whenever we hover (or click) on one, it would interactively update the corresponding word cloud. We could also have it updated automatically to pass to the next book after a certain time to see the progression of the world cloud. We would also have an option of displaying the word cloud for all the books together.
+
+### Additional visualisations
+If we have time, we will try to do more advanced visualisations such as 
+- **Spells launched by line** in the book. More concretely, this visualisation will allow the user to explore at which time each spell is launched and in which context. For this visualisation, will probably only `d3` and more precisely `d3-brush` to allow more interaction for the user.
+- Sentiment analysis in movie screenplay. This visualisation will probably be the most advanced one as it will involve some Machine Learning to be able to extract emotion and sentiment for each line said by characters. THis visualisation will allow us to navigate across the movies and scenes in each movie and to see how the emotion of a character evolves across this scene and maybe across the whole movie. For this visualisation, we will probably only need diverse features from the `d3` library. 
 
