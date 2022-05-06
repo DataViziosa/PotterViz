@@ -64,7 +64,7 @@ In this visualisation, we represent on the right-hand side of the page a pie cha
 Each wand consists of a type of wood surrounding a core of magical substance. The wood may be unique to each wand, but the core material is generally redundant (there are 4 of them). In this visualisation, we will display through a Sankey chart a mapping between the 15 main characters of the saga and the core material of their wand.
 
 ### Word Cloud
-<img align="left" width="250" style="background-color:grey" src="images/word_cloud.png"></img>
+<div style="background-color:grey;"><img align="left" width="250" src="images/word_cloud.png"></img></div>
 
 We'd like to display the most prominent words that occur throughout the collection of Harry Potter books through the use of word clouds. We would have the book covers displayed and whenever we hover (or click) on one, it would interactively update the corresponding word cloud. We could also have it updated automatically to pass to the next book after a certain time to see the progression of the world cloud. We would also have an option of displaying the word cloud for all the books together.
 
