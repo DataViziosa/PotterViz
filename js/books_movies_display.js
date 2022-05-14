@@ -1,21 +1,3 @@
-/*const book_path = (id) => `assets/book_cover/hp${id}.jpeg`;
-const book_info = {
-  1 : book_path(1),
-  2 : book_path(2),
-  3 : book_path(3),
-  4 : book_path(4),
-  5 : book_path(5),
-  6 : book_path(6),
-  7 : book_path(7)
-};
-function displayBookInfo(book_id){
-  console.log(book_id);
-  console.log(book_info[book_id]);
-
-  document.getElementById("placeholder").src=book_info[book_id];
-  document.getElementById("wake_dumbledore").innerHTML=`Book ${book_id}`;
-};*/
-
 //const books = require("../data/hpcollection/books.json");
 
 function formatBookInfo(bookInfoJson) {
