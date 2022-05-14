@@ -1,0 +1,83 @@
+.collection-title {
+  text-align: center;
+  font-family: 'Harry Potter', monospace;
+  margin-top: 2.5%;
+  color: white;
+  opacity: 0.85;
+}
+
+.gallery-top-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5% 5% 0 5%;
+}
+
+.gallery-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 17.5% 2.5% 17.5%;
+}
+
+.gallery-bottom-row-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5% 5% 2.5% 5%;
+}
+
+
+.book-frame {
+  transition: transform 0.5s;
+}
+
+.book {
+  max-height: 250px;
+}
+
+.thumbnail-banner {
+  display: block;
+  height: 40px;
+  max_height: 40px;
+  position: relative;
+  top: 7.5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.book-title {
+  color: orange;
+  text-align: center;
+  font-family: 'Harry Potter', monospace;
+}
+
+.book-details {
+  font-size: 0.6rem;
+  text-align: left;
+}
+
+.book-frame:hover {
+  transform: scale(1.5);
+}
+
+.book-frame:hover .book {
+  opacity: 0.1;
+}
+
+.book-frame:hover .thumbnail-banner {
+  opacity: 0.1;
+}
+
+.book-frame:hover .book-description {
+  opacity: 1.0;
+  visibility: visible;
+}
