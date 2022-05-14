@@ -1,3 +1,4 @@
+//////////////////// BOOKS ////////////////////
 //const books = require("../data/hpcollection/books.json");
 
 function formatBookInfo(bookInfoJson) {
@@ -92,4 +93,88 @@ function displayBookInfo(i) {
 
 for (let i = 1; i <= 7; i++) {
   displayBookInfo(i);
+}
+
+//////////////////// MOVIES ////////////////////
+//const movies = require("../data/movies/movies.json");
+
+function formatMovieInfo(movieInfoJson) {
+  let movieInfo = [];
+  movieInfo[0] = `Release Year: ${movieInfoJson['released_year']}`
+  movieInfo[1] = `Running Time: ${movieInfoJson['running_time']}`;
+  movieInfo[2] = `Budget: $${movieInfoJson['budget'] / 1000000} million`;
+  movieInfo[3] = `Box Office: $${movieInfoJson['box_office'] / 1000000} million`;
+  return movieInfo;
+}
+
+function getMoviesInfo(movies) {
+  let moviesInfo = {}
+  for (let i = 0; i < 8; i++) {
+    moviesInfo[i + 1] = formatMovieInfo(movies[i])
+  }
+  return moviesInfo;
+}
+
+const moviesData = {
+  '1': [
+    'Release Year: 2001',
+    'Running Time: 152',
+    'Budget: $125 million',
+    'Box Office: $1002 million'
+  ],
+  '2': [
+    'Release Year: 2002',
+    'Running Time: 161',
+    'Budget: $100 million',
+    'Box Office: $880.3 million'
+  ],
+  '3': [
+    'Release Year: 2004',
+    'Running Time: 142',
+    'Budget: $130 million',
+    'Box Office: $796.7 million'
+  ],
+  '4': [
+    'Release Year: 2005',
+    'Running Time: 157',
+    'Budget: $150 million',
+    'Box Office: $896.4 million'
+  ],
+  '5': [
+    'Release Year: 2007',
+    'Running Time: 138',
+    'Budget: $150 million',
+    'Box Office: $942 million'
+  ],
+  '6': [
+    'Release Year: 2009',
+    'Running Time: 153',
+    'Budget: $250 million',
+    'Box Office: $943.2 million'
+  ],
+  '7': [
+    'Release Year: 2010',
+    'Running Time: 146',
+    'Budget: $200 million',
+    'Box Office: $976.9 million'
+  ],
+  '8': [
+    'Release Year: 2011',
+    'Running Time: 130',
+    'Budget: $250 million',
+    'Box Office: $1342 million'
+  ]
+}
+
+function displayMoviesInfo(i) {
+  d3.selectAll(`#movie-${i}`)
+    .selectAll(".book-details")
+    .data(moviesData[i.toString()])
+    .enter()
+    .insert("li")
+    .text((d) => d);
+}
+
+for (let i = 1; i <= 8; i++) {
+  displayMoviesInfo(i);
 }

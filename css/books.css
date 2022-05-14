@@ -18,6 +18,13 @@
   margin: 0 17.5% 2.5% 17.5%;
 }
 
+.gallery-bottom-row-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5% 5% 2.5% 5%;
+}
+
+
 .book-frame {
   transition: transform 0.5s;
 }
