@@ -18,12 +18,16 @@
 
 <!-- Custom Stylesheet-->
 <link rel="stylesheet" href="css/hogwarts_houses.css">
+<link rel="stylesheet" href="css/books.css" />
 
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>-->
 <link rel="stylesheet" href="css/fullpage.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/fontawesome.min.css">
+
+<!-- Custom Harry Potter font -->
+<link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
 </head>
 
 <body>
@@ -63,7 +67,7 @@
 									      <input type="text" class="form-control" id="char_patronus" autocomplete="off" disabled="disabled">
 									    </div>
 									  </div>
-									  
+
 									  <div class="form-group row">
 									    <label for="char_house" class="col-4 col-form-label"><i class="fa-solid fa-house"></i> House</label>
 									    <div class="col-8">
@@ -116,7 +120,7 @@
 									  	<ul class="list-group" id="char_interact_with">
 									  	</ul>
 									  </div>
-					        </div> 
+					        </div>
 				        </div>
 				      </div>
 				      <div class="modal-footer" id="char_info_footer">
@@ -147,13 +151,106 @@
 </a>
 	</div>
 	<div class="section" data-anchor="Introduction">
-		<div class="slide" data-anchor="Introduction-1"></div>
-		<div class="slide" data-anchor="Introduction-2"></div>
+		<div class="slide" data-anchor="Introduction-1">
+			Hello
+		</div>
+		<div class="slide" data-anchor="Introduction-2">
+			<h1 class="collection-title">Book Collection</h1>
+			<div class="gallery-top-row">
+				<div class="book-frame">
+					<!-- TODO: Add border magic -->
+					<img src="assets/Harry-Potter-alphabet-banner-1.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp1.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Philosopher's Stone
+						</p>
+						<ul id="book-1" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-2.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp2.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Chamber of Secrets
+						</p>
+						<ul id="book-2" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-3.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp3.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and Prisoner of Azkaban
+						</p>
+						<ul id="book-3" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-4.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp4.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+						Harry Potter and the Goblet of Fire
+						</p>
+						<ul id="book-4" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-bottom-row">
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-5.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp5.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Order of the Phoenix
+						</p>
+						<ul id="book-5" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-6.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp6.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Half-Blood Prince
+						</p>
+						<ul id="book-6" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-7.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp7.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Deathly Hallows
+						</p>
+						<ul id="book-7" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="slide" data-anchor="Introduction-3"></div>
 	</div>
 	<div class="section" data-anchor="Hogwarts">
 		<div class="slide" data-anchor="Hogwarts-1">
-			
+
 		</div>
 		<div class="slide" data-anchor="Hogwarts-2">
 			<div class="col-12">
@@ -230,7 +327,7 @@ $(document).ready(function(){
         "Stats",
         "About",
       ],
-      controlArrows:false, 
+      controlArrows:false,
       showActiveTooltip:false,
       afterSlideLoad: function( section, origin, destination, direction, trigger){
       	// See https://github.com/alvarotrigo/fullPage.js#callbacks for documentation
@@ -239,11 +336,14 @@ $(document).ready(function(){
       		if($("#analyzedHouse").val()===""){
 	      		window.location.href = "index.html#Hogwarts/Hogwarts-2";
 	      	}
-      	}	
+      	}
 			}
 	});
 });
 
 </script>
+
+<script src="js/books_movies_display.js"></script>
+
 </body>
 </html>
