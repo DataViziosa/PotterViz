@@ -15,9 +15,12 @@
 	<script src="js/scrolloverflow.min.js"></script>
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/d3.min.js"></script>
-	<!-- Script for word cloud functionality-->
-	<script src="https://raw.githubusercontent.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+	<!--script src="js/d3.min.js"></script-->
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+
+	<!-- Script for word cloud functionality https://github.com/jasondavies/d3-cloud/blob/master/build/d3.layout.cloud.js -->
+	<script src="js/d3.layout.cloud.js"></script>
+
 	<!-- Custom scripts-->
 	<script src="js/hogwarts_houses.js"></script>
 	<script src="js/music.js"></script>
@@ -352,11 +355,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="section" data-anchor="Word-Cloud">
-			<div class="slide" data-anchor="Word-Cloud-1"></div>
-			<div class="slide" data-anchor="Word-Cloud-2">
+		<div class="section" data-anchor="The-Writing">
+			<div class="slide" data-anchor="The-Writing-1"></div>
+			<div class="slide" data-anchor="The-Writing-2">
 				<div id="wordcloud">
 
+				</div>
+				<div>
+					<div id='mini-book-gallery' class="gallery-top-row">
+						<img src="data/images/book_cover/hp1.jpeg" class="mini-book" />
+						<img src="data/images/book_cover/hp2.jpeg" class="mini-book" />
+						<img src="data/images/book_cover/hp3.jpeg" class="mini-book" />
+						<img src="data/images/book_cover/hp4.jpeg" class="mini-book" />
+						<img src="data/images/book_cover/hp5.jpeg" class="mini-book" />
+						<img src="data/images/book_cover/hp6.jpeg" class="mini-book" />
+						<img src="data/images/book_cover/hp7.jpeg" class="mini-book" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -478,8 +492,8 @@
 		$(document).ready(function () {
 			$('#wrapper').fullpage({
 				licenseKey: "gplv3-license",
-				anchors: ['Title', 'Introduction', 'Hogwarts', 'Characters', 'Magical-World', 'deep', 'About'], // div data-anchor to link navigation to div
-				sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black'], // the background color of each section
+				anchors: ['Title', 'Introduction', 'The-Writing', 'Hogwarts', 'Characters', 'Magical-World', 'deep', 'About'], // div data-anchor to link navigation to div
+				sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black', 'black'], // the background color of each section
 				navigationPosition: "right", //set the navigation to the right of the images
 				autoScrolling: true, // scroll full slide and not half of them
 				navigation: true, // Disoplay the dots for vertical navigation
