@@ -32,8 +32,7 @@ function analyseHouse(){
 
 
 function displayData(house){
-
-	let datapath = "http://localhost:8888/data/"
+	let datapath = "http://localhost:80/data/"
 	let char_data = datapath+"cleaned/selected_chars.csv"
 	let char_images = datapath + "images/characters/"
 	let ext_img = ".png"
@@ -60,11 +59,8 @@ function displayData(house){
 
 
 	d3.csv(char_data).then(d=>buildPlot(d))
-
 	function buildPlot(data){
 		var data = data.filter(d=>d.house.toLowerCase() == house.toLowerCase())
-		console.log(data)
-		console.log(data[0].house=="")
 
 		defs.selectAll(".artist-pattern")
 			.data(data)
@@ -99,6 +95,7 @@ function displayData(house){
 		}
 	}
 }
+
 
 function defaultIfEmpty(field, defaultVal="Unknown"){
 	return ((field === "")? defaultVal:field)
@@ -136,7 +133,9 @@ function arrayStringToArray(arr, sep=", ", transformation = d=>d){
 }
 
 function addBookFeaturedIn(books){
-	books = arrayStringToArray(books)	
+	if(typeof(books)==="string"){
+		books = arrayStringToArray(books)
+	}	
 
 	dico = {
 		1:"Harry Potter and the Philosopher's Stone",
@@ -153,13 +152,17 @@ function addBookFeaturedIn(books){
 }
 
 function addAssociations(associations){
-	associations = arrayStringToArray(associations,", ", removeFirstAndLastChar)
+	if(typeof(associations)==="string"){
+		associations = arrayStringToArray(associations,", ", removeFirstAndLastChar)
+	}
 	$("#char_assoc_in").empty()
 	associations.forEach(d=>$("#char_assoc_in").append('<li class="list-group-item">'+d+'</li>'))
 }
 
 function addInteractions(interactions){
-	interactions = arrayStringToArray(interactions, ", ", removeFirstAndLastChar)
+	if(typeof(interactions)==="string"){
+		interactions = arrayStringToArray(interactions, ", ", removeFirstAndLastChar)
+	}
 	$("#char_interact_with").empty()
 	interactions.forEach(d=>$("#char_interact_with").append('<li class="list-group-item">'+d+'</li>'))
 }
