@@ -1,15 +1,15 @@
 <!doctype html>
 <html>
 <head>
+	<!-- TODO: reformat document -->
+	<!-- TODO: add background image? -->
 	<meta charset="utf-8">
 	<title>A Harry Potter journey</title>
 	<meta name="author" content="Emna Fendri, Stephane Selim and Alessio Verardo">
 	<meta name="description" content="Visualisation of the Harry Potter universe">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Harry Potter, Visualisation, Vizualisation, Com-480, Data Visualisation">
-	<link rel="icon" href="data/images/houses_logo/hogwarts.png" type="image/png">
-
-
+	<link rel="icon" href="data/images/houses_logo/hogwarts.png" type="image/png">å
 	<!-- Libraries scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/scrolloverflow.min.js"></script>
@@ -31,6 +31,10 @@
 	<link rel="stylesheet" href="css/fullpage.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/books.css" />
+
+	<!-- Custom very authentic Harry Potter font -->
+	<link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
 </head>
 
 <body>
@@ -71,7 +75,7 @@
 									      <input type="text" class="form-control" id="char_patronus" autocomplete="off" disabled="disabled">
 									    </div>
 									  </div>
-									  
+
 									  <div class="form-group row">
 									    <label for="char_house" class="col-4 col-form-label"><i class="fa-solid fa-house"></i> House</label>
 									    <div class="col-8">
@@ -124,7 +128,7 @@
 									  	<ul class="list-group" id="char_interact_with">
 									  	</ul>
 									  </div>
-					        </div> 
+					        </div>
 				        </div>
 				      </div>
 				      <div class="modal-footer" id="char_info_footer">
@@ -135,59 +139,244 @@
 			  </div>
 			</div>
 		</div>
-	<div id="wrapper">
-		<!-- Main part of the website  -->
-		<div class="section" data-anchor="Title">
-		<svg width="586" height="400" xmlns="http://www.w3.org/2000/svg">
-		 <g>
-		  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp1" cx="171" stroke="#fff" fill="#000"/>
-		  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp3" transform="rotate(192,390.0091,270)" cx="390.00912" stroke="#fff" fill="#000"/>
-		  <path id="hp2" d="m239,247c36,-26 85,-1 85,-1" opacity="NaN" stroke-width="20" stroke="#fff" fill="#000"/>
-		  <path id="hp4" d="m176.54311,41.80681l20.31907,37.15581l-8.37838,4.38497l25.58558,31.83439l-8.37462,5.31647l31.62913,53.30836l-53.64864,-40.85207l10.23273,-5.67321l-33.33333,-26.16614l11.94444,-8.08618l-35.19519,-27.44942l39.21921,-23.77298z" stroke-width="0" stroke="#e6b905" fill="#e6b905"/>
-		 </g>
-		</svg><br>
-		<a href="#Introduction">
-	<svg xmlns="http://www.w3.org/2000/svg" width="80" height="120" id="arrow" viewBox="0 0 122.91 110.38">
-	  <path id="hg2" transform="rotate(90 44.0126 61.8)" stroke-width="5"  d="m49.26179,61.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
-	  <path id="hg1" transform="rotate(90 44.0126 27.8)" stroke-width="5" d="m49.26179,27.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
-	  <path id="hg3" transform="rotate(90 44.013 96.8)" stroke-width="5" d="m49.26179,96.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
-	</svg>
-	</a>
+<div id="wrapper">
+	<div class="section" data-anchor="Title">
+	<svg width="586" height="400" xmlns="http://www.w3.org/2000/svg">
+	 <g>
+	  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp1" cx="171" stroke="#fff" fill="#000"/>
+	  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp3" transform="rotate(192,390.0091,270)" cx="390.00912" stroke="#fff" fill="#000"/>
+	  <path id="hp2" d="m239,247c36,-26 85,-1 85,-1" opacity="NaN" stroke-width="20" stroke="#fff" fill="#000"/>
+	  <path id="hp4" d="m176.54311,41.80681l20.31907,37.15581l-8.37838,4.38497l25.58558,31.83439l-8.37462,5.31647l31.62913,53.30836l-53.64864,-40.85207l10.23273,-5.67321l-33.33333,-26.16614l11.94444,-8.08618l-35.19519,-27.44942l39.21921,-23.77298z" stroke-width="0" stroke="#e6b905" fill="#e6b905"/>
+	 </g>
+	</svg><br>
+	<a href="#Introduction">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="120" id="arrow" viewBox="0 0 122.91 110.38">
+  <path id="hg2" transform="rotate(90 44.0126 61.8)" stroke-width="5"  d="m49.26179,61.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg1" transform="rotate(90 44.0126 27.8)" stroke-width="5" d="m49.26179,27.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg3" transform="rotate(90 44.013 96.8)" stroke-width="5" d="m49.26179,96.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+</svg>
+</a>
+	</div>
+	<div class="section" data-anchor="Introduction">
+		<div class="slide" data-anchor="Introduction-1">
+			Hello
+			<button onclick="playMusic()">Play the music</button>
 		</div>
-		<div class="section" data-anchor="Introduction">
-			<div class="slide" data-anchor="Introduction-1">
-				<!-- Need user interaction to play the music-->
-				<button onclick="playMusic()">Play the music</button>
-			</div>
-			<div class="slide" data-anchor="Introduction-2"></div>
-			<div class="slide" data-anchor="Introduction-3"></div>
-		</div>
-		<div class="section" data-anchor="Hogwarts">
-			<div class="slide" data-anchor="Hogwarts-1">
-			</div>
-			<div class="slide" data-anchor="Hogwarts-2">
-				<div class="col-12">
-					<div class="col-5 hogwarts-logo">
-						<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('gryffindor')">
-							<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/gryffindor.png">
-						</a>
-					</div>
-					<div class="col-5 hogwarts-logo">
-						<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('ravenclaw')">
-							<img class="img-fluid mw-100 hogwarts-logo-img"src="data/images/houses_logo/ravenclaw.png">
-						</a>
-					</div>
-					<div class="col-5 hogwarts-logo">
-						<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('hufflepuff')">
-							<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/hufflepuff.png">
-						</a>
-					</div>
-					<div class="col-5 hogwarts-logo">
-						<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('slytherin')">
-							<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/slytherin.png">
-						</a>
+		<div class="slide" data-anchor="Introduction-2">
+			<h1 class="collection-title">Book Collection</h1>
+			<div class="gallery-top-row">
+				<div class="book-frame">
+					<!-- TODO: Add border magic -->
+					<!-- TODO: Add trailing cursor -->
+					<img src="assets/Harry-Potter-alphabet-banner-1.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp1.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Philosopher's Stone
+						</p>
+						<ul id="book-1" class="book-details">
+
+						</ul>
 					</div>
 				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-2.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp2.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Chamber of Secrets
+						</p>
+						<ul id="book-2" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-3.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp3.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and Prisoner of Azkaban
+						</p>
+						<ul id="book-3" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-4.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp4.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+						Harry Potter and the Goblet of Fire
+						</p>
+						<ul id="book-4" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-bottom-row">
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-5.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp5.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Order of the Phoenix
+						</p>
+						<ul id="book-5" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-6.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp6.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Half-Blood Prince
+						</p>
+						<ul id="book-6" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-7.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp7.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Deathly Hallows
+						</p>
+						<ul id="book-7" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide" data-anchor="Introduction-3">
+			<h1 class="collection-title">Movie Collection</h1>
+			<div class="gallery-top-row">
+				<div class="book-frame">
+					<img src="data/images/movies/hp1.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Philosopher's Stone
+						</p>
+						<ul id="movie-1" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp2.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Chamber of Secrets
+						</p>
+						<ul id="movie-2" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp3.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and Prisoner of Azkaban
+						</p>
+						<ul id="movie-3" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp4.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+						Harry Potter and the Goblet of Fire
+						</p>
+						<ul id="movie-4" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-bottom-row-2">
+				<div class="book-frame">
+					<img src="data/images/movies/hp5.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Order of the Phoenix
+						</p>
+						<ul id="movie-5" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp6.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Half-Blood Prince
+						</p>
+						<ul id="movie-6" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp7.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Deathly Hallows Part 1
+						</p>
+						<ul id="movie-7" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp8.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Deathly Hallows Part 2
+						</p>
+						<ul id="movie-8" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" data-anchor="Hogwarts">
+		<div class="slide" data-anchor="Hogwarts-1">
+		</div>
+		<div class="slide" data-anchor="Hogwarts-2">
+			<div class="col-12">
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('gryffindor')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/gryffindor.png">
+					</a>
+				</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('ravenclaw')">
+						<img class="img-fluid mw-100 hogwarts-logo-img"src="data/images/houses_logo/ravenclaw.png">
+					</a>
+				</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('hufflepuff')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/hufflepuff.png">
+					</a>
+				</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('slytherin')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/slytherin.png">
+					</a>
+				</div>
+			</div>
 			</div>
 			<div class="slide" data-anchor="Hogwarts-3">
 				<input type="hidden" id="analyzedHouse" value="">
@@ -258,7 +447,6 @@
 		</div>
 	</div>
 	<script>
-
 	$(document).ready(function(){
 			$('#wrapper').fullpage({
 			licenseKey:"gplv3-license",
@@ -301,6 +489,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.1/plugins/sigma.renderers.customShapes.min.js" integrity="sha512-aq73VTnmRtppJmMoDa567DjtQsbyMBtfEDdLGdU8EqqwOEO4ExH36KE7i9kjWdv9XTuMi9vHnrt9aw5nItTicw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="js/char_networks.js"></script>
 	<script type="text/javascript" src="js/spell_by_book.js"></script>
-<script type="text/javascript" src="js/sentiment_analysis.js"></script>
+	<script type="text/javascript" src="js/books_movies_display.js"></script>
 </body>
 </html>
