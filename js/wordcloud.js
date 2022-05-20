@@ -4,11 +4,19 @@
 
 // Encapsulate the word cloud functionality
 function wordCloud(selector) {
-  var fill = d3.scale.category20();
-  //var fill = d3.scaleOrdinal(d3.schemeCategory10);
+  //var fill = d3.scale.category20();
+  var fill = d3.scaleOrdinal(d3.schemeCategory10);
+  // Custom color palette of 20 unique colors (https://sashamaps.net/docs/resources/20-colors/)
+  /*colors = [
+    '#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231',
+    '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe',
+    '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000',
+    '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff'
+  ]*/
+
 
   //Construct the word cloud's SVG element
-  var svg = d3.selectAll(selector).append("svg")
+  var svg = d3.select(selector).append("svg")
       .attr("width", 500)
       .attr("height", 500)
       .append("g")
@@ -25,13 +33,13 @@ function wordCloud(selector) {
           .append("text")
           .style("font-family", "Harry Potter")
           .style("fill", function(d, i) { return fill(i); })
+          //.style("fill", "white")
           .attr("text-anchor", "middle")
           .attr('font-size', 1)
-          .text(function(d) { return d.text; });
+          .text(function(d) { return d.text; })
 
       //Entering and existing words
-      cloud
-          .transition()
+      .merge(cloud).transition()
               .duration(600)
               .style("font-size", function(d) { return d.size + "px"; })
               .attr("transform", function(d) {
@@ -63,7 +71,7 @@ function wordCloud(selector) {
               .padding(5)
               .rotate(function() { return ~~(Math.random() * 2) * 90; })
               // TODO: change with Harry Potter
-              .font("Impact")
+              .font("Harry Potter")
               .fontSize(function(d) { return d.size; })
               .on("end", draw)
               .start();
@@ -72,22 +80,125 @@ function wordCloud(selector) {
 
 }
 
-//Some sample data - http://en.wikiquote.org/wiki/Opening_lines
-var words = [
-    "You don't know about me without you have read a book called The Adventures of Tom Sawyer but that ain't no matter.",
-    "The boy with fair hair lowered himself down the last few feet of rock and began to pick his way toward the lagoon.",
-    "When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-first birthday with a party of special magnificence, there was much talk and excitement in Hobbiton.",
-    "It was inevitable: the scent of bitter almonds always reminded him of the fate of unrequited love."
-]
+//const booksTopWords = require("../data/cleaned/word_cloud.json");
+const booksTopWords = {
+  '0': [
+    'quirrell',           'flamel',
+    'mr dursley',         'troll',
+    'professor quirrell', 'norbert',
+    'ronan',              'mrs dursley',
+    'piers',              'nicolas',
+    'firenze',            'turban',
+    'mr ollivander',      'bane',
+    'ollivander',         'unicorn',
+    'gotten',             'nimbus two',
+    'nicolas flamel',     'griphook',
+    'two thousand',       'nimbus two thousand',
+    'flint',              'nimbus',
+    'house cup',          'mr potter',
+    'sorcerer',           'scabbers',
+    'get yer',            'third floor'
+  ],
+  '1': [
+    'chamber secrets',   'secrets',
+    'lockhart',          'dobby',
+    'riddle',            'myrtle',
+    'diary',             'gilderoy',
+    'gilderoy lockhart', 'colin',
+    'justin',            'heir',
+    'basilisk',          'moaning myrtle',
+    'fawkes',            'lucius',
+    'elf',               'ernie',
+    'sir dobby',         'borgin',
+    'aragog',            'mr borgin',
+    'lucius malfoy',     'mandrakes',
+    'myrtle bathroom',   'heir slytherin',
+    'riddle diary',      'attacks',
+    'hospital wing',     'fifty years'
+  ],
+  '2': [
+    'prisoner',     'azkaban',
+    'lupin',        'professor lupin',
+    'pettigrew',    'sirius',
+    'scabbers',     'crookshanks',
+    'dementors',    'buckbeak',
+    'trelawney',    'professor trelawney',
+    'marge',        'firebolt',
+    'aunt marge',   'hogsmeade',
+    'dementor',     'stan',
+    'peter',        'boggart',
+    'sirius black', 'map',
+    'hippogriff',   'rat',
+    'expecto',      'ern',
+    'james',        'rosmerta',
+    'lesson',       'patronus'
+  ],
+  '3': [
+    'moody',         'bagman',       'crouch',
+    'cedric',        'mr crouch',    'winky',
+    'krum',          'karkaroff',    'sirius',
+    'dobby',         'wormtail',     'maxime',
+    'madame maxime', 'rita',         'fleur',
+    'madame',        'diggory',      'tournament',
+    'skeeter',       'rita skeeter', 'beauxbatons',
+    'task',          'elf',          'frank',
+    'durmstrang',    'triwizard',    'eaters',
+    'death eaters',  'champion',     'viktor'
+  ],
+  '4': [
+    'potter order',         'order phoenix',
+    'phoenix',              'umbridge',
+    'sirius',               'professor umbridge',
+    'luna',                 'lupin',
+    'kreacher',             'harry potter order',
+    'cho',                  'tonks',
+    'moody',                'death eaters',
+    'eaters',               'trelawney',
+    'dementors',            'prophecy',
+    'angelina',             'bellatrix',
+    'james',                'grawp',
+    'dobby',                'elf',
+    'department mysteries', 'mundungus',
+    'professor trelawney',  'kingsley',
+    'department',           'marietta'
+  ],
+  '5': [
+    'prince',             'half blood',
+    'slughorn',           'riddle',
+    'prime minister',     'scrimgeour',
+    'prime',              'ogden',
+    'luna',               'kreacher',
+    'tonks',              'eaters',
+    'death eaters',       'prophecy',
+    'horcrux',            'borgin',
+    'zabini',             'bellatrix',
+    'lupin',              'horcruxes',
+    'narcissa',           'fleur',
+    'dark lord',          'eater',
+    'death eater',        'sirius',
+    'professor slughorn', 'hastily',
+    'hepzibah',           'room requirement'
+  ],
+  '6': [
+    'deathly',      'griphook',      'luna',
+    'kreacher',     'lupin',         'eaters',
+    'death eaters', 'horcrux',       'bellatrix',
+    'fleur',        'locket',        'greyback',
+    'tonks',        'aberforth',     'grindelwald',
+    'bathilda',     'scrimgeour',    'yaxley',
+    'ollivander',   'muriel',        'horcruxes',
+    'doge',         'elder',         'tent',
+    'gregorovitch', 'lily',          'death eater',
+    'eater',        'godric hollow', 'kingsley'
+  ]
+}
 
-//Prepare one of the sample sentences by removing punctuation,
-// creating an array of words and computing a random size attribute.
+
+// Get the array of top words of a book and adjust the size according to the ranking
 function getWords(i) {
-    return words[i]
-            .replace(/[!\.,:;\?]/g, '')
-            .split(' ')
-            .map(function(d) {
-                return {text: d, size: 10 + Math.random() * 60};
+    return booksTopWords[i]
+            .map(function(d, i) {
+                return {text: d, size: 10 + ((30.0 - i) / 30.0) * 60};
             })
 }
 
@@ -97,9 +208,37 @@ function getWords(i) {
 function showNewWords(vis, i) {
     i = i || 0;
 
-    vis.update(getWords(i ++ % words.length))
-    setTimeout(function() { showNewWords(vis, i + 1)}, 2000)
+    data = getWords(i)
+    vis.update(data)
+    //setTimeout(function() { showNewWords(vis, i + 1)}, 2000)
 }
+
+// Insert books
+/*const books = [1, 2, 3, 4, 5, 6, 7]
+
+const miniBookGallerySelector =
+  d3.select("#mini-book-gallery")
+  .data(books);
+
+miniBookGallerySelector.enter()
+  .merge(miniBookGallerySelector).append("img")
+    .attr("src", (d) => `data/images/book_cover/hp${d}.jpeg`)
+    .attr("class", "mini-book")
+    .on("mouseover", (d, i) => console.log(i));*/
+
+/*d3.select("#ok")
+  .data(booksSrcs)
+  .enter()
+  .append("img")
+    .attr("src", "data/images/book_cover/hp1.jpeg")
+    .attr("class", "mini-book")
+    .on("mouseover", (d, i) => console.log(i));*/
+
+/*d3.selectAll(".mini-book")
+  .data(books)
+  .join("text")
+  .text(d => d)
+  .on("mouseover", (d, i) => console.log(i));*/
 
 //Create a new instance of the word cloud visualisation.
 var myWordCloud = wordCloud("#wordcloud");
