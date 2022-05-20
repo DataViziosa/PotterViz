@@ -15,8 +15,9 @@
 	<script src="js/scrolloverflow.min.js"></script>
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<!--script src="js/d3.min.js"></script-->
-	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<!--script src="http://d3js.org/d3.v3.min.js"></script-->
+
 
 	<!-- Script for word cloud functionality https://github.com/jasondavies/d3-cloud/blob/master/build/d3.layout.cloud.js -->
 	<script src="js/d3.layout.cloud.js"></script>
@@ -31,12 +32,12 @@
 	<link rel="stylesheet" href="css/char_networks.css">
 	<link rel="stylesheet" href="css/spell_by_books.css">
 	<link rel="stylesheet" href="css/sentiment_analysis.css">
+	<link rel="stylesheet" href="css/books.css" />
 
 	<!-- Libraries stylesheets -->
 	<link rel="stylesheet" href="css/fullpage.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fontawesome.min.css">
-	<link rel="stylesheet" href="css/books.css" />
 
 	<!-- Custom very authentic Harry Potter font -->
 	<link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
@@ -362,14 +363,16 @@
 
 				</div>
 				<div>
-					<div id='mini-book-gallery' class="gallery-top-row">
-						<img src="data/images/book_cover/hp1.jpeg" class="mini-book" />
-						<img src="data/images/book_cover/hp2.jpeg" class="mini-book" />
-						<img src="data/images/book_cover/hp3.jpeg" class="mini-book" />
-						<img src="data/images/book_cover/hp4.jpeg" class="mini-book" />
-						<img src="data/images/book_cover/hp5.jpeg" class="mini-book" />
-						<img src="data/images/book_cover/hp6.jpeg" class="mini-book" />
-						<img src="data/images/book_cover/hp7.jpeg" class="mini-book" />
+					<!-- TODO: add to change number of words? -->
+					<!-- TODO: add scrolldown menu to choose type of words (tf-ids, frequents etc..) -->
+					<div id="ok" class="gallery-top-row">
+						<img src="data/images/book_cover/hp1.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 0)"/>
+						<img src="data/images/book_cover/hp2.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 1)"/>
+						<img src="data/images/book_cover/hp3.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 2)"/>
+						<img src="data/images/book_cover/hp4.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 3)"/>
+						<img src="data/images/book_cover/hp5.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 4)"/>
+						<img src="data/images/book_cover/hp6.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 5)"/>
+						<img src="data/images/book_cover/hp7.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 6)"/>
 					</div>
 				</div>
 			</div>

@@ -71,6 +71,15 @@ body {
   text-align: left;
 }
 
+.mini-book {
+  max-height: 150px;
+  transition: transform 0.25s;
+}
+
+.mini-book:hover {
+  transform: scale(1.5);
+}
+
 .book-frame:hover {
   transform: scale(1.5);
 }
