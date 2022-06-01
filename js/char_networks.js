@@ -66,7 +66,6 @@ class SigmaGraph{
    */
   create_nodes(nodes){
     nodes.forEach(node => {
-      console.log(node)
       self.nodes.push({
         id:node.id,
         label:node.name,
@@ -172,7 +171,6 @@ class SigmaGraph{
 
     // Iterate over all the nodes
     s.graph.nodes().forEach(n => {
-      console.log(self.selected_nodes.length)
       if(self.selected_nodes.size ==0){
         n.color = communityColors[n.node_data.community]
       }else{
