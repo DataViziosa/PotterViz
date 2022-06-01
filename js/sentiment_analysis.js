@@ -75,11 +75,13 @@ class PolarityScore{
 						.attr("width", this.width)
 						.attr("height", this.height)
 
-	  	this.yAxisGroup = this.svg.append("g")
+	  	
 	  	this.margin = {top: 20, right: 30, bottom: 30, left: 40}
 
 	  	this.xAxis = d3.axisBottom(this.xScale).tickSize(15)
 		this.yAxis = d3.axisLeft().scale(this.yScale).tickSize(0.25)
+		this.yAxisGroup = this.svg.append("g").attr("class", "axisWhite").call(this.yAxis)
+
 		// the main drawable component
 		this.svg.append("g")
 			    .attr("transform", "translate(" + this.margin.left + ",0)")
@@ -109,6 +111,19 @@ class PolarityScore{
 		this.xScale.domain([1, tot_line]).range([this.margin.left, this.width - this.margin.right])
 		this.yScale.domain([-1,1]).range([ this.height - this.margin.bottom, this.margin.top])
 		this.svg.html("")
+
+	    //Append group and insert axis
+	    this.svg.append("g")
+	    	.attr("class", "axisWhite")
+	    	.call(this.xAxis)
+
+	    /*this.svg.append('text')
+			    .attr('text-anchor', 'middle')
+			    .attr("color", "#FFF")
+			    .text("x axis")
+			    //.attr('transform', 'rotate(-90)')
+	   */
+
 
 		this.svg.append("path")
 	      .datum(data)
