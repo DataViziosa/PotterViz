@@ -329,7 +329,7 @@ d3.json(association_network).then(d=>{
   // Setup searchbar
   var sel = d3.select("#search-char-cont")
               .append("select")
-              .attr("class", "form-select col-5 inline-block")
+              .attr("class", "form-select inline-block")
               .attr("id","search-char")
   var btn = d3.select("#search-char-cont")
               .append("button")
