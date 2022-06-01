@@ -1,8 +1,8 @@
-body {
+/*body {
    /*cursor: url('http://www.rw-designer.com/cursor-extern.php?id=26747'), pointer;*/
-   /* Taken from https://icons8.com/icons/set/wand */
+   /* Taken from https://icons8.com/icons/set/wand 
    cursor: url('../assets/icons8-wand-64.png'), pointer;
-}
+}*/
 
 .collection-title {
   text-align: center;
