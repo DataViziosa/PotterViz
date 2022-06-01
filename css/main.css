@@ -104,6 +104,7 @@ a path  {
 }
 
 .slideTitle{
+  font-size: 45px;
   font-family: "WWFont";
 }
 
@@ -112,6 +113,10 @@ a path  {
 }
 
 .websiteImg{
+  display: block;
+  width: 60%;
+  /*margin-right: 30px;*/
+  margin: 0 auto;
   box-shadow:  0px 0px 27px 18px rgba(255,255,255,0.19);
 }
 
