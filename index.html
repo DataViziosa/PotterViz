@@ -165,7 +165,7 @@
 			<button onclick="playMusic()">Play the music</button>
 		</div>
 		<div class="slide" data-anchor="Introduction-2">
-			<h1 class="collection-title">Book Collection</h1>
+			<h2 class="slideTitle">Book Collection</h1>
 			<div class="gallery-top-row">
 				<div class="book-frame">
 					<!-- TODO: Add border magic -->
@@ -258,7 +258,7 @@
 			</div>
 		</div>
 		<div class="slide" data-anchor="Introduction-3">
-			<h1 class="collection-title">Movie Collection</h1>
+			<h1 class="slideTitle">Movie Collection</h1>
 			<div class="gallery-top-row">
 				<div class="book-frame">
 					<img src="data/images/movies/hp1.jpeg" class="book"/>
@@ -498,7 +498,8 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="About">
-			A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo
+			A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo.
+			<!-- Add data provenance-->
 		</div>
 	</div>
 	<script>
@@ -528,15 +529,15 @@
 	      controlArrows:false, // disable arrow for hroizontal navigation as they were superposed with the navigation tools
 	      showActiveTooltip:false,
 	      afterSlideLoad: function( section, origin, destination, direction, trigger){
-	      	//allow us to make some action after we move to some slide 
-	      	// See https://github.com/alvarotrigo/fullPage.js#callbacks for documentation
-	      	if(destination.anchor==="Hogwarts-3"){
-	      		// If the page Hogwarts-3 (bubble chart) is load without having selected a house, we redirect the user to the house selection page.
-	      		if($("#analyzedHouse").val()===""){
-		      		window.location.href = "index.html#Hogwarts/Hogwarts-2";
-		      	}
-	      	}	
-				}
+		      	//allow us to make some action after we move to some slide 
+		      	// See https://github.com/alvarotrigo/fullPage.js#callbacks for documentation
+		      	if(destination.anchor==="Hogwarts-3"){
+		      		// If the page Hogwarts-3 (bubble chart) is load without having selected a house, we redirect the user to the house selection page.
+		      		if($("#analyzedHouse").val()===""){
+			      		window.location.href = "index.html#Hogwarts/Hogwarts-2";
+			      	}
+		      	}	
+			}
 		})
 	})
 
