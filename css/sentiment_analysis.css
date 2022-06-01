@@ -18,6 +18,7 @@
 #charInScene{
 	text-align: left;
   overflow: scroll;
+  text-align: center
 }
 
 .y-axis, .x-axis{

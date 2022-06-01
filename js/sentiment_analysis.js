@@ -108,7 +108,7 @@ class PolarityScore{
 	 */
 	displayRectangleTooltip(d, info, tooltip_rectangle){
 	 	return tooltip_rectangle.style("visibility", "visible")
-	              .style("left", d['pageX']+10+"px")
+	              .style("left", d['pageX']+30+"px")
 	              .style("top", d['pageY']-80+"px")
 	              .html("<span style='font-weight:bold'>Speaker: "+info['character']+"<br></span>Score: "+info['polarity_score']+"<br><br>«"+info['dialog']+"»")
 	}
@@ -130,13 +130,13 @@ class PolarityScore{
 		   .attr("transform", "translate("+ (this.margin.left)+", 0)")
 		   .call(this.yAxis);
 
-		this.svg.append("text")      // text label for the x axis
-        .attr("x", -this.height/2)
-        .attr("y",this.margin.top)
-        .attr("class","axisWhite")
-        .attr("transform","rotate(-90)")
-        .style("text-anchor", "middle")
-        .text("Polarity score")
+		this.ytitle = this.svg.append("text")      // text label for the x axis
+					        .attr("x", -this.height/2)
+					        .attr("y",this.margin.top)
+					        .attr("class","axisWhite")
+					        .attr("transform","rotate(-90)")
+					        .style("text-anchor", "middle")
+					        .text("Polarity score")
 
 
 
@@ -207,9 +207,9 @@ class PolarityScore{
 	}
 
 	changeScale(x_low, x_high){
-	  //Update xAxis scale
-	  this.xScale.domain([x_low, x_high])
-	    .range([0, this.width]);
+		//Update xAxis scale
+		this.xScale.domain([x_low, x_high])
+			.range([0, this.width])
 
 	  //Call axes
 	  var t =this.svg.transition()
@@ -254,8 +254,6 @@ class PolarityScore{
     				return -this.yScale(0)+this.yScale(score)
     			}
 			})
-
-	  this.yAxisGroup.call(this.yAxis);
 	}
 }
 
@@ -364,6 +362,7 @@ function displayScenes(data, pol){
 							var sceneData = d.srcElement.__data__
 							charInScene(sceneData.chars)
 							pol.changeScale(sceneData.start_diag, sceneData.nb_dialog+sceneData.start_diag)
+							pol.ytitle.text("")
 						})
 						.on("mouseover", d => {
 							pol.showRectangle( d.srcElement.__data__.name)
@@ -373,6 +372,7 @@ function displayScenes(data, pol){
 				     		pol.showRectangle("")
 				           tooltip_sentiment.style("visibility", "hidden") // remove the div
 				       })
+
 }
 
 
