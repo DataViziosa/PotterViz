@@ -375,9 +375,16 @@
 	</div>
 	<div class="section" data-anchor="Hogwarts">
 		<div class="slide" data-anchor="Hogwarts-1">
+			<div class="container">
+				<h3 class="slideTitle">Hogwarts houses</h3>
+				Around their eleventh birthday, the British witches and wizards receive, if they have shown magical abailities, their admission letter from te school for School of Witchcraft and Wizardry, Hogwarts. On September first, After having taken the Hogwarts Express at 11am precisely on King's cross 9 3/4' platform, they arrive in the beautiful castle<br><br>
+				<img src="/images/hogwarts.webp" width="600" height="400" class="websiteImg"><img src="/images/sorting_hat.webp" width="600" height="400" class="websiteImg"><br>
+				Before their first dinner, they must be sorted out by the <span style="font-style:italic;">Sorting Hat</span> into one of the different Hogwarts named after the 4 founders of the school and most amazing wizards and witches of their time: <span style="font-style:italic;">Godric Gryffindor, Rowena Ravenclaw, Helga Hufflepuff or Salazar Slytherin</span>. In Harry Potter's first year, 40 students, 10 per houses, were sorted out. It means that Hogwarts has around 280 students in each year. This might becomes very hard to remember and that's why, in this first visualisation, we let you explore the Hogwarts houses and the characters that belongs to the, for the main characters in the Harry Potter saga.
+			</div>
 		</div>
 		<div class="slide" data-anchor="Hogwarts-2">
 			<div class="col-12">
+				<h3 class="slideTitle">Select your house</h3>
 				<div class="col-5 hogwarts-logo">
 					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('gryffindor')">
 						<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/gryffindor.png">
@@ -410,18 +417,40 @@
 		</div>
 		<div class="section" data-anchor="Characters">
 			<div class="slide" data-anchor="Characters-1">
-				
+				<h3 class="slideTitle">Exploring the association groups</h3>
+				<div class="container">
+					Have you ever wonder in which group were both Fred Weasley and Angeline Johnson before getting married ? Or can you name all the member of the Order of the Phoenix during the first war against Vold.... hem, <span style="font-weight:bold;"> He-Who-Must-Not-Be-Named</span> ?
+					Well, in Harry Potter, as in every such saga, spanning several years and a lot of different situations, keeping tracks of every group of characters and who are in, is really hard as they contain complex social relations that are evolving over time.
+
+					To help you understand them, we give you the possibility to interactively explore a subset of the different Harry Potter association groups, their members and the different association in common between multiple characters.
+
+					Note that for visualisation purposes, we did not include Hogwarts houses since they were already shown in a former visualisations.
+					<br><br>
+					<div class="col-5 inline-block" style="text-align: left;">
+						<h5>How to use the graph in the next slide</h5>
+						<ul id="common-association-list" class ="list-group" >
+							<li>Click on node: select character and neighbours.</li>
+							<li>Double click on node: display all characters information.</li>
+							<li>Click on background: deselect all nodes.</li>
+							<li>Click on multiple node: display the association in common.</li>
+							<li>Click on menu on the left: hide or show the association.</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="slide" data-anchor="Characters-2" id="explore-char">
-				<h3>Exploring character groups</h3>
+				<h3 class="slideTitle">Exploring character groups</h3>
+				<div id="search-char-cont" style="margin-bottom: 20px;">
+						<h4 class="inline-block col-3">Search for a character</h4>
+					</div>
 				<div id="sigma-container" class="col-8 inline-block"></div>
 				<div id="filter-menu" class="col-3 inline-block"></div>
 				<div id="common-association" class="col-12">
-					<div id="search-char-cont">
-						<h4 class="inline-block col-3">Search for a character</h4>
+					<div class="col-12 inline-block">
+						<h5>Group in common between the selected characters</h5>
+						<ul id="common-association-list" class ="list-group  list-group-horizontal"></ul>
 					</div>
-					<h4>Group in common between the selected characters</h4>
-					<ul id="common-association-list" class ="list-group  list-group-horizontal"></ul>
+					
 				</div>
 			</div>
 			<div class="slide" data-anchor="Characters-3">
