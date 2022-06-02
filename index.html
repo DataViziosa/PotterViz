@@ -11,11 +11,13 @@
 	<meta name="keywords" content="Harry Potter, Visualisation, Vizualisation, Com-480, Data Visualisation">
 	<link rel="icon" href="data/images/houses_logo/hogwarts.png" type="image/png">
 	<!-- Libraries scripts-->
+	<script src="js/constantes.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/scrolloverflow.min.js"></script>
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<!-- Script for word cloud functionality https://github.com/jasondavies/d3-cloud/blob/master/build/d3.layout.cloud.js -->
 	<script src="js/d3.layout.cloud.js"></script>
 	<!-- Custom scripts-->
@@ -40,6 +42,7 @@
 </head>
 
 <body>
+	<audio id="audio" style="visibility: hidden;"></audio>
 	<!-- Modal used to diplay character information, by default it is hidden --> 
 	<div class="modal fade" id="myModal">
 			  <div class="modal-dialog modal-dialog-scrollable">
@@ -161,8 +164,8 @@
 	</div>
 	<div class="section" data-anchor="Introduction">
 		<div class="slide" data-anchor="Introduction-1">
-			Hello
-			<button onclick="playMusic()">Play the music</button>
+			<button onclick="handleMusic()" id="playMusic">Play the music</button>
+
 		</div>
 		<div class="slide" data-anchor="Introduction-2">
 			<h2 class="slideTitle">Book Collection</h1>
@@ -375,16 +378,17 @@
 	</div>
 	<div class="section" data-anchor="Hogwarts">
 		<div class="slide" data-anchor="Hogwarts-1">
+			<h3 class="slideTitle">Hogwarts houses</h3>
 			<div class="container">
-				<h3 class="slideTitle">Hogwarts houses</h3>
 				Around their eleventh birthday, the British witches and wizards receive, if they have shown magical abailities, their admission letter from te school for School of Witchcraft and Wizardry, Hogwarts. On September first, After having taken the Hogwarts Express at 11am precisely on King's cross 9 3/4' platform, they arrive in the beautiful castle<br><br>
-				<img src="/images/hogwarts.webp" width="600" height="400" class="websiteImg"><img src="/images/sorting_hat.webp" width="600" height="400" class="websiteImg"><br>
+				<img class="img-fluid mw-45 websiteImg" src="/images/hogwarts.webp"><!--<img src="/images/sorting_hat.png" class="img-fluid mw-45 websiteImg">--><br>
 				Before their first dinner, they must be sorted out by the <span style="font-style:italic;">Sorting Hat</span> into one of the different Hogwarts named after the 4 founders of the school and most amazing wizards and witches of their time: <span style="font-style:italic;">Godric Gryffindor, Rowena Ravenclaw, Helga Hufflepuff or Salazar Slytherin</span>. In Harry Potter's first year, 40 students, 10 per houses, were sorted out. It means that Hogwarts has around 280 students in each year. This might becomes very hard to remember and that's why, in this first visualisation, we let you explore the Hogwarts houses and the characters that belongs to the, for the main characters in the Harry Potter saga.
 			</div>
 		</div>
 		<div class="slide" data-anchor="Hogwarts-2">
 			<div class="col-12">
 				<h3 class="slideTitle">Select your house</h3>
+				<p>Click on one house to dive into it and explore the characters sorted in it.</p><br>
 				<div class="col-5 hogwarts-logo">
 					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('gryffindor')">
 						<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/gryffindor.png">
@@ -428,7 +432,7 @@
 					<br><br>
 					<div class="col-5 inline-block" style="text-align: left;">
 						<h5>How to use the graph in the next slide</h5>
-						<ul id="common-association-list" class ="list-group" >
+						<ul class ="list-group" >
 							<li>Click on node: select character and neighbours.</li>
 							<li>Double click on node: display all characters information.</li>
 							<li>Click on background: deselect all nodes.</li>
@@ -441,8 +445,8 @@
 			<div class="slide" data-anchor="Characters-2" id="explore-char">
 				<h3 class="slideTitle">Exploring character groups</h3>
 				<div id="search-char-cont" style="margin-bottom: 20px;">
-						<h4 class="inline-block col-3">Search for a character</h4>
-					</div>
+					<h4 class="inline-block col-3">Search for a character</h4>
+				</div>
 				<div id="sigma-container" class="col-8 inline-block"></div>
 				<div id="filter-menu" class="col-3 inline-block"></div>
 				<div id="common-association" class="col-12">
@@ -453,9 +457,6 @@
 					
 				</div>
 			</div>
-			<div class="slide" data-anchor="Characters-3">
-				
-			</div>
 		</div>
 		<div class="section" data-anchor="Magical-World">
 			<div class="slide" data-anchor="Magical-World-1"></div>
@@ -464,13 +465,16 @@
 		</div>
 		<div class="section" data-anchor="deep">
 			<div class="slide" data-anchor="deep-1"></div>
-			<div class="slide" data-anchor="deep-2">
+			<div class="slide" data-anchor="deep-2"></div>
+			<div class="slide" data-anchor="deep-3"></div>
+			<div class="slide" data-anchor="deep-4">
 				<div id="spellByBook">
-					<h2>Spell Launched per book</h2>
+					<h2 class="slideTitleR">Spell Launched per book</h2>
 					<div id="spellByBookContainer" style="width:100%;height:80%"></div>
 				</div>
 			</div>
-			<div class="slide" data-anchor="deep-3">
+			<div class="slide" data-anchor="deep-5"></div>
+			<div class="slide" data-anchor="deep-6">
 				<div id="sentimentAnalysis" style="width:100%;height:100%">
 					<div class="btn-group" role="group" aria-label="check_group">
 						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp1" autocomplete="off" onclick="displayMovie(1)" checked>
@@ -498,7 +502,7 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="About">
-			A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo.
+			<h2 class="ml3">A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo.</h2>
 			<!-- Add data provenance-->
 		</div>
 	</div>
@@ -549,5 +553,18 @@
 	<script type="text/javascript" src="js/books_movies_display.js"></script>
 	<script type="text/javascript" src="js/wordcloud.js"></script>
 	<script type="text/javascript" src="js/sentiment_analysis.js"></script>
+	<script>
+		var textWrapper = document.querySelector('.ml3');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({loop: false})
+		  .add({
+		    targets: '.ml3 .letter',
+		    opacity: [0,1],
+		    easing: "easeInOutQuad",
+		    duration: 500,
+		    delay: (el, i) => 50 * (i+1)
+		  })
+	</script>
 </body>
 </html>

@@ -97,19 +97,14 @@ a path  {
    transform: scale(1.5);
 }
 
-.axisWhite line{
-  stroke: #FFF;
-}
 
-.axisWhite path{
-  stroke: #FFF;
-}
-
-.axisWhite text{
+.axisWhite{
   fill: #FFF;
+  stroke: #FFF;
 }
 
 .slideTitle{
+  font-size: 45px;
   font-family: "WWFont";
 }
 
@@ -118,9 +113,36 @@ a path  {
 }
 
 .websiteImg{
+  display: block;
+  width: 60%;
+  /*margin-right: 30px;*/
+  margin: 0 auto;
   box-shadow:  0px 0px 27px 18px rgba(255,255,255,0.19);
 }
 
 .container{
   text-align: justify;
 }
+
+
+.card {
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+.card .view {
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.card h5 a {
+  color: #0d47a1;
+}
+.card h5 a:hover {
+  color: #072f6b;
+}
+
+
+#pButton {
+  margin-top: 12px;
+  cursor: pointer; }

@@ -30,21 +30,20 @@ var bookName = {1:"Philosopher's Stone", 2:"Chamber of Secrets", 3:"Prisoner of 
 
 
 // define over all constants
-var data = "http://localhost:80/data/"
-var spell_data = data+"cleaned/spellByBooke.csv"
+var spell_data = cleaned_path+"spellByBooke.csv"
 
 var width =  1200
-var height = 750
-var margin = {left: 40, top: 40, bottom: 40, right: 40}
+var height = 700
+var margin = {left: 30, top: 40, bottom: 40, right: 40}
 
 
 // add the svg object to html
 var svg = d3.select("#spellByBookContainer")
 			.append("svg")
-			.attr("width", width+margin.right +margin.left)
+			.attr("width", width+margin.right +margin.left+40)
 			.attr("height", height+margin.top+margin.bottom)
 			.append("g")
-			.attr("transform","translate("+margin.left+","+margin.top+")")
+			.attr("transform","translate("+(40+margin.left)+","+margin.top+")")
 
 
 // create the tooltip div 
@@ -71,6 +70,9 @@ d3.csv(spell_data).then(data=>{
 	
 	var x0 = [0,68000] //@TODO should be replaced by the maximal line count
 	var y0 = sortedCounts
+
+	var x_sel_0 = x0[0]
+	var x_sel_1 = x0[1]
 
 	// y scale is ordinal 
 	var yScale = d3.scalePoint()
@@ -104,6 +106,13 @@ d3.csv(spell_data).then(data=>{
 	   .attr("transform", "translate("+ (margin.left-10)+", 0)")//"+margin.top+")")
 	   .call(yAxis);
 
+	svg.append("text")      // text label for the x axis
+        .attr("x", (width+margin.right+margin.left)/2 )
+        .attr("y",height+margin.top )
+        .attr("class","axisWhite")
+        .style("text-anchor", "middle")
+        .text("Line number in book");
+
     data = data.filter(x => sortedCounts.includes(x.spell))
 
     // Create all the points
@@ -134,15 +143,20 @@ d3.csv(spell_data).then(data=>{
  function brushended(e) {
  	// get the selection boundary
     var s = e.selection
+
     if (!s) {
     	// if the selection is empty (e.g. when we double click for instance), reset to default value
         if (!idleTimeout) return idleTimeout = setTimeout(idled, idleDelay)
             xScale.domain(x0)
             yScale.domain(y0)
+            x_sel_0 = x0[0]
+    		x_sel_1 = x0[1]
     } else {
     	// get the scale back 
         xScale.domain([s[0], s[1]].map(xScale.invert, xScale))
         svg.select(".brush").call(brush.move, null);
+        x_sel_0 = xScale.domain()[0]+1000
+    	x_sel_1 = xScale.domain()[1]
     }
     zoom()
 }
@@ -155,9 +169,19 @@ function zoom() {
     var t = svg.transition().duration(750);
     svg.select(".axis--x").transition(t).call(xAxis);
     svg.select(".axis--y").transition(t).call(yAxis);
-    svg.selectAll("circle").transition(t)
+    svg.selectAll("circle")
+    .transition(t)
     .attr("cx", d=> xScale(d.lineNb))
     .attr("cy", d=> yScale(d.spell))
+
+    svg.selectAll("circle")
+    .classed("out-boundary", function(d){
+    	return !((d.lineNb >= x_sel_0) && (d.lineNb<=x_sel_1))
+    })
+    .classed("in-boundary", function(d){
+    	return ((d.lineNb >= x_sel_0) && (d.lineNb<=x_sel_1))
+    })
+    
 }
     
 

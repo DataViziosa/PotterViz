@@ -12,9 +12,14 @@
 	color: white;
 }
 
-.hidden{
-	display: none;
+.in-boundary{
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.750s, visibility 0.750s;
+
 }
-.shown{
-	display: block;
+.out-boundary{
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.750s, visibility 0.750s;
 }
