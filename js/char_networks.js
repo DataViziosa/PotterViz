@@ -1,9 +1,5 @@
-
-let datapath = "http://localhost:80/data/"
-let char_data = datapath+"cleaned/selected_chars.csv"
-let char_images = datapath + "images/characters/"
-let association_network = datapath+ "cleaned/association_network.json"
-let ext_img = ".png"
+let char_data = cleaned_path+"selected_chars.csv"
+let association_network = cleaned_path+ "association_network.json"
 
 const defaultEdgeColor = "rgba(200,200,200,0.2)"
 const notSelectedEdgeColor = "rgba(220,220,220,0.2)"

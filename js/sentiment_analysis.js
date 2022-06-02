@@ -1,8 +1,4 @@
-var datapath_sa = "http://localhost:80/data/"
-var cleaned_folder = datapath_sa+"cleaned/"
-var char_data_sa = cleaned_folder+"selected_chars.csv"
-var char_images_sa = datapath_sa + "images/characters/"
-var ext_img_sa = ".png"
+var char_data_sa = cleaned_path+"selected_chars.csv"
 
 var movie_id_to_name = {
 	1: "Harry Potter and the Philosopher's Stone",
@@ -303,7 +299,7 @@ function charInScene(char_set){
 				) 
 			})
 		var imgs = divs.append("img")
-					   .attr('src', d=>char_images_sa+d.image_name+ext_img_sa)
+					   .attr('src', d=>char_images+d.image_name+ext_img)
 					   .attr("width", 50)
 					   .attr("height", 50)
 					   .attr("class", "chars-img inline-block")
@@ -378,7 +374,7 @@ function displayScenes(data, pol){
 
 function displayMovie(movieNb){
 	$("#charInScene").html("")
-	d3.csv(cleaned_folder+"sentimentMovie.csv").then(d=>{
+	d3.csv(cleaned_path+"sentimentMovie.csv").then(d=>{
 		var movie_name = movie_id_to_name[movieNb]
 		var data = d.filter(x=> x.movie == movie_name)
 

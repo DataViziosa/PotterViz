@@ -1,4 +1,3 @@
-
 function handlePlay(audioElement){
   var musicList = ["music/hedwig.mp3","music/inferi.mp3","music/courtyard-apocalypse.mp3","music/showdown.mp3","music/voldemort-end.mp3","music/obliviate.mp3","music/hp-theme.mp3", "music/fb-theme.mp3"]
   audioElement.setAttribute('src', musicList[0])
@@ -8,7 +7,7 @@ function handlePlay(audioElement){
   audioElement.addEventListener('ended', function() {
       cpt = (cpt+1)%musicList.length
       audioElement.setAttribute('src', musicList[cpt])
-      this.play();
+      this.play()
   }, false)
 
   audioElement.play()
@@ -16,10 +15,9 @@ function handlePlay(audioElement){
 }
 
 function handlePause(audioElement){
-  audioElement.pause();
-  audioElement.currentTime = 0;
+  audioElement.pause()
+  audioElement.currentTime = 0
 }
-
 
 function handleMusic(){
   var textPause = "Pause the music"

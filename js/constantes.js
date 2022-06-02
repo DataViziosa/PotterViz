@@ -1,0 +1,5 @@
+let base_path = "http://localhost:80/"
+let data_path = base_path + "data/"
+let cleaned_path = data_path+ "cleaned/"
+let char_images = data_path+"images/characters/"
+let ext_img = ".png"

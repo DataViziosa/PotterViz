@@ -30,8 +30,7 @@ var bookName = {1:"Philosopher's Stone", 2:"Chamber of Secrets", 3:"Prisoner of 
 
 
 // define over all constants
-var data = "http://localhost:80/data/"
-var spell_data = data+"cleaned/spellByBooke.csv"
+var spell_data = cleaned_path+"spellByBooke.csv"
 
 var width =  1200
 var height = 700
