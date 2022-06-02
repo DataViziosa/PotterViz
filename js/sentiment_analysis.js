@@ -1,10 +1,4 @@
-var datapath_sa = "http://localhost:80/data/"
-var cleaned_folder = datapath_sa+"cleaned/"
-var char_data_sa = cleaned_folder+"selected_chars.csv"
-var char_images_sa = datapath_sa + "images/characters/"
-var ext_img_sa = ".png"
-
-var width_sa = 900
+var char_data_sa = cleaned_path+"selected_chars.csv"
 
 var movie_id_to_name = {
 	1: "Harry Potter and the Philosopher's Stone",
@@ -18,6 +12,7 @@ var movie_id_to_name = {
 }
 
 displayMovie(1)
+var width_sa = 1000
 
 function returnListOfChaptersInMovie(data){
 	var last_chapter = ""
@@ -25,14 +20,21 @@ function returnListOfChaptersInMovie(data){
 	var cur_nb = 0
 	var cur_total = 0
 	var set_chars = new Set()
+	var cur_max = -2.0
+	var cur_min = 2.0
+
 	var chapters = []
 
 	for(k in data){
 		var d = data[k]
+		var score = parseFloat(d.polarity_score)
+
 		if(last_chapter == d.chapter){
 			cur_nb += 1
 			cur_total += 1
 			set_chars.add(d.character)
+			cur_max = (score > cur_max) ? score : cur_max
+			cur_min = (score < cur_min) ? score : cur_min
 		} else{
 			if(cur_id!=0){
 				chapters.push({
@@ -40,12 +42,16 @@ function returnListOfChaptersInMovie(data){
 					name: last_chapter,
 					nb_dialog: cur_nb,
 					start_diag: cur_total-cur_nb,
-					chars: set_chars
+					chars: set_chars,
+					min: cur_min,
+					max: cur_max
 				})
 			}
 			cur_id += 1
 			cur_nb = 1
 			cur_total += 1
+			cur_max = score
+			cur_min = score
 			last_chapter = d.chapter
 			set_chars = new Set()
 			set_chars.add(d.character)
@@ -56,7 +62,9 @@ function returnListOfChaptersInMovie(data){
 					name: last_chapter,
 					nb_dialog: cur_nb,
 					start_diag: cur_total-cur_nb,
-					chars: set_chars
+					chars: set_chars,
+					min: cur_min,
+					max: cur_max
 				})
 	return [chapters, cur_total]
 }
@@ -76,16 +84,12 @@ class PolarityScore{
 						.attr("height", this.height)
 
 	  	
-	  	this.margin = {top: 20, right: 30, bottom: 30, left: 40}
+	  	this.margin = {top: 20, right: 30, bottom: 30, left: 50}
 
-	  	this.xAxis = d3.axisBottom(this.xScale).tickSize(15)
-		this.yAxis = d3.axisLeft().scale(this.yScale).tickSize(0.25)
-		this.yAxisGroup = this.svg.append("g").attr("class", "axisWhite").call(this.yAxis)
+	  	this.xAxis = d3.axisBottom(this.xScale).tickSize(2)
+		this.yAxis = d3.axisLeft().scale(this.yScale).tickSize(2)
 
-		// the main drawable component
-		this.svg.append("g")
-			    .attr("transform", "translate(" + this.margin.left + ",0)")
-			    .call(this.yAxis)
+		
 
 		this.tooltip_rectangle = d3.select("body")
 	              .append("div")
@@ -100,7 +104,7 @@ class PolarityScore{
 	 */
 	displayRectangleTooltip(d, info, tooltip_rectangle){
 	 	return tooltip_rectangle.style("visibility", "visible")
-	              .style("left", d['pageX']+10+"px")
+	              .style("left", d['pageX']+30+"px")
 	              .style("top", d['pageY']-80+"px")
 	              .html("<span style='font-weight:bold'>Speaker: "+info['character']+"<br></span>Score: "+info['polarity_score']+"<br><br>«"+info['dialog']+"»")
 	}
@@ -117,12 +121,19 @@ class PolarityScore{
 	    	.attr("class", "axisWhite")
 	    	.call(this.xAxis)
 
-	    /*this.svg.append('text')
-			    .attr('text-anchor', 'middle')
-			    .attr("color", "#FFF")
-			    .text("x axis")
-			    //.attr('transform', 'rotate(-90)')
-	   */
+	    this.svg.append("g")
+		   .attr("class", "axis axis--y") // assign an axis class
+		   .attr("transform", "translate("+ (this.margin.left)+", 0)")
+		   .call(this.yAxis);
+
+		this.ytitle = this.svg.append("text")      // text label for the x axis
+					        .attr("x", -this.height/2)
+					        .attr("y",this.margin.top)
+					        .attr("class","axisWhite")
+					        .attr("transform","rotate(-90)")
+					        .style("text-anchor", "middle")
+					        .text("Polarity score")
+
 
 
 		this.svg.append("path")
@@ -192,15 +203,18 @@ class PolarityScore{
 	}
 
 	changeScale(x_low, x_high){
-	  //Update xAxis scale
-	  this.xScale.domain([x_low, x_high])
-	    .range([0, this.width]);
+		//Update xAxis scale
+		this.xScale.domain([x_low, x_high])
+			.range([0, this.width])
 
 	  //Call axes
 	  var t =this.svg.transition()
 	    .duration(500)
 	    .ease(d3.easeLinear)
 	    .call(this.xAxis)
+
+
+	
 
 	   this.svg.selectAll(".line-plot-scene")
 	   		.transition(t)
@@ -236,8 +250,6 @@ class PolarityScore{
     				return -this.yScale(0)+this.yScale(score)
     			}
 			})
-
-	  this.yAxisGroup.call(this.yAxis);
 	}
 }
 
@@ -287,7 +299,7 @@ function charInScene(char_set){
 				) 
 			})
 		var imgs = divs.append("img")
-					   .attr('src', d=>char_images_sa+d.image_name+ext_img_sa)
+					   .attr('src', d=>char_images+d.image_name+ext_img)
 					   .attr("width", 50)
 					   .attr("height", 50)
 					   .attr("class", "chars-img inline-block")
@@ -305,9 +317,9 @@ function displayScenes(data, pol){
 
 	function displaySceneTooltip(d, info, tooltip_sentiment){
 	 	return tooltip_sentiment.style("visibility", "visible")
-	              .style("left", d['pageX']+10+"px")
+	              .style("left", d['pageX']+30+"px")
 	              .style("top", d['pageY']-80+"px")
-	              .html("<span style='font-weight:bold'>"+info['name']+" ("+info['nb_dialog']+")</span>")
+	              .html("<span style='font-weight:bold'>"+info['name']+" ("+info['nb_dialog']+")<br>Min polarity score: "+info['min']+"<br>Max polarity score: "+info['max']+"</span>")
 	}
 	var arr_chapters = returnListOfChaptersInMovie(data)
 	var chapters = arr_chapters[0]
@@ -346,6 +358,7 @@ function displayScenes(data, pol){
 							var sceneData = d.srcElement.__data__
 							charInScene(sceneData.chars)
 							pol.changeScale(sceneData.start_diag, sceneData.nb_dialog+sceneData.start_diag)
+							pol.ytitle.text("")
 						})
 						.on("mouseover", d => {
 							pol.showRectangle( d.srcElement.__data__.name)
@@ -355,12 +368,13 @@ function displayScenes(data, pol){
 				     		pol.showRectangle("")
 				           tooltip_sentiment.style("visibility", "hidden") // remove the div
 				       })
+
 }
 
 
 function displayMovie(movieNb){
 	$("#charInScene").html("")
-	d3.csv(cleaned_folder+"sentimentMovie.csv").then(d=>{
+	d3.csv(cleaned_path+"sentimentMovie.csv").then(d=>{
 		var movie_name = movie_id_to_name[movieNb]
 		var data = d.filter(x=> x.movie == movie_name)
 
