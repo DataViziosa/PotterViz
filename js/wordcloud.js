@@ -5,7 +5,7 @@
 // Encapsulate the word cloud functionality
 function wordCloud(selector) {
   //var fill = d3.scale.category20();
-  var fill = d3.scaleOrdinal(d3.schemeCategory10);
+  //var fill = d3.scaleOrdinal(d3.schemeCategory10);
   // Custom color palette of 20 unique colors (https://sashamaps.net/docs/resources/20-colors/)
   /*colors = [
     '#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231',
@@ -13,6 +13,8 @@ function wordCloud(selector) {
     '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000',
     '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff'
   ]*/
+
+  var palette = ["#1AC3A6", "#34CF7A","#41A1E1", "#A667BF", "#F2C500","#EA8B1D", "#EB5D49", "#475B6F", "#ECF0F1", "#9FAEAF"]
 
 
   //Construct the word cloud's SVG element
@@ -31,8 +33,8 @@ function wordCloud(selector) {
       //Entering words
       cloud.enter()
           .append("text")
-          .style("font-family", "HPFont")
-          .style("fill", function(d, i) { return fill(i); })
+          .style("font-family", "Harry Potter")
+          .style("fill", function(d, i) { return palette[i % 10]; })
           //.style("fill", "white")
           .attr("text-anchor", "middle")
           .attr('font-size', 1)

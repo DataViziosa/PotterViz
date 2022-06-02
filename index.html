@@ -40,7 +40,7 @@
 
 <body>
 	<audio id="audio" style="visibility: hidden;"></audio>
-	<!-- Modal used to diplay character information, by default it is hidden --> 
+	<!-- Modal used to diplay character information, by default it is hidden -->
 	<div class="modal fade" id="myModal">
 			  <div class="modal-dialog modal-dialog-scrollable">
 			    <div class="modal-content">
@@ -161,11 +161,36 @@
 	</div>
 	<div class="section" data-anchor="Introduction">
 		<div class="slide" data-anchor="Introduction-1">
-			<button onclick="handleMainButton()" id="playMusic">Play the music</button>
-			<button onclick="handleNext()" id="playMusic">Next</button>
-			<button onclick="handlePrevious()" id="playMusic">Previous</button>
-
-		</div>
+			<div class="container">
+				<!-- TODO: maybe add background img in Introduction -->
+				<img src="data/images/hp_logo/Harry_Potter.webp"/>
+				<p class="lead">Step into the magical world of Harry Potter. Explore the characters, books, movies and everything in between. The wizarding world is your oyster.</p>
+				<div class="Container">
+					<div class="row">
+						<div class="col-2">
+							<div>Books</div>
+							<div class="key-figures"></div>
+						</div>
+						<div class="col-2">
+							<div>Units Sold (Millions)</div>
+							<div class="key-figures"></div>
+						</div>
+						<div class="col-2">
+							<div>Languages</div>
+							<div class="key-figures"></div>
+						</div>
+						<div class="col-2">
+							<div>Movies</div>
+							<div class="key-figures"></div>
+						</div>
+						<div class="col-2">
+							<div>Box Office (Millions of $)</div>
+							<div class="key-figures"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
 		<div class="slide" data-anchor="Introduction-2">
 			<h2 class="slideTitle">Book Collection</h1>
 			<div class="gallery-top-row">
@@ -433,7 +458,7 @@
 						<h5>Group in common between the selected characters</h5>
 						<ul id="common-association-list" class ="list-group  list-group-horizontal"></ul>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -543,7 +568,7 @@
 				navigationPosition:"right", //set the navigation to the right of the images
 				autoScrolling: true, // scroll full slide and not half of them
 			  navigation: true, // Disoplay the dots for vertical navigation
-			  showActiveTooltip: true, // Show the name of the section on the navigation bar 
+			  showActiveTooltip: true, // Show the name of the section on the navigation bar
 			  slidesNavigation:true, // display the dots for horizontal navigation
 			  slidesNavPosition:"bottom", // set the position of the horizontal navigation dots
 			  normalScrollElements: '.modal, #spellByBook, #sigma-container,#filter-menu, #charInScene', // Put the div id in which we want to block fullpage js scrolling
@@ -566,7 +591,7 @@
 
 	      },
 	      afterSlideLoad: function( section, origin, destination, direction, trigger){
-		      	//allow us to make some action after we move to some slide 
+		      	//allow us to make some action after we move to some slide
 		      	// See https://github.com/alvarotrigo/fullPage.js#callbacks for documentation
 		      	if(destination.anchor==="Hogwarts-3"){
 		      		// If the page Hogwarts-3 (bubble chart) is load without having selected a house, we redirect the user to the house selection page.
@@ -579,6 +604,7 @@
 	})
 
 	</script>
+	<script type="text/javascript" src="js/introduction.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.1/plugins/sigma.renderers.customShapes.min.js" integrity="sha512-aq73VTnmRtppJmMoDa567DjtQsbyMBtfEDdLGdU8EqqwOEO4ExH36KE7i9kjWdv9XTuMi9vHnrt9aw5nItTicw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="js/char_networks.js"></script>

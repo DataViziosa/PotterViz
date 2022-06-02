@@ -42,11 +42,12 @@
 .thumbnail-banner {
   display: block;
   height: 40px;
-  max_height: 40px;
+  max-height: 40px;
   position: relative;
   top: 7.5px;
   margin-left: auto;
   margin-right: auto;
+  z-index: -1;
 }
 
 .book-description {
@@ -63,6 +64,7 @@
 .book-title {
   color: orange;
   text-align: center;
+  font-size: larger;
   font-family: 'HPFont', monospace;
 }
 
@@ -82,10 +84,11 @@
 
 .book-frame:hover {
   transform: scale(1.5);
+  background-color: black;
 }
 
 .book-frame:hover .book {
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .book-frame:hover .thumbnail-banner {
