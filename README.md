@@ -48,8 +48,19 @@ We have prepared a conda environment, named `potterviz`, with all the Python pac
 Once installed, to activate the environment, please use `conda activate potterviz`. To use it in Jupyter, please initiate Jupyter from a terminal with adaexam as the active conda environment. Alternatively, you can add the conda environment as a custom kernel by using the following command:   
 `python -m ipykernel install --user --name=potterviz`
 
+## Datasets used 
+- [Harry Potter Collection](https://github.com/theDavidBarton/the-harry-potter-database) contains a lot of information about characters, potions, spells and books. 
+- We enhance the book dataset (in the previous bullet) with more information about [sales](https://en.wikipedia.org/wiki/List_of_best-selling_books) and [translations](https://en.wikipedia.org/wiki/Harry_Potter_in_translation)
+- [Harry Potter network](https://github.com/dpmartin42/Networks/tree/master/Harry%20Potter) describing the network of interactiosn between characters.
+- [Harry Potter Books content](https://github.com/formcept/whiteboard/tree/master/nbviewer/notebooks/data/harrypotter) containing the texts of all the Harry Potter books. 
+- [Harry Potter movies](https://www.kaggle.com/kornflex/harry-potter-movies-dataset) containing information about the movies as well as the transcript that can be useful for advanced analysis.
+- Top 40 favourite Harry Potter characters based on [this article ](https://www.theguardian.com/childrens-books-site/2011/aug/30/snape-favourite-harry-potter-character).
+
+## Display our visualization locally
+You can either see our visualization here or you can display it locally. To do so, you will need to install [MAMP](https://www.mamp.info/en/mac/) which is a local web hoster. This will allow you to run an Apache Server locally and therefore, to be able to load files from disk without any complaints from the browser. Note that you have to change the **base_path** variable in [this file](js/constantes.js) to the basic localhost address provided by MAMP (By default it should http://localhost:80/). Then, you just need to setup MAMP to point to the foler in which the visualization is stored and you will be able to display the visualization locally. 
+
 ## Authors
 The contributors to this project are:
+- [Alessio Verardo](https://github.com/AlessioVerardo)
 - [Emna Fendri](https://github.com/Emna-FENDRI)
 - [Stephane Selim](https://github.com/stefnans)
-- [Alessio Verardo](https://github.com/AlessioVerardo)
