@@ -1,4 +1,4 @@
-google.charts.load("current", {packages:["sankey"]});
+/*google.charts.load("current", {packages:["sankey"]});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = new google.visualization.DataTable();
@@ -38,3 +38,4 @@ function drawChart() {
     //document.body.style.backgroundColor = "black";
     chart.draw(data, options);
 }
+*/

@@ -13,18 +13,19 @@
 	<!-- Libraries scripts-->
 	<script src="js/constantes.js" type="text/javascript"></script>
 	<!-- Script for google vizualization-->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/scrolloverflow.min.js"></script>
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/d3.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<!-- Script for word cloud functionality https://github.com/jasondavies/d3-cloud/blob/master/build/d3.layout.cloud.js -->
 	<script src="js/d3.layout.cloud.js"></script>
 	<!-- Custom scripts-->
 	<script src="js/hogwarts_houses.js"></script>
-
+	<script type="text/javascript" src="js/introduction.js"></script>
 
 	<!-- Custom Stylesheets -->
 	<link rel="stylesheet" href="css/main.css">
@@ -41,7 +42,15 @@
 </head>
 
 <body>
-	<audio id="audio" style="visibility: hidden;"></audio>
+	
+	<div id ="audioContainer">
+		<audio id="audio" style="visibility: hidden;"></audio>
+		<input type="hidden" value="Play the music" id="audioCtrl">
+		<div id="audioControl"><i class="fa-solid fa-backward" onclick="handlePrevious()"></i><i id="playBtn" class="fa-solid fa-play" style="display: inline-block;" onclick="handleMainButton()"></i><i class="fa-solid fa-pause"  id="pauseBtn" style="display: none;" onclick="handleMainButton()"></i><i class="fa-solid fa-forward" onclick="handleNext()"></i></div>
+		<div id="audioTitle"><h1></h1></div>
+		<div id="audioArtist"><h1></h1></div>
+	</div>
+
 	<!-- Modal used to diplay character information, by default it is hidden -->
 	<div class="modal fade" id="myModal">
 			  <div class="modal-dialog modal-dialog-scrollable">
@@ -175,31 +184,31 @@
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Books</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Units Sold (Mil)</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Translations</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Movies</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Box Office ($ Mil)</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 				</div>
@@ -498,7 +507,7 @@
 		</div>
 		<div class="section" data-anchor="deep">
 			<div class="slide" data-anchor="deep-1">
-				Ever wondered
+				
 			</div>
 			<div class="slide" data-anchor="deep-2"><div id="wordcloud">
 			</div>
@@ -531,7 +540,7 @@
 			</div>
 			<div class="slide" data-anchor="deep-5">
 				<h2 class="slideTitle">Sentiment analysis</h2>
-
+				What do you think is the most present emotion in the entire Harry Potter saga ? Is it happiness ? Death as suggested by J.K. Rowling herself ? One of the most famous theory is that each of the Harry Potter book is one of the seven step of grief. Can we feel it in the books ? Does Machine Learning suggests that indeed the global emotion is going down over time ? To answer all of these questions, we present to you our most advanced visualization. It will let you explore different emotions impregnated in the serie. This visualization is splitted into different parts. You have the possibility to select one movie and then a particular chapter. Simply by hovering the upper image, you'll be able to see at the different scenes in the movie and what part of the global emotion plot it represents. By clicking on one scene, you will access to the different characters starred in that scene and their texts will be displayed in the emotion anaylsis plot. Select and explore, see the emotions given by your favorite, this visualization has a lot of combinations and resources. 
 			</div>
 			<div class="slide" data-anchor="deep-6">
 				<div id="sentimentAnalysis" style="width:100%;height:100%">
@@ -569,11 +578,8 @@
 			<!-- Add data provenance-->
 		</div>
 	</div>
-	<script type="text/javascript" src="js/introduction.js"></script>
-	<!--script type="text/javascript" src="js/wands.js"></script-->
-	<script type="text/javascript" src="js/spells.js"></script>
-	
 	<script>
+		
 	function fadeInText(){
 
 		var textWrapper = document.querySelector('#ml3');
@@ -588,8 +594,10 @@
 		    delay: (el, i) => 50 * (i+1)
 	  	})
 		  $("#ml3").css("opacity", "1")
-	}
+	} 
+	</script>
 
+	<script type="text/javascript" src="js/spells.js"></script>
 
 	$(document).ready(function(){
 			$('#wrapper').fullpage({
