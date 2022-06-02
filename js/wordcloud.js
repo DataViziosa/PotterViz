@@ -73,7 +73,7 @@ function wordCloud(selector) {
               .padding(5)
               .rotate(function() { return ~~(Math.random() * 2) * 90; })
               // TODO: change with Harry Potter
-              .font("Harry Potter")
+              .font("HPFont")
               .fontSize(function(d) { return d.size; })
               .on("end", draw)
               .start();

@@ -6,7 +6,7 @@
 
 .collection-title {
   text-align: center;
-  font-family: 'Harry Potter', monospace;
+  font-family: 'HPFont', monospace;
   margin-top: 2.5%;
   color: white;
   opacity: 0.85;
@@ -63,7 +63,7 @@
 .book-title {
   color: orange;
   text-align: center;
-  font-family: 'Harry Potter', monospace;
+  font-family: 'HPFont', monospace;
 }
 
 .book-details {

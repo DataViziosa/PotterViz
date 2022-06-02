@@ -1,44 +1,22 @@
-/*d3.selectAll("key_figures")
-    .append('div')
-    .transition()
-    .duration(5000)
-    .tween("tweenme", function(d, i) {
-      return function(t) {
-        this.textContent = d3.interpolateRound(0, 25)(t);
-      }
-    });*/
+const NUMBER_OF_BOOKS = 7;
+const UNITS_SOLD = 522;
+const NUMBER_OF_TRANSLATIONS = 90;
+const NUMBER_OF_MOVIES = 8;
+const BOX_OFFICE = 7113;
+const NUMBER_OF_SPELLS = 0;
 
-//d3.selectAll(".key_figures")
+var arr = [NUMBER_OF_BOOKS, UNITS_SOLD, NUMBER_OF_TRANSLATIONS, NUMBER_OF_MOVIES, BOX_OFFICE];
 
+let key_figures = d3.selectAll(".key-figures").data(arr)
 
-var arr = ["string1","string2","string3","string4","string5"];
-
-/*var selected = d3.selectAll('.key-figures').data(arr)
-
-selected.enter()
-  .append("p")
-  .merge(selected)
-  .text(function(d){
-    console.log("HERHE")
-  return d;
-});*/
-
-let key_figures = d3.selectAll(".key-figures")
-
-key_figures.append("div")
+key_figures.enter()
+  .append("div")
+  .attr("font-family", "hp.ttf")
+  .merge(key_figures)
   .transition()
-  .duration(5000)
+  .duration(2000)
   .tween("tweenme", function(d, i) {
     return function(t) {
-      this.textContent = d3.interpolateRound(0, 25)(t);
+      this.textContent = d3.interpolateRound(0, d)(t);
     }
   });
-
-
-
-/*transition.tween("attr.fill", function() {
-    const i = d3.interpolateRgb(this.getAttribute("fill"), "blue");
-    return function(t) {
-      this.setAttribute("fill", i(t));
-    };
-  });*/
