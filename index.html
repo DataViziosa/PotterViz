@@ -19,10 +19,11 @@
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/d3.min.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<!-- Script for word cloud functionality https://github.com/jasondavies/d3-cloud/blob/master/build/d3.layout.cloud.js -->
 	<script src="js/d3.layout.cloud.js"></script>
+	<script src="https://unpkg.com/d3-sankey@0"></script>
 	<!-- Custom scripts-->
 	<script src="js/hogwarts_houses.js"></script>
 	<script type="text/javascript" src="js/introduction.js"></script>
@@ -496,7 +497,7 @@
 			</div>
 			<div class="slide" data-anchor="Magical-World-2">
 				<div class="container">
-					<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+					<div id="sankey" style="width: 900px; height: 400px;"></div>
 				</div>
 			</div>
 			<div class="slide" data-anchor="Magical-World-3">
@@ -507,7 +508,6 @@
 		</div>
 		<div class="section" data-anchor="deep">
 			<div class="slide" data-anchor="deep-1">
-				
 			</div>
 			<div class="slide" data-anchor="deep-2"><div id="wordcloud">
 			</div>
@@ -578,7 +578,7 @@
 			<!-- Add data provenance-->
 		</div>
 	</div>
-
+	<script type="text/javascript" src="js/wands.js"></script>
 	<script>
 	function fadeInText(){
 
@@ -624,7 +624,7 @@
 	      afterLoad:function(origin, destination, direction, trigger){
 	      	if(destination.anchor==="About"){
 	      		fadeInText()
-	      	}
+	      	} 
 
 	      },
 	      afterSlideLoad: function( section, origin, destination, direction, trigger){
@@ -637,6 +637,8 @@
 			      	}
 		      	} else if (destination.anchor === "Introduction-1"){
 		      		displayKeyFigures()
+		      	}else if(destination.anchor === "Magical-World-2"){
+		      		//drawSankey()
 		      	}
 			}
 		})
@@ -650,8 +652,8 @@
 	<script type="text/javascript" src="js/spell_by_book.js"></script>
 	<script type="text/javascript" src="js/books_movies_display.js"></script>
 	<script type="text/javascript" src="js/wordcloud.js"></script>
-	<script type="text/javascript" src="js/wands.js"></script>
-	<script type="text/javascript" src="js/spells.js"></script>
+	<script type="text/javascript" src="js/spells2.js"></script>
+	<script type="text/javascript" src="js/sankey.js"></script>
 	<script type="text/javascript" src="js/sentiment_analysis.js"></script>
 	<script src="js/music.js"></script>
 </body>
