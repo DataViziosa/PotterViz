@@ -22,7 +22,7 @@
 	<script src="js/d3.layout.cloud.js"></script>
 	<!-- Custom scripts-->
 	<script src="js/hogwarts_houses.js"></script>
-	<script src="js/music.js"></script>
+
 
 	<!-- Custom Stylesheets -->
 	<link rel="stylesheet" href="css/main.css">
@@ -164,7 +164,9 @@
 	</div>
 	<div class="section" data-anchor="Introduction">
 		<div class="slide" data-anchor="Introduction-1">
-			<button onclick="handleMusic()" id="playMusic">Play the music</button>
+			<button onclick="handleMainButton()" id="playMusic">Play the music</button>
+			<button onclick="handleNext()" id="playMusic">Next</button>
+			<button onclick="handlePrevious()" id="playMusic">Previous</button>
 
 		</div>
 		<div class="slide" data-anchor="Introduction-2">
@@ -553,6 +555,7 @@
 	<script type="text/javascript" src="js/books_movies_display.js"></script>
 	<script type="text/javascript" src="js/wordcloud.js"></script>
 	<script type="text/javascript" src="js/sentiment_analysis.js"></script>
+	<script src="js/music.js"></script>	
 	<script>
 		var textWrapper = document.querySelector('.ml3');
 		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
