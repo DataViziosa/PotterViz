@@ -32,10 +32,7 @@ function analyseHouse(){
 
 
 function displayData(house){
-	let datapath = "http://localhost:80/data/"
-	let char_data = datapath+"cleaned/selected_chars.csv"
-	let char_images = datapath + "images/characters/"
-	let ext_img = ".png"
+	let char_data = cleaned_path+"selected_chars.csv"
 	let width = 900
 	let height = 750
 	const char_desc_name = document.getElementById("char_desc_name")
