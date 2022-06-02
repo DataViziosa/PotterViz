@@ -33,7 +33,7 @@ function wordCloud(selector) {
       //Entering words
       cloud.enter()
           .append("text")
-          .style("font-family", "Harry Potter")
+          .style("font-family", "HPFont")
           .style("fill", function(d, i) { return palette[i % 10]; })
           //.style("fill", "white")
           .attr("text-anchor", "middle")
