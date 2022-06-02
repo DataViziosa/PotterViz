@@ -3,47 +3,51 @@
 ## Deliverables
 - The goal of the [first milestone](deliverables/milestone1.md) was to define the project and perform an [exploratory data analysis](python/exploratory_data_analysis.ipynb). 
 - In the second [second milestone](deliverables/milestone2.md), we are asked to give more details about the visualisations we want to make.
+- For the third and final milestone, we are asked to produce the visualization ([available on this link](https://dataviziosa.github.io/PotterViz/)), one [screencast presentation](https://www.youtube.com/...) and finally a [process book](deliverables/process_book.pdf) explaining how we arrive to that result. 
 
 ## File structure
 The structure of our folders is as follows: 
 ```
-├── assets
-├── css
-├── data
-├── deliverables
-├── fonts
-├── images
-├── music
-├── plugins
-├── js
-
-├── helper
-    ├── autoencoder_helper.py             # Helper function to extract feature from patches using the auto-encoder
-    ├── const.py                          # All the constants used throughout the project
-    ├── datasets_image.py                 # Data augmentation for the FCN and Unet neural networks
-    ├── datasets_patch.py                 # Datasets for the Autoencoder network
-    ├── image.py                          # Functions to handle images
-    ├── loading.py                        # all the loading functions for training and testing dataset
-    ├── metrics.py                        # Functions to assess performance of our datasets
-    ├── neural_net.py                     # Functions related to the training of the datasets
-    ├── predictions.py                    # functions to predict whether a pixel is a road or background in the test data
-    ├── submission.py                     # Functions used to create submissions for AICrowd
-    ├── visualisations.py                 # Functions used to make differnet visualisations of the images
-├── models
-    ├── autoencoder.py                    # The architecture of the auto-encoder neural network described in section 2.2.2 of the report
-    ├── FCNet.py                          # The Fully convolutional network architecture described in part 2.2.4 of the report
-    ├── features_extraction.py            # Functions used to extract features from image or image patch
-    ├── UNet.py                           # The UNet architecture architecture described in part 2.2.3 of the report
-├── output
-    ├── features                          # Features outputed by the autoencoder neural network. 
-    ├── weights                           # Save of the different weights output during the training of our networks
-├── autoencoder.ipynb                     # Notebook detailling the implementation and results of the autoencoder
-├── baseline.ipynb                        # Initial data exploration and baseline model training
-├── neural_net_training.ipynb             # Notebook used to train our neural netwokrs
-├── report.pdf                            # The report of the project
-├── requirements.txt                      # List of all the packages (and versions) needed to run our project
+├── assets                                      # Folders with asset we used 
+├── css                                         # All the css files we used in the project                                 
+├── data                                        # All the data used throughout the project
+    ├── cleaned                                 # All the cleaned files (by our python script)
+    ├── hp_networks                             # files coming from the HPNetworks github
+    ├── hpbooks                                 # Text of the Harry Potter books
+    ├── hpcollection                            # Collection of files coming from the HPCollection database 
+    ├── images                                  # All the data images of our visualization
+        ├── book_cover                          # The book cover images  
+        ├── characters                          # Images of all the considered chaacters 
+        ├── houses_logo                         # The houses images
+        ├── hp_logo                             # One image with the written logo for each of the Harry Potter and Fantastic Beasts movies
+        ├── movies                              # The movie covers 
+    ├── movies                                  # Movie screenplays and movie information
+├── deliverables                                # Folder containing the different deliverables of the semester
+├── fonts                                       # The different custom fonts related to the Harry Potter universe
+├── js                                          # All the js file we used in the project
+├── images                                      # The different images used throughout the website
+├── music                                       # A subset of the Harry Potter music used in the website
+├── python                                      # All the python files used to scrap and process our data
+    ├── association_network.ipynb               # Process and create the association network
+    ├── environment.yml                         # The environement.yml to execute the python script in the same environement as us
+    ├── exploratory_data_analysis.ipynb         # Notebook with the exploratory data analysis
+    ├── sentiment_analysis_movie_script.ipynb   # Sentiment analysis notebook 
+    ├── spell_by_book.ipynb                     # Count the spell by book notebook
+    ├── web_scraping.ipynb                      # Notebook with all the web scraping methods
+    ├── word_cloud.ipynb                        # Notebook to create the word_cloud visualisation, i.e. select the list of words that will be used later on
+├── webfonts                                    # FontAwesome fonts 
+├── index.html
+├── LICENSE
 └── README.md
 ```
+
+## Conda Environment
+We have prepared a conda environment, named `potterviz`, with all the Python packages that you might need for the exam. You can install it with the following command:   
+`conda env create -f environment.yml`
+
+Once installed, to activate the environment, please use `conda activate potterviz`. To use it in Jupyter, please initiate Jupyter from a terminal with adaexam as the active conda environment. Alternatively, you can add the conda environment as a custom kernel by using the following command:   
+`python -m ipykernel install --user --name=potterviz`
+
 ## Authors
 The contributors to this project are:
 - [Emna Fendri](https://github.com/Emna-FENDRI)

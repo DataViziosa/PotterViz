@@ -470,7 +470,9 @@
 			<div class="slide" data-anchor="Magical-World-3"></div>
 		</div>
 		<div class="section" data-anchor="deep">
-			<div class="slide" data-anchor="deep-1"></div>
+			<div class="slide" data-anchor="deep-1">
+				Ever wondered 
+			</div>
 			<div class="slide" data-anchor="deep-2"><div id="wordcloud">
 			</div>
 			<div>
@@ -486,14 +488,24 @@
 					<img src="data/images/book_cover/hp7.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 6)"/>
 				</div>
 			</div></div>
-			<div class="slide" data-anchor="deep-3"></div>
-			<div class="slide" data-anchor="deep-4">
-				<div id="spellByBook">
-					<h2 class="slideTitleR">Spell Launched per book</h2>
-					<div id="spellByBookContainer" style="width:100%;height:80%"></div>
+			<div class="slide" data-anchor="deep-3">
+				<div class="container">
+					<h2 class="slideTitle">Spell Launched per book</h2>
+					What defines magic in the Harry Potter World ? The wand. Every witch and wizard should have one in order to learn how to control magic. This learning process comes along with a lot of different spells along the way. As you have previously seen, spells can be of any type and there is a huge amount of them. Ever wondered how many times and at which point in time in the saga each spell has been casted ? The next visualization will exactly answer this question. You will be able to see a timeline with all the times each of 20 most used spells has been casted during the Harry Potter saga. By hovering the different circles, you will be able to see the context in which the spell has been casted. Furthermore, the books have been color-coded. To be more precise on which circle to hover, you can click and drag to zoom inside the timeline.
 				</div>
 			</div>
-			<div class="slide" data-anchor="deep-5"></div>
+			<div class="slide" data-anchor="deep-4">
+				<div class="container">
+					<div id="spellByBook">
+						<h2 class="slideTitle">Spell Launched per book</h2>
+						<div id="spellByBookContainer" style="width:100%;height:80%"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide" data-anchor="deep-5">
+				<h2 class="slideTitle">Sentiment analysis</h2>
+
+			</div>
 			<div class="slide" data-anchor="deep-6">
 				<div id="sentimentAnalysis" style="width:100%;height:100%">
 					<h2 class="slideTitle">Select your favorite movie</h2>
@@ -522,16 +534,33 @@
 					<div id="charInScene" style="width:100%;height:10%;"></div>
 					<h4 class="slideSubtitle">Sentiment analysis</h4>
 					<div id="sentimentAnalysisPlot" style="width:100%;"></div>
-					</div>
 				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="About">
-			<h2 class="ml3">A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo.</h2>
+			<h2 id="ml3">A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo.</h2>
 			<!-- Add data provenance-->
 		</div>
 	</div>
+	<script type="text/javascript" src="js/introduction.js"></script>
 	<script>
+	function fadeInText(){
+
+		var textWrapper = document.querySelector('#ml3');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		
+		anime.timeline({loop: false})
+		  .add({
+		    targets: '#ml3 .letter',
+		    opacity: [0,1],
+		    easing: "easeInOutQuad",
+		    duration: 500,
+		    delay: (el, i) => 50 * (i+1)
+	  	})
+		  $("#ml3").css("opacity", "1")
+	}
+
+
 	$(document).ready(function(){
 			$('#wrapper').fullpage({
 			licenseKey:"gplv3-license",
@@ -556,21 +585,29 @@
 	      ],
 	      controlArrows:false, // disable arrow for hroizontal navigation as they were superposed with the navigation tools
 	      showActiveTooltip:false,
+	      afterLoad:function(origin, destination, direction, trigger){
+	      	if(destination.anchor==="About"){
+	      		fadeInText()
+	      	} 
+
+	      },
 	      afterSlideLoad: function( section, origin, destination, direction, trigger){
 		      	//allow us to make some action after we move to some slide
 		      	// See https://github.com/alvarotrigo/fullPage.js#callbacks for documentation
 		      	if(destination.anchor==="Hogwarts-3"){
 		      		// If the page Hogwarts-3 (bubble chart) is load without having selected a house, we redirect the user to the house selection page.
 		      		if($("#analyzedHouse").val()===""){
-			      		window.location.href = "index.html#Hogwarts/Hogwarts-2";
+			      		window.location.href = base_path+"index.html#Hogwarts/Hogwarts-2";
 			      	}
+		      	}else if (destination.anchor === "Introduction-1"){
+		      		displayKeyFigures()
 		      	}
 			}
 		})
 	})
 
 	</script>
-	<script type="text/javascript" src="js/introduction.js"></script>
+	
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.1/plugins/sigma.renderers.customShapes.min.js" integrity="sha512-aq73VTnmRtppJmMoDa567DjtQsbyMBtfEDdLGdU8EqqwOEO4ExH36KE7i9kjWdv9XTuMi9vHnrt9aw5nItTicw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="js/char_networks.js"></script>
@@ -578,19 +615,6 @@
 	<script type="text/javascript" src="js/books_movies_display.js"></script>
 	<script type="text/javascript" src="js/wordcloud.js"></script>
 	<script type="text/javascript" src="js/sentiment_analysis.js"></script>
-	<script src="js/music.js"></script>
-	<script>
-		var textWrapper = document.querySelector('.ml3');
-		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-		anime.timeline({loop: false})
-		  .add({
-		    targets: '.ml3 .letter',
-		    opacity: [0,1],
-		    easing: "easeInOutQuad",
-		    duration: 500,
-		    delay: (el, i) => 50 * (i+1)
-		  })
-	</script>
+	<script src="js/music.js"></script>	
 </body>
 </html>
