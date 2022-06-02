@@ -56,6 +56,9 @@ Once installed, to activate the environment, please use `conda activate pottervi
 - [Harry Potter movies](https://www.kaggle.com/kornflex/harry-potter-movies-dataset) containing information about the movies as well as the transcript that can be useful for advanced analysis.
 - Top 40 favourite Harry Potter characters based on [this article ](https://www.theguardian.com/childrens-books-site/2011/aug/30/snape-favourite-harry-potter-character).
 
+## Display our visualization locally
+You can either see our visualization here or you can display it locally. To do so, you will need to install [MAMP](https://www.mamp.info/en/mac/) which is a local web hoster. This will allow you to run an Apache Server locally and therefore, to be able to load files from disk without any complaints from the browser. Note that you have to change the **base_path** variable in [this file](js/constantes.js) to the basic localhost address provided by MAMP (By default it should http://localhost:80/). Then, you just need to setup MAMP to point to the foler in which the visualization is stored and you will be able to display the visualization locally. 
+
 ## Authors
 The contributors to this project are:
 - [Emna Fendri](https://github.com/Emna-FENDRI)
