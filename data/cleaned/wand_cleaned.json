@@ -1,0 +1,255 @@
+{   
+   "nodes":[
+   {  "node":0, 
+      "name": "Albus Dumbledore"
+   },
+   {  "node":1, 
+      "name": "Bellatrix Lestrange"
+   },
+   {  "node":2, 
+      "name": "Cedric Diggory"
+   },
+   {  "node":3, 
+      "name": "Celestina Warbeck"
+   },
+   {  "node":4, 
+      "name": "Dolores Umbridge"
+   },
+   {  "node":5,
+      "name": "Draco Malfoy",
+       "wood": "Hawthorn",
+       "length": 10,
+       "core": "Veela hair",
+       "Note": "This wand passed into the possession of Harry Potter after the Skirmish at Malfoy Manor in 1998 until Harry came into possession of the Elder Wand and mended his first wand."
+   },
+   {  "node":6,
+      "name": "Fleur Delacour",
+       "wood": "Rosewood",
+       "length": 9.5,
+       "core": "Phoenix feather",
+       "Note": "In this wand the core is a hair from Fleur's grandmother, who was a Veela."
+   },
+   {  "node":7,
+      "name": "Garrick Ollivander",
+       "wood": "Hornbeam",
+       "length": 12.75,
+       "core": "Dragon heartstring",
+       "Note": ""
+   },
+   {  "node":8,
+      "name": "Harry Potter",
+       "wood": "Holly",
+       "length": 11,
+       "core": "Phoenix feather",
+       "Note": "Brother to Voldemort's wand — the core tail feathers are both from Fawkes; broken in December 1997 while fleeing from Godric's Hollow;[22] repaired with the Elder Wand in May 1998."
+   },
+   {  "node":9,
+      "name": "Hermione Granger",
+       "wood": "Vine",
+       "length": 10.75,
+       "core": "Dragon heartstring",
+       "Note": "This wand was confiscated when the trio was captured by Snatchers in 1998."
+   },
+   {  "node":10,
+      "name": "Horace Slughorn",
+       "wood": "Cedar",
+       "length": 10.25,
+       "core": "Dragon heartstring",
+       "Note": "Fairly flexible."
+   },
+
+   {  "node":11,
+      "name": "Lucius Malfoy",
+       "wood": "Elm",
+       "length": 18,
+       "core": "Dragon heartstring",
+       "Note": "This wand was kept in a snake-headed walking stick that Lucius carried; 'borrowed' by Lord Voldemort and destroyed by Harry Potter's wand during the Battle of the Seven Potters in 1997."
+   },
+   {  "node":12,
+      "name": "Minerva McGonagall",
+       "wood": "Fir",
+       "length": 9.5,
+       "core": "Dragon heartstring",
+       "Note": "This wand was most likely purchased from Ollivanders in 1947 when she was eleven almost twelve."
+   },
+   {  "node":13,
+      "name": "Neville Longbottom",
+       "wood": "Cherry",
+       "length": -1,
+       "core": "Unicorn hair",
+       "Note": "This wand was nice for Charm work."
+   },
+   {  "node":14,
+      "name": "Quirinus Quirrell",
+       "wood": "Alder",
+       "length": 9,
+       "core": "Unicorn hair",
+       "Note": "This wand was nice for Charm work."
+   },
+   {  "node":15,
+      "name": "Ronald Weasley",
+       "wood": "Willow",
+       "length": 14,
+       "core": "Unicorn hair",
+       "Note": "Purchased with his father's winnings from a Daily Prophet draw. Taken from him by Snatchers and replaced with Peter Pettigrew's wand."
+   },
+   {  "node":16,
+      "name": "Tom Riddle",
+       "wood": "Yew",
+       "length": 13.5,
+       "core": "Phoenix feather",
+       "Note": "This wand is brother to Harry Potter's wand — the core tail feathers are both from Fawkes."
+   },
+   {
+      "node":17,
+      "name":"Thestral tail hair"
+   },
+   {
+      "node":18,
+      "name":"Dragon heartstring"
+   },
+   {
+      "node":19,
+      "name":"Unicorn hair"
+   },
+   {
+      "node":20,
+      "name":"Phoenix feather"
+   }
+
+],
+   "links":[
+      {
+         "source":0,
+         "target":17,
+         "wood": "Elder",
+          "length": 15,
+          "core": "Thestral tail hair",
+          "Note": "The Elder Wand, one of the Deathly Hallows. Also known as the Deathstick and the Wand of Destiny."
+      },
+      {
+         "source":1,
+         "target":18,
+         "wood": "Walnut",
+         "length": 12.75,
+         "core": "Dragon heartstring",
+         "Note": "This wand is described as 'unyielding;' passed into the possession of Hermione Granger after the Skirmish at Malfoy Manor in 1998."
+      },
+      {
+         "source":2,
+         "target":19,
+          "wood": "Walnut",
+          "length": 12.25,
+          "core": "Unicorn hair",
+          "Note": "This wand was 'pleasantly springy'; hair from particularly fine male unicorn (seventeen hands high), which nearly gored Mr Ollivander with its horn after he plucked its tail hair."
+      },
+      {
+         "source":2,
+         "target":19,
+          "wood": "Walnut",
+          "length": 12.25,
+          "core": "Unicorn hair",
+          "Note": "This wand was 'pleasantly springy'; hair from particularly fine male unicorn (seventeen hands high), which nearly gored Mr Ollivander with its horn after he plucked its tail hair."
+      },
+      {
+         "source":3,
+         "target":20,
+         "wood": "Larch",
+         "length": 10.5,
+         "core": "Phoenix feather",
+         "Note": "Celestina Warbeck's wand is mentioned in the lyrics of the title track of her best-selling album, You Stole My Cauldron but You Can't Have my Heart."
+      },
+      {
+         "source":4,
+         "target":18,
+          "wood": "Birch",
+          "length": 8,
+          "core": "Dragon heartstring",
+          "Note": "This wand is described as 'unusually short;' broken by a centaur's hoof in June 1996 in the Forbidden Forest"
+      },
+      {  "source":5,
+          "target":8,
+          "wood": "Hawthorn",
+          "length": 10,
+          "core": "Veela hair",
+          "Note": "This wand passed into the possession of Harry Potter after the Skirmish at Malfoy Manor in 1998 until Harry came into possession of the Elder Wand and mended his first wand."
+      },
+      {  "source":6,
+          "target":8,
+          "wood": "Rosewood",
+          "length": 9.5,
+          "core": "Phoenix feather",
+          "Note": "In this wand the core is a hair from Fleur's grandmother, who was a Veela."
+      },
+      {  "source":7,
+          "target":8,
+          "wood": "Hornbeam",
+          "length": 12.75,
+          "core": "Dragon heartstring",
+          "Note": ""
+      },
+      {  "source":8,
+          "target":8,
+          "wood": "Holly",
+          "length": 11,
+          "core": "Phoenix feather",
+          "Note": "Brother to Voldemort's wand — the core tail feathers are both from Fawkes; broken in December 1997 while fleeing from Godric's Hollow;[22] repaired with the Elder Wand in May 1998."
+      },
+      {  "source":9,
+          "target":8,
+          "wood": "Vine",
+          "length": 10.75,
+          "core": "Dragon heartstring",
+          "Note": "This wand was confiscated when the trio was captured by Snatchers in 1998."
+      },
+      {  "source":10,
+          "target":8,
+          "wood": "Cedar",
+          "length": 10.25,
+          "core": "Dragon heartstring",
+          "Note": "Fairly flexible."
+      },
+      {  "source":11,
+          "target":8,
+          "wood": "Elm",
+          "length": 18,
+          "core": "Dragon heartstring",
+          "Note": "This wand was kept in a snake-headed walking stick that Lucius carried; 'borrowed' by Lord Voldemort and destroyed by Harry Potter's wand during the Battle of the Seven Potters in 1997."
+      },
+      {  "source":12,
+          "target":8,
+          "wood": "Fir",
+          "length": 9.5,
+          "core": "Dragon heartstring",
+          "Note": "This wand was most likely purchased from Ollivanders in 1947 when she was eleven almost twelve."
+      },
+      {  "source":13,
+          "target":8,
+          "wood": "Cherry",
+          "length": -1,
+          "core": "Unicorn hair",
+          "Note": "This wand was nice for Charm work."
+      },
+      {  "source":14,
+          "target":8,
+          "wood": "Alder",
+          "length": 9,
+          "core": "Unicorn hair",
+          "Note": "This wand was nice for Charm work."
+      },
+      {  "source":15,
+          "target":8,
+          "wood": "Willow",
+          "length": 14,
+          "core": "Unicorn hair",
+          "Note": "Purchased with his father's winnings from a Daily Prophet draw. Taken from him by Snatchers and replaced with Peter Pettigrew's wand."
+      },
+      {  "source":16,
+          "target":8,
+          "wood": "Yew",
+          "length": 13.5,
+          "core": "Phoenix feather",
+          "Note": "This wand is brother to Harry Potter's wand — the core tail feathers are both from Fawkes."
+      }
+   ]
+}
