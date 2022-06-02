@@ -77,7 +77,7 @@ class PolarityScore{
 		this.xScale = d3.scaleLinear()
 		this.yScale = d3.scaleLinear()
 		this.width = width_sa
-		this.height = 400
+		this.height = 300
 		this.svg = d3.select("#sentimentAnalysisPlot")
 						.append("svg")
 						.attr("width", this.width)
@@ -272,7 +272,7 @@ function charInScene(char_set){
 			.data(char_data)
 			.enter()
 			.append("div")
-			.attr("class","chars-scene col-3 inline-block")
+			.attr("class","chars-scene col-3 col-md-2 inline-block")
 			.on("mouseover",d=>{
 				var char_name = d.srcElement.__data__.name
 				d3.select("#sentimentAnalysisPlot").selectAll(".rect-pol-score").each(
@@ -334,7 +334,7 @@ function displayScenes(data, pol){
 
 	var svgScene = d3.select("#sentimentAnalysisMenu")
 						.attr("width", width_sa)
-						.attr("height", 130)
+						.attr("height", 150)
 	svgScene.html("")
 
 
@@ -350,9 +350,9 @@ function displayScenes(data, pol){
 						.attr("width", d=>{
 							return xScale(d.start_diag+d.nb_dialog)-xScale(d.start_diag)
 						})
-						.attr("height", 130)
+						.attr("height", 150)
 						.attr('class', 'menu-block')
-						.attr('y', d=> 30)
+						.attr('y', d=> 0)
 						.attr('x', d=> xScale(d.start_diag))
 						.on("click",d=> {
 							var sceneData = d.srcElement.__data__

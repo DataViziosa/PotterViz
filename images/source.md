@@ -3,3 +3,4 @@ Here you will find the list of all the images used on the website and where they
 
 - Hogwarts castle picture: [New Yorker](https://www.newyorker.com/humor/daily-shouts/true-history-jewish-wizards-hogwarts-harry-potter).
 - Sorting hat: [Harry Potter wiki](https://harrypotter.fandom.com/wiki/Sorting_Hat).
+- Background sentiment analysis: [400coup](https://www.400coups.ch/images/detailed/62/x_clmt61883_a.jpg)
