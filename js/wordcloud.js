@@ -31,7 +31,7 @@ function wordCloud(selector) {
       //Entering words
       cloud.enter()
           .append("text")
-          .style("font-family", "Harry Potter")
+          .style("font-family", "HPFont")
           .style("fill", function(d, i) { return fill(i); })
           //.style("fill", "white")
           .attr("text-anchor", "middle")
@@ -71,7 +71,7 @@ function wordCloud(selector) {
               .padding(5)
               .rotate(function() { return ~~(Math.random() * 2) * 90; })
               // TODO: change with Harry Potter
-              .font("Harry Potter")
+              .font("HPFont")
               .fontSize(function(d) { return d.size; })
               .on("end", draw)
               .start();
