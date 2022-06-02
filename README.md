@@ -40,6 +40,14 @@ The structure of our folders is as follows:
 ├── LICENSE
 └── README.md
 ```
+
+## Conda Environment
+We have prepared a conda environment, named `potterviz`, with all the Python packages that you might need for the exam. You can install it with the following command:   
+`conda env create -f environment.yml`
+
+Once installed, to activate the environment, please use `conda activate potterviz`. To use it in Jupyter, please initiate Jupyter from a terminal with adaexam as the active conda environment. Alternatively, you can add the conda environment as a custom kernel by using the following command:   
+`python -m ipykernel install --user --name=potterviz`
+
 ## Authors
 The contributors to this project are:
 - [Emna Fendri](https://github.com/Emna-FENDRI)
