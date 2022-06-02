@@ -61,6 +61,24 @@ You can either see our visualization here or you can display it locally. To do s
 
 ## Authors
 The contributors to this project are:
+- [Alessio Verardo](https://github.com/AlessioVerardo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [Emna Fendri](https://github.com/Emna-FENDRI)
 - [Stephane Selim](https://github.com/stefnans)
-- [Alessio Verardo](https://github.com/AlessioVerardo)
+
