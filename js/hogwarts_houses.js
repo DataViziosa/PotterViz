@@ -48,10 +48,10 @@ function displayData(house){
 
 	var defs = svg.append("defs")
 		
-	let radiusScale = d3.scaleSqrt().domain([1,7]).range([20,35])
+	let radiusScale = d3.scaleSqrt().domain([1,7]).range([15,25])
 	let simulation = d3.forceSimulation()
 		.force("x", d3.forceX(width/2).strength(0.05))
-		.force("y", d3.forceY(height/2).strength(0.1))
+		.force("y", d3.forceY(height/3).strength(0.1))
 		.force("collide", d3.forceCollide(d=>radiusScale(d.books_featured_in.length)+1))
 
 
