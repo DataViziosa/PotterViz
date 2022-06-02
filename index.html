@@ -355,26 +355,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="section" data-anchor="The-Writing">
-		<div class="slide" data-anchor="The-Writing-1"></div>
-		<div class="slide" data-anchor="The-Writing-2">
-			<div id="wordcloud">
-			</div>
-			<div>
-				<!-- TODO: add to change number of words? -->
-				<!-- TODO: add scrolldown menu to choose type of words (tf-ids, frequents etc..) -->
-				<div id="mini-book-gallery" class="gallery-top-row">
-					<img src="data/images/book_cover/hp1.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 0)"/>
-					<img src="data/images/book_cover/hp2.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 1)"/>
-					<img src="data/images/book_cover/hp3.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 2)"/>
-					<img src="data/images/book_cover/hp4.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 3)"/>
-					<img src="data/images/book_cover/hp5.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 4)"/>
-					<img src="data/images/book_cover/hp6.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 5)"/>
-					<img src="data/images/book_cover/hp7.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 6)"/>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="section" data-anchor="Hogwarts">
 		<div class="slide" data-anchor="Hogwarts-1">
 			<h3 class="slideTitle">Hogwarts houses</h3>
@@ -459,12 +439,28 @@
 		</div>
 		<div class="section" data-anchor="Magical-World">
 			<div class="slide" data-anchor="Magical-World-1"></div>
-			<div class="slide" data-anchor="Magical-World-2"></div>
+			<div class="slide" data-anchor="Magical-World-2">
+			
+			</div>
 			<div class="slide" data-anchor="Magical-World-3"></div>
 		</div>
 		<div class="section" data-anchor="deep">
 			<div class="slide" data-anchor="deep-1"></div>
-			<div class="slide" data-anchor="deep-2"></div>
+			<div class="slide" data-anchor="deep-2"><div id="wordcloud">
+			</div>
+			<div>
+				<!-- TODO: add to change number of words? -->
+				<!-- TODO: add scrolldown menu to choose type of words (tf-ids, frequents etc..) -->
+				<div id="mini-book-gallery" class="gallery-top-row">
+					<img src="data/images/book_cover/hp1.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 0)"/>
+					<img src="data/images/book_cover/hp2.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 1)"/>
+					<img src="data/images/book_cover/hp3.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 2)"/>
+					<img src="data/images/book_cover/hp4.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 3)"/>
+					<img src="data/images/book_cover/hp5.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 4)"/>
+					<img src="data/images/book_cover/hp6.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 5)"/>
+					<img src="data/images/book_cover/hp7.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 6)"/>
+				</div>
+			</div></div>
 			<div class="slide" data-anchor="deep-3"></div>
 			<div class="slide" data-anchor="deep-4">
 				<div id="spellByBook">
@@ -475,6 +471,7 @@
 			<div class="slide" data-anchor="deep-5"></div>
 			<div class="slide" data-anchor="deep-6">
 				<div id="sentimentAnalysis" style="width:100%;height:100%">
+					<h2 class="slideTitle">Select your favorite movie</h2>
 					<div class="btn-group" role="group" aria-label="check_group">
 						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp1" autocomplete="off" onclick="displayMovie(1)" checked>
 						  <label class="btn btn-outline-secondary" for="btn_hp1">Harry Potter and the Philosopher's Stone</label>
@@ -492,10 +489,14 @@
 						  <label class="btn btn-outline-secondary" for="btn_hp7">Harry Potter and the Deathly Hallows Part 1</label>
 						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp8" autocomplete="off" onclick="displayMovie(8)">
 						  <label class="btn btn-outline-secondary" for="btn_hp8">Harry Potter and the Deathly Hallows Part 2</label>
-						</div>
+					</div>
+					<h4 class="slideSubtitle">Hover over the image and click to select your favorite scene in the movie</h4>
+					
 					<svg id="sentimentAnalysisMenu"></svg>
-					<div id="charInScene" style="width:100%;height:30%"></div>
-					<div id="sentimentAnalysisPlot" style="width:100%;height:30%">
+						<h4 class="slideSubtitle">Characters in the scene</h4>
+					<div id="charInScene" style="width:100%;height:10%;"></div>
+					<h4 class="slideSubtitle">Sentiment analysis</h4>
+					<div id="sentimentAnalysisPlot" style="width:100%;"></div>
 					</div>
 				</div>
 			</div>
@@ -509,8 +510,8 @@
 	$(document).ready(function(){
 			$('#wrapper').fullpage({
 			licenseKey:"gplv3-license",
-				anchors: ['Title', 'Introduction','The-Writing', 'Hogwarts','Characters','Magical-World','deep','About'], // div data-anchor to link navigation to div
-	      sectionsColor: ['black', 'black','black', 'black', 'black', 'black', 'black', 'black'], // the background color of each section 
+				anchors: ['Title', 'Introduction', 'Hogwarts','Characters','Magical-World','deep','About'], // div data-anchor to link navigation to div
+	      sectionsColor: ['black', 'black','black', 'black', 'black', 'black', 'black'], // the background color of each section 
 				navigationPosition:"right", //set the navigation to the right of the images
 				autoScrolling: true, // scroll full slide and not half of them
 			  navigation: true, // Disoplay the dots for vertical navigation
@@ -522,7 +523,6 @@
 			  navigationTooltips: [
 	        "Title",
 	        "Introduction",
-	        "The Writing",
 	        "Hogwarts Houses",
 	        "Characters",
 	        "Magical World",

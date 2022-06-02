@@ -107,6 +107,12 @@ a path  {
   font-size: 45px;
   font-family: "WWFont";
 }
+.slideSubtitle{
+  font-size: 25px;
+  font-family: "WWFont";
+  margin-bottom: 0px;
+  margin-top: 0.7%;
+}
 
 .modal{
   color:  grey !important;
