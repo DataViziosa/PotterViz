@@ -3,7 +3,7 @@
 ## Deliverables
 - The goal of the [first milestone](deliverables/milestone1.md) was to define the project and perform an [exploratory data analysis](python/exploratory_data_analysis.ipynb). 
 - In the second [second milestone](deliverables/milestone2.md), we are asked to give more details about the visualisations we want to make.
-- For the third and final milestone, we are asked to produce the visualization ([available on this link](https://dataviziosa.github.io/PotterViz/), one [screencast presentation](https://www.youtube.com/...) and finally a [process book](deliverables/process_book.pdf) explaining how we arrive to that result. 
+- For the third and final milestone, we are asked to produce the visualization ([available on this link](https://dataviziosa.github.io/PotterViz/)), one [screencast presentation](https://www.youtube.com/...) and finally a [process book](deliverables/process_book.pdf) explaining how we arrive to that result. 
 
 ## File structure
 The structure of our folders is as follows: 
