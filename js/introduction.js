@@ -15,7 +15,7 @@ function displayKeyFigures() {
 
   key_figures.enter()
     .append("div")
-    .attr("font-family", "hp.ttf")
+    .attr("font-family", "HPFont")
     .merge(key_figures)
     .transition()
     .duration(2000)

@@ -13,12 +13,13 @@
 	<!-- Libraries scripts-->
 	<script src="js/constantes.js" type="text/javascript"></script>
 	<!-- Script for google vizualization-->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/scrolloverflow.min.js"></script>
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/d3.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<!-- Script for word cloud functionality https://github.com/jasondavies/d3-cloud/blob/master/build/d3.layout.cloud.js -->
 	<script src="js/d3.layout.cloud.js"></script>
@@ -634,8 +635,7 @@
 		      		if($("#analyzedHouse").val()===""){
 			      		window.location.href = base_path+"index.html#Hogwarts/Hogwarts-2";
 			      	}
-		      	}else if (destination.anchor === "Introduction-1"){
-		      		console.log("asasdas")
+		      	} else if (destination.anchor === "Introduction-1"){
 		      		displayKeyFigures()
 		      	}
 			}
