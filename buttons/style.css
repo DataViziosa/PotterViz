@@ -1,0 +1,83 @@
+body{
+  background: black;
+  
+}
+#next{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+  position: relative;
+}
+#next h1{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%)
+}
+#back{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+}
+#back h1{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%)
+}
+
+#pause{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+}
+#pause h1{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%)
+}
+
+#title{
+
+  width: 170px;
+  height: 30px;
+
+
+}
+#title h1{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%);
+  color: gainsboro;
+  font-size: 0.875em;
+}
+
+#artist{
+
+  width: 170px;
+  height: 30px;
+
+
+
+}
+#artist h1{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%);
+  color: gainsboro;
+  font-size: 0.875em;
+}
+#container{
+  border-radius: 25px;
+  width: 160px;
+  height: 150px;
+  border: solid;
+  border-color: gainsboro;
+  /*padding:2.5%;*/
+}
