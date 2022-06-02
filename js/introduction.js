@@ -5,12 +5,12 @@ const NUMBER_OF_MOVIES = 8;
 const BOX_OFFICE = 7113;
 const NUMBER_OF_SPELLS = 0;
 
-var arr = [NUMBER_OF_BOOKS, UNITS_SOLD, NUMBER_OF_TRANSLATIONS, NUMBER_OF_MOVIES, BOX_OFFICE];
-
 /**
   To be called when entering the introduction page for the first time
 */
 function displayKeyFigures() {
+  const arr = [NUMBER_OF_BOOKS, UNITS_SOLD, NUMBER_OF_TRANSLATIONS, NUMBER_OF_MOVIES, BOX_OFFICE];
+
   let key_figures = d3.selectAll(".key-figures").data(arr)
 
   key_figures.enter()
