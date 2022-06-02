@@ -23,7 +23,5 @@ function displayKeyFigures() {
       return function(t) {
         this.textContent = d3.interpolateRound(0, d)(t);
       }
-  });
+  })
 }
-
-//displayKeyFigures();

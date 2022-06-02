@@ -24,7 +24,7 @@
 	<script src="js/d3.layout.cloud.js"></script>
 	<!-- Custom scripts-->
 	<script src="js/hogwarts_houses.js"></script>
-
+	<script type="text/javascript" src="js/introduction.js"></script>
 
 	<!-- Custom Stylesheets -->
 	<link rel="stylesheet" href="css/main.css">
@@ -183,31 +183,31 @@
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Books</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Units Sold (Mil)</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Translations</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Movies</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 					<div class="card" style="width: 14rem; background-color: transparent;">
 						<h5 class="card-title">Box Office ($ Mil)</h5>
 						<div class="card-body">
-						  <p class="card-text key-figures"></p>
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
 				</div>
@@ -506,7 +506,7 @@
 		</div>
 		<div class="section" data-anchor="deep">
 			<div class="slide" data-anchor="deep-1">
-				Ever wondered
+				
 			</div>
 			<div class="slide" data-anchor="deep-2"><div id="wordcloud">
 			</div>
@@ -539,7 +539,7 @@
 			</div>
 			<div class="slide" data-anchor="deep-5">
 				<h2 class="slideTitle">Sentiment analysis</h2>
-				What do you think is the most present emotion in the entire Harry Potter saga ? Is it happiness ? Death as suggested by J.K. Rowling herself ? One of the most famous theory is that each of the Harry Potter book is one of the seven step of grief.  
+				What do you think is the most present emotion in the entire Harry Potter saga ? Is it happiness ? Death as suggested by J.K. Rowling herself ? One of the most famous theory is that each of the Harry Potter book is one of the seven step of grief. Can we feel it in the books ? Does Machine Learning suggests that indeed the global emotion is going down over time ? To answer all of these questions, we present to you our most advanced visualization. It will let you explore different emotions impregnated in the serie. This visualization is splitted into different parts. You have the possibility to select one movie and then a particular chapter. Simply by hovering the upper image, you'll be able to see at the different scenes in the movie and what part of the global emotion plot it represents. By clicking on one scene, you will access to the different characters starred in that scene and their texts will be displayed in the emotion anaylsis plot. Select and explore, see the emotions given by your favorite, this visualization has a lot of combinations and resources. 
 			</div>
 			<div class="slide" data-anchor="deep-6">
 				<div id="sentimentAnalysis" style="width:100%;height:100%">
@@ -577,7 +577,7 @@
 			<!-- Add data provenance-->
 		</div>
 	</div>
-	<script type="text/javascript" src="js/introduction.js"></script>
+
 	<script>
 	function fadeInText(){
 
@@ -635,6 +635,7 @@
 			      		window.location.href = base_path+"index.html#Hogwarts/Hogwarts-2";
 			      	}
 		      	}else if (destination.anchor === "Introduction-1"){
+		      		console.log("asasdas")
 		      		displayKeyFigures()
 		      	}
 			}
