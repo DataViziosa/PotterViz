@@ -177,6 +177,13 @@ a path  {
   position: absolute;
   right: 0;
   bottom: 0;
+  background-color: black;
+  opacity: 0.1;
+  transition: opacity 0.5s;
+}
+
+#audioContainer:hover {
+  opacity: 1;
 }
 
 .fa-solid  {
