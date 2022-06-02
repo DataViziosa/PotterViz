@@ -542,6 +542,7 @@
 			<!-- Add data provenance-->
 		</div>
 	</div>
+	<script type="text/javascript" src="js/introduction.js"></script>
 	<script>
 	function fadeInText(){
 
@@ -587,7 +588,7 @@
 	      afterLoad:function(origin, destination, direction, trigger){
 	      	if(destination.anchor==="About"){
 	      		fadeInText()
-	      	}
+	      	} 
 
 	      },
 	      afterSlideLoad: function( section, origin, destination, direction, trigger){
@@ -598,13 +599,15 @@
 		      		if($("#analyzedHouse").val()===""){
 			      		window.location.href = base_path+"index.html#Hogwarts/Hogwarts-2";
 			      	}
+		      	}else if (destination.anchor === "Introduction-1"){
+		      		displayKeyFigures()
 		      	}
 			}
 		})
 	})
 
 	</script>
-	<script type="text/javascript" src="js/introduction.js"></script>
+	
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.1/plugins/sigma.renderers.customShapes.min.js" integrity="sha512-aq73VTnmRtppJmMoDa567DjtQsbyMBtfEDdLGdU8EqqwOEO4ExH36KE7i9kjWdv9XTuMi9vHnrt9aw5nItTicw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="js/char_networks.js"></script>
