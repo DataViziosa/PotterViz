@@ -152,3 +152,34 @@ a path  {
 #pButton {
   margin-top: 12px;
   cursor: pointer; }
+
+/* 
+ music player
+*/
+
+#audioControl > i{
+  margin: 10px;
+}
+#audioControl{
+  text-align: center;
+}
+#audioTitle, #audioArtist{
+  margin-left: 20px;
+}
+
+#audioContainer{
+  z-index: 3;
+  border-radius: 25px;
+  width: 200px;
+  height: 140px;
+  border: solid;
+  border-color: gainsboro;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.fa-solid  {
+  font-size: 35px;
+  color: gainsboro;
+}
