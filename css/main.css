@@ -67,23 +67,25 @@ a path  {
 
 @font-face {
   font-family: HPFont;
-  src: url("/fonts/hp.ttf");
+  src: url("/fonts/hp.ttf")
 }
 @font-face {
   font-family: FBFont;
-  src: url("/fonts/fb.ttf");
+  src: url("/fonts/fb.ttf")
 }
 @font-face {
   font-family: WWFont;
-  src: url("/fonts/ww.ttf");
+  src: url("/fonts/ww.ttf")
 }
 @font-face {
   font-family: Akira;
-  src: url("/fonts/akira.otf");
+  src: url("/fonts/akira.otf")
 }
 
 body{
   color: white!important;
+  /* Credits : https://www.cursors-4u.com/cursor/2011/02/06/harry-potter-magical-wand.html */
+  cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
 }
 body p {
   font-size: 1.1em;
@@ -211,9 +213,7 @@ body p {
 
 .key-figure-container {
   /*margin-left: 20%; */
-  width: 14rem;
-  background-color: transparent;
-  padding: 1%;
+  padding: 7.5%;
 }
 
 .key-figures {
