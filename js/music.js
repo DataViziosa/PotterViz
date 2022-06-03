@@ -1,3 +1,7 @@
+var btnPlay = $("#audioCtrl")
+var textPause = "Pause the music"
+var textPlay = "Play the music"
+
 class MusicPlayer{
   constructor(){
     self.musicList = ["music/hedwig.mp3","music/inferi.mp3","music/courtyard-apocalypse.mp3","music/showdown.mp3","music/voldemort-end.mp3","music/obliviate.mp3","music/hp-theme.mp3", "music/fb-theme.mp3"]
@@ -13,6 +17,11 @@ class MusicPlayer{
     self.audioElement.setAttribute('src', musicList[self.cpt])
     $("#audioTitle").text(self.title[self.cpt])
     $("#audioArtist").text(self.author[self.cpt])
+
+    btnPlay.val(textPause)
+    $("#playBtn").css("display","none")
+    $("#pauseBtn").css("display","inline-block")
+
     self.audioElement.play()
   }
 
@@ -50,6 +59,7 @@ class MusicPlayer{
 
 player = new MusicPlayer()
 
+
 function handleNext(){
   player.next()
 }
@@ -59,10 +69,6 @@ function handlePrevious(){
 }
 
 function handleMainButton(){
-  var btnPlay = $("#audioCtrl")
-  var textPause = "Pause the music"
-  var textPlay = "Play the music"
-
   var txt = btnPlay.val() 
   if(txt === textPlay){
     player.play()
