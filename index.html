@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
-
 <head>
+	<!-- TODO: reformat document -->
 	<!-- TODO: add background image? -->
 	<meta charset="utf-8">
 	<title>A Harry Potter journey</title>
@@ -11,20 +11,21 @@
 	<meta name="keywords" content="Harry Potter, Visualisation, Vizualisation, Com-480, Data Visualisation">
 	<link rel="icon" href="data/images/houses_logo/hogwarts.png" type="image/png">
 	<!-- Libraries scripts-->
+	<script src="js/constantes.js" type="text/javascript"></script>
+	<!-- Script for google vizualization-->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/scrolloverflow.min.js"></script>
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/d3.min.js"></script>
-	<!--script src="http://d3js.org/d3.v3.min.js"></script-->
-
-
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<!-- Script for word cloud functionality https://github.com/jasondavies/d3-cloud/blob/master/build/d3.layout.cloud.js -->
 	<script src="js/d3.layout.cloud.js"></script>
-
 	<!-- Custom scripts-->
 	<script src="js/hogwarts_houses.js"></script>
-	<script src="js/music.js"></script>
+	<script type="text/javascript" src="js/introduction.js"></script>
 
 	<!-- Custom Stylesheets -->
 	<link rel="stylesheet" href="css/main.css">
@@ -32,379 +33,412 @@
 	<link rel="stylesheet" href="css/char_networks.css">
 	<link rel="stylesheet" href="css/spell_by_books.css">
 	<link rel="stylesheet" href="css/sentiment_analysis.css">
-	<link rel="stylesheet" href="css/books.css" />
 
 	<!-- Libraries stylesheets -->
 	<link rel="stylesheet" href="css/fullpage.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fontawesome.min.css">
-
-	<!-- Custom very authentic Harry Potter font -->
-	<link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+	<link rel="stylesheet" href="css/books.css" />
 </head>
 
 <body>
+
+	<div id ="audioContainer">
+		<audio id="audio" style="visibility: hidden;"></audio>
+		<input type="hidden" value="Play the music" id="audioCtrl">
+		<div id="audioControl"><i class="fa-solid fa-backward" onclick="handlePrevious()"></i><i id="playBtn" class="fa-solid fa-play" style="display: inline-block;" onclick="handleMainButton()"></i><i class="fa-solid fa-pause"  id="pauseBtn" style="display: none;" onclick="handleMainButton()"></i><i class="fa-solid fa-forward" onclick="handleNext()"></i></div>
+		<div id="audioTitle"><h1></h1></div>
+		<div id="audioArtist"><h1></h1></div>
+	</div>
+
 	<!-- Modal used to diplay character information, by default it is hidden -->
 	<div class="modal fade" id="myModal">
-		<div class="modal-dialog modal-dialog-scrollable">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body col-12">
-					<div class="container-fluid">
-						<div id="char_info">
-							<img src="data/images/characters/harry_potter.png" id="char_picture">
-							<h3 id="char_name"></h3>
-							<div id="char_infos">
-								<div class="form-group row">
-									<label for="char_birthday" class="col-1 col-form-label"><i
-											class="fa-solid fa-cake-candles"></i></label>
-									<div class="col-11">
-										<input type="text" class="form-control" id="char_birthday" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="char_death" class="col-1 col-form-label"><i
-											class="fa-solid fa-skull"></i></label>
-									<div class="col-11">
-										<input type="text" class="form-control" id="char_death" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="char_wand" class="col-4 col-form-label"><i
-											class="fa-solid fa-wand-sparkles"></i> Wand</label>
-									<div class="col-8">
-										<input type="text" class="form-control" id="char_wand" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="char_patronus" class="col-4 col-form-label"><i
-											class="fa-solid fa-paw"></i> Patronus</label>
-									<div class="col-8">
-										<input type="text" class="form-control" id="char_patronus" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
+			  <div class="modal-dialog modal-dialog-scrollable">
+			    <div class="modal-content">
+			    	<div class="modal-header">
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+			      <div class="modal-body col-12">
+			      	<div class="container-fluid">
+				        <div id="char_info">
+				        	<img src="data/images/characters/harry_potter.png" id="char_picture">
+				        	<h3 id="char_name"></h3>
+				        	<div id="char_infos">
+								    <div class="form-group row">
+									    <label for="char_birthday" class="col-1 col-form-label"><i class="fa-solid fa-cake-candles"></i></label>
+									    <div class="col-11">
+									      <input type="text" class="form-control" id="char_birthday" autocomplete="off" disabled="disabled">
+									    </div>
+									  </div>
+									  <div class="form-group row">
+									    <label for="char_death" class="col-1 col-form-label"><i class="fa-solid fa-skull"></i></label>
+									    <div class="col-11">
+									      <input type="text" class="form-control" id="char_death" autocomplete="off" disabled="disabled">
+									    </div>
+									  </div>
+					        	<div class="form-group row">
+									    <label for="char_wand" class="col-4 col-form-label"><i class="fa-solid fa-wand-sparkles"></i> Wand</label>
+									    <div class="col-8">
+									      <input type="text" class="form-control" id="char_wand" autocomplete="off" disabled="disabled">
+									    </div>
+									  </div>
+									  <div class="form-group row">
+									    <label for="char_patronus" class="col-4 col-form-label"><i class="fa-solid fa-paw"></i> Patronus</label>
+									    <div class="col-8">
+									      <input type="text" class="form-control" id="char_patronus" autocomplete="off" disabled="disabled">
+									    </div>
+									  </div>
 
-								<div class="form-group row">
-									<label for="char_house" class="col-4 col-form-label"><i
-											class="fa-solid fa-house"></i> House</label>
-									<div class="col-8">
-										<input type="text" class="form-control" id="char_house" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
+									  <div class="form-group row">
+									    <label for="char_house" class="col-4 col-form-label"><i class="fa-solid fa-house"></i> House</label>
+									    <div class="col-8">
+									      <input type="text" class="form-control" id="char_house" autocomplete="off" disabled="disabled">
+									    </div>
+									  </div>
 
-								<div class="form-group row">
-									<label for="char_species" class="col-4 col-form-label">Species</label>
-									<div class="col-8">
-										<input type="text" class="form-control" id="char_species" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="char_gender" class="col-4 col-form-label">Gender</label>
-									<div class="col-8">
-										<input type="text" class="form-control" id="char_gender" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="char_hair" class="col-4 col-form-label">Hair color</label>
-									<div class="col-8">
-										<input type="text" class="form-control" id="char_hair" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="char_eye" class="col-4 col-form-label">Eye color</label>
-									<div class="col-8">
-										<input type="text" class="form-control" id="char_eye" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="char_blood" class="col-4 col-form-label"><i
-											class="fa-solid fa-droplet"></i> Blood type</label>
-									<div class="col-8">
-										<input type="text" class="form-control" id="char_blood" autocomplete="off"
-											disabled="disabled">
-									</div>
-								</div>
-								<div class="row">
-									<label for="char_book_in" class="col-form-label"><span class="bold">Books featured
-											in :</span> </label>
-									<ul class="list-group" id="char_book_in">
-									</ul>
-								</div>
-								<div class="row">
-									<label for="char_assoc_in" class="col-form-label"><span class="bold">Association
-											characters in : </span></label>
-									<ul class="list-group" id="char_assoc_in">
-									</ul>
-								</div>
-								<div class="row">
-									<label for="char_interact_with" class="col-form-label"><span class="bold">Other
-											character interactions</span></label>
-									<ul class="list-group" id="char_interact_with">
-									</ul>
-								</div>
-							</div>
+									  <div class="form-group row">
+						        		<label for="char_species" class="col-4 col-form-label">Species</label>
+										    <div class="col-8">
+										      <input type="text" class="form-control" id="char_species" autocomplete="off" disabled="disabled">
+										    </div>
+									  </div>
+										<div class="form-group row">
+						        		<label for="char_gender" class="col-4 col-form-label">Gender</label>
+										    <div class="col-8" >
+										      <input type="text" class="form-control" id="char_gender" autocomplete="off" disabled="disabled" >
+										    </div>
+										</div>
+					        	<div class="form-group row">
+						        		<label for="char_hair" class="col-4 col-form-label">Hair color</label>
+										    <div class="col-8">
+										      <input type="text" class="form-control" id="char_hair" autocomplete="off" disabled="disabled">
+										    </div>
+									  </div>
+							      <div class="form-group row">
+						        		<label for="char_eye" class="col-4 col-form-label">Eye color</label>
+										    <div class="col-8">
+										      <input type="text" class="form-control" id="char_eye" autocomplete="off" disabled="disabled">
+										    </div>
+									  </div>
+					        	<div class="form-group row">
+									    <label for="char_blood" class="col-4 col-form-label"><i class="fa-solid fa-droplet"></i> Blood type</label>
+									    <div class="col-8">
+									      <input type="text" class="form-control" id="char_blood" autocomplete="off" disabled="disabled">
+									    </div>
+									  </div>
+									  <div class="row">
+									  	<label for="char_book_in" class="col-form-label"><span class="bold">Books featured in :</span> </label>
+									  	<ul class="list-group" id="char_book_in">
+									  	</ul>
+									  </div>
+									  <div class="row">
+									  	<label for="char_assoc_in" class="col-form-label"><span class="bold">Association characters in : </span></label>
+									  	<ul class="list-group" id="char_assoc_in">
+									  	</ul>
+									  </div>
+									  <div class="row">
+									  	<label for="char_interact_with" class="col-form-label"><span class="bold">Other character interactions</span></label>
+									  	<ul class="list-group" id="char_interact_with">
+									  	</ul>
+									  </div>
+					        </div>
+				        </div>
+				      </div>
+				      <div class="modal-footer" id="char_info_footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close_modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+<div id="wrapper">
+	<div class="section" data-anchor="Title">
+	<svg width="586" height="400" xmlns="http://www.w3.org/2000/svg">
+	 <g>
+	  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp1" cx="171" stroke="#fff" fill="#000"/>
+	  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp3" transform="rotate(192,390.0091,270)" cx="390.00912" stroke="#fff" fill="#000"/>
+	  <path id="hp2" d="m239,247c36,-26 85,-1 85,-1" opacity="NaN" stroke-width="20" stroke="#fff" fill="#000"/>
+	  <path id="hp4" d="m176.54311,41.80681l20.31907,37.15581l-8.37838,4.38497l25.58558,31.83439l-8.37462,5.31647l31.62913,53.30836l-53.64864,-40.85207l10.23273,-5.67321l-33.33333,-26.16614l11.94444,-8.08618l-35.19519,-27.44942l39.21921,-23.77298z" stroke-width="0" stroke="#e6b905" fill="#e6b905"/>
+	 </g>
+	</svg><br>
+	<a href="#Introduction">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="120" id="arrow" viewBox="0 0 122.91 110.38">
+  <path id="hg2" transform="rotate(90 44.0126 61.8)" stroke-width="5"  d="m49.26179,61.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg1" transform="rotate(90 44.0126 27.8)" stroke-width="5" d="m49.26179,27.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg3" transform="rotate(90 44.013 96.8)" stroke-width="5" d="m49.26179,96.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+</svg>
+</a>
+	</div>
+	<div class="section" data-anchor="Introduction">
+		<div class="slide" data-anchor="Introduction-1">
+			<div class="container text-center">
+				<!-- TODO: maybe add background img in Introduction? -->
+				<img src="data/images/hp_logo/Harry_Potter.webp" alt="Harry Potter Logo"/>
+				<p class="lead">Step into the magical world of Harry Potter. Explore the characters, books, movies and everything in between. The wizarding world is your oyster! <br><br>
+
+					You're going to need your broom (meaning keyboard and mouse) to navigate through this amazing journey. First stop is on the right, where you'll find the gallery of books by JK. Rowling that kickstarted the whole universe. After that, the Warner Bros. motion pictures
+					that brought the same magic on the big screen over 20 years ago.
+				</p>
+				<div class="row">
+					<div class="card" style="width: 14rem; background-color: transparent;">
+						<h5 class="card-title">Books</h5>
+						<div class="card-body">
+						  <div class="card-text key-figures"></div>
 						</div>
 					</div>
-					<div class="modal-footer" id="char_info_footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-							id="close_modal">Close</button>
+					<div class="card" style="width: 14rem; background-color: transparent;">
+						<h5 class="card-title">Units Sold (Mil)</h5>
+						<div class="card-body">
+						  <div class="card-text key-figures"></div>
+						</div>
+					</div>
+					<div class="card" style="width: 14rem; background-color: transparent;">
+						<h5 class="card-title">Translations</h5>
+						<div class="card-body">
+						  <div class="card-text key-figures"></div>
+						</div>
+					</div>
+					<div class="card" style="width: 14rem; background-color: transparent;">
+						<h5 class="card-title">Movies</h5>
+						<div class="card-body">
+						  <div class="card-text key-figures"></div>
+						</div>
+					</div>
+					<div class="card" style="width: 14rem; background-color: transparent;">
+						<h5 class="card-title">Box Office ($ Mil)</h5>
+						<div class="card-body">
+						  <div class="card-text key-figures"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+		<div class="slide" data-anchor="Introduction-2">
+			<h3 class="slideTitle">Book Collection</h3>
+			<h5>Hover over each book to find out more about it</h5>
+			<div class="gallery-top-row">
+				<div class="book-frame">
+					<!-- TODO: Add border magic -->
+					<!-- TODO: Add trailing cursor -->
+					<img src="assets/Harry-Potter-alphabet-banner-1.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp1.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Philosopher's Stone
+						</p>
+						<ul id="book-1" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-2.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp2.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Chamber of Secrets
+						</p>
+						<ul id="book-2" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-3.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp3.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and Prisoner of Azkaban
+						</p>
+						<ul id="book-3" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-4.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp4.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+						Harry Potter and the Goblet of Fire
+						</p>
+						<ul id="book-4" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-bottom-row">
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-5.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp5.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Order of the Phoenix
+						</p>
+						<ul id="book-5" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-6.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp6.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Half-Blood Prince
+						</p>
+						<ul id="book-6" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="assets/Harry-Potter-alphabet-banner-7.png" class="thumbnail-banner" />
+					<img src="data/images/book_cover/hp7.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Deathly Hallows
+						</p>
+						<ul id="book-7" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide" data-anchor="Introduction-3">
+			<h3 class="slideTitle">Movie Collection</h3>
+			<h5>Hover over each movie to find out more about it</h5>
+			<div class="gallery-top-row">
+				<div class="book-frame">
+					<img src="data/images/movies/hp1.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Philosopher's Stone
+						</p>
+						<ul id="movie-1" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp2.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Chamber of Secrets
+						</p>
+						<ul id="movie-2" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp3.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and Prisoner of Azkaban
+						</p>
+						<ul id="movie-3" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp4.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+						Harry Potter and the Goblet of Fire
+						</p>
+						<ul id="movie-4" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-bottom-row-2">
+				<div class="book-frame">
+					<img src="data/images/movies/hp5.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Order of the Phoenix
+						</p>
+						<ul id="movie-5" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp6.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Half-Blood Prince
+						</p>
+						<ul id="movie-6" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp7.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Deathly Hallows Part 1
+						</p>
+						<ul id="movie-7" class="book-details">
+
+						</ul>
+					</div>
+				</div>
+				<div class="book-frame">
+					<img src="data/images/movies/hp8.jpeg" class="book"/>
+					<div class="book-description">
+						<p class="book-title">
+							Harry Potter and the Deathly Hallows Part 2
+						</p>
+						<ul id="movie-8" class="book-details">
+
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
-	<div id="wrapper">
-		<div class="section" data-anchor="Title">
-			<svg width="586" height="400" xmlns="http://www.w3.org/2000/svg">
-				<g>
-					<ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp1" cx="171" stroke="#fff" fill="#000" />
-					<ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp3" transform="rotate(192,390.0091,270)"
-						cx="390.00912" stroke="#fff" fill="#000" />
-					<path id="hp2" d="m239,247c36,-26 85,-1 85,-1" opacity="NaN" stroke-width="20" stroke="#fff"
-						fill="#000" />
-					<path id="hp4"
-						d="m176.54311,41.80681l20.31907,37.15581l-8.37838,4.38497l25.58558,31.83439l-8.37462,5.31647l31.62913,53.30836l-53.64864,-40.85207l10.23273,-5.67321l-33.33333,-26.16614l11.94444,-8.08618l-35.19519,-27.44942l39.21921,-23.77298z"
-						stroke-width="0" stroke="#e6b905" fill="#e6b905" />
-				</g>
-			</svg><br>
-			<a href="#Introduction">
-				<svg xmlns="http://www.w3.org/2000/svg" width="80" height="120" id="arrow" viewBox="0 0 122.91 110.38">
-					<path id="hg2" transform="rotate(90 44.0126 61.8)" stroke-width="5"
-						d="m49.26179,61.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z"
-						stroke="#fff" fill="#fff" />
-					<path id="hg1" transform="rotate(90 44.0126 27.8)" stroke-width="5"
-						d="m49.26179,27.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z"
-						stroke="#fff" fill="#fff" />
-					<path id="hg3" transform="rotate(90 44.013 96.8)" stroke-width="5"
-						d="m49.26179,96.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z"
-						stroke="#fff" fill="#fff" />
-				</svg>
-			</a>
-		</div>
-		<div class="section" data-anchor="Introduction">
-			<div class="slide" data-anchor="Introduction-1">
-				<button onclick="playMusic()">Play the music</button>
-			</div>
-			<div class="slide" data-anchor="Introduction-2">
-				<h1 class="collection-title">Book Collection</h1>
-				<div class="gallery-top-row">
-					<div class="book-frame">
-						<!-- TODO: Add border magic -->
-						<!-- TODO: Add trailing cursor -->
-						<img src="assets/Harry-Potter-alphabet-banner-1.png" class="thumbnail-banner" />
-						<img src="data/images/book_cover/hp1.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Philosopher's Stone
-							</p>
-							<ul id="book-1" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="assets/Harry-Potter-alphabet-banner-2.png" class="thumbnail-banner" />
-						<img src="data/images/book_cover/hp2.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Chamber of Secrets
-							</p>
-							<ul id="book-2" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="assets/Harry-Potter-alphabet-banner-3.png" class="thumbnail-banner" />
-						<img src="data/images/book_cover/hp3.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and Prisoner of Azkaban
-							</p>
-							<ul id="book-3" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="assets/Harry-Potter-alphabet-banner-4.png" class="thumbnail-banner" />
-						<img src="data/images/book_cover/hp4.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Goblet of Fire
-							</p>
-							<ul id="book-4" class="book-details"></ul>
-						</div>
-					</div>
-				</div>
-				<div class="gallery-bottom-row">
-					<div class="book-frame">
-						<img src="assets/Harry-Potter-alphabet-banner-5.png" class="thumbnail-banner" />
-						<img src="data/images/book_cover/hp5.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Order of the Phoenix
-							</p>
-							<ul id="book-5" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="assets/Harry-Potter-alphabet-banner-6.png" class="thumbnail-banner" />
-						<img src="data/images/book_cover/hp6.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Half-Blood Prince
-							</p>
-							<ul id="book-6" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="assets/Harry-Potter-alphabet-banner-7.png" class="thumbnail-banner" />
-						<img src="data/images/book_cover/hp7.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Deathly Hallows
-							</p>
-							<ul id="book-7" class="book-details"></ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slide" data-anchor="Introduction-3">
-				<h1 class="collection-title">Movie Collection</h1>
-				<div class="gallery-top-row">
-					<div class="book-frame">
-						<img src="data/images/movies/hp1.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Philosopher's Stone
-							</p>
-							<ul id="movie-1" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="data/images/movies/hp2.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Chamber of Secrets
-							</p>
-							<ul id="movie-2" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="data/images/movies/hp3.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and Prisoner of Azkaban
-							</p>
-							<ul id="movie-3" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="data/images/movies/hp4.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Goblet of Fire
-							</p>
-							<ul id="movie-4" class="book-details"></ul>
-						</div>
-					</div>
-				</div>
-				<div class="gallery-bottom-row-2">
-					<div class="book-frame">
-						<img src="data/images/movies/hp5.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Order of the Phoenix
-							</p>
-							<ul id="movie-5" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="data/images/movies/hp6.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Half-Blood Prince
-							</p>
-							<ul id="movie-6" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="data/images/movies/hp7.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Deathly Hallows Part 1
-							</p>
-							<ul id="movie-7" class="book-details"></ul>
-						</div>
-					</div>
-					<div class="book-frame">
-						<img src="data/images/movies/hp8.jpeg" class="book" />
-						<div class="book-description">
-							<p class="book-title">
-								Harry Potter and the Deathly Hallows Part 2
-							</p>
-							<ul id="movie-8" class="book-details"></ul>
-						</div>
-					</div>
-				</div>
+	<div class="section" data-anchor="Hogwarts">
+		<div class="slide" data-anchor="Hogwarts-1">
+			<h3 class="slideTitle">Hogwarts houses</h3>
+			<div class="container">
+				Around their eleventh birthday, the British witches and wizards who have demonstrated magical abilities, receive their admission letter from the renowned School of Witchcraft and Wizardry, Hogwarts. On September first, After having taken the Hogwarts Express at 11am precisely on King's cross 9 3/4' platform, they arrive at this beautiful castle.<br><br>
+				<img class="img-fluid mw-45 websiteImg" src="/images/hogwarts.webp"><!--<img src="/images/sorting_hat.png" class="img-fluid mw-45 websiteImg">--><br>
+				Before their first dinner, they'd be sorted out by the <span style="font-style:italic;">Sorting Hat</span> into one of the 4 Hogwarts houses, named after the 4 founders of the school and most amazing wizards and witches of their time: <span style="font-style:italic;">Godric Gryffindor, Rowena Ravenclaw, Helga Hufflepuff or Salazar Slytherin</span>. In Harry Potter's first year, 40 students, 10 per houses, were sorted out by the hat. It means that each year Hogwarts has around 280 students. They might be hard to track of and that's why, in this first visualisation, we let you explore the Hogwarts houses and the characters that belongs to them, from the main characters of the Harry Potter saga.
 			</div>
 		</div>
-		<div class="section" data-anchor="The-Writing">
-			<div class="slide" data-anchor="The-Writing-1"></div>
-			<div class="slide" data-anchor="The-Writing-2">
-				<div id="wordcloud">
-
+		<div class="slide" data-anchor="Hogwarts-2">
+			<div class="col-12">
+				<h3 class="slideTitle">Select your house</h3>
+				<p>Click on one house to dive into it and explore the characters sorted in it.</p><br>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('gryffindor')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/gryffindor.png">
+					</a>
 				</div>
-				<div>
-					<!-- TODO: add to change number of words? -->
-					<!-- TODO: add scrolldown menu to choose type of words (tf-ids, frequents etc..) -->
-					<div id="mini-book-gallery" class="gallery-top-row">
-						<img src="data/images/book_cover/hp1.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 0)"/>
-						<img src="data/images/book_cover/hp2.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 1)"/>
-						<img src="data/images/book_cover/hp3.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 2)"/>
-						<img src="data/images/book_cover/hp4.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 3)"/>
-						<img src="data/images/book_cover/hp5.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 4)"/>
-						<img src="data/images/book_cover/hp6.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 5)"/>
-						<img src="data/images/book_cover/hp7.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 6)"/>
-					</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('ravenclaw')">
+						<img class="img-fluid mw-100 hogwarts-logo-img"src="data/images/houses_logo/ravenclaw.png">
+					</a>
+				</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('hufflepuff')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/hufflepuff.png">
+					</a>
+				</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('slytherin')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/slytherin.png">
+					</a>
 				</div>
 			</div>
-		</div>
-		<div class="section" data-anchor="Hogwarts">
-			<div class="slide" data-anchor="Hogwarts-1">
-			</div>
-			<div class="slide" data-anchor="Hogwarts-2">
-				<div class="col-12">
-					<div class="col-5 hogwarts-logo">
-						<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('gryffindor')">
-							<img class="img-fluid mw-100 hogwarts-logo-img"
-								src="data/images/houses_logo/gryffindor.png">
-						</a>
-					</div>
-					<div class="col-5 hogwarts-logo">
-						<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('ravenclaw')">
-							<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/ravenclaw.png">
-						</a>
-					</div>
-					<div class="col-5 hogwarts-logo">
-						<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('hufflepuff')">
-							<img class="img-fluid mw-100 hogwarts-logo-img"
-								src="data/images/houses_logo/hufflepuff.png">
-						</a>
-					</div>
-					<div class="col-5 hogwarts-logo">
-						<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('slytherin')">
-							<img class="img-fluid mw-100 hogwarts-logo-img" src="data/images/houses_logo/slytherin.png">
-						</a>
-					</div>
-				</div>
 			</div>
 			<div class="slide" data-anchor="Hogwarts-3">
 				<input type="hidden" id="analyzedHouse" value="">
@@ -415,129 +449,220 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="Characters">
-			<div class="slide" data-anchor="Characters-1"></div>
+			<div class="slide" data-anchor="Characters-1">
+				<h3 class="slideTitle">Exploring the association groups</h3>
+				<div class="container">
+					Have you ever wondered in which group were Fred Weasley and Angeline Johnson before getting married? Better yet, can you name all the members of the Order of the Phoenix during the first war against Vold.... hem, <span style="font-weight:bold;"> He-Who-Must-Not-Be-Named</span> ?
+					Well in Harry Potter, as in every such saga spanning several years and a lot of different events, keeping track of everyone's group affiliations is really hard. They contain complex social relations that can span a huge periods of time.
+
+					To help you understand these affiliations, we give you the possibility to interactively explore a subset of the different Harry Potter association groups. You can check their members and the different associations in common between multiple characters.
+
+					We did not include Hogwarts houses since they were already shown in a former visualisations. But if you miss Hogwarts already scroll back! You can always come back later.
+					<br><br>
+					<div class="col-5 inline-block" style="text-align: left;">
+						<h5>Cheat Sheet for exploring the graph to its fullest</h5>
+						<ul class ="list-group" >
+							<li>Click on node: select character and neighbours.</li>
+							<li>Double click on node: display a character's bio.</li>
+							<li>Click on background: deselect all nodes.</li>
+							<li>Click on multiple nodes: display the associations in common between them.</li>
+							<li>Click on menu on the left: hide or show associations.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="slide" data-anchor="Characters-2" id="explore-char">
-				<h3>Exploring character groups</h3>
+				<h3 class="slideTitle">Exploring character groups</h3>
+				<div id="search-char-cont" style="margin-bottom: 20px;">
+					<h4 class="inline-block col-3">Search for a character</h4>
+				</div>
 				<div id="sigma-container" class="col-8 inline-block"></div>
 				<div id="filter-menu" class="col-3 inline-block"></div>
 				<div id="common-association" class="col-12">
-					<div id="search-char-cont">
-						<h4 class="inline-block col-3">Search for a character</h4>
+					<div class="col-12 inline-block">
+						<h5>Group in common between the selected characters</h5>
+						<ul id="common-association-list" class ="list-group  list-group-horizontal"></ul>
 					</div>
-					<h4>Group in common between the selected characters</h4>
-					<ul id="common-association-list" class="list-group  list-group-horizontal"></ul>
+
 				</div>
 			</div>
-			<div class="slide" data-anchor="Characters-3"></div>
 		</div>
 		<div class="section" data-anchor="Magical-World">
-			<div class="slide" data-anchor="Magical-World-1"></div>
-			<div class="slide" data-anchor="Magical-World-2"></div>
-			<div class="slide" data-anchor="Magical-World-3"></div>
-		</div>
-		<div class="section" data-anchor="deep">
-			<div class="slide" data-anchor="deep-1"></div>
-			<div class="slide" data-anchor="deep-2">
-				<div id="spellByBook">
-					<h2>Spell Launched per book</h2>
-					<div id="spellByBookContainer" style="width:100%;height:80%"></div>
+			<div class="slide" data-anchor="Magical-World-1">
+				<h3 class="slideTitle">Exploring Wands and Spells </h3>
+				<div class="container text-center">
+
+						Each wand consists of a type of wood surrounding a core of magical substance.
+						The wood may be unique to each wand, but the core material is generally redundant.
+						Let us discover in more details the core component of the wands of the  15 main characters of the saga.
+						<br>
+						And for the most curious, you can also check the repartition of spells types across the saga.
+				</div>
+				<!--TODO: EMNA INTRODUCTION-->
+				<!--TODO: PUT TITLES TO EACH SLIDE-->
+				<!--TODO: TRY TO CENTER DISPLAY AND ENLARGE THE VIZ-->
+				<!--TODO: LOAD WITH D3 JSON AT THE END-->
+			</div>
+			<div class="slide" data-anchor="Magical-World-2">
+				<div class="container">
+					<h3 class="slideTitle">Exploring wands </h3>
+					<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
 				</div>
 			</div>
+			<div class="slide" data-anchor="Magical-World-3">
+				<div class="container">
+					<!-- style="width: 900px; height: 500px;"-->
+					<h3 class="slideTitle">Exploring spells repartition </h3>
+					<div id="piechart" style="width: 900px; height: 300px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="section" data-anchor="deep">
+			<div class="slide" data-anchor="deep-1">
+
+			</div>
+			<div class="slide" data-anchor="deep-2"><div id="wordcloud">
+			</div>
+			<div>
+				<!-- TODO: add to change number of words? -->
+				<!-- TODO: add scrolldown menu to choose type of words (tf-ids, frequents etc..) -->
+				<div id="mini-book-gallery" class="gallery-top-row">
+					<img src="data/images/book_cover/hp1.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 0)"/>
+					<img src="data/images/book_cover/hp2.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 1)"/>
+					<img src="data/images/book_cover/hp3.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 2)"/>
+					<img src="data/images/book_cover/hp4.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 3)"/>
+					<img src="data/images/book_cover/hp5.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 4)"/>
+					<img src="data/images/book_cover/hp6.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 5)"/>
+					<img src="data/images/book_cover/hp7.jpeg" class="mini-book" onmouseover="showNewWords(myWordCloud, 6)"/>
+				</div>
+			</div></div>
 			<div class="slide" data-anchor="deep-3">
+				<div class="container">
+					<h2 class="slideTitle">Spell Launched per book</h2>
+					What defines magic in the Harry Potter World ? The wand. Every witch and wizard should have one in order to learn how to control magic. This learning process comes along with a lot of different spells along the way. As you have previously seen, spells can be of any type and there is a huge amount of them. Ever wondered how many times and at which point in time in the saga each spell has been casted ? The next visualization will exactly answer this question. You will be able to see a timeline with all the times each of 20 most used spells has been casted during the Harry Potter saga. By hovering the different circles, you will be able to see the context in which the spell has been casted. Furthermore, the books have been color-coded. To be more precise on which circle to hover, you can click and drag to zoom inside the timeline.
+				</div>
+			</div>
+			<div class="slide" data-anchor="deep-4">
+				<div class="container">
+					<div id="spellByBook">
+						<h2 class="slideTitle">Spell Launched per book</h2>
+						<div id="spellByBookContainer" style="width:100%;height:80%"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide" data-anchor="deep-5">
+				<h2 class="slideTitle">Sentiment analysis</h2>
+				What do you think is the most present emotion in the entire Harry Potter saga ? Is it happiness ? Death as suggested by J.K. Rowling herself ? One of the most famous theory is that each of the Harry Potter book is one of the seven step of grief. Can we feel it in the books ? Does Machine Learning suggests that indeed the global emotion is going down over time ? To answer all of these questions, we present to you our most advanced visualization. It will let you explore different emotions impregnated in the serie. This visualization is splitted into different parts. You have the possibility to select one movie and then a particular chapter. Simply by hovering the upper image, you'll be able to see at the different scenes in the movie and what part of the global emotion plot it represents. By clicking on one scene, you will access to the different characters starred in that scene and their texts will be displayed in the emotion anaylsis plot. Select and explore, see the emotions given by your favorite, this visualization has a lot of combinations and resources.
+			</div>
+			<div class="slide" data-anchor="deep-6">
 				<div id="sentimentAnalysis" style="width:100%;height:100%">
+					<h2 class="slideTitle">Select your favorite movie</h2>
 					<div class="btn-group" role="group" aria-label="check_group">
-						<input type="radio" class="btn-check" name="btnradio" id="btn_hp1" autocomplete="off"
-							onclick="displayMovie(1)" checked>
-						<label class="btn btn-outline-secondary" for="btn_hp1">Harry Potter and the Philosopher's
-							Stone</label>
-						<input type="radio" class="btn-check" name="btnradio" id="btn_hp2" autocomplete="off"
-							onclick="displayMovie(2)">
-						<label class="btn btn-outline-secondary" for="btn_hp2">Harry Potter and the Chamber of
-							Secrets</label>
-						<input type="radio" class="btn-check" name="btnradio" id="btn_hp3" autocomplete="off"
-							onclick="displayMovie(3)">
-						<label class="btn btn-outline-secondary" for="btn_hp3">Harry Potter and the Prisoner of
-							Azkaban</label>
-						<input type="radio" class="btn-check" name="btnradio" id="btn_hp4" autocomplete="off"
-							onclick="displayMovie(4)">
-						<label class="btn btn-outline-secondary" for="btn_hp4">Harry Potter and the Goblet of
-							Fire</label>
-						<input type="radio" class="btn-check" name="btnradio" id="btn_hp5" autocomplete="off"
-							onclick="displayMovie(5)">
-						<label class="btn btn-outline-secondary" for="btn_hp5">Harry Potter and the Order of the
-							Phoenix</label>
-						<input type="radio" class="btn-check" name="btnradio" id="btn_hp6" autocomplete="off"
-							onclick="displayMovie(6)">
-						<label class="btn btn-outline-secondary" for="btn_hp6">Harry Potter and the Half-Blood
-							Prince</label>
-						<input type="radio" class="btn-check" name="btnradio" id="btn_hp7" autocomplete="off"
-							onclick="displayMovie(7)">
-						<label class="btn btn-outline-secondary" for="btn_hp7">Harry Potter and the Deathly Hallows Part
-							1</label>
-						<input type="radio" class="btn-check" name="btnradio" id="btn_hp8" autocomplete="off"
-							onclick="displayMovie(8)">
-						<label class="btn btn-outline-secondary" for="btn_hp8">Harry Potter and the Deathly Hallows Part
-							2</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp1" autocomplete="off" onclick="displayMovie(1)" checked>
+						  <label class="btn btn-outline-secondary" for="btn_hp1">Harry Potter and the Philosopher's Stone</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp2" autocomplete="off" onclick="displayMovie(2)">
+						  <label class="btn btn-outline-secondary" for="btn_hp2">Harry Potter and the Chamber of Secrets</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp3" autocomplete="off" onclick="displayMovie(3)">
+						  <label class="btn btn-outline-secondary" for="btn_hp3">Harry Potter and the Prisoner of Azkaban</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp4" autocomplete="off" onclick="displayMovie(4)">
+						  <label class="btn btn-outline-secondary" for="btn_hp4">Harry Potter and the Goblet of Fire</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp5" autocomplete="off" onclick="displayMovie(5)">
+						  <label class="btn btn-outline-secondary" for="btn_hp5">Harry Potter and the Order of the Phoenix</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp6" autocomplete="off" onclick="displayMovie(6)">
+						  <label class="btn btn-outline-secondary" for="btn_hp6">Harry Potter and the Half-Blood Prince</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp7" autocomplete="off" onclick="displayMovie(7)">
+						  <label class="btn btn-outline-secondary" for="btn_hp7">Harry Potter and the Deathly Hallows Part 1</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btn_hp8" autocomplete="off" onclick="displayMovie(8)">
+						  <label class="btn btn-outline-secondary" for="btn_hp8">Harry Potter and the Deathly Hallows Part 2</label>
 					</div>
+					<h4 class="slideSubtitle">Hover over the image and click to select your favorite scene in the movie</h4>
+
 					<svg id="sentimentAnalysisMenu"></svg>
-					<div id="charInScene" style="width:100%;height:30%"></div>
-					<div id="sentimentAnalysisPlot" style="width:100%;height:30%">
-					</div>
+						<h4 class="slideSubtitle">Characters in the scene</h4>
+					<div id="charInScene" style="width:100%;height:10%;"></div>
+					<h4 class="slideSubtitle">Sentiment analysis</h4>
+					<div id="sentimentAnalysisPlot" style="width:100%;"></div>
 				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="About">
-			<text style="color:white">A Harry Potter Journey created by Emna Fendri, Stephane Selim and Alessio
-				Verardo</text>
+			<h2 id="ml3">A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo.</h2>
+			<!-- Add data provenance-->
 		</div>
 	</div>
 	<script>
-		$(document).ready(function () {
+
+	function fadeInText(){
+
+		var textWrapper = document.querySelector('#ml3');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({loop: false})
+		  .add({
+		    targets: '#ml3 .letter',
+		    opacity: [0,1],
+		    easing: "easeInOutQuad",
+		    duration: 500,
+		    delay: (el, i) => 50 * (i+1)
+	  	})
+		  $("#ml3").css("opacity", "1")
+	}
+
+	$(document).ready(function(){
 			$('#wrapper').fullpage({
-				licenseKey: "gplv3-license",
-				anchors: ['Title', 'Introduction', 'The-Writing', 'Hogwarts', 'Characters', 'Magical-World', 'deep', 'About'], // div data-anchor to link navigation to div
-				sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black', 'black'], // the background color of each section
-				navigationPosition: "right", //set the navigation to the right of the images
+			licenseKey:"gplv3-license",
+				anchors: ['Title', 'Introduction', 'Hogwarts','Characters','Magical-World','deep','About'], // div data-anchor to link navigation to div
+	      sectionsColor: ['black', 'black','black', 'black', 'black', 'black', 'black'], // the background color of each section
+				navigationPosition:"right", //set the navigation to the right of the images
 				autoScrolling: true, // scroll full slide and not half of them
-				navigation: true, // Disoplay the dots for vertical navigation
-				showActiveTooltip: true, // Show the name of the section on the navigation bar
-				slidesNavigation: true, // display the dots for horizontal navigation
-				slidesNavPosition: "bottom", // set the position of the horizontal navigation dots
-				normalScrollElements: '.modal, #spellByBook, #sigma-container,#filter-menu, #charInScene', // Put the div id in which we want to block fullpage js scrolling
-				fitToSection: true,
-				navigationTooltips: [
-					"Title",
-					"Introduction",
-					"The Writing",
-					"Hogwarts Houses",
-					"Characters",
-					"Magical World",
-					"Going deeper",
-					"About",
-				],
-				controlArrows: false, // disable arrow for hroizontal navigation as they were superposed with the navigation tools
-				showActiveTooltip: false,
-				afterSlideLoad: function (section, origin, destination, direction, trigger) {
-					//allow us to make some action after we move to some slide
-					// See https://github.com/alvarotrigo/fullPage.js#callbacks for documentation
-					if (destination.anchor === "Hogwarts-3") {
-						// If the page Hogwarts-3 (bubble chart) is load without having selected a house, we redirect the user to the house selection page.
-						if ($("#analyzedHouse").val() === "") {
-							window.location.href = "index.html#Hogwarts/Hogwarts-2";
-						}
-					}
-				}
-			})
+			  navigation: true, // Disoplay the dots for vertical navigation
+			  showActiveTooltip: true, // Show the name of the section on the navigation bar
+			  slidesNavigation:true, // display the dots for horizontal navigation
+			  slidesNavPosition:"bottom", // set the position of the horizontal navigation dots
+			  normalScrollElements: '.modal, #spellByBook, #sigma-container,#filter-menu, #charInScene', // Put the div id in which we want to block fullpage js scrolling
+			  fitToSection:true,
+			  navigationTooltips: [
+	        "Title",
+	        "Introduction",
+	        "Hogwarts Houses",
+	        "Characters",
+	        "Magical World",
+	        "Going deeper",
+	        "About",
+	      ],
+	      controlArrows:false, // disable arrow for hroizontal navigation as they were superposed with the navigation tools
+	      showActiveTooltip:false,
+	      afterLoad:function(origin, destination, direction, trigger){
+	      	if(destination.anchor==="About"){
+	      		fadeInText()
+	      	}
+
+	      },
+	      afterSlideLoad: function( section, origin, destination, direction, trigger){
+		      	//allow us to make some action after we move to some slide
+		      	// See https://github.com/alvarotrigo/fullPage.js#callbacks for documentation
+		      	if(destination.anchor==="Hogwarts-3"){
+		      		// If the page Hogwarts-3 (bubble chart) is load without having selected a house, we redirect the user to the house selection page.
+		      		if($("#analyzedHouse").val()===""){
+			      		window.location.href = base_path+"index.html#Hogwarts/Hogwarts-2";
+			      	}
+		      	} else if (destination.anchor === "Introduction-1"){
+		      		displayKeyFigures()
+		      	}
+			}
 		})
+	})
 
 	</script>
-	<!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.1/plugins/sigma.renderers.customShapes.min.js" integrity="sha512-aq73VTnmRtppJmMoDa567DjtQsbyMBtfEDdLGdU8EqqwOEO4ExH36KE7i9kjWdv9XTuMi9vHnrt9aw5nItTicw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="js/char_networks.js"></script>
-	<script type="text/javascript" src="js/spell_by_book.js"></script-->
+	<script type="text/javascript" src="js/spell_by_book.js"></script>
 	<script type="text/javascript" src="js/books_movies_display.js"></script>
 	<script type="text/javascript" src="js/wordcloud.js"></script>
-
+	<script type="text/javascript" src="js/sentiment_analysis.js"></script>
+	<script type="text/javascript" src="js/spells.js"></script>
+	<script src="js/music.js"></script>
 </body>
-
 </html>
