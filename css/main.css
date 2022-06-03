@@ -67,19 +67,19 @@ a path  {
 
 @font-face {
   font-family: HPFont;
-  src: url("fonts/hp.ttf");
+  src: url("/fonts/hp.ttf");
 }
 @font-face {
   font-family: FBFont;
-  src: url("fonts/fb.ttf");
+  src: url("/fonts/fb.ttf");
 }
 @font-face {
   font-family: WWFont;
-  src: url("fonts/ww.ttf");
+  src: url("/fonts/ww.ttf");
 }
 @font-face {
   font-family: Akira;
-  src: url("fonts/akira.otf");
+  src: url("/fonts/akira.otf");
 }
 
 body{
@@ -186,7 +186,7 @@ body p {
   right: 0;
   bottom: 0;
   background-color: black;
-  opacity: 0.1;
+  opacity: 0.3;
   transition: opacity 0.5s;
 }
 
@@ -197,6 +197,7 @@ body p {
 #audioContainer .fa-solid  {
   font-size: 35px;
   color: gainsboro;
+  cursor: pointer;
 }
 
 .anychart-credits{
