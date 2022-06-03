@@ -1,7 +1,4 @@
-body{
-  color: white!important;
-  font-family: "Poppins";
-}
+
 .inline-block{
   display: inline-block !important;
 }
@@ -80,7 +77,15 @@ a path  {
   font-family: WWFont;
   src: url("/fonts/ww.ttf");
 }
+@font-face {
+  font-family: Akira;
+  src: url("/fonts/akira.otf");
+}
 
+body{
+  color: white!important;
+  font-family: "Akira";
+}
 
 .hogwarts-logo{
   display: inline-block;
@@ -187,7 +192,7 @@ a path  {
   opacity: 1;
 }
 
-.fa-solid  {
+#audioContainer .fa-solid  {
   font-size: 35px;
   color: gainsboro;
 }

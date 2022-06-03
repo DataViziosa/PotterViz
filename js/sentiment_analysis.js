@@ -272,7 +272,7 @@ function charInScene(char_set){
 			.data(char_data)
 			.enter()
 			.append("div")
-			.attr("class","chars-scene col-3 col-md-2 inline-block")
+			.attr("class","chars-scene col-4 col-md-3 inline-block")
 			.on("mouseover",d=>{
 				var char_name = d.srcElement.__data__.name
 				d3.select("#sentimentAnalysisPlot").selectAll(".rect-pol-score").each(
