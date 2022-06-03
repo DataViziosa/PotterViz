@@ -126,7 +126,7 @@ a path  {
   box-shadow:  0px 0px 27px 18px rgba(255,255,255,0.19);
 }
 
-.container{
+.container p {
   text-align: justify;
 }
 
@@ -191,11 +191,15 @@ a path  {
   color: gainsboro;
 }
 
-<<<<<<< HEAD
 .anychart-credits{
   display: none;
 }
-=======
+
+.card p{
+  text-align: center;
+}
+
+
 .key-figure-container {
   /*margin-left: 20%; */
   width: 14rem;
@@ -206,4 +210,4 @@ a path  {
 .key-figures {
   font-size: xx-large;
 }
->>>>>>> main
+
