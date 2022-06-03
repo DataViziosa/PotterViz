@@ -57,7 +57,10 @@ Once installed, to activate the environment, please use `conda activate pottervi
 - The images and musics used are not copyright-free, that's why we put the name of the authors or the link to the original owner of the images in the respective source.md files for [images](images/source.md) and [music](music/source.md).
 
 ## Display our visualization locally
-You can either see our visualization [here](https://dataviziosa.github.io/PotterViz/) or you can display it locally. To do so, you will need to install [MAMP](https://www.mamp.info/en/mac/) which is a local web hoster. This will allow you to run an Apache Server locally and therefore, to be able to load files from disk without any complaints from the browser. Note that you have to change the **base_path** variable in [this file](js/constantes.js) to the basic localhost address provided by MAMP (By default it should http://localhost:80/). Then, you just need to setup MAMP to point to the foler in which the visualization is stored and you will be able to display the visualization locally. 
+You can either see our visualization [here](https://dataviziosa.github.io/PotterViz/) or you can display it locally. To do so, you will need to install [MAMP](https://www.mamp.info/en/mac/) which is a local web hoster. This will allow you to run an Apache Server locally and therefore, to be able to load files from disk without any complaints from the browser. Note that you have to change the path at exactly 5 locations to be able to run the code locally:
+- In main.css, you have to change the path to /PotterViz/ to / at every location (lines 70, 74, 78, 82)
+- Similarly, in sentiment_analysis.css at line 71.
+Then, you just need to setup MAMP to point to the foler in which the visualization is stored and you will be able to display the visualization locally. 
 
 For a better experience, please use the website in **fullscreen mode**.
 
