@@ -183,3 +183,7 @@ a path  {
   font-size: 35px;
   color: gainsboro;
 }
+
+.anychart-credits{
+  display: none;
+}
