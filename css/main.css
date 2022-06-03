@@ -123,6 +123,7 @@ a path  {
   width: 50%;
   /*margin-right: 30px;*/
   margin: 0 auto;
+  border-radius: 10px;
   box-shadow:  0px 0px 27px 18px rgba(255,255,255,0.19);
 }
 
