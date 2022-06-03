@@ -328,6 +328,8 @@ d3.json(association_network).then(d=>{
   var btn = d3.select("#search-char-cont")
               .append("button")
               .attr("class", "btn btn-secondary col-2 inline-block")
+              .style("margin-left", '2%')
+              .style("vertical-align", "unset")
               .text("Search in graph")
               .on("click",e=>sigmaGraph.focus_node(document.getElementById("search-char").value))
 
