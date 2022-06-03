@@ -84,7 +84,9 @@ a path  {
 
 body{
   color: white!important;
-  font-family: "Akira";
+}
+body p {
+  font-size: 1.1em;
 }
 
 .hogwarts-logo{

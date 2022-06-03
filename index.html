@@ -470,11 +470,9 @@
 					<!-- https://europeanfilmawards.eu/en_EN/film/harry-potter-and-the-order-of-the-phoenix.5121 -->
 					<img class="img-fluid mw-45 websiteImg" src="/images/order_of_the_phoenix.jpg">
 					<p>
-					Well in Harry Potter, as in every such saga spanning several years and a lot of different events, keeping track of everyone's group affiliations is really hard. They contain complex social relations that can span a huge periods of time.<br><br>
+					Well in Harry Potter, as in every such saga spanning several years and a lot of different events, keeping track of everyone's group affiliations is really hard. They contain complex social relations that can span a huge periods of time.<br>
 
-					To help you understand these affiliations, we give you the possibility to interactively explore a subset of the different Harry Potter association groups. You can check their members and the different associations in common between multiple characters.<br><br>
-
-					We did not include Hogwarts houses since they were already shown in a former visualisations. But if you miss Hogwarts already scroll back! You can always come back later.</p>
+					To help you understand these affiliations, we give you the possibility to interactively explore a subset of the different Harry Potter association groups. You can check their members and the different associations in common between multiple characters. We did not include Hogwarts houses since they were already shown in a former visualisations. But if you miss Hogwarts already scroll back! You can always come back later.</p>
 					<div class="col-5 inline-block" style="text-align: left;">
 						<h5>Cheat Sheet for exploring the graph to its fullest</h5>
 						<ul class ="list-group" >
@@ -505,10 +503,7 @@
 		</div>
 		<div class="section" data-anchor="Magical-World">
 			<div class="slide" data-anchor="Magical-World-1">
-				<!--TODO: EMNA INTRODUCTION-->
-				<!--TODO: PUT TITLES TO EACH SLIDE-->
-				<!--TODO: TRY TO CENTER DISPLAY AND ENLARGE THE VIZ-->
-				<!--TODO: LOAD WITH D3 JSON AT THE END-->
+				
 			</div>
 			<div class="slide" data-anchor="Magical-World-2">
 				<div class="container">
@@ -634,22 +629,6 @@
 		</div>
 	</div>
 	<script>
-	function fadeInText(){
-
-		var textWrapper = document.querySelector('#ml3');
-		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-		anime.timeline({loop: false})
-		  .add({
-		    targets: '#ml3 .letter',
-		    opacity: [0,1],
-		    easing: "easeInOutQuad",
-		    duration: 500,
-		    delay: (el, i) => 50 * (i+1)
-	  	})
-		  $("#ml3").css("opacity", "1")
-	}
-
 	$(document).ready(function(){
 			$('#wrapper').fullpage({
 			licenseKey:"gplv3-license",
@@ -675,10 +654,7 @@
 	      controlArrows:false, // disable arrow for hroizontal navigation as they were superposed with the navigation tools
 	      showActiveTooltip:false,
 	      afterLoad:function(origin, destination, direction, trigger){
-	      	if(destination.anchor==="About"){
-	      		fadeInText()
-	      	} 
-
+	      	
 	      },
 	      afterSlideLoad: function( section, origin, destination, direction, trigger){
 		      	//allow us to make some action after we move to some slide
@@ -686,7 +662,7 @@
 		      	if(destination.anchor==="Hogwarts-3"){
 		      		// If the page Hogwarts-3 (bubble chart) is load without having selected a house, we redirect the user to the house selection page.
 		      		if($("#analyzedHouse").val()===""){
-			      		window.location.href = base_path+"index.html#Hogwarts/Hogwarts-2";
+			      		window.location.href = base_path+"index.html#Hogwarts/Hogwarts-2" //base_path+"index.html#Hogwarts/Hogwarts-2";
 			      	}
 		      	} else if (destination.anchor === "Introduction-1"){
 		      		displayKeyFigures()

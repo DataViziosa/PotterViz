@@ -36,7 +36,7 @@ class MusicPlayer{
   }
 
   play(){
-    self.audioElement.setAttribute('src', musicList[0])
+    self.audioElement.setAttribute('src', musicList[self.cpt])
     self.audioElement.volume = self.volume
     var ref = this
     
