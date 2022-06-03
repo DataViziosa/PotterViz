@@ -43,7 +43,20 @@
 	<link rel="stylesheet" href="css/books.css" />
 </head>
 <body>
-
+<div id="loading-screen" style="
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        background: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+    </div>
 	<div id ="audioContainer">
 		<audio id="audio" style="visibility: hidden;"></audio>
 		<input type="hidden" value="Play the music" id="audioCtrl">
@@ -678,7 +691,16 @@
 		      	}else if(destination.anchor === "Magical-World-2"){
 		      		//drawSankey()
 		      	}
-			}
+			},
+			afterRender: () => {
+	        const loadingScreen = d3.select('#loading-screen');
+
+	        loadingScreen
+	          .transition()
+	          .duration(2000)
+	          .style('opacity', 0)
+	          .on('end', () => loadingScreen.style('display', 'none'));
+	      }
 		})
 	})
 
