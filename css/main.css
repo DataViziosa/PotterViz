@@ -67,19 +67,19 @@ a path  {
 
 @font-face {
   font-family: HPFont;
-  src: url("fonts/hp.ttf");
+  src: url("/PotterViz/fonts/hp.ttf");
 }
 @font-face {
   font-family: FBFont;
-  src: url("fonts/fb.ttf");
+  src: url("/PotterViz/fonts/fb.ttf");
 }
 @font-face {
   font-family: WWFont;
-  src: url("fonts/ww.ttf");
+  src: url("/PotterViz/fonts/ww.ttf");
 }
 @font-face {
   font-family: Akira;
-  src: url("fonts/akira.otf");
+  src: url("/PotterViz/fonts/akira.otf");
 }
 
 body{
