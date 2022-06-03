@@ -191,11 +191,10 @@ a path  {
   color: gainsboro;
 }
 
-<<<<<<< HEAD
 .anychart-credits{
   display: none;
 }
-=======
+
 .key-figure-container {
   /*margin-left: 20%; */
   width: 14rem;
@@ -206,4 +205,4 @@ a path  {
 .key-figures {
   font-size: xx-large;
 }
->>>>>>> main
+
