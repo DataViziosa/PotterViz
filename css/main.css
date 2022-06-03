@@ -85,7 +85,7 @@ a path  {
 body{
   color: white!important;
   /* Credits : https://www.cursors-4u.com/cursor/2011/02/06/harry-potter-magical-wand.html */
-  cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+  cursor: url("/PotterViz/assets/use160.cur"), auto !important;
 }
 body p {
   font-size: 1.1em;
