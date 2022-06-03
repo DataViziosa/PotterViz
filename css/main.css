@@ -35,7 +35,7 @@ body{
 
 
 @keyframes opacity {
-  0% {opacity: 0} 
+  0% {opacity: 0}
   100% {opacity: 1}
 }
 
@@ -44,9 +44,9 @@ a path  {
       animation: 3.5s opacity2 infinite;
     }
     @keyframes opacity2 {
-      15% {opacity: 0.3} 
+      15% {opacity: 0.3}
       35% {opacity: 1}
-      65% {opacity: 1} 
+      65% {opacity: 1}
       85% {opacity: 0.3}
     }
     #hg2 {animation-delay: 0.5s}
@@ -88,7 +88,7 @@ a path  {
 
 .hogwarts-logo-img{
   z-index: 0;
-  height: 300px !important;
+  height: 250px !important;
   transition: transform 300ms ease-in-out;
   }
 
@@ -153,7 +153,7 @@ a path  {
   margin-top: 12px;
   cursor: pointer; }
 
-/* 
+/*
  music player
 */
 
@@ -177,6 +177,13 @@ a path  {
   position: absolute;
   right: 0;
   bottom: 0;
+  background-color: black;
+  opacity: 0.1;
+  transition: opacity 0.5s;
+}
+
+#audioContainer:hover {
+  opacity: 1;
 }
 
 .fa-solid  {
@@ -184,6 +191,19 @@ a path  {
   color: gainsboro;
 }
 
+<<<<<<< HEAD
 .anychart-credits{
   display: none;
 }
+=======
+.key-figure-container {
+  /*margin-left: 20%; */
+  width: 14rem;
+  background-color: transparent;
+  padding: 1%;
+}
+
+.key-figures {
+  font-size: xx-large;
+}
+>>>>>>> main
