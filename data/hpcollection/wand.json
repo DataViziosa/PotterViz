@@ -15,7 +15,7 @@
 },
 {
    "name": "Cedric Diggory",
-    "wood": "Walnut",
+    "wood": "Ash",
     "length": 12.25,
     "core": "Unicorn hair",
     "Note": "This wand was 'pleasantly springy'; hair from particularly fine male unicorn (seventeen hands high), which nearly gored Mr Ollivander with its horn after he plucked its tail hair."
@@ -38,14 +38,14 @@
    "name": "Draco Malfoy",
     "wood": "Hawthorn",
     "length": 10,
-    "core": "Veela hair",
+    "core": "nicorn hair",
     "Note": "This wand passed into the possession of Harry Potter after the Skirmish at Malfoy Manor in 1998 until Harry came into possession of the Elder Wand and mended his first wand."
 },
 {
    "name": "Fleur Delacour",
     "wood": "Rosewood",
     "length": 9.5,
-    "core": "Phoenix feather",
+    "core": "Veela hair",
     "Note": "In this wand the core is a hair from Fleur's grandmother, who was a Veela."
 },
 {

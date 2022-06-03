@@ -16,13 +16,15 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/scrolloverflow.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
 	<script src="js/fullpage2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/d3.min.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<!-- Script for word cloud functionality https://github.com/jasondavies/d3-cloud/blob/master/build/d3.layout.cloud.js -->
 	<script src="js/d3.layout.cloud.js"></script>
+	<script src="https://unpkg.com/d3-sankey@0"></script>
 	<!-- Custom scripts-->
 	<script src="js/hogwarts_houses.js"></script>
 	<script type="text/javascript" src="js/introduction.js"></script>
@@ -164,9 +166,9 @@
 	</svg><br>
 	<a href="#Introduction">
 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="120" id="arrow" viewBox="0 0 122.91 110.38">
-  <path id="hg2" transform="rotate(90 44.0126 61.8)" stroke-width="5"  d="m49.26179,61.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
-  <path id="hg1" transform="rotate(90 44.0126 27.8)" stroke-width="5" d="m49.26179,27.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
-  <path id="hg3" transform="rotate(90 44.013 96.8)" stroke-width="5" d="m49.26179,96.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg2" transform="rotate(90 44.0126 61.8)" stroke-width="5"  d="m49.26179,61.79999l-30.74921,-40.20003l20.25078,0l30.74921,40.20003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg1" transform="rotate(90 44.0126 27.8)" stroke-width="5" d="m49.26179,27.79999l-30.74921,-40.20003l20.25078,0l30.74921,40.20003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg3" transform="rotate(90 44.013 96.8)" stroke-width="5" d="m49.26179,96.79999l-30.74921,-40.20003l20.25078,0l30.74921,40.20003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
 </svg>
 </a>
 	</div>
@@ -497,13 +499,16 @@
 				<!--TODO: LOAD WITH D3 JSON AT THE END-->
 			</div>
 			<div class="slide" data-anchor="Magical-World-2">
-				<div class="container text-center">
-					<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+				<div class="container">
+					<h2 class="slideTitle">Wizard to the core of their wands</h2>
+					<div id="sankey" style="width: 100%; height: 500px;"></div>
 				</div>
 			</div>
 			<div class="slide" data-anchor="Magical-World-3">
-				<div class="container text-center">
+				<div class="container">
+					<h2 class="slideTitle">Distribution of spells </h2>
 					<div id="piechart" style="width: 900px; height: 500px;"></div>
+					In this visualisation, we allow you to interactively see the distribution of the different type of spells across all the spells in the Harry Potter saga. 
 				</div>
 			</div>
 		</div>
@@ -615,7 +620,6 @@
 		</div>
 	</div>
 	<script>
-
 	function fadeInText(){
 
 		var textWrapper = document.querySelector('#ml3');
@@ -659,7 +663,7 @@
 	      afterLoad:function(origin, destination, direction, trigger){
 	      	if(destination.anchor==="About"){
 	      		fadeInText()
-	      	}
+	      	} 
 
 	      },
 	      afterSlideLoad: function( section, origin, destination, direction, trigger){
@@ -672,12 +676,89 @@
 			      	}
 		      	} else if (destination.anchor === "Introduction-1"){
 		      		displayKeyFigures()
+		      	}else if(destination.anchor === "Magical-World-2"){
+		      		//drawSankey()
 		      	}
 			}
 		})
 	})
 
 	</script>
+	<script src="https://cdn.anychart.com/releases/v8/js/anychart-core.min.js"></script>
+	<script src="https://cdn.anychart.com/releases/v8/js/anychart-sankey.min.js"></script>
+	<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-pie.min.js"></script>
+<script>
+anychart.onDocumentReady(function(){
+	 var data = [
+		{from: "Albus Dumbledore", to: "Thestral tail hair", weight: 1000, wand:"15\", Thestral tail hair, Elder wood", note:"The Elder Wand, one of the Deathly Hallows. Also known as the Deathstick and the Wand of Destiny."},
+		{from: "Bellatrix Lestrange", to: "Dragon heartstring", weight: 1000, wand:"12.75\", Dragon heartstring, Walnut wood", note:"This wand is described as 'unyielding;' passed into the possession of Hermione Granger after the Skirmish at Malfoy Manor in 1998."},
+		{from: "Cedric Diggory", to: "Unicorn hair", weight: 1000, wand:"12.25\", Unicorn hair, Ash wood", note:"This wand was 'pleasantly springy'; hair from particularly fine male unicorn (seventeen hands high), which nearly gored Mr Ollivander with its horn after he plucked its tail hair."},
+		{from: "Celestina Warbeck", to: "Unicorn hair", weight: 1000, wand:"10.5\", Phoenix feather, Larch wood", note:"Celestina Warbeck's wand is mentioned in the lyrics of the title track of her best-selling album, You Stole My Cauldron but You Can't Have my Heart."},
+		{from: "Dolores Umbridge", to: "Dragon heartstring", weight:1000, wand:"8\", Dragon heartstring, Birch wood", note:"This wand is described as 'unusually short;' broken by a centaur's hoof in June 1996 in the Forbidden Forest" },
+		{from: "Draco Malfoy", to: "Unicorn hair", weight: 1000, wand:"10\", Unicorn hair, Hawthorn wood", note:"This wand passed into the possession of Harry Potter after the Skirmish at Malfoy Manor in 1998 until Harry came into possession of the Elder Wand and mended his first wand."},
+		{from: "Fleur Delacour", to: "Veela hair", weight: 1000, wand:"9.5\", Veela hair, Rosewood wood", note:"In this wand the core is a hair from Fleur's grandmother, who was a Veela."},
+		{from: "Harry Potter", to:"Phoenix feather",weight:1000, wand:"11\", Phoenix feather, Holly wood", note:"Brother to Voldemort's wand — the core tail feathers are both from Fawkes; broken in December 1997 while fleeing from Godric's Hollow;[22] repaired with the Elder Wand in May 1998."},
+		{from: "Garrick Ollivander", to: "Dragon heartstring", weight: 1000,wand:"12.75\", Dragon heartstring, Hornbeam wood"},
+		{from: "Hermione Granger", to: "Dragon heartstring", weight: 1000,wand:"10.75\", Dragon heartstring, Vine wood", note:"This wand was confiscated when the trio was captured by Snatchers in 1998."},
+		{from: "Horace Slughorn", to: "Dragon heartstring", weight: 1000, wand:"10.25\", Dragon heartstring, Cedar wood", note:""},
+		{from: "Lucius Malfoy", to: "Dragon heartstring", weight: 1000, wand:"18\", Dragon heartstring, Elm wood", note:"This wand was kept in a snake-headed walking stick that Lucius carried; 'borrowed' by Lord Voldemort and destroyed by Harry Potter's wand during the Battle of the Seven Potters in 1997."},
+		{from: "Minerva McGonagall", to: "Dragon heartstring", weight: 1000, wand:"9.5\", Dragon heartstring, Fir wood", note:"This wand was most likely purchased from Ollivanders in 1947 when she was eleven almost twelve."},
+		{from: "Neville Longbottom", to: "Unicorn hair", weight: 1000, wand:"Unknown length, Unicorn hair, Cherry wood", note:"This wand was nice for Charm work."},
+		{from: "Quirinus Quirrell", to: "Unicorn hair", weight: 1000, wand:"9\", Unicorn hair, Alder wood", note:"This wand was nice for Charm work."},
+		{from: "Ronald Weasley", to: "Unicorn hair", weight: 1000, wand:"14\", Unicorn hair, Willow wood", note:"Purchased with his father's winnings from a Daily Prophet draw. Taken from him by Snatchers and replaced with Peter Pettigrew's wand."},
+		{from: "Tom Riddle", to: "Phoenix feather", weight: 1000, wand:"13.5\", Phoenix feather, Yew wood", note:"This wand is brother to Harry Potter's wand — the core tail feathers are both from Fawkes."}
+	 ]
+
+	//calling the Sankey function
+	var sankey_chart = anychart.sankey(data);
+
+	// configure labels
+	sankey_chart.node().labels().useHtml(true)
+	sankey_chart.node().labels().format(
+	  "<span style='font-weight:bold'>{%name}</span>"
+	)
+	sankey_chart.flow().hovered().labels().enabled(false)
+	sankey_chart.dropoff().normal().labels().enabled(true)
+	sankey_chart.dropoff().labels().padding(10)
+	sankey_chart.background().fill("black")
+
+	// configure tooltips
+	sankey_chart.node().tooltip().format("{%wand}\n\n{%note}")
+	sankey_chart.flow().tooltip().format("{%wand}\n\n{%note}")
+	sankey_chart.curveFactor(0)
+	//customizing the width of the nodes
+	sankey_chart.nodeWidth("30%")
+	//setting the chart title
+	sankey_chart.title("")
+	//customizing the vertical padding of the nodes
+	sankey_chart.nodePadding(10)
+	//setting the container id
+	sankey_chart.container("sankey")
+	//initiating drawing the Sankey diagram
+	sankey_chart.draw()
+
+	var data_pie = [
+	  {x: "Charm", value: 157},
+	  {x: "Healing Spell", value: 3},
+	  {x: "Conjuration", value: 7},
+	  {x: "Curse", value: 25},
+	  {x: "Hex", value: 21},
+	  {x:"Transfiguration", value:26},
+	  {x:"Other", value:14}
+	]
+
+
+	// create a chart and set the data
+	chart = anychart.pie(data_pie);
+
+	// set the container id
+	chart.container("piechart");
+	chart.background().fill("black")
+
+	// initiate drawing the chart
+	chart.draw();
+});
+</script>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.1/plugins/sigma.renderers.customShapes.min.js" integrity="sha512-aq73VTnmRtppJmMoDa567DjtQsbyMBtfEDdLGdU8EqqwOEO4ExH36KE7i9kjWdv9XTuMi9vHnrt9aw5nItTicw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
