@@ -568,12 +568,9 @@
 			<div class="slide" data-anchor="Magical-World-1">
 				<h3 class="slideTitle">Exploring Wands and Spells </h3>
 				<div class="container">
-					<p>Each wand consists of a type of wood surrounding a core of magical substance.
-						The wood may be unique to each wand, but the core material is generally redundant.
-						Let us discover in more details the core component of the wands of the 15 main characters of the
-						saga.
-						<br>
-						And for the most curious, you can also check the repartition of spells types across the saga.
+					<img class="img-fluid mw-45 websiteImg" src="images/wands.jpeg">
+					<p>
+						Each wand of the wizardling consists of a type of wood surrounding a core of magical substance. Whether it is Ollivander or Gregorovitch that built the wand, the core magical substance doesn't vary too much whereas the wood can make the wand much more unique. Our next tool will help us to see the core components of the wand of 17 main characters of the saga.
 					</p>
 				</div>
 			</div>
@@ -585,10 +582,11 @@
 			</div>
 			<div class="slide" data-anchor="Magical-World-3">
 				<div class="container">
-					<h2 class="slideTitle">Exploring spells</h2>
+					<h2 class="slideTitle">Exploring the casted spells</h2>
 					<div id="piechart" style="width: 100%; height: 500px;"></div>
-					In this visualisation, we allow you to interactively see the distribution of the different type of
-					spells across all the spells in the Harry Potter saga.
+					<p>
+						Do you know which is the most used spells throughout the books ? And to which category does he belong to ? With our tool, we let you interactively explore the repartition of casted spells across categories. Think about it, does this distribution makes sense after having seen or read the Harry Potter saga ? Do you know when each type of spell is used the most ? All the answers will be given in a more fine-grained[visualization allowing you to know exactly which spell has been casted and when throughout the books.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -662,7 +660,7 @@
 			<div class="slide" data-anchor="deep-4">
 				<div class="container text-center">
 					<div id="spellByBook">
-						<h2 class="slideTitle">Spell Launched per book</h2>
+						<h2 class="slideTitle">Spell casted per book</h2>
 						<div id="spellByBookContainer" style="width:100%;height:80%"></div>
 					</div>
 				</div>
@@ -826,7 +824,7 @@
 				{ from: "Dolores Umbridge", to: "Dragon heartstring", weight: 1, wand: "8\", Dragon heartstring, Birch wood", note: "This wand is described as 'unusually short;' broken by a centaur's hoof in June 1996 in the Forbidden Forest" },
 				{ from: "Draco Malfoy", to: "Unicorn hair", weight: 1, wand: "10\", Unicorn hair, Hawthorn wood", note: "This wand passed into the possession of Harry Potter after the Skirmish at Malfoy Manor in 1998 until Harry came into possession of the Elder Wand and mended his first wand." },
 				{ from: "Fleur Delacour", to: "Veela hair", weight: 1, wand: "9.5\", Veela hair, Rosewood wood", note: "In this wand the core is a hair from Fleur's grandmother, who was a Veela." },
-				{ from: "Harry Potter", to: "Phoenix feather", weight: 1, wand: "11\", Phoenix feather, Holly wood", note: "Brother to Voldemort's wand — the core tail feathers are both from Fawkes; broken in December 1997 while fleeing from Godric's Hollow;[22] repaired with the Elder Wand in May 1998." },
+				{ from: "Harry Potter", to: "Phoenix feather", weight: 1, wand: "11\", Phoenix feather, Holly wood", note: "Brother to Voldemort's wand — the core tail feathers are both from Fawkes;" },
 				{ from: "Garrick Ollivander", to: "Dragon heartstring", weight: 1, wand: "12.75\", Dragon heartstring, Hornbeam wood" },
 				{ from: "Hermione Granger", to: "Dragon heartstring", weight: 1, wand: "10.75\", Dragon heartstring, Vine wood", note: "This wand was confiscated when the trio was captured by Snatchers in 1998." },
 				{ from: "Horace Slughorn", to: "Dragon heartstring", weight: 1, wand: "10.25\", Dragon heartstring, Cedar wood", note: "" },
@@ -847,6 +845,7 @@
 				"<span style='font-weight:bold'>{%name}</span>"
 			)
 			sankey_chart.flow().hovered().labels().enabled(false)
+			sankey_chart.flow().normal().fill("#ffffff 0.4");
 			sankey_chart.dropoff().normal().labels().enabled(true)
 			sankey_chart.dropoff().labels().padding(10)
 			sankey_chart.background().fill("black")
@@ -854,34 +853,39 @@
 			// configure tooltips
 			sankey_chart.node().tooltip().format("{%wand}\n\n{%note}")
 			sankey_chart.flow().tooltip().format("{%wand}\n\n{%note}")
+
 			sankey_chart.curveFactor(0)
 			//customizing the width of the nodes
-			sankey_chart.nodeWidth("30%")
+			sankey_chart.nodeWidth("25%")
 			//setting the chart title
 			sankey_chart.title("")
 			//customizing the vertical padding of the nodes
-			sankey_chart.nodePadding(10)
+			sankey_chart.nodePadding(5)
 			//setting the container id
 			sankey_chart.container("sankey")
 			//initiating drawing the Sankey diagram
 			sankey_chart.draw()
 
 			var data_pie = [
-				{ x: "Charm", value: 157 },
-				{ x: "Healing Spell", value: 3 },
-				{ x: "Conjuration", value: 7 },
-				{ x: "Curse", value: 25 },
-				{ x: "Hex", value: 21 },
-				{ x: "Transfiguration", value: 26 },
-				{ x: "Other", value: 14 }
+				{ x: "Charm", value: 157, best1:"Accio (30)",  best2:"Expelliarmus (27)",best3: "Expecto patronum (25)",best4:"Stupefy (25)"},
+				{ x: "Healing Spell", value: 3, best1:"Episkey (2)", best2:"Reparifors (0)", best3: "Vulnera Sanentur (0)", best4:"No more spell in that category"},
+				{ x: "Conjuration", value: 7, best1:"Incarcerous (2)", best2:"Obscuro (1)", best3:"Orchideous (1)", best4:"Serpensortia (1)"},
+				{ x: "Curse", value: 25 , best1:"Avada kedavra (22)",best3:"Crucio (14)", best2:"Imperio (15)", best4:"Petrificus totalus (10)"},
+				{ x: "Hex", value: 21, best1:"Bat-Bogey Hex (1)", best2:"Bedazzling Hex (1)", best3:"Densaugeo (1)", best4:"Hurling Hex (1)"},
+				{ x: "Transfiguration", value: 26, best1:"Switching Spell (4)", best2:"Badgering (2)", best3:"Evanesco (2)", best4:"Inanimatus Conjurus (2)"},
+				{ x: "Jinx", value:31, best1:"Impedimenta (11)", best2:"Levicorpus (6)", best3:"Relashio (5)", best4:"Furnunculus (2)"},
+				{ x: "Other", value: 14, best1:"Green Sparks (3)", best2:"Finite Incantatem (2)", best3:"Liberacorpus (2)", best4:"Point Me (2)"}
 			]
 
 			// create a chart and set the data
 			chart = anychart.pie(data_pie);
 
 			// set the container id
-			chart.container("piechart");
+			chart.container("piechart")
 			chart.background().fill("black")
+
+			var tooltip = chart.tooltip()
+		  	tooltip.format("{%value} spells casted in that category\n\nThe most used ones are:\n\t- {%best1}\n\t- {%best2}\n\t- {%best3}\n\t- {%best4}")
 
 			// initiate drawing the chart
 			chart.draw();
